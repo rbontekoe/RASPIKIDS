@@ -13,9 +13,9 @@ Daarnaast heb ik vroeger meegewerkt aan CoderDojo evenementen voor kinderen bij 
 
 In deze cursus laat ik zien hoe je programma's kunt maken die draaien op een Raspberry Pi, net als die van mij. Mijn programma's draaien in Docker containers. Een Docker container is een soort 'doos' waarin we programma's kunnen draaien, zodat ze elkaar niet beïnvloeden.
 
-Ook werk ik graag met Node-RED. Dit is een programma waarmee we grafisch onze programma's kunnen opbouwen. Het is vergelijkbaar met programma's voor de BBC Micro-bit. Op YouTube zijn heel veel instructie-videos te vinden over Node-RED.
+Ook werk ik graag met Node-RED. Dit is een programma waarmee we grafisch onze programma's kunnen opbouwen. Het is vergelijkbaar met programma's voor de BBC Micro-bit. Op YouTube zijn heel veel [instructie-videos](https://www.youtube.com/channel/UCQaB8NXBEPod7Ab8PPCLLAA) te vinden over Node-RED.
 
-Ik gebruik verschillende sensors om dingen te meten, zoals de DHT22 om de temperatuur en luchtvochtigheid te meten. De ESP8266 en ESP32 zijn speciale computertjes die kunnen communiceren met andere computers via WiFi. Bijvoorbeeld met een MQTT broker.
+Ik gebruik verschillende sensors om dingen te meten, zoals de DHT22 om de temperatuur en luchtvochtigheid te meten. De ESP8266 en ESP32 zijn microcontrollers, hele kleine en goedkope computertjes die kunnen communiceren met andere computers via WiFi. Bijvoorbeeld met een MQTT broker.
 
 Een MQTT broker is een programma dat helpt bij het uitwisselen van informatie tussen andere computers. Dit gebeurt meestal via een WiFi-netwerk.
 
@@ -24,6 +24,12 @@ MicroPython is een computerprogramma dat ik gebruik voor de ESP's.
 Succes met de cursus,
 
 Rob Bontekoe
+
+!!! info
+    Op deze cursus is de MIT licence van toepassing:
+
+    De MIT-licentie is een soort regel die zegt dat mensen het mogen gebruiken, kopiëren, wijzigen en delen van een bepaald programma op hun computer of andere apparaat, zolang ze de maker ervan duidelijk vermelden en het programma niet verkopen zonder toestemming. Dit is een handige manier om ervoor te zorgen dat mensen het programma kunnen gebruiken om te leren of om er dingen mee te maken, zonder dat ze daar geld voor hoeven te betalen.
+
 
 ### Voor wie is deze cursus bestemd?
 
@@ -37,9 +43,19 @@ Een Raspberry Pi is een kleine computer die je kunt gebruiken om allerlei leuke 
 - Ze gebruiken weinig stroom: omdat ze klein en niet zo krachtig zijn, gebruiken ze niet zoveel stroom als gewone computers. Je kunt de Raspberry Pi dus dag en nacht aan laten staan zonder dat het veel stroom kost.
 - Ze zijn goed voor het leren van computers: ze een goede manier om te leren hoe computers werken zonder dat je bang hoeft te zijn dat je iets kapot maakt.
 
+![Raspberry Pi 3B+](https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_3B_PLUS_001.png)
+**Raspberry Pi 3B+**
+
+
 ### Wat is Docker?
 
-Docker is een manier om software op verschillende computers te laten werken. Het is een soort doos waarin je al je software kunt stoppen, zodat het op elke computer werkt die Docker heeft. Het is net zoals een koffer waarin je al je spullen in stopt voordat je op vakantie gaat, zodat je alles bij je hebt. Zo werkt het ook met Docker, alleen dan met software in plaats van spullen.
+[Docker](https://nl.wikipedia.org/wiki/Docker_(software)) is een programma dat helpt om software op verschillende computers te laten werken. Het maakt gebruik van containers, die zijn als kleine pakketjes software die alles bevatten wat nodig is om een programma te laten werken. Het is net zoals een koffer waarin je al je spullen in stopt voordat je op vakantie gaat, zodat je alles bij je hebt. Zo werkt het ook met Docker, alleen dan met software in plaats van spullen.
+
+Er zijn twee soorten processoren, of "hersenen", waar computers mee werken: ARM-processoren en X86-processoren. Een Raspberry Pi heeft een ARM-processor. PC's hebben meestal een X86-processor.
+
+Een container moet aangepast zijn aan het type processor waarop je het wilt gebruiken. Dus als je bijvoorbeeld een website hebt gemaakt die je op een Raspberry Pi wilt laten werken, moet je een container hebben die is aangepast aan de ARM-processor van de Raspberry Pi. Als je diezelfde website op een PC wilt laten werken, moet je een container hebben die aangepast is aan de X86-processor van de PC.
+
+Met Docker kan de ontwikkelaar ervoor zorgen dat de container automatisch wordt aangepast aan het type processor waarop het wordt uitgevoerd. Zo hoef je geen zorgen te maken dat het programma niet goed werkt, omdat Docker ervoor zorgt dat het wél goed werkt.
 
 ### Wat is Portainer?
 
@@ -61,7 +77,7 @@ Node-RED draait in een container als het wordt gebruikt in combinatie met Docker
 
 ### Wat is een MQTT-broker?
 
-MQTT-broker is een programma dat wordt gebruikt om informatie tussen verschillende apparaten of programma's te verzenden en te ontvangen. Dit gebeurt via een protocol dat MQTT heet, dat staat voor "Message Queuing Telemetry Transport".
+[MQTT-broker](https://nl.wikipedia.org/wiki/MQTT) is een programma dat wordt gebruikt om informatie tussen verschillende apparaten of programma's te verzenden en te ontvangen. Dit gebeurt via een protocol dat MQTT heet, dat staat voor "Message Queuing Telemetry Transport".
 
 Stel je voor dat je een groep vrienden hebt die op verschillende plekken wonen. Als je iets wilt laten weten aan al je vrienden, kun je MQTT-broker gebruiken om een bericht te versturen. Het bericht wordt dan verzonden naar de MQTT-broker, die het vervolgens naar al je vrienden stuurt. Zo kun je gemakkelijk informatie verzenden naar al je vrienden, ongeacht waar ze zijn of wat ze aan het doen zijn.
 
@@ -71,13 +87,20 @@ MQTT-broker is dus een soort "postbode" die ervoor zorgt dat informatie tussen v
 
 ### Wat is een ESP8266 of ESP32?
 
-ESP8266 en ESP32 zijn microcontrollers, wat betekent dat ze kleine computers zijn die zijn ontworpen om simpele taken uit te voeren. Ze worden vaak gebruikt in elektronische projecten, zoals het maken van een slimme thermostaat of het bouwen van een robot.
+ESP8266 en [ESP32](https://nl.wikipedia.org/wiki/ESP32) zijn microcontrollers, wat betekent dat ze kleine computers zijn die zijn ontworpen om simpele taken uit te voeren. Ze worden vaak gebruikt in elektronische projecten, zoals het maken van een slimme thermostaat of het bouwen van een robot.
+
+![DHT22](https://elektronicavoorjou.nl/wp-content/uploads/2021/01/DHT22-1.jpg)
+
+**DHT22 van elektronicavoorjou.nl die de temperatuur en de luchtvochtigheidsgad meet**
 
 Stel je voor dat je een kleine legoblokjes-robot wilt maken die kan rijden en om obstakels heen kan navigeren. Je kunt dan een ESP8266 of ESP32 gebruiken om de robot te besturen. De microcontroller zorgt ervoor dat de robot kan bewegen en dat hij kan reageren op zijn omgeving, bijvoorbeeld door obstakels te ontwijken als hij ze tegenkomt.
 
 ESP8266 en ESP32 zijn specifieke merken van microcontrollers. Ze hebben beide wifi-verbinding, wat betekent dat ze kunnen communiceren met andere apparaten via het internet. Dit maakt ze handig voor projecten waarbij je wilt dat de microcontroller met het internet kan communiceren, zoals bij het maken van een slimme thermostaat die je op afstand kunt bedienen.
 
 ESP8266 en ESP32 zijn dus kleine computers die je kunt gebruiken om simpele taken uit te voeren in elektronische projecten. Ze kunnen met het internet communiceren en zijn handig voor projecten waarbij je wilt dat de microcontroller met het internet kan communiceren.
+
+![ESP8222](https://elektronicavoorjou.nl/wp-content/uploads/2019/12/NodeMcu-Lua-WIFI-Board-ESP8266-CP2102-1.jpg)
+**ESP8266 van elektronicavoorjou.nl die ik gebruik om de output van de DHT22 naar mijn Raspberry Pi te sturen**
 
 ### Wat is een sensor en een slimme meter?
 
@@ -89,6 +112,10 @@ Een slimme meter is een specifiek soort sensor die wordt gebruikt om energieverb
 
 Sensoren en slimme meters zijn dus apparaten die informatie kunnen detecteren of meten. Ze kunnen worden gebruikt om allerlei soorten informatie te verzamelen, zoals temperatuur of energieverbruik, en kunnen worden gebruikt in elektronische projecten of apparaten om de omgeving te monitoren.
 
+![P1 kabel](https://www.sossolutions.nl/media/catalog/product/cache/5df5c040ed8cd3972c59a8e190e44350/1/_/1.8m_kabel.png)
+
+**P1 Kabel van www.sossolutions.nl die ik gebruik om mijn Slimme Meter met mijn Raspberry Pi te koppelen**
+
 ### Wat is MicroPython?
 
 MicroPython is een specifieke versie van de programmeertaal Python die is ontworpen om te draaien op kleine computers, zoals microcontrollers. MicroPython is handig als je wilt dat je programma's snel en efficiënt werken op een kleine computer, zoals een microcontroller.
@@ -96,3 +123,5 @@ MicroPython is een specifieke versie van de programmeertaal Python die is ontwor
 Stel je voor dat je een robot wilt maken die zichzelf kan bewegen en obstakels kan ontwijken. Je kunt MicroPython gebruiken om de robot te programmeren, zodat hij weet hoe hij moet bewegen en hoe hij op obstakels moet reageren. Zo kun je gemakkelijk een programma maken dat de robot laat bewegen en navigeren.
 
 MicroPython wordt vaak gebruikt in elektronische projecten waarbij een kleine computer, zoals een microcontroller, wordt gebruikt. Het is een handige manier om programma's te schrijven die efficiënt werken op een kleine computer en die gemakkelijk te begrijpen zijn.
+
+![Micropython](https://spng.subpng.com/20180525/qey/kisspng-micropython-esp32-esp8266-circuitpython-5b083fe8d52d31.5545051715272673048732.png)
