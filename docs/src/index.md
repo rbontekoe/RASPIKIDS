@@ -7,19 +7,19 @@
 
 ## Inleiding
 
-Ik heb een Raspberry Pi 3B+ thuis waarop verschillende programma's draaien. Bijvoorbeeld: een programma om de temperatuur in de verschillende kamers in mijn huis te meten, een programma om gegevens over het weer op te halen van Visual Crossing, een programma om het stroom- en gasverbruik te bekijken en een database met recepten uit Italië.
+Ik heb een Raspberry Pi 3B+ thuis waarop verschillende programma's draaien. Zoals een programma om de temperatuur in de verschillende kamers in mijn huis te meten, een programma om gegevens over het weer op te halen van Visual Crossing, een programma om het stroom- en gasverbruik te bekijken en een receptendatabase met italiaanse recepten.
 
-Daarnaast heb ik vroeger meegewerkt aan CoderDojo evenementen voor kinderen bij het Technisch Lab van LeusdenZet. Door Corona en mijn leeftijd ben ik hiermee gestopt, maar ik wil wel nog graag een bijdrage leveren door middel van online cursusmateriaal.
+Daarnaast heb ik vroeger meegewerkt aan CoderDojo evenementen voor kinderen bij het Technisch Lab van LeusdenZet. Door Corona en mijn leeftijd ben ik hiermee gestopt, maar ik wil wel nog steeds graag een bijdrage leveren door middel van online cursusmateriaal.
 
-In deze cursus laat ik zien hoe je programma's kunt maken die draaien op een Raspberry Pi, net als die van mij. Mijn programma's draaien in een Docker container. Een Docker container is een soort 'doos' waarin we programma's kunnen draaien, zodat ze elkaar niet beïnvloeden.
+In deze cursus laat ik zien hoe je programma's kunt maken die draaien op een Raspberry Pi, net als die van mij. Mijn programma's draaien in Docker containers. Een Docker container is een soort 'doos' waarin we programma's kunnen draaien, zodat ze elkaar niet beïnvloeden.
 
-Ook werk ik graag met Node-RED. Dit is een programma waarmee we grafisch onze programma's kunnen opbouwen. Het is vergelijkbaar met programma's voor de BBC Micro-bit. Op YouTube ziijn heel veel instructie-videos te vinden over Node-RED.
+Ook werk ik graag met Node-RED. Dit is een programma waarmee we grafisch onze programma's kunnen opbouwen. Het is vergelijkbaar met programma's voor de BBC Micro-bit. Op YouTube zijn heel veel instructie-videos te vinden over Node-RED.
 
-Ik gebruik verschillende sensors om dingen te meten, zoals de DHT22 om de temperatuur en luchtvochtigheid te meten. De ESP8266 en ESP32 zijn speciale computers die kunnen communiceren met andere computers via WiFi. Bijvoorbeeld met een MQTT broker.
+Ik gebruik verschillende sensors om dingen te meten, zoals de DHT22 om de temperatuur en luchtvochtigheid te meten. De ESP8266 en ESP32 zijn speciale computertjes die kunnen communiceren met andere computers via WiFi. Bijvoorbeeld met een MQTT broker.
 
 Een MQTT broker is een programma dat helpt bij het uitwisselen van informatie tussen andere computers. Dit gebeurt meestal via een WiFi-netwerk.
 
-Ik programmeer de ESP's met MicroPython. MicroPython is een computerprogramma dat we gebruiken voor de ESP's.
+MicroPython is een computerprogramma dat ik gebruik voor de ESP's.
 
 Succes met de cursus,
 
@@ -29,13 +29,18 @@ Rob Bontekoe
 
 De cursus is bestemd voor kinderen van 8 tot 16 jaar.
 
+### Wat is een Raspberry Pi?
+
+Een Raspberry Pi is een kleine computer die je kunt gebruiken om allerlei leuke dingen mee te doen, zoals je eigen website maken of een spel spelen. Er zijn een paar dingen die Raspberry Pi's aantrekkelijk maken om te gebruiken:
+
+- Ze zijn goedkoop: je kunt al een Raspberry Pi kopen voor een paar tientjes.
+- Ze zijn klein: je kunt een Raspberry Pi gemakkelijk meenemen in je tas of zak.
+- Ze gebruiken weinig stroom: omdat ze klein en niet zo krachtig zijn, gebruiken ze niet zoveel stroom als gewone computers. Je kunt de Raspberry Pi dus dag en nacht aan laten staan zonder dat het veel stroom kost.
+- Ze zijn goed voor het leren van computers: ze een goede manier om te leren hoe computers werken zonder dat je bang hoeft te zijn dat je iets kapot maakt.
+
 ### Wat is Docker?
 
-Docker is een programma dat wordt gebruikt om software in kleine stukjes, genaamd "containers", te verpakken. Dit maakt het makkelijker om software op verschillende computers te laten werken, omdat alle benodigde bestanden en instellingen bij de container horen.
-
-Stel je voor dat je een taart wilt maken, maar je hebt alleen een grote koekenpan. Als je alle ingredienten voor de taart in de koekenpan doet en de taart gaat bakken, zal de taart wel klaar zijn, maar het is moeilijk om de taart uit de koekenpan te halen zonder hem te beschadigen. Met Docker is het net alsof je de ingredienten voor de taart in een kleine cakevorm doet. Zo kun je de taart gemakkelijk uit de vorm halen zonder hem te beschadigen, en kun je de taart gemakkelijk op een andere plaats opeten of laten zien aan andere mensen.
-
-Docker wordt vaak gebruikt door softwareontwikkelaars om ervoor te zorgen dat hun programma's op elke computer goed werken, ongeacht het besturingssysteem of de instellingen op die computer. Het is dus een soort "verpakking" voor software, die ervoor zorgt dat het makkelijk is om te installeren en te gebruiken.
+Docker is een manier om software op verschillende computers te laten werken. Het is een soort doos waarin je al je software kunt stoppen, zodat het op elke computer werkt die Docker heeft. Het is net zoals een koffer waarin je al je spullen in stopt voordat je op vakantie gaat, zodat je alles bij je hebt. Zo werkt het ook met Docker, alleen dan met software in plaats van spullen.
 
 ### Wat is Portainer?
 
