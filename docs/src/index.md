@@ -32,7 +32,6 @@ De cursus is bestemd voor kinderen van 8 tot 16 jaar.
 ### Wat is een Raspberry Pi?
 
 Een Raspberry Pi is een kleine computer die je kunt gebruiken om allerlei leuke dingen mee te doen, zoals je eigen website maken of een spel spelen. Er zijn een paar dingen die Raspberry Pi's aantrekkelijk maken om te gebruiken:
-
 - Ze zijn goedkoop: je kunt al een Raspberry Pi kopen voor een paar tientjes.
 - Ze zijn klein: je kunt een Raspberry Pi gemakkelijk meenemen in je tas of zak.
 - Ze gebruiken weinig stroom: omdat ze klein en niet zo krachtig zijn, gebruiken ze niet zoveel stroom als gewone computers. Je kunt de Raspberry Pi dus dag en nacht aan laten staan zonder dat het veel stroom kost.
