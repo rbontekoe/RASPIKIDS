@@ -145,7 +145,7 @@ Stel je voor dat je een robot wilt maken die zichzelf kan bewegen en obstakels k
 
 MicroPython wordt vaak gebruikt in elektronische projecten waarbij een kleine computer, zoals een microcontroller, wordt gebruikt. Het is een handige manier om programma's te schrijven die efficiënt werken op een kleine computer en die gemakkelijk te begrijpen zijn.
 
-Tijdens de cursus gebruiken we een programma Thonny om MicroPython code te maken.
+Tijdens de cursus gebruiken we het programma Thonny om MicroPython code te maken.
 
 ```@raw html
 <img src="https://seeklogo.com/images/M/micropython-logo-6255D51390-seeklogo.com.png" alt="MicroPython logo" width="80">
