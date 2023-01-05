@@ -10,17 +10,36 @@ Pages = ["chapter2.md"]
 
 ## Wat heb je nodig
 
-- Een PC met een slot voor een micro SSD-kaartje.
+- Een PC met een slot voor een micro SSD-kaartje (bij deelname aan een Coder Dojo ligt het kaarte als klaar!).
 - Een micro SSD-kaartjeshouder.
+- Het programma Raspberry Pi Imager.
 
 ## Wat ga je doen
 
-Stap 1: Het programma Imager installeren op je PC
-Stap 2: SSD kaartje klaarmaken.
+Stap 1: Het programma Imager installeren op je PC.
+Stap 2: SSD kaartje klaarmaken met Ubuntu Server.
 
 ## Stap 1
 
+1. Kijk hoeveel bit processor van je Raspberry Pi is.
+
+1. Ga naar [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/) en download het programma.
+
+2. Installeer het programma.
+
 ## Stap 2
+
+3. Stop het Micro SSD-kaartje in een houder.
+
+4. Stop de houder in uw laptop.
+
+5. Start het programma.
+
+[ss01.png](/rbontekoe.github.io/ss01.png)
+
+6. Klik op op de toets `Choose OS`.
+
+
 
 
 ## Samenvatting
