@@ -31,23 +31,29 @@ Rob Bontekoe
     De MIT-licentie is een soort regel die zegt dat mensen het mogen gebruiken, kopiëren, wijzigen en delen van een bepaald programma op hun computer of andere apparaat, zolang ze de maker ervan duidelijk vermelden en het programma niet verkopen zonder toestemming. Dit is een handige manier om ervoor te zorgen dat mensen het programma kunnen gebruiken om te leren of om er dingen mee te maken, zonder dat ze daar geld voor hoeven te betalen.
 
 
-### Voor wie is deze cursus bestemd?
+## Voor wie is deze cursus bestemd?
 
-De cursus is bestemd voor kinderen van 8 tot 16 jaar.
+De cursus is bestemd voor kinderen van 8 tot 14 jaar.
 
-### Wat is een Raspberry Pi?
+## Wat is een Raspberry Pi?
 
 Een Raspberry Pi is een kleine computer die je kunt gebruiken om allerlei leuke dingen mee te doen, zoals je eigen website maken of een spel spelen. Er zijn een paar dingen die Raspberry Pi's aantrekkelijk maken om te gebruiken:
 - Ze zijn goedkoop: je kunt al een Raspberry Pi kopen voor een paar tientjes.
 - Ze zijn klein: je kunt een Raspberry Pi gemakkelijk meenemen in je tas of zak.
 - Ze gebruiken weinig stroom: omdat ze klein en niet zo krachtig zijn, gebruiken ze niet zoveel stroom als gewone computers. Je kunt de Raspberry Pi dus dag en nacht aan laten staan zonder dat het veel stroom kost.
-- Ze zijn goed voor het leren van computers: ze een goede manier om te leren hoe computers werken zonder dat je bang hoeft te zijn dat je iets kapot maakt.
+- Ze zijn goed voor het leren van computers: een goede manier om te leren hoe computers werken zonder dat je bang hoeft te zijn dat je iets kapot maakt.
 
-![Raspberry Pi 3B+](https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_3B_PLUS_001.png)
+![Raspberry Pi 3B+](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Raspberry_Pi_3_B%2B_%2839906369025%29.png/390px-Raspberry_Pi_3_B%2B_%2839906369025%29.png)
+
 **Raspberry Pi 3B+**
 
+Deze cursus is gemaakt om te werken op een [Raspberry Pi 3B+](https://nl.wikipedia.org/wiki/Raspberry_Pi#:~:text=Raspberry%20Pi%203,-De%20RPi%203&text=Op%20Pi%2Ddag%202018%20verscheen,(100%20Mbit%2Fs).). We hebben het getest om ervoor te zorgen dat alles goed werkt op die computer.
 
-### Wat is Docker?
+```@raw html
+<img src="https://seeklogo.com/images/R/raspberry-pi-logo-8240ABBDFE-seeklogo.com.png" alt="Raspberry Pi logo" width="100">
+```
+
+## Wat is Docker?
 
 [Docker](https://nl.wikipedia.org/wiki/Docker_(software)) is een programma dat helpt om software op verschillende computers te laten werken. Het maakt gebruik van containers, die zijn als kleine pakketjes software die alles bevatten wat nodig is om een programma te laten werken. Het is net zoals een koffer waarin je al je spullen in stopt voordat je op vakantie gaat, zodat je alles bij je hebt. Zo werkt het ook met Docker, alleen dan met software in plaats van spullen.
 
@@ -57,7 +63,11 @@ Een container moet aangepast zijn aan het type processor waarop je het wilt gebr
 
 Met Docker kan de ontwikkelaar ervoor zorgen dat de container automatisch wordt aangepast aan het type processor waarop het wordt uitgevoerd. Zo hoef je geen zorgen te maken dat het programma niet goed werkt, omdat Docker ervoor zorgt dat het wél goed werkt.
 
-### Wat is Portainer?
+```@raw html
+<img src="https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png" alt="Docker logo" width="120">
+```
+
+## Wat is Portainer?
 
 Portainer is een programma dat je kunt gebruiken om Docker te beheren. Als je Docker gebruikt, heb je misschien verschillende containers die je wilt starten, stoppen of verwijderen. Portainer maakt het makkelijker om deze taken uit te voeren door een gebruiksvriendelijke grafische interface te bieden waarmee je de containers kunt beheren.
 
@@ -65,44 +75,53 @@ Stel je voor dat je een doos met speelgoed hebt, en je wilt weten welke speelgoe
 
 Portainer is dus een soort "beheerprogramma" voor Docker, dat ervoor zorgt dat het makkelijker is om Docker te gebruiken en te beheren. Als je veel containers hebt of als je nieuw bent met Docker, kan Portainer je helpen om alles beter te begrijpen en te gebruiken.
 
-### Wat is Node-RED?
+```@raw html
+<img src="https://seeklogo.com/images/P/portainer-wordmark-logo-9C4DA30483-seeklogo.com.png" alt="Portainer logo" width="300">
+```
 
-Node-RED is een programma dat je kunt gebruiken om eenvoudig kleine programma's, of "flows", te maken. Dit kun je doen door knoppen en andere elementen op een scherm te slepen en te plakken, en door ze met elkaar te verbinden met lijnen.
+## Wat is Node-RED?
+
+[Node-RED](https://www.compusers.nl/sites/default/files/swb-jaargangen/2019/2019-2/SwB20192_IoT_Domotica_en_NodeRED.pdf) is een programma dat je kunt gebruiken om eenvoudig kleine programma's, of "flows", te maken. Dit kun je doen door knoppen en andere elementen op een scherm te slepen en te plakken, en door ze met elkaar te verbinden met lijnen.
 
 Stel je voor dat je een spel hebt waarbij je allerlei opdrachten moet doen. Met Node-RED is het net alsof je de opdrachten op een rijtje kunt leggen, en door middel van pijlen kunt aangeven wat er moet gebeuren als je een opdracht hebt voltooid. Zo kun je bijvoorbeeld aangeven dat als je klaar bent met opruimen, je een film mag kijken.
 
 Node-RED wordt vaak gebruikt om dingen te automatiseren of om informatie van verschillende bronnen te verzamelen en te verwerken. Bijvoorbeeld, je kunt Node-RED gebruiken om te controleren of er nieuwe e-mails zijn, of om de temperatuur in huis te meten en de verwarming aan te zetten als het te koud wordt.
 
-Node-RED draait in een container als het wordt gebruikt in combinatie met Docker. Een container is een soort kleine "verpakking" voor software, die ervoor zorgt dat het makkelijk is om te installeren en te gebruiken. Als Node-RED in een container draait, betekent dit dat het makkelijk is om te installeren en te gebruiken, omdat alle benodigde bestanden en instellingen bij de container horen.
+```@raw html
+<img src="https://seeklogo.com/images/N/node-red-logo-03ED3C7805-seeklogo.com.png" alt="Node-RED logo" width="100">
+```
 
-### Wat is een MQTT-broker?
+## Wat is een MQTT-broker?
 
-[MQTT-broker](https://nl.wikipedia.org/wiki/MQTT) is een programma dat wordt gebruikt om informatie tussen verschillende apparaten of programma's te verzenden en te ontvangen. Dit gebeurt via een protocol dat MQTT heet, dat staat voor "Message Queuing Telemetry Transport".
+[MQTT-broker](https://nl.wikipedia.org/wiki/MQTT) is een programma dat gebruikt wordt om informatie te versturen en ontvangen via wifi. Het gebeurt via een protocol dat MQTT heet, dat staat voor "Message Queuing Telemetry Transport".
 
-Stel je voor dat je een groep vrienden hebt die op verschillende plekken wonen. Als je iets wilt laten weten aan al je vrienden, kun je MQTT-broker gebruiken om een bericht te versturen. Het bericht wordt dan verzonden naar de MQTT-broker, die het vervolgens naar al je vrienden stuurt. Zo kun je gemakkelijk informatie verzenden naar al je vrienden, ongeacht waar ze zijn of wat ze aan het doen zijn.
+Alle apparaten die willen communiceren met de MQTT-broker moeten zich eerst "registreren". Dit betekent dat ze zich aanmelden bij de MQTT-broker en laten weten dat ze informatie willen verzenden of ontvangen.
 
-MQTT-broker wordt vaak gebruikt in het "Internet of Things", oftewel het internet van dingen. Dit is een term die wordt gebruikt voor alle apparaten die zijn verbonden met het internet, zoals slimme thermostaten, beveiligingscamera's en koelkasten. Als deze apparaten met elkaar kunnen communiceren via een MQTT-broker, kun je bijvoorbeeld de temperatuur in huis op afstand controleren of een melding ontvangen als de koelkast opengaat.
+Node-RED is een programma dat makkelijk te gebruiken is om te communiceren met een MQTT-broker via wifi. Het heeft speciaal ontworpen voorzieningen om dit te doen.
 
-MQTT-broker is dus een soort "postbode" die ervoor zorgt dat informatie tussen verschillende apparaten of programma's kan worden verzonden en ontvangen. Het maakt het makkelijk om informatie te verzenden naar verschillende plekken of om te communiceren met andere apparaten.
+```@raw html
+<img src="https://seeklogo.com/images/M/mqtt-logo-C92D58AA94-seeklogo.com.png" alt="MQTT logo" width="200">
+```
 
-### Wat is een ESP8266 of ESP32?
+## Wat is een ESP8266 of een ESP32?
 
-ESP8266 en [ESP32](https://nl.wikipedia.org/wiki/ESP32) zijn microcontrollers, wat betekent dat ze kleine computers zijn die zijn ontworpen om simpele taken uit te voeren. Ze worden vaak gebruikt in elektronische projecten, zoals het maken van een slimme thermostaat of het bouwen van een robot.
+De ESP8266 en de [ESP32](https://nl.wikipedia.org/wiki/ESP32) zijn microcontrollers, wat betekent dat het kleine computers zijn die zijn ontworpen om simpele taken uit te voeren.
 
-![DHT22](https://elektronicavoorjou.nl/wp-content/uploads/2021/01/DHT22-1.jpg)
+```@raw html
+<img src="https://elektronicavoorjou.nl/wp-content/uploads/2019/12/NodeMcu-Lua-WIFI-Board-ESP8266-CP2102-1.jpg" alt="ESP8266" width="300">
+```
 
-**DHT22 van elektronicavoorjou.nl die de temperatuur en de luchtvochtigheidsgad meet**
+**ESP8266 van [elektronicavoorjou.nl](https://elektronicavoorjou.nl/product/nodemcu-esp8266-wifi-board/) die ik gebruik om de output van een DHT22 naar mijn Raspberry Pi te sturen**
 
-Stel je voor dat je een kleine legoblokjes-robot wilt maken die kan rijden en om obstakels heen kan navigeren. Je kunt dan een ESP8266 of ESP32 gebruiken om de robot te besturen. De microcontroller zorgt ervoor dat de robot kan bewegen en dat hij kan reageren op zijn omgeving, bijvoorbeeld door obstakels te ontwijken als hij ze tegenkomt.
+Ze hebben beide een wifi-verbinding, wat betekent dat ze kunnen communiceren met andere apparaten. Dit maakt ze handig voor projecten waarbij je wilt dat de microcontroller via wifi kan communiceren. Ze worden vaak gebruikt in elektronische projecten bijvoorbeeld in combinatie met een DHT22, om de temperatuur in een ruimte te meten en door te geven aan een MQTT-broker.
 
-ESP8266 en ESP32 zijn specifieke merken van microcontrollers. Ze hebben beide wifi-verbinding, wat betekent dat ze kunnen communiceren met andere apparaten via het internet. Dit maakt ze handig voor projecten waarbij je wilt dat de microcontroller met het internet kan communiceren, zoals bij het maken van een slimme thermostaat die je op afstand kunt bedienen.
+```@raw html
+<img src="https://elektronicavoorjou.nl/wp-content/uploads/2021/01/DHT22-1.jpg" alt="DHT22" width="300">
+```
 
-ESP8266 en ESP32 zijn dus kleine computers die je kunt gebruiken om simpele taken uit te voeren in elektronische projecten. Ze kunnen met het internet communiceren en zijn handig voor projecten waarbij je wilt dat de microcontroller met het internet kan communiceren.
+**DHT22 van [elektronicavoorjou.nl](https://elektronicavoorjou.nl/product/dht22-temp-vocht-sensor/) die de temperatuur en de luchtvochtigheidsgad meet**
 
-![ESP8222](https://elektronicavoorjou.nl/wp-content/uploads/2019/12/NodeMcu-Lua-WIFI-Board-ESP8266-CP2102-1.jpg)
-**ESP8266 van elektronicavoorjou.nl die ik gebruik om de output van de DHT22 naar mijn Raspberry Pi te sturen**
-
-### Wat is een sensor en een slimme meter?
+## Wat is een sensor en een slimme meter?
 
 Een sensor is een apparaat dat informatie kan detecteren of meten, zoals temperatuur, licht of beweging. Sensoren worden vaak gebruikt in elektronische projecten of apparaten om informatie te verzamelen over de omgeving.
 
@@ -112,11 +131,13 @@ Een slimme meter is een specifiek soort sensor die wordt gebruikt om energieverb
 
 Sensoren en slimme meters zijn dus apparaten die informatie kunnen detecteren of meten. Ze kunnen worden gebruikt om allerlei soorten informatie te verzamelen, zoals temperatuur of energieverbruik, en kunnen worden gebruikt in elektronische projecten of apparaten om de omgeving te monitoren.
 
-![P1 kabel](https://www.sossolutions.nl/media/catalog/product/cache/5df5c040ed8cd3972c59a8e190e44350/1/_/1.8m_kabel.png)
+```@raw html
+<img src="https://www.sossolutions.nl/media/catalog/product/cache/5df5c040ed8cd3972c59a8e190e44350/1/_/1.8m_kabel.png" alt="P1 kabel" width="300">
+```
 
-**P1 Kabel van www.sossolutions.nl die ik gebruik om mijn Slimme Meter met mijn Raspberry Pi te koppelen**
+**P1 Kabel van [www.sossolutions.nl](https://www.sossolutions.nl/slimme-meter-kabel) die ik gebruik om mijn Slimme Meter met mijn Raspberry Pi te koppelen**
 
-### Wat is MicroPython?
+## Wat is MicroPython?
 
 MicroPython is een specifieke versie van de programmeertaal Python die is ontworpen om te draaien op kleine computers, zoals microcontrollers. MicroPython is handig als je wilt dat je programma's snel en efficiënt werken op een kleine computer, zoals een microcontroller.
 
@@ -124,4 +145,8 @@ Stel je voor dat je een robot wilt maken die zichzelf kan bewegen en obstakels k
 
 MicroPython wordt vaak gebruikt in elektronische projecten waarbij een kleine computer, zoals een microcontroller, wordt gebruikt. Het is een handige manier om programma's te schrijven die efficiënt werken op een kleine computer en die gemakkelijk te begrijpen zijn.
 
-![Micropython](https://spng.subpng.com/20180525/qey/kisspng-micropython-esp32-esp8266-circuitpython-5b083fe8d52d31.5545051715272673048732.png)
+Tijdens de cursus gebruiken we een programma Thonny om MicroPython code te maken.
+
+```@raw html
+<img src="https://seeklogo.com/images/M/micropython-logo-6255D51390-seeklogo.com.png" alt="MicroPython logo" width="80">
+```

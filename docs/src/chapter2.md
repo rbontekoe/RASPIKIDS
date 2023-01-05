@@ -32,9 +32,6 @@ Stap 5: Raspberry Pi met SSH benaderen
 
 ## Stap 2: Monitor en toetsenbord aansluiten
 
- Step | Action | Comment |
-| :--- | :--- | :--- |
-| 1 | $ cd ~/.julia/dev/Accounts | Go to the Accounts project folder. |
 
 ## Stap 3: Voeding aansluiten
 
@@ -44,7 +41,7 @@ Stap 5: Raspberry Pi met SSH benaderen
 
 
 
-## Stap 5: Raspberry Pi vanuit een andere compouter benaderen
+## Stap 5: Raspberry Pi vanuit een andere computer benaderen
 
 
 
