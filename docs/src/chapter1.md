@@ -37,6 +37,8 @@ Stap 2: SSD kaartje klaarmaken met Ubuntu Server.
 
 [ss01.png](/rbontekoe.github.io/ss01.png)
 
+TEST
+
 6. Klik op op de toets `Choose OS`.
 
 
