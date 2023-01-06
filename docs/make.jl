@@ -1,12 +1,12 @@
 using Documenter
 
 makedocs(
-    sitename = "RASPI",
+    sitename = "RASPIKIDS",
     format = Documenter.HTML(),
+
     pages = [
         "Toepassingen met de Raspberry Pi" => "index.md",
         "Blog" => "blog.md",
-        "Introductie" => "chapter1.md",
         "Sectie 1 - Basis installaties" => [
             "SSD-kaartje klaarmaken voor de Raspberry Pi 3B+" => "chapter1.md",
             "WiFi instellen" => "chapter2.md",
