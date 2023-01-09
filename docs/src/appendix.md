@@ -7,7 +7,7 @@
 
 Ik heb zelf een Lenovo Legion Y520 Windows 10 laptop met Ubuntu 22.04 geïnstalleerd op een [Samsung portable SSD T5](#Install-Ubuntu-on-Samsung-T5-and-Lemovo-Legion-Y520-with-Windows-10) schijf. Ik start mijn machine op vanaf deze schijf.
 
-## Installeren van PuTTYop Windows
+## Installeren van PuTTY op Windows
 
 Om PuTTY te downloaden en te installeren, moet je de volgende stappen volgen:
 
@@ -19,7 +19,7 @@ Stap        | Actie      | Opmerking |
 | 4 | Volg de stappen in het installatieprogramma om PuTTY te installeren op je computer | |
 ||
 
-## Install Git
+## Installeren Git
 
 Git is een vrij en open source gedistribueerd versiebeheersysteem, ontworpen om alles van kleine tot zeer grote projecten met snelheid en efficiëntie af te handelen.
 
@@ -30,9 +30,9 @@ Git is een vrij en open source gedistribueerd versiebeheersysteem, ontworpen om 
 Stap        | Actie      | Opmerking |
 | :---------- | :---------- | :---------- |
 | 1 | sudo apt install git | |
-| 2 | git config --global user.email "<your email address>" |  |
+| 2 | git config --global user.email "<your email address>" | Bijvoorbeeld: "rbontekoe@appligate.nl" |
 | 3 | git config --global user.name "<your first and last name>" | Bijvoorbeeld: "Rob Bontekoe" |
-| 4 | git config --global github.user "<yout git hub name>" | Bijvoorbeeld: "rbontekoe" |
+| 4 | git config --global github.user "<your git hub name>" | Bijvoorbeeld: "rbontekoe" |
 | 5 | cat .gitconfig | Laat je git data zien. |
 ||
 
@@ -43,7 +43,7 @@ Om Thonny te installeren op Ubuntu 22.04, volg je de volgende stappen:
 |Stap        | Actie      | Opmerking |
 |:---------- | :---------- |:---------- |
 | 1 | Ctrl + Alt + T| Open het terminalvenster. |
-| 2 | sudo apt-get install thonny | Thonny installeren. |
+| 2 | sudo apt install thonny | Thonny installeren. |
 ||
 
 ## Installeren Docker op Raspberry Pi
@@ -55,6 +55,7 @@ Docker is een open containerplatform voor het ontwikkelen, verschepen en uitvoer
 - Je hebt `curl` geinstallleerd: `sudo apt install curl`.
 
 ##### Installeren
+
 |Stap        | Actie      | Opmerking |
 |:---------- | :---------- |:---------- |
 | 1 | sudo apt-get update | Update Software Repositories. |
