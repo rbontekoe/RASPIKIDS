@@ -106,18 +106,56 @@ sudo apt update && sudo apt full-upgrade
 
 sudo reboot
 ```
+Ubuntu is een besturingssysteem, zoals Windows of MacOS. Het helpt je om je computer te laten werken en om programma's te gebruiken.
 
-We gebruiken vaak het programma Nano om bestanden te maken of te wijzigen. Als je het volgende opdrachtje intypt in de terminal en op Enter drukt, dan kan je het bestand openen om aan te passen: "sudo nano /etc/netplan/50-cloud-init.yaml".
+Soms komen er nieuwe versies van programma's uit, of worden er fouten in programma's opgelost. Als je Ubuntu gebruikt, kan het handig zijn om deze nieuwe versies te installeren of om fouten te repareren. Dit kan je doen door een opdracht te geven aan Ubuntu met behulp van de terminal.
+
+`sudo apt update` zorgt ervoor dat Ubuntu de lijst met beschikbare programma's en hun versies bijwerkt. Dit betekent dat Ubuntu kijkt naar welke nieuwe versies er zijn van programma's die je al hebt geïnstalleerd, of welke nieuwe programma's er beschikbaar zijn.
+
+`sudo apt full-upgrade` zorgt ervoor dat Ubuntu de nieuwste versies van alle programma's installeert of bijwerkt. Dit is vergelijkbaar met sudo apt upgrade, maar apt full-upgrade handelt ook beter met afhankelijkheden. Dit betekent dat als een nieuwe versie van een programma afhankelijk is van een ander programma, dat apt full-upgrade ervoor zorgt dat het andere programma ook geïnstalleerd of bijgewerkt wordt. Het kan ook programma's verwijderen die niet meer nodig zijn en nieuwe programma's toevoegen om aan de afhankelijkheden van de nieuwe programma's te voldoen.
+
+Dus, als je `sudo apt update && sudo apt full-upgrade` uitvoert, zal Ubuntu de lijst met beschikbare programma's bijwerken **en** alle programma's installeren of bijwerken naar hun nieuwste versies, terwijl het ook afhankelijkheden op een slimme manier afhandelt. Dit is een veelgebruikte manier om alle programma's op een Ubuntu-systeem bij te werken naar hun nieuwste versies.
+
+We gebruiken vaak het programma `Nano` om bestanden te maken of te wijzigen. Als je het volgende opdrachtje intypt in de terminal en op Enter drukt, dan kan je het bestand openen om aan te passen: "sudo nano /etc/netplan/50-cloud-init.yaml".
 
 ```
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Om WiFi te laten werken, moet je de juiste gegevens invullen in het bestand dat heet 50-cloud-init.yaml. Helaas moet je alles zelf intypen, maar later als we vanuit je eigen computer verbinding maken met de Raspberry Pi kunnen we gebruik maken van het "copy-paste" commando om het gemakkelijker te maken, zie de volgende stap 5.
+Om WiFi te laten werken, moet je de juiste gegevens invullen in het bestand dat heet 50-cloud-init.yaml. Helaas moet je alles zelf intypen, maar later als we vanuit onze eigen computer een verbinding maken met de Raspberry Pi kunnen we gebruik maken van het "copy-paste" commando om het gemakkelijker te maken, zie de volgende stap 5.
 
 ## Stap 5 - Maak verbinding met de Raspberry Pi vanaf een andere computer via SSH
 
+Om verbinding te maken met een Raspberry Pi vanuit een andere computer met SSH, heb je eerst een aantal dingen nodig:
 
+De Raspberry Pi moet aan het stroomnetwerk zijn aangesloten en aan staan.
+
+Je moet weten wat het IP-adres is van de Raspberry Pi. Dit is een uniek nummer dat aan elke computer en elk apparaat op het internet is toegewezen. Je kan het IP-adres van de Raspberry Pi opzoeken door op de Raspberry Pi een terminalvenster te openen en het commando hostname -I uit te voeren.
+
+Je moet ook weten wat het gebruikersnaam en wachtwoord zijn voor de Raspberry Pi. De standaardgebruikersnaam is pi en het standaardwachtwoord is raspberry. Als je dit hebt veranderd, moet je het juiste gebruikersnaam en wachtwoord gebruiken.
+
+Je moet op de andere computer een programma hebben geïnstalleerd dat SSH ondersteunt, zoals PuTTY (voor Windows) of Terminal (voor MacOS en Linux).
+
+Als je alle benodigdheden hebt, kan je de volgende stappen volgen om verbinding te maken met de Raspberry Pi vanuit een andere computer:
+
+Open het programma dat je gebruikt om SSH te ondersteunen op de andere computer.
+
+Voer het IP-adres van de Raspberry Pi in in het programma. Dit kan je vinden door het commando `hostname -I` uit te voeren op de Raspberry Pi.
+
+```
+hostname -I # haal het ip-adres van je Raspberry Pi 3B+ op
+192.168.2.49
+```
+
+Klik op de knop "Connect" of voer het commando ssh ubuntu@<IP-adres Raspberry Pi> in in het programma.
+
+```
+ssh ubuntu@192.168.2.49
+```
+
+Voer het gebruikersnaam en wachtwoord in dat je voor de Raspberry Pi hebt gebruikt.
+
+Als alles goed is gegaan, zou je nu verbinding moeten hebben met de Raspberry Pi vanuit de andere computer. Je kan dan opdrachten geven aan de Raspberry Pi en bestanden uitwisselen tussen de twee computers.
 
 ## Samenvatting
 
