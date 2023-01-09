@@ -153,7 +153,7 @@ Klik op de knop "Connect" of voer het commando ssh ubuntu@<IP-adres Raspberry Pi
 ssh ubuntu@192.168.2.49
 ```
 
-Voer het gebruikersnaam en wachtwoord in dat je voor de Raspberry Pi hebt gebruikt.
+Voer de gebruikersnaam en het wachtwoord in dat je voor de Raspberry Pi hebt gebruikt.
 
 Als alles goed is gegaan, zou je nu verbinding moeten hebben met de Raspberry Pi vanuit de andere computer. Je kan dan opdrachten geven aan de Raspberry Pi en bestanden uitwisselen tussen de twee computers.
 
