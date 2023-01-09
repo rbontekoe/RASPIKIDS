@@ -66,13 +66,13 @@ Docker is een open containerplatform voor het ontwikkelen, verschepen en uitvoer
 | 6 | sudo docker version | Check Docker Version |
 ||
 
-## Installeren van Ubuntu op een Samsung T5 en Lemovo Legion Y520 met Windows 10
+## Installeren van Ubuntu op een Samsung T5 en Lenovo Legion Y520 met Windows 10
 
 The stappen die ik heb gevolgd.
 
 |Stap        | Actie/Response | Opmerking |
 |:---------- | :---------- |:---------- |
-| 1 | Download ISO-image van de Ubuntu 22.04. website |  |
+| 1 | Download ISO-image van de Ubuntu 18.04. website |  |
 | 2 | Kopieer met Rufus naar een [USB-stick](https://github.com/kfechter/LegionY530Ubuntu/blob/master/Sections/CreateBootDrive.md) |  |
 | 3 | Start de machine en druk op F2 | Verander de Bios van Lenovo |
 ||
