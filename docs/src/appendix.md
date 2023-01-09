@@ -42,7 +42,7 @@ Om Thonny te installeren op Ubuntu 22.04, volg je de volgende stappen:
 | 2 | sudo apt-get install thonny | Thonny installeren. |
 ||
 
-## Installeren Docker op Paspberry Pi
+## Installeren Docker op Raspberry Pi
 
 Docker is een open containerplatform voor het ontwikkelen, verschepen en uitvoeren van toepassingen.
 
