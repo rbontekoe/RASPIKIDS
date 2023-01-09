@@ -139,7 +139,7 @@ TODO: It didn't work for me. Troubleshoot!
 | sudo docker start <name or id> | Bjvoorbeeld: `docker start domoticz`. |
 | sudo docker exec -it <name or id> <command> | Bijvoorbeeld: `docker exec -it test_sshd bash`. |
 | sudo docker exec -it <name or id> <command> | Bijvoorbeeld: `docker exec -it test_sshd julia`. |
-| Ctrl-D | verlaat de container |
+| Ctrl-D | Verlaat de container |
 | sudo docker stop <name or id> | Bijvoorbeeld `docker domoticz`. |
 | sudo docker rm -f <name or id> | Verwijder een container. |
 | sudo docker rmi <image id> | erwijder een image. |
@@ -147,7 +147,7 @@ TODO: It didn't work for me. Troubleshoot!
 
 ## Installeren van Ubuntu op een Samsung T5 en Lemovo Legion Y520 met Windows 10
 
-The stappen die ik heb gedaan.
+The stappen die ik heb gevolgd.
 
 |Stap        | Actie/Response | Comment |
 |:---------- | :---------- |:---------- |
