@@ -132,7 +132,7 @@ De Raspberry Pi moet aan het stroomnetwerk zijn aangesloten en aan staan.
 
 Je moet weten wat het IP-adres is van de Raspberry Pi. Dit is een uniek nummer dat aan elke computer en elk apparaat op het internet is toegewezen. Je kan het IP-adres van de Raspberry Pi opzoeken door op de Raspberry Pi een terminalvenster te openen en het commando hostname -I uit te voeren.
 
-Je moet ook weten wat het gebruikersnaam en wachtwoord zijn voor de Raspberry Pi. De standaardgebruikersnaam is pi en het standaardwachtwoord is raspberry. Als je dit hebt veranderd, moet je het juiste gebruikersnaam en wachtwoord gebruiken.
+Je moet ook weten wat het gebruikersnaam en wachtwoord zijn voor de Raspberry Pi. De standaardgebruikersnaam is ubuntu en het standaardwachtwoord is ubuntu. Als je dit hebt veranderd, moet je het juiste gebruikersnaam en wachtwoord gebruiken.
 
 Je moet op de andere computer een programma hebben geïnstalleerd dat SSH ondersteunt, zoals PuTTY (voor Windows) of Terminal (voor MacOS en Linux).
 
@@ -159,6 +159,6 @@ Als alles goed is gegaan, zou je nu verbinding moeten hebben met de Raspberry Pi
 
 ## Samenvatting
 
-
+Om WiFi in te stellen op een Raspberry Pi, heb je een Raspberry Pi computer, een micro SD-kaartje, een stroomadapter, een scherm met HDMI aansluiting, een USB-toetsenbord en de naam en het wachtwoord van je WiFi-netwerk nodig. Volg de stappen: stop het SD-kaartje in de Raspberry Pi, sluit het scherm en het toetsenbord aan op de Raspberry Pi, sluit de stroomadapter aan op de Raspberry Pi, gebruik speciale bevelen om dingen te doen met de Raspberry Pi en maak verbinding met de Raspberry Pi vanaf een andere computer via SSH. Gebruik de bevelen "sudo raspi-config" en "sudo nano /etc/wpa_supplicant/wpa_supplicant.conf" om de WiFi in te stellen. Voer het commando "sudo reboot" uit om de Raspberry Pi opnieuw op te starten met de nieuwe WiFi-instellingen.
 
 See also, [Getting started with Visual Studio Code](https://code.visualstudio.com/docs/introvideos/basics).
