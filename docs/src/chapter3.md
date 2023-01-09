@@ -44,3 +44,4 @@ Nu is Docker geïnstalleerd en gestart op je Raspberry Pi 3B+ met Ubuntu Server 
 
 ## Samenvattig
 
+Docker is een tool waarmee we gemakkelijk programma's op een computer kunnen draaien. We kunnen het installeren op een Raspberry Pi met het besturingssysteem Ubuntu 22.04 door verbinding te maken met de Raspberry Pi via SSH en het commando `curl -sSL https://get.docker.com | sh` te gebruiken. Als we de Raspberry Pi opstarten, kunnen we Docker starten met het programma `systemctl`. We kunnen ook de versie van Docker controleren met het commando: `docker version`. Het is een soort 'doos' waarin we programma's kunnen zetten om ze gemakkelijk te starten en gebruiken.
