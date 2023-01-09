@@ -1,25 +1,29 @@
 # Installation Instructions
 
+!!! info
+    Zorg ervoor dat je toestemming hebt van een ouder of verantwoordelijke volwassene voordat je iets downloadt op je computer. Als je hulp nodig hebt tijdens het downloaden en installeren, vraag dan aan een ouder of verantwoordelijke volwassene om je te helpen.
+
 ## Introduction
 
-Ik heb een Lenovo Legion Y520 Windows 10 laptop met Ubuntu 22.04 geïnstalleerd op een [Samsung portable SSD T5](#Install-Ubuntu-on-Samsung-T5-and-Lemovo-Legion-Y520-with-Windows-10) schijf. Ik start mijn machine op vanaf deze schijf.
+Ik heb zelf een Lenovo Legion Y520 Windows 10 laptop met Ubuntu 22.04 geïnstalleerd op een [Samsung portable SSD T5](#Install-Ubuntu-on-Samsung-T5-and-Lemovo-Legion-Y520-with-Windows-10) schijf. Ik start mijn machine op vanaf deze schijf.
 
 ## Installeren van PuTTYop Windows
 
 Om PuTTY te downloaden en te installeren, moet je de volgende stappen volgen:
 
-1.  Ga naar de website van PuTTY: https://www.putty.org/
-2.  Klik op de link 'Download PuTTY' om het installatieprogramma te downloaden.
-3.  Zoek het installatieprogramma in je downloads en open het.
-4.  Volg de stappen in het installatieprogramma om PuTTY te installeren op je computer.
-
-Zorg ervoor dat je toestemming hebt van een ouder of verantwoordelijke volwassene voordat je iets downloadt op je computer. Als je hulp nodig hebt tijdens het downloaden en installeren, vraag dan aan een ouder of verantwoordelijke volwassene om je te helpen.
+Stap        | Actie      | Opmerking |
+| :---------- | :---------- | :---------- |
+| 1 | Ga naar `https://www.putty.org/` | Website van PuTTY. |
+| 2 | Klik op de link 'Download PuTTY' om het installatieprogramma te downloaden | |
+| 3 | Zoek het installatieprogramma in je downloads en open het |  |
+| 4 | Volg de stappen in het installatieprogramma om PuTTY te installeren op je computer | |
+||
 
 ## Install Git
 
 Git is een vrij en open source gedistribueerd versiebeheersysteem, ontworpen om alles van kleine tot zeer grote projecten met snelheid en efficiëntie af te handelen.
 
-##### Prerequisites
+##### Voorwaarden
 - Je computer OS is Ubuntu 22.04 64 bit.
 - Je hebt een [GitHub account](https://github.com/).
 
