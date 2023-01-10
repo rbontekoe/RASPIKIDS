@@ -17,7 +17,9 @@ Pages = ["chapter3.md"]
 
 Stap 1: curl installeren.
 
-Stap 2: Docker installeren
+Stap 2: Docker installeren.
+
+Stap 3: Installeer Docker Client op je laptop. 
 
 ## Stap 1 - curl installeren
 
@@ -34,13 +36,51 @@ We willen een programma op onze computer gebruiken dat 'Docker' heet. Op onze Ra
 | 1 | ssh ubuntu@<ip-adres Raspberry pi> | Maak verbinding met de Raspberry Pi. |
 | 2 | sudo apt-get update | Software lijst updaten en naar de nieuwste versie upgraden. |
 | 3 | sudo apt-get remove docker docker-engine docker.io | VOudere versions van Docker verwijderen. |
-| 4 | curl -sSL https://get.docker.com \| sh| Docker installeren. |
+| 4 | curl -sSL https://get.docker.com \| sh| Docker Engine installeren. |
+| 5 | sudo usermod -aG docker $USER | voeg $USER (= ubuntu) to the docker groep.
 | 5 | sudo systemctl start docker | Docker te starten. |
 | 6 | sudo systemctl enable docker | Docker automatisch starten als de computer opstart |
-| 4 | sudo docker version | Versie van Docker te controleren. |
+| 7 | sudo docker version | Versie van Docker te controleren. |
 ||
 
 Nu is Docker geïnstalleerd en gestart op je Raspberry Pi 3B+ met Ubuntu Server 22.04. Je kan het installeren van Docker-images en -containers beginnen door de docker commando's te gebruiken.
+
+## Stap 3 - Installeer Docker Client op je laptop
+
+### Windows
+
+```
+choco install docker-cli
+```
+
+### Mac
+
+```
+brew install docker
+```
+
+### Linux bijvoorbeeld Ubuntu
+
+```
+# Installeer Docker Client CLI (Command Line Interface)
+sudo apt install docker-ce-cli
+
+# Maak een Private/Plublic key certificaten
+# ssh-keygen -t rsa -b 4096 -C "your_email@domain.com", bijvoorbeeld:
+ssh-keygen -t rsa -b 4096 -C "rbontekoe@appligate.nl"
+
+# Kopieer je public key naar de Raspberry Pi
+ssh-copy-id ubuntu@192.168.2.49
+
+# Zet de environment variable DOCKER_HOST
+# export DOCKER_HOST=ssh://<ip-adres Raspberry Pi> bijvoorbeeld:
+export DOCKER_HOST=ssh://ubuntu@192.168.2.49
+
+# Toon het versie nummer van Docker Engine op Raspberry Pi
+docker version
+
+```
+
 
 ## Samenvattig
 
