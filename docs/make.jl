@@ -32,7 +32,7 @@ makedocs(
             "Gegevens opslaan in Influx met Node-RED" => "chapter13.md",
             "Gegevens grafisch weergeven met Grafana" => "chapter14.md"
         ],
-        "Installation Instruction" => "appendix.md",
+        "Bijlage" => "appendix.md",
         "References" => "references.md"
     ]
 )

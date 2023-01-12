@@ -1,11 +1,45 @@
-# Installation Instructions
+# Bijlage
 
 !!! info
     Zorg ervoor dat je toestemming hebt van een ouder of verantwoordelijke volwassene voordat je iets downloadt op je computer. Als je hulp nodig hebt tijdens het downloaden en installeren, vraag dan aan een ouder of verantwoordelijke volwassene om je te helpen.
 
-## Introduction
+# Introduction
 
 Ik heb zelf een Lenovo Legion Y520 Windows 10 laptop met Ubuntu 22.04 geïnstalleerd op een [Samsung portable SSD T5](#Install-Ubuntu-on-Samsung-T5-and-Lemovo-Legion-Y520-with-Windows-10) schijf. Ik start mijn machine op vanaf deze schijf.
+
+
+## Voordelen en nadelen van containerisatie
+
+### Nadelen
+Er zijn een aantal nadelen verbonden aan containerisatie, waaronder:
+
+1. Complexiteit: Containerisatie kan de complexiteit van een systeem verhogen, vooral als er veel verschillende containers worden gebruikt.
+
+2. Beveiliging: Containerisatie kan beveiligingsrisico's introduceren, vooral als containers niet goed worden beheerd en geconfigureerd.
+
+3. Prestaties: In sommige gevallen kunnen containers de prestaties van een systeem beïnvloeden, vooral als er veel containers op dezelfde fysieke server worden uitgevoerd.
+
+4. Opslag: Containerisatie kan leiden tot een grotere opslagbehoefte voor het opslaan van de containerafbeeldingen.
+
+5. Beheer: Containerbeheer kan complex zijn en vereist specifieke vaardigheden en tools.
+
+6. Netwerk: In sommige gevallen kan de netwerkconfiguratie van de containerisatie-omgeving complex zijn.
+
+### Voordelen
+
+Er zijn een aantal voordelen verbonden aan containerisatie, waaronder:
+
+1. Portabiliteit: Containers zorgen voor een hoge graad van portabiliteit, waardoor applicaties gemakkelijk tussen verschillende omgevingen kunnen worden verplaatst.
+
+2. Isolatie: Containers bieden een aantal voordelen voor de isolatie van applicaties, waardoor het risico van conflicten tussen verschillende applicaties wordt verminderd.
+
+3. Schaalbaarheid: Containerisatie maakt het gemakkelijker om applicaties te schalen, aangezien containers gemakkelijk kunnen worden toegevoegd of verwijderd als er meer of minder capaciteit nodig is.
+
+4. Kostenefficiëntie: Containerisatie kan leiden tot kostenefficiëntie, aangezien containers minder middelen verbruiken dan traditionele virtuele machines.
+
+5. Continu integratie en deployment: De containerisatie-technologie kan gebruikt worden voor continu integratie en deployment, waardoor het gemakkelijker is om updates en nieuwe versies van applicaties te implementeren.
+
+6. Beheer: Containerisatie kan het beheer van applicaties vergemakkelijken, omdat containers gemakkelijk kunnen worden gestart, gestopt en verwijderd.
 
 ## Installeren van PuTTY op Windows
 
@@ -58,12 +92,10 @@ Docker is een open containerplatform voor het ontwikkelen, verschepen en uitvoer
 
 |Stap        | Actie      | Opmerking |
 |:---------- | :---------- |:---------- |
-| 1 | sudo apt-get update | Update Software Repositories. |
-| 2 | sudo apt-get remove docker docker-engine docker.io | Verwijder oudere versions van Docker |
+| 1 | sudo apt update | Update Software Repositories. |
+| 2 | sudo apt remove docker docker-engine docker.io | Verwijder oudere versies van Docker |
 | 3 | curl -sSL https://get.docker.com \| sh| Installeer Docker |
-| 4 | sudo systemctl start docker |  |
-| 5 | sudo systemctl enable docker |  |
-| 6 | sudo docker version | Check Docker Version |
+| 4 | sudo docker version | Check [Docker Engine Version](https://docs.docker.com/engine/release-notes/) |
 ||
 
 ## Installeren van Ubuntu op een Samsung T5 en Lenovo Legion Y520 met Windows 10
@@ -78,18 +110,16 @@ The stappen die ik heb gevolgd.
 ||
 ```
 Onder de Boot tab:
-Fast Boot disabled
+ Fast Boot disabled
 Onder de Security tab:
-Secureboot disabled
-Zie ook:
-https://github.com/kfechter/LegionY530Ubuntu/blob/master/Sections/InstallUbuntu.md
+ Secureboot disabled
 ```
 
 |Stap        | Action/Response | Omerking |
 |:---------- | :---------- |:---------- |
 | 4 | Start Y520 met Windows 10 and druk op F12 |  |
-| 5 | Choose Ubuntu | Herstart via USB. |
+| 5 | Kies Ubuntu | Herstart via USB. |
 | 6 | Na herstart kies voor `install Ubuntu on 500GB portable disk` |  |
 | 7 | sudo apt update |  |
-| 8 | sudo do-release-upgrade -d | [Upgrade to Ubuntu 20.04](https://ubuntu.com/blog/how-to-upgrade-from-ubuntu-18-04-lts-to-20-04-lts-today). |
+| 8 | sudo do-release-upgrade -d | [Upgrade naar Ubuntu 20.04](https://ubuntu.com/blog/how-to-upgrade-from-ubuntu-18-04-lts-to-20-04-lts-today). |
 ||
