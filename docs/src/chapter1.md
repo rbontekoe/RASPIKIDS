@@ -14,6 +14,8 @@ Om een Micro SD kaartje te maken voor een Raspberry Pi 3B+, heb je het volgende 
 - Een [Micro SD](https://elektronicavoorjou.nl/product/transcend-micro-sd-rpi-os/) kaartje, bijvoorbeeld een van 32GB. Dit kaartje al klaar als je deelneemt aan een Coder Dojo in Leusden.
 - Een Micro SD-kaarthouder, die meestal wordt deze meegeleverd met het Micro SD kaartje.
 - Het Raspberry Pi Imager programma.
+- Naam van je Wifi-netwerk.
+- Wachtwoord van je Wifi-netwerk.
 
 ## Wat ga je doen
 
@@ -58,8 +60,30 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 - Kies **Ubuntu Server 22.04.1 LTS (32 bit** als je Raspberry Pi een 32 bit processor heeft, of **Ubuntu Server 22.04.1 LTS (64 bit)** als je Raspberry Pi een 64 bit processor heeft.
 
 ```@raw html
-<img src="https://assets.raspberrypi.com/static/md-bfd602be71b2c1099b91877aed3b41f0.png" alt="MicroPython logo" width="400">
+<img src="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/3X/3/f/3f95678d7eef60678d413adff5a41836e4437b4c_2_690x448.png" alt="MicroPython logo" width="400">
 ```
+We gaan naar een speciale pagina waar we kunnen aanpassen hoe onze computer werkt. We komen daar door op een knop te drukken met een tandwiel erop, die zich helemaal rechtsonderin op het scherm bevindt. Op die pagina kunnen we bijvoorbeeld WiFi aanzetten, de naam van onze computer veranderen en een wachtwoord instellen, zodat we vanuit een andere plek op onze computer kunnen werken.
+
+- Klik op de toets met het tandwiel.
+- Klik op het keuzevakje dat voor 'Set hostname' en verander de naam in 'ubuntu'.
+- Klik op het keuzevakje dat voor 'SSH' staat.
+- Klik op het keuzerondje 'Use password authentication'.
+
+- Scrol verder naar beneden en klik op het keuzevakje 'Set username and password'.
+- Verander de naam in: `ubuntu`
+- En geef een wachtwoord op. Noteer het wachtwoord wel op een papiertje voor het geval je het vergeet.
+
+- Klik op het keuzevakje 'Configure wireless wan'.
+- Verander de naam in de naam van je WiFi netwerk.
+- Geef ook het wachtwoord op.
+- Klik op het keuzevakje 'Show password' en controleer of het juist is.
+
+- Vernander de landcode in 'NL'.
+- Klik op het keuzevakje 'Set local setting'.
+- Verander 'Time Zone' in `Europe/Amsterdam`.
+- Klik op de `SAVE' toets.
+
+Nu zijn we klaar om het programma genaamd Ubuntu op de Micro SD kaart te zetten. Dit programma zorgt ervoor dat onze computer werkt.
 
 - Klik op de toets **Choose Storage**.
 
