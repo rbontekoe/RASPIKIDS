@@ -1,23 +1,23 @@
 # SD-kaartje klaarmaken voor de Raspberry Pi 3B+
 
-*We gaan een SSD-kaartje klaarmaken voor de Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server erop. Dit betekent dat we een speciaal soort computerprogramma op het kaartje gaan installeren. Dit programma heet Ubuntu Server en we kunnen het gebruiken op de Raspberry Pi. Ubuntu Server is gemaakt om te helpen bij het uitvoeren van taken op een computer.*
+*We gaan een Micro SD-kaartje klaarmaken voor de Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server erop. Dit betekent dat we een speciaal soort computerprogramma op het kaartje gaan installeren. Ubuntu Server is gemaakt om te helpen bij het uitvoeren van taken op een computer.*
 
 ```@contents
 Pages = ["chapter1.md"]
 ```
 
-## Wat heb je nodig
+## Wat je nodig hebt
 
 Om een Micro SD kaartje te maken voor een Raspberry Pi 3B+, heb je het volgende nodig:
 
 - Een computer met een slot voor een Micro SD kaarthouder.
-- Een [Micro SD](https://elektronicavoorjou.nl/product/transcend-micro-sd-rpi-os/) kaartje, bijvoorbeeld een van 32GB. Dit kaartje al klaar als je deelneemt aan een Coder Dojo in Leusden.
+- Een [Micro SD](https://elektronicavoorjou.nl/product/transcend-micro-sd-rpi-os/) kaartje, bijvoorbeeld een van 32GB.
 - Een Micro SD-kaarthouder, die meestal wordt deze meegeleverd met het Micro SD kaartje.
 - Het Raspberry Pi Imager programma.
 - Naam van je Wifi-netwerk.
 - Wachtwoord van je Wifi-netwerk.
 
-## Wat ga je doen
+## Wat je gaat doen
 
 Om Ubuntu Server te installeren op je Raspberry Pi, volg je deze stappen:
 
@@ -27,7 +27,7 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 
 ## Stap 1 - Installeer het Imager programma op je computer
 
-- Ga naar [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/) en download het programma.
+- Ga naar [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/) en download het programma Imager.
 
 - Installeer het programma.
 
@@ -45,7 +45,7 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 
 - Doe de kaarthouder in je laptop.
 
-- Start het programma.
+- Start het programma Imager.
 
 ```@raw html
 <img src="https://assets.raspberrypi.com/static/md-bfd602be71b2c1099b91877aed3b41f0.png" alt="MicroPython logo" width="400">
@@ -62,35 +62,35 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 ```@raw html
 <img src="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/3X/3/f/3f95678d7eef60678d413adff5a41836e4437b4c_2_690x448.png" alt="MicroPython logo" width="400">
 ```
-We gaan naar een speciale pagina waar we kunnen aanpassen hoe onze computer werkt. We komen daar door op een knop te drukken met een tandwiel erop, die zich helemaal rechtsonderin op het scherm bevindt. Op die pagina kunnen we bijvoorbeeld WiFi aanzetten, de naam van onze computer veranderen en een wachtwoord instellen, zodat we vanuit een andere plek op onze computer kunnen werken.
+We gaan naar een plek waar we kunnen veranderen hoe onze computer werkt. We komen daar door op een knop met een tandwiel erop te drukken. Daar kunnen we bijvoorbeeld WiFi istellen, de naam van onze computer veranderen en een wachtwoord instellen zodat we vanaf een andere plek op onze computer kunnen werken.
 
-- Klik op de toets met het tandwiel.
+- Klik op de knop met het tandwiel.
 - Klik op het keuzevakje dat voor 'Set hostname' en verander de naam in 'ubuntu'.
 - Klik op het keuzevakje dat voor 'SSH' staat.
 - Klik op het keuzerondje 'Use password authentication'.
 
 - Scrol verder naar beneden en klik op het keuzevakje 'Set username and password'.
 - Verander de naam in: `ubuntu`
-- En geef een wachtwoord op. Noteer het wachtwoord wel op een papiertje voor het geval je het vergeet.
+- En geef een wachtwoord op. Noteer het wachtwoord op een papiertje voor het geval je het vergeet.
 
 - Klik op het keuzevakje 'Configure wireless wan'.
 - Verander de naam in de naam van je WiFi netwerk.
 - Geef ook het wachtwoord op.
 - Klik op het keuzevakje 'Show password' en controleer of het juist is.
 
-- Vernander de landcode in 'NL'.
+- Verander de landcode in 'NL'.
 - Klik op het keuzevakje 'Set local setting'.
 - Verander 'Time Zone' in `Europe/Amsterdam`.
 - Klik op de `SAVE' toets.
 
-Nu zijn we klaar om het programma genaamd Ubuntu op de Micro SD kaart te zetten. Dit programma zorgt ervoor dat onze computer werkt.
+Nu zijn we klaar om Ubuntu op een Micro SD kaart te zetten. Dit programma zorgt ervoor dat onze computer werkt.
 
 - Klik op de toets **Choose Storage**.
 
 - Kies **Internal SD card reader**. Ubuntu Server wordt op je micro SD kaartje gezet. Als dat gebeurd is wordt het geheel nog een keer getest.
 
-- Haal de kaarthouder uit je computer.
+- Haal de kaarthouder met de Micro SD kaart uit je computer.
 
 ## Samenvatting
 
-In dit hoofdstuk heb je geleerd hoe je het speciale computerprogramma genaamd Ubuntu kunt installeren op een Micro SD kaart voor je Raspberry Pi 3B+. Dit programma kan je gebruiken om je Raspberry Pi te laten werken. We gebruiken de versie 22.04 van Ubuntu, die speciaal gemaakt is voor de Raspberry Pi 3B+.
+We gaan naar de Raspberry Pi website, downloaden het programma Imager en installeren het. Daarna gaan we ons Micro SD kaartje klaarmaken met Ubuntu Server. We gebruiken de versie 22.04 van Ubuntu, die speciaal gemaakt is voor de Raspberry Pi. Vooraf kijken we of we een 32 bit of 64 bit Raspberry Pi 3B+ hebben. Als we dat weten, doen we het Micro SD kaartje in de kaarthouder en in onze laptop. We starten het programma, kiezen Ubuntu als ons besturingssysteem, en kiezen de juiste versie voor onze Raspberry Pi. Dan stellen we WiFi in en slaan we alles op.
