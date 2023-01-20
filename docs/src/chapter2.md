@@ -15,11 +15,15 @@ Om een Raspberry Pi te gebruiken, heb je het volgende nodig:
 - Een [Raspberry Pi 3B+](https://www.sossolutions.nl/raspberry-pi-3-model-b-plus) computer.
 - Een klaargemaakt micro SD-kaartje voor de Raspberry Pi, zie vorige hoofdstuk.
 - Een adapter om stroom aan de Raspberry Pi te geven.
+- Naam van je Wifi-netwerk.
+- Wachtwoord van je Wifi-netwerk.
+
+Als je later WiFi wilt instellen dan heb je ook nodig:
+
 - Een scherm met HDMI aansluiting, zoals een TV of de [UCtronics 7 Inch touchscreen](https://www.sossolutions.nl/uctronics-7-inch-ips-touchscreen-for-raspberry-pi-with-prop-stand-1024-600-capacitive-hdmi-lcd-monitor-portable-display-for-raspberry-pi-4-3-b-windows-10-8-7-free-driver).
 - Een [USB-toetsenbord US](https://www.sossolutions.nl/officiele-raspberry-pi-toetsenbord-muis-zwart-grijs),
 om te typen op de Raspberry Pi.
-- Naam van je Wifi-netwerk.
-- Wachtwoord van je Wifi-netwerk.
+
 
 
 ## Wat ga je doen
@@ -84,35 +88,33 @@ Voer het commando ssh ubuntu@<IP-adres Raspberry Pi> in in het programma.
 ssh ubuntu@192.168.2.49
 ```
 
-Voer de gebruikersnaam en het wachtwoord in dat je voor de Raspberry Pi hebt gebruikt.
+Vul de naam en het wachtwoord in die je gebruikt voor je Raspberry Pi.
 
-Als alles goed is gegaan, zou je nu verbinding moeten hebben met de Raspberry Pi vanuit de andere computer. Je kan dan opdrachten geven aan de Raspberry Pi en bestanden uitwisselen tussen de twee computers.
+Als alles goed is gegaan, dan moet je nu verbonden zijn met de Raspberry Pi vanaf een andere computer. Dan kan je opdrachten geven aan de Raspberry Pi en bestanden uitwisselen tussen de twee computers.
 
-Voor windows zul je het programma Putty moeten installeren en er een [verbinding](https://www.ssh.com/academy/ssh/putty/windows/install) mee maken.
+Als je windows gebruikt, dan moet je een programma genaamd Putty installeren. Met dat programma kan je een [verbinding](https://www.ssh.com/academy/ssh/putty/windows/install) maken.
 
 ## Stap 4 - Sluit het scherm en het toetsenbord aan op de Raspberry Pi
 
-Zolang de Raspberry Pi niet aangesloten is op het Internet kun je er aleen mee werken via een toetsenbord en een monitor met een HDMI aansluiting.
+Als de Raspberry Pi nog niet aangesloten is op internet, dan kan je er alleen mee werken als je een toetsenbord en een beeldscherm met een HDMI kabel gebruikt.
 
 ![Raspberry Pi](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Raspberry_Pi_3_B%2B_%2839906369025%29.png/390px-Raspberry_Pi_3_B%2B_%2839906369025%29.png)
 
-1. De USB-poorten zitten aan de rechterkant van het Raspberry Pi 3B+ bord. Daar sluit je het toetsenbord aan.
+- De USB-poorten zitten aan de rechterkant van het Raspberry Pi 3B+ bord. Daar sluit je het toetsenbord aan.
+- De HDMI-poort is de grote connector onderaan in het midden van het bord. Daar sluit je de monitor of TV aa
+- Sluit de adapter aan.
 
-2. De HDMI-poort is de grote connector onderaan in het midden van het bord. Daar sluit je de monitor of TV aan
+Het systeem zal je vragen om een gebruikersnaam. Typ "ubuntu" en druk op de knop Enter. Dan zal het systeem vragen of je het wachtwoord wilt veranderen. Typ eerst het oude wachtwoord "ubuntu" en daarna je nieuwe geheim woord. Druk op de knop Enter om te bevestigen dat je het geheim woord hebt veranderd. Noteer het wachtwoord op een papiertje.
 
-3. Sluit de adapter aan.
-
-Het systeem zal je vragen om het gebruikersnaam. Voer "ubuntu" in en druk op de Enter-toets. Het systeem zal nu vragen of je het wachtwoord wilt wijzigen. Voer eerst het oude wachtwoord "ubuntu" in en daarna je nieuwe wachtwoord. Druk op de Enter-toets om de wijziging te bevestigen.
-
-Om de Raspberry Pi opnieuw op te starten, geef je het volgende commando: 
+Om de Raspberry Pi opnieuw te laten beginnen, geef je het volgende opdracht:
 
 ```
 sudo reboot
 ``` 
 
-Druk op de Enter-toets om het commando uit te laten voeren.
+Druk op de knop Enter om het opdracht te laten werken.
 
-Het scherm waar je op werkt, wordt de "terminal" genoemd.
+De plek waar je op werkt wordt de "terminal" genoemd.
 
 ### 50-cloud-init.yaml
 ```
@@ -141,6 +143,8 @@ network:
 
 De terminal is een programma op je computer waarmee je speciale opdrachten kunt geven aan het besturingssysteem van je computer. Als je bijvoorbeeld wilt dat je computer bestanden kan downloaden via WiFi, dan kan je een speciaal bestand aanpassen met behulp van de terminal.
 
+De terminal is een programma op je computer waarmee je speciale opdrachten kan geven aan de computer. Bijvoorbeeld als je met je computer een bestand hebt download via WiFi, dan kan je het bestand veranderen met hulp van de terminal.
+
 ```
 sudo apt update && sudo apt full-upgrade
 
@@ -148,22 +152,22 @@ sudo reboot
 ```
 Ubuntu is een besturingssysteem, zoals Windows of MacOS. Het helpt je om je computer te laten werken en om programma's te gebruiken.
 
-Soms komen er nieuwe versies van programma's uit, of worden er fouten in programma's opgelost. Als je Ubuntu gebruikt, kan het handig zijn om deze nieuwe versies te installeren of om fouten te repareren. Dit kan je doen door een opdracht te geven aan Ubuntu met behulp van de terminal.
+Soms komen er nieuwe versies van programma's of worden er fouten in programma's opgelost. Als je Ubuntu gebruikt, kan het handig zijn om deze nieuwe versies te installeren of om fouten te repareren. Je kan dit doen door een opdracht te geven aan Ubuntu met hulp van de terminal.
 
-`sudo apt update` zorgt ervoor dat Ubuntu de lijst met beschikbare programma's en hun versies bijwerkt. Dit betekent dat Ubuntu kijkt naar welke nieuwe versies er zijn van programma's die je al hebt geïnstalleerd, of welke nieuwe programma's er beschikbaar zijn.
+`sudo apt update` laat Ubuntu kijken naar welke nieuwe versies er zijn van programma's die je al hebt of welke nieuwe programma's je kan downloaden. Zo kan Ubuntu de lijst met beschikbare programma's en versies bijwerken.
 
-`sudo apt full-upgrade` zorgt ervoor dat Ubuntu de nieuwste versies van alle programma's installeert of bijwerkt. Dit is vergelijkbaar met sudo apt upgrade, maar apt full-upgrade handelt ook beter met afhankelijkheden. Dit betekent dat als een nieuwe versie van een programma afhankelijk is van een ander programma, dat apt full-upgrade ervoor zorgt dat het andere programma ook geïnstalleerd of bijgewerkt wordt. Het kan ook programma's verwijderen die niet meer nodig zijn en nieuwe programma's toevoegen om aan de afhankelijkheden van de nieuwe programma's te voldoen.
+`sudo apt full-upgrade` laat Ubuntu de nieuwste versies van alle programma's installeren of bijwerken. Dit is vergelijkbaar met "sudo apt upgrade", maar apt full-upgrade is beter om te gebruiken als er afhankelijkheden zijn. Dit betekent dat als een nieuwe versie van een programma afhankelijk is van een ander programma, apt full-upgrade ervoor zorgt dat het andere programma ook geïnstalleerd of bijgewerkt wordt. Het kan ook programma's verwijderen die niet meer nodig zijn en nieuwe programma's toevoegen om aan de afhankelijkheden van de nieuwe programma's te voldoen.
 
-Dus, als je `sudo apt update && sudo apt full-upgrade` uitvoert, zal Ubuntu de lijst met beschikbare programma's bijwerken **en** alle programma's installeren of bijwerken naar hun nieuwste versies, terwijl het ook afhankelijkheden op een slimme manier afhandelt. Dit is een veelgebruikte manier om alle programma's op een Ubuntu-systeem bij te werken naar hun nieuwste versies.
+Dus als je "sudo apt update && sudo apt full-upgrade" uitvoert, dan zal Ubuntu de lijst met beschikbare programma's bijwerken en alle programma's installeren of bijwerken naar hun nieuwste versies. Het gaat ook slim om met afhankelijkheden. Dit is een veelgebruikte manier om alle programma's op een Ubuntu-systeem bij te werken naar hun nieuwste versies.
 
-We gebruiken vaak het programma `Nano` om bestanden te maken of te wijzigen. Als je het volgende opdrachtje intypt in de terminal en op Enter drukt, dan kan je het bestand openen om aan te passen: "sudo nano /etc/netplan/50-cloud-init.yaml".
+We gebruiken vaak het programma "Nano" om bestanden te maken of te veranderen. Als je dit opdrachtje intypt in de terminal en op Enter drukt, dan kan je het bestand openen om aan te passen: `sudo nano /etc/netplan/50-cloud-init.yaml`.
 
 ```
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Om WiFi te laten werken, moet je de juiste gegevens invullen in het bestand dat heet 50-cloud-init.yaml. Helaas moet je alles zelf intypen, maar later als we vanuit onze eigen computer een verbinding maken met de Raspberry Pi kunnen we gebruik maken van het "copy-paste" commando om het gemakkelijker te maken, zie de volgende stap 5.
+Om WiFi te laten werken, moet je de juiste informatie invullen in een bestand genaamd 50-cloud-init.yaml. Helaas moet je alles zelf typen, maar later als we een verbinding maken met de Raspberry Pi vanuit onze eigen computer, kunnen we het "kopieer-plak" commando gebruiken om het gemakkelijker te maken. Kijk naar de volgende stap 5. Let er wel op dat je niet de tab-toets gebruikt, maar in plaats daarvan twee spaties intypt.
 
 ## Samenvatting
 
-Om WiFi in te stellen op een Raspberry Pi, heb je een Raspberry Pi computer, een micro SD-kaartje, een stroomadapter, een scherm met HDMI aansluiting, een USB-toetsenbord en de naam en het wachtwoord van je WiFi-netwerk nodig. Volg de stappen: stop het SD-kaartje in de Raspberry Pi, sluit het scherm en het toetsenbord aan op de Raspberry Pi, sluit de stroomadapter aan op de Raspberry Pi, gebruik speciale bevelen om dingen te doen met de Raspberry Pi en maak verbinding met de Raspberry Pi vanaf een andere computer via SSH. Gebruik de bevelen "sudo raspi-config" en "sudo nano /etc/wpa_supplicant/wpa_supplicant.conf" om de WiFi in te stellen. Voer het commando "sudo reboot" uit om de Raspberry Pi opnieuw op te starten met de nieuwe WiFi-instellingen.
+Om WiFi in te stellen op een Raspberry Pi, heb je een Raspberry Pi computer, een micro SD-kaartje, een stroomadapter en de naam en het wachtwoord van je WiFi-netwerk nodig. Volg de stappen: stop het SD-kaartje in de Raspberry Pi, sluit het scherm en het toetsenbord aan op de Raspberry Pi, sluit de stroomadapter aan op de Raspberry Pi, gebruik speciale bevelen om dingen te doen met de Raspberry Pi en maak verbinding met de Raspberry Pi vanaf een andere computer via SSH. Gebruik de bevelen "sudo raspi-config" en "sudo nano /etc/wpa_supplicant/wpa_supplicant.conf" om de WiFi in te stellen. Voer het commando "sudo reboot" uit om de Raspberry Pi opnieuw op te starten met de nieuwe WiFi-instellingen.

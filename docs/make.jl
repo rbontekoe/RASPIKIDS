@@ -9,7 +9,7 @@ makedocs(
         "Blog" => "blog.md",
         "Sectie 1 - Basis installaties" => [
             "SSD-kaartje klaarmaken voor de Raspberry Pi 3B+" => "chapter1.md",
-            "WiFi instellen" => "chapter2.md",
+            "Communiceren met de Raspberry Pi" => "chapter2.md",
             "Docker installeren" => "chapter3.md",
             "Portainer installeren" => "chapter4.md",
             "Node-RED installeren" => "chapter5.md"
