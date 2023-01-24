@@ -11,15 +11,15 @@ Pages = ["chapter4.md"]
 ## Wat je nodig hebt
 
 - Een Raspberry Pi 3B+ met het besturingssysteem Ubunti 22.04 (zie het vorige hoofdstuk).
-- SSH verbinding met de Raspberry Pi
+- SSH verbinding met de Raspberry Pi.
 
 ## Wat je gaat doen
 
-Je hebt geen account nodig als je 'images' van containers wilt downloaden. De image van Portainer heet portainer/portainer-ce en gaan we gebuiken om een container op de Raspberry Pi te maken.
+Je hebt geen account nodig als je 'images' van containers wilt downloaden. De image van Portainer heet `portainer/portainer-ce` en gaan we gebuiken om een container op de Raspberry Pi te maken.
 
 [Docker Hub](https://hub.docker.com/) is een website waar veel software zit in kleine stukjes die images heten. Een image is een soort mal of patroon dat je kunt gebruiken als basis voor iets dat je wilt maken, bijvoorbeeld een container. Zo hoef je niet alles opnieuw te bedenken of te maken, maar kun je snel aan de slag met de dingen die echt belangrijk zijn voor jouw project.
 
-Je hoeft geen account te hebben om deze images te downloaden en te gebruiken om containers te maken. We gaan een speciaal stukje software gebruiken dat portainer/portainer-ce heet, een programma waarmee we onze Docker-omgeving gemakkelijker kunnen beheren. We hebben het images nodig om er een container van te maken op de Raspberry Pi.
+Je hoeft geen account te hebben om deze images te downloaden en te gebruiken om containers te maken. We gaan een speciaal stukje software gebruiken dat `portainer/portainer-ce` heet, een programma waarmee we onze Docker-omgeving gemakkelijker kunnen beheren. We hebben het images nodig om er een container van te maken op de Raspberry Pi.
 
 Stap 1: Container met Portainer installeren.
 
@@ -38,8 +38,15 @@ Als we eenmaal Portainer hebben geinstalleerd kunnen we er ook containers mee in
 | 3 | In webbrowser: http://<ip-adres Raspberry Pi>:9000 | Ga naar de web interface, bijvoorbeeld met `192.168.2.49:9000`. |
 | 4 | Geef een gebruikersnaam op: admin | Naam wel noteren voor later. |
 | 5 | En... een wachtwoord: ... | Mag jezelf bedenken... Wel noteren voor later. |
+| 6 | Klik in het rechtervlak op "stacks" |  |
+| 7 | Klik in het menu (links) op "containers" | Je krijgt een overzicht van alle containers die onder Docker draaien te zien. Nu is er nog maar één: 'portainer'. |
 ||
 
+!!! info
+    Als je een container hebt met de naam portainer (\-\-name=portainer) en je wilt het verwijderen, dan kan je dat doen door in de terminal te typen:
+    ```
+    docker rm -f portainer
+    ```
 
 ## Samenvatting
 
