@@ -34,7 +34,7 @@ Stap 2: Sluit de adapter voor de stroom aan op de Raspberry Pi.
 
 Stap 3: Maak verbinding met de Raspberry Pi vanaf een andere computer via SSH.
 
-Stap 4: Gebruik speciale bevelen om dingen te doen met de Raspberry Pi.
+Stap 4: Later WiFi instellen.
 
 ## Stap 1: Stop het SD-kaartje in de Raspberry Pi
 
@@ -94,15 +94,15 @@ Als alles goed is gegaan, dan moet je nu verbonden zijn met de Raspberry Pi vana
 
 Als je windows gebruikt, dan moet je een programma genaamd Putty installeren. Met dat programma kan je een [verbinding](https://www.ssh.com/academy/ssh/putty/windows/install) maken.
 
-## Stap 4 - Sluit het scherm en het toetsenbord aan op de Raspberry Pi
+## Stap 4 - Later WiFi instellen
 
-Als de Raspberry Pi nog niet aangesloten is op internet, dan kan je er alleen mee werken als je een toetsenbord en een beeldscherm met een HDMI kabel gebruikt.
+Als de Raspberry Pi nog niet aangesloten is op het internet, dan kan je er alleen mee werken als je een toetsenbord en een beeldscherm met een HDMI kabel hebt.
 
 ![Raspberry Pi](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Raspberry_Pi_3_B%2B_%2839906369025%29.png/390px-Raspberry_Pi_3_B%2B_%2839906369025%29.png)
 
 - De USB-poorten zitten aan de rechterkant van het Raspberry Pi 3B+ bord. Daar sluit je het toetsenbord aan.
-- De HDMI-poort is de grote connector onderaan in het midden van het bord. Daar sluit je de monitor of TV aa
-- Sluit de adapter aan.
+- De HDMI-poort is de grote connector onderaan in het midden van het bord. Daar sluit je de monitor of TV aan.
+- De poort die helemaal links onderaan zit, is voor je adapter om stroom te geven.
 
 Het systeem zal je vragen om een gebruikersnaam. Typ "ubuntu" en druk op de knop Enter. Dan zal het systeem vragen of je het wachtwoord wilt veranderen. Typ eerst het oude wachtwoord "ubuntu" en daarna je nieuwe geheim woord. Druk op de knop Enter om te bevestigen dat je het geheim woord hebt veranderd. Noteer het wachtwoord op een papiertje.
 
@@ -112,7 +112,7 @@ Om de Raspberry Pi opnieuw te laten beginnen, geef je het volgende opdracht:
 sudo reboot
 ``` 
 
-Druk op de knop Enter om het opdracht te laten werken.
+- Druk op de knop Enter om het opdracht te laten werken.
 
 De plek waar je op werkt wordt de "terminal" genoemd.
 
@@ -134,25 +134,25 @@ network:
         wlan0:
             optional: true
             access-points:
-                "YOUR-SSID-NAME":
-                    password: "YOUR-NETWORK-PASSWORD"
+                "Je wifi netwerknaam (SSID)":
+                    password: "Je wifi wachtwoord"
             dhcp4: true
 ```
 
 ## Stap 5 - Gebruik speciale bevelen om dingen te doen met de Raspberry Pi
 
-De terminal is een programma op je computer waarmee je speciale opdrachten kunt geven aan het besturingssysteem van je computer. Als je bijvoorbeeld wilt dat je computer bestanden kan downloaden via WiFi, dan kan je een speciaal bestand aanpassen met behulp van de terminal.
+De terminal is een programma op je computer waarmee je speciale opdrachten kunt geven aan de computer. Bijvoorbeeld als je een bestand wilt downloaden via WiFi.
 
-De terminal is een programma op je computer waarmee je speciale opdrachten kan geven aan de computer. Bijvoorbeeld als je met je computer een bestand hebt download via WiFi, dan kan je het bestand veranderen met hulp van de terminal.
+Ubuntu is een speciaal computer programma dat helpt om met je computer te werken en om programma's te gebruiken. Soms komen er nieuwe versies van programma's of worden er fouten in programma's opgelost. Als je Ubuntu gebruikt, kan het handig zijn om deze nieuwe versies te installeren of om fouten te repareren. Je kan dit doen door een opdracht te geven aan Ubuntu met hulp van de terminal:
 
 ```
+# 
 sudo apt update && sudo apt full-upgrade
 
 sudo reboot
 ```
-Ubuntu is een besturingssysteem, zoals Windows of MacOS. Het helpt je om je computer te laten werken en om programma's te gebruiken.
 
-Soms komen er nieuwe versies van programma's of worden er fouten in programma's opgelost. Als je Ubuntu gebruikt, kan het handig zijn om deze nieuwe versies te installeren of om fouten te repareren. Je kan dit doen door een opdracht te geven aan Ubuntu met hulp van de terminal.
+Als je "sudo apt update && sudo apt full-upgrade" intypt in de terminal en op Enter drukt, dan zal Ubuntu de lijst met beschikbare programma's bijwerken en alle programma's installeren of bijwerken naar hun nieuwste versies. Dit is een veelgebruikte manier om alle programma's op een Ubuntu-systeem bij te werken naar hun nieuwste versies.
 
 `sudo apt update` laat Ubuntu kijken naar welke nieuwe versies er zijn van programma's die je al hebt of welke nieuwe programma's je kan downloaden. Zo kan Ubuntu de lijst met beschikbare programma's en versies bijwerken.
 
@@ -166,8 +166,8 @@ We gebruiken vaak het programma "Nano" om bestanden te maken of te veranderen. A
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Om WiFi te laten werken, moet je de juiste informatie invullen in een bestand genaamd 50-cloud-init.yaml. Helaas moet je alles zelf typen, maar later als we een verbinding maken met de Raspberry Pi vanuit onze eigen computer, kunnen we het "kopieer-plak" commando gebruiken om het gemakkelijker te maken. Kijk naar de volgende stap 5. Let er wel op dat je niet de tab-toets gebruikt, maar in plaats daarvan twee spaties intypt.
+Om WiFi te laten werken, moet je de juiste informatie invullen in een bestand genaamd 50-cloud-init.yaml, zie hiervoor het voorbeeld in [50-cloud-init.yaml](#cloud-init.yaml). Helaas moet je alles zelf typen. (later als je een verbinding maakt met de Raspberry Pi vanuit je eigen computer, kunnen je de "kopieer-plak" commando's gebruiken. Let er wel op dat je niet de tab-toets gebruikt, maar in plaats daarvan vier spaties intypt.
 
 ## Samenvatting
 
-Om WiFi in te stellen op een Raspberry Pi, heb je een Raspberry Pi computer, een micro SD-kaartje, een stroomadapter en de naam en het wachtwoord van je WiFi-netwerk nodig. Volg de stappen: stop het SD-kaartje in de Raspberry Pi, sluit het scherm en het toetsenbord aan op de Raspberry Pi, sluit de stroomadapter aan op de Raspberry Pi, gebruik speciale bevelen om dingen te doen met de Raspberry Pi en maak verbinding met de Raspberry Pi vanaf een andere computer via SSH. Gebruik de bevelen "sudo raspi-config" en "sudo nano /etc/wpa_supplicant/wpa_supplicant.conf" om de WiFi in te stellen. Voer het commando "sudo reboot" uit om de Raspberry Pi opnieuw op te starten met de nieuwe WiFi-instellingen.
+In dit hoofdstuk leer je hoe je de Raspberry Pi, kan gebruiken. Het moet een verbinding met het internet hebben, zodat je nieuwe programma's kan downloaden. Je kan met de Raspberry Pi praten met een USB-toetsenbord en een monitor met een HDMI-aansluiting, bijvoorbeeld een TV. Maar je kan ook praten met de Raspberry Pi via je laptop. Ook kan je later je wifi instellen.
