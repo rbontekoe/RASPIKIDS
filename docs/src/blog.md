@@ -2,6 +2,10 @@
 
 ## 2023
 
+### 24-01-2023
+
+We hebben nog wat veranderingen gemaakt in het hoofdstuk over hoe te praten met de Raspberry Pi computer.
+
 ### 20-01-2023
 
 In het tweede hoofdstuk 'Communiceren met de Raspberry Pi' is klaar. Je leert hoe je vanaf een laptop kan praten met de Raspberry Pi.

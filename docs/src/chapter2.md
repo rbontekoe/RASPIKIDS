@@ -161,7 +161,7 @@ We gebruiken vaak het programma "Nano" om bestanden te maken of te veranderen. A
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Om WiFi te laten werken, moet je de juiste informatie invullen in een bestand genaamd 50-cloud-init.yaml, zie hiervoor het voorbeeld in [50-cloud-init.yaml](#cloud-init.yaml). Helaas moet je alles zelf typen. (later als je een verbinding maakt met de Raspberry Pi vanuit je eigen computer, kunnen je de "kopieer-plak" commando's gebruiken. Let er wel op dat je niet de tab-toets gebruikt, maar in plaats daarvan vier spaties intypt.
+Om WiFi te laten werken, moet je de juiste informatie invullen in een bestand genaamd 50-cloud-init.yaml, zie hiervoor het voorbeeld in [50-cloud-init.yaml](#cloud-init.yaml). Helaas moet je alles zelf typen. (later als je een verbinding maakt met de Raspberry Pi vanuit je eigen computer, kunnen je de "kopieer-plak" commando's gebruiken.) Let er wel op dat je niet de tab-toets gebruikt, maar in plaats daarvan twee of vier spaties intypt.
 
 ## Samenvatting
 
