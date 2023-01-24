@@ -31,7 +31,7 @@ We willen een programma op onze computer gebruiken dat 'Docker' heet. Op onze Ra
 
 |Stap        | Actie      | Opmerking |
 |:---------- | :---------- |:---------- |
-| 1 | ssh ubuntu@<ip-adres Raspberry pi> | Maak verbinding met de Raspberry Pi. |
+| 1 | ssh ubuntu@<ip-adres Raspberry pi> | Maak een verbinding met je Raspberry Pi. Lees stap 3 in het vorige hoofdstuk om te zien hoe je het internetadres van je Raspberry Pi kunt vinden.|
 | 2 | sudo apt-get update | Software lijst updaten naar de nieuwste versies. |
 | 3 | sudo apt-get remove docker docker-engine docker.io | Oudere versions van Docker verwijderen. |
 | 4 | curl -sSL https://get.docker.com \| sh| Docker installeren met officieel online script. |
