@@ -146,19 +146,14 @@ De terminal is een programma op je computer waarmee je speciale opdrachten kunt 
 Ubuntu is een speciaal computer programma dat helpt om met je computer te werken en om programma's te gebruiken. Soms komen er nieuwe versies van programma's of worden er fouten in programma's opgelost. Als je Ubuntu gebruikt, kan het handig zijn om deze nieuwe versies te installeren of om fouten te repareren. Je kan dit doen door een opdracht te geven aan Ubuntu met hulp van de terminal:
 
 ```
-# 
+# nieuwste versies van alle programma's installeren of bijwerken
 sudo apt update && sudo apt full-upgrade
 
+# Raspberry Pi opnieuw opstarten met de nieuwste versies
 sudo reboot
 ```
 
-Als je "sudo apt update && sudo apt full-upgrade" intypt in de terminal en op Enter drukt, dan zal Ubuntu de lijst met beschikbare programma's bijwerken en alle programma's installeren of bijwerken naar hun nieuwste versies. Dit is een veelgebruikte manier om alle programma's op een Ubuntu-systeem bij te werken naar hun nieuwste versies.
-
-`sudo apt update` laat Ubuntu kijken naar welke nieuwe versies er zijn van programma's die je al hebt of welke nieuwe programma's je kan downloaden. Zo kan Ubuntu de lijst met beschikbare programma's en versies bijwerken.
-
-`sudo apt full-upgrade` laat Ubuntu de nieuwste versies van alle programma's installeren of bijwerken. Dit is vergelijkbaar met "sudo apt upgrade", maar apt full-upgrade is beter om te gebruiken als er afhankelijkheden zijn. Dit betekent dat als een nieuwe versie van een programma afhankelijk is van een ander programma, apt full-upgrade ervoor zorgt dat het andere programma ook geïnstalleerd of bijgewerkt wordt. Het kan ook programma's verwijderen die niet meer nodig zijn en nieuwe programma's toevoegen om aan de afhankelijkheden van de nieuwe programma's te voldoen.
-
-Dus als je "sudo apt update && sudo apt full-upgrade" uitvoert, dan zal Ubuntu de lijst met beschikbare programma's bijwerken en alle programma's installeren of bijwerken naar hun nieuwste versies. Het gaat ook slim om met afhankelijkheden. Dit is een veelgebruikte manier om alle programma's op een Ubuntu-systeem bij te werken naar hun nieuwste versies.
+`sudo apt full-upgrade` laat Ubuntu de nieuwste versies van alle programma's installeren of bijwerken. Dit is vergelijkbaar met `sudo apt upgrade`, maar `apt full-upgrade` is beter om te gebruiken als er afhankelijkheden zijn. Dit betekent dat als een nieuwe versie van een programma afhankelijk is van een ander programma, `apt full-upgrade` ervoor zorgt dat het andere programma ook geïnstalleerd of bijgewerkt wordt. Het kan ook programma's verwijderen die niet meer nodig zijn en nieuwe programma's toevoegen om aan de afhankelijkheden van de nieuwe programma's te voldoen.
 
 We gebruiken vaak het programma "Nano" om bestanden te maken of te veranderen. Als je dit opdrachtje intypt in de terminal en op Enter drukt, dan kan je het bestand openen om aan te passen: `sudo nano /etc/netplan/50-cloud-init.yaml`.
 
