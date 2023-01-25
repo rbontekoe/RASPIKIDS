@@ -58,7 +58,7 @@ networks:
   node-red-net:
 ```
 
-Dit is een bestand dat Docker gebruikt om het programma Node-RED te maken. We halen het image (=nodered/node-red:latest) van het internet van [Docker Hub](https://hub.docker.com/). `latest` geeft aan dat we altijd de nieuwste versie gebruiken. We zetten het programma aan in de tijdzone van Amsterdam. We geven ook toegang tot het programma vanaf de computer via poort 1880. Ook maken we een plek om gegevens op te slaan op de Raspberry Pi dat node-red-data heet.
+Dit is een bestand dat Docker gebruikt om een container met Node-RED te maken. Het haalt het image (=nodered/node-red:latest) van het internet van [Docker Hub](https://hub.docker.com/). `latest` geeft aan dat we altijd de nieuwste versie gebruiken. We zetten het programma aan in de tijdzone van Amsterdam. We geven ook toegang tot het programma vanaf de computer via poort 1880. Ook maken we een plek om gegevens op te slaan op de Raspberry Pi dat node-red-data heet.
 
 ## Stap 1: Inloggen op Portainer en naar Stacks gaan
 
@@ -78,7 +78,7 @@ Je gaat de inhoud van het bestand docker-compose.yml uit het voorbeeld hier bove
 |Stap        | Actie      | Opmerking |
 |:---------- | :---------- |:---------- |
 | 1 | Ga naar [docker-compose.yml](#docker-compose.yml)|  |
-| 2 | Selecteer alle tekst met je muis |  |
+| 2 | Selecteer alle tekst met je muis | Regels met "#" zijn commentaarregels en hoef je niet mee te kopieren. |
 | 3 | Ctrl-C | Kopieer de tekst naar het klembord. |
 ||
 
