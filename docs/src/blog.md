@@ -2,6 +2,10 @@
 
 ## 2023
 
+### 25-01-2023
+
+De les over hoe je Node-RED installeert is nu klaar.
+
 ### 24-01-2023
 
 We hebben nog wat veranderingen gemaakt in het hoofdstuk over hoe te praten met de Raspberry Pi computer.
