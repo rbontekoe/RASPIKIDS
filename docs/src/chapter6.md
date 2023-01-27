@@ -34,7 +34,7 @@ Voer de volgende stappen uit:
 ![fig 1](assets/fig_1.png)
 
 - Verbind de nodes met de muis aan elkaar door een eindpunt met een beginpunt te verbinden.
-- Dubbelklik op de http in node en geef als URL op `/hallo`
+- Dubbelklik op de http in node en geef als URL op `/hallo`.
 - Dubbelklik op template en tik `<h1>Hallo wereld!</h1>` op de eerste regel van het veld "template".
 
 ![fig 2](assets/fig_2.png)
@@ -47,7 +47,7 @@ Voer de volgende stappen uit:
 
 ![fig_4](assets/fig_4.png)
 
-- Voeg meer tekst toe aan de website door ze tussen de `<p>` en `</p>` te zetten.
+- Voeg meer tekst toe aan de website door ze tussen de `<p>` en `</p>` tags te zetten.
 
 ### Stap 2: Adressen en telefoonnummers tabel
 
@@ -56,6 +56,10 @@ Voer de volgende stappen uit:
 
 
 ## Samenvatting
+
+We gaan een website maken met Node-RED. We moeten hiervoor onze computer of telefoon verbinden met ons WiFi-netwerk. Tijdens het maken van de website leren we ook werken met HTML-code. De taal waarmee we websites maken. We moeten ervoor zorgen dat we een verbinding hebben met de Raspberry Pi en dat er bepaalde programma's geinstalleerd zijn. We gaan stap voor stap de website maken, de eerste stap is om een "Hallo wereld!" voorbeeld te maken. We gebruiken hiervoor 3 nodes en we verbinden deze met elkaar. Tenslotte drukken we op de knop "Deploy". Als alles goed is gegaan, kun je in de browser `IP_adres_Raspberry_Pi:1880/hallo` intypen en zie je "Hallo wereld" verschijnen.
+
+---
 
 Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld
 
