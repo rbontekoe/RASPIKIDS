@@ -16,9 +16,9 @@ Pages = ["chapter6.md"]
 
 ## Wat je gaat doen
 
-- Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld
-- Stap 2: Adressen en telefoonnummers tabel
-- Stap 3: Personaliseer je website
+- Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld.
+- Stap 2: Adressen en telefoonnummers tabel voorbeeld.
+- Stap 3: Personaliseer je website.
 
 ### Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld
 
@@ -35,15 +35,19 @@ Voer de volgende stappen uit:
 
 - Verbind de nodes met de muis aan elkaar door een eindpunt met een beginpunt te verbinden.
 - Dubbelklik op de http in node en geef als URL op `/hallo`
-- Dubbelklik op template en tik `<h1>Hallo wereld!</h1>` op de eerste regel.
+- Dubbelklik op template en tik `<h1>Hallo wereld!</h1>` op de eerste regel van het veld "template".
 
 ![fig 2](assets/fig_2.png)
 
-- Genereer de code door op de toets "Deploy" (rechtsbovenin)
+- Genereer de code door op de toets "Deploy" (rechtsbovenin) te klikken.
 
 ![fig_3](assets/fig_3.png)
 
-- Geef als adres op in de browser: `IP_adres_Raspberry_Pi:1880/hallo`
+- Typ in de zoekbalk van je internet browser: `IP_adres_Raspberry_Pi:1880/hallo`. Als alles goed is gegaan, zie je 'Hallo wereld' in vette letters verschijnen op het scherm.
+
+![fig_4](assets/fig_4.png)
+
+- Voeg meer tekst toe aan de website door ze tussen de `<p>` en `</p>` te zetten.
 
 ### Stap 2: Adressen en telefoonnummers tabel
 
