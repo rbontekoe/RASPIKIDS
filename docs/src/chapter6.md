@@ -24,22 +24,24 @@ Pages = ["chapter6.md"]
 
 Je hebt 3 nodes nodig om een eenvoudige website te maken:
 - http in
-- template
+- template (staat 1 sectie hoger)
 - http response
+
+Sleep de nodes naar het canvas.
 
 ![fig 1](assets/fig_1.png)
 
-<html>
-<head>
-</head>
-<body>
-<h1>Hello World<h1>
-</body>
-</html>
+1. Verbind de nodes met de muis aan elkaar door een eindpunt met een beginpunt te verbinden.
+2. Dubbelklik op de http in node en geef als URL op `/hallo`
+3. Dubbelklik op template en tik `<h1>Hallo wereld!</h1>` op de eerste regel.
 
 ![fig 2](assets/fig_2.png)
 
+4. Genereer de code door op de toets "Deploy" (rechtsbovenin)
+
 ![fig_3](assets/fig_3.png)
+
+5. Geef als adres op in de browser: `IP_adres_Raspberry_Pi:1880/hallo`
 
 ### Stap 2: Adressen en telefoonnummers tabel
 
