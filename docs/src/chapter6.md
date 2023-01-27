@@ -23,8 +23,23 @@ Pages = ["chapter6.md"]
 ### Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld
 
 Je hebt 3 nodes nodig om een eenvoudige website te maken:
+- http in
+- template
+- http response
 
-![flow](https://stevesnoderedguide.com/wp-content/uploads/node-red-webserver-file.png)
+![fig 1](assets/fig_1.png)
+
+<html>
+<head>
+</head>
+<body>
+<h1>Hello World<h1>
+</body>
+</html>
+
+![fig 2](assets/fig_2.png)
+
+![fig_3](assets/fig_3.png)
 
 ### Stap 2: Adressen en telefoonnummers tabel
 
