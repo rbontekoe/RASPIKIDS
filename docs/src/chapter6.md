@@ -100,7 +100,7 @@ Klik [hier](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-need
 
 2. Verbind de knoopunten zoals in het plaatje staat weeregegeven:
    
-   [fig_5](assets/fig_5.png)
+   ![fig_5](assets/fig_5.png)
 
 3. Geef voor `http in` de volgende url op: `/toon`.
 
