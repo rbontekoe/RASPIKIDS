@@ -96,17 +96,17 @@ Klik [hier](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-need
    - `http response`
    - `debug`
 
-   `http request` gebruiken we om een verbinding met de honden website te maken en het JSON object op te halen.
+   Een `http request` gebruik je als je op internet iets vraagt aan een website, zoals de honden website. Het antwoord dat je terugkrijgt is in het formaat van "JSON object". Als je "debug" gebruikt, kun je het antwoord dat je hebt opgehaald bekijken.
 
-2. Verbind de knoopunten zoals in het plaatje staat weeregegeven:
+2. Verbind de knooppunten net als op de tekening.:
    
    ![fig_5](assets/fig_5.png)
 
-3. Geef voor `http in` de volgende url op: `/toon`.
+3. Voer de volgende webadres in bij het invoerveld 'http in': `/toon`.
 
-4. Geef in `http request de url van de API op:
+4. Geef het webadres voor een foto van een hond op: `https://dog.ceo/api/breeds/image/random`.
 
-5. Plaats in het template de HTML-code voor de website:
+5. Plaats in het `template` de HTML-code voor de website:
    
 ```
 <!DOCTYPE html>
@@ -162,8 +162,7 @@ Tegenwoordig moet je website in elke omstandigheid er goed uitzien. [Bootstrap](
 
 ## Samenvatting
 
-We gaan een website maken met Node-RED. We moeten hiervoor onze computer of telefoon verbinden met ons WiFi-netwerk. Tijdens het maken van de website leren we ook werken met HTML-code. De taal waarmee we websites maken. We moeten ervoor zorgen dat we een verbinding hebben met de Raspberry Pi en dat er bepaalde programma's geinstalleerd zijn. We gaan stap voor stap de website maken, de eerste stap is om een "Hallo wereld!" voorbeeld te maken. We gebruiken hiervoor 3 nodes en we verbinden deze met elkaar. Tenslotte drukken we op de knop "Deploy". Als alles goed is gegaan, kun je in de browser `IP_adres_Raspberry_Pi:1880/hallo` intypen en zie je "Hallo wereld" verschijnen.
-
+We gaan een website maken met Node-RED op een Raspberry Pi. Je moet een aantal programma's hebben geïnstalleerd en verbinding hebben met de Raspberry Pi via wifi. Tijdens het maken van de website leer je ook werken met HTML-code. We gaan stap voor stap de website maken, waarbij we beginnen met een "Hallo wereld!"-voorbeeld en later ga je de website verbeteren met Bootstrap. Ook leer je hoe je met API's (manieren voor computers om met elkaar te communiceren) kunt werken en foto's van honden op de website kunt zetten.
 
 
 
