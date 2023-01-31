@@ -8,7 +8,7 @@ makedocs(
         "Toepassingen met de Raspberry Pi" => "index.md",
         "Blog" => "blog.md",
         "Sectie 1 - Basis installaties" => [
-            "SSD-kaartje klaarmaken voor de Raspberry Pi 3B+" => "chapter1.md",
+            "Micro SD-kaartje klaarmaken voor de Raspberry Pi 3B+" => "chapter1.md",
             "Communiceren met de Raspberry Pi" => "chapter2.md",
             "Docker installeren" => "chapter3.md",
             "Portainer installeren" => "chapter4.md",

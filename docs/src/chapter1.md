@@ -1,4 +1,4 @@
-# SD-kaartje klaarmaken voor de Raspberry Pi 3B+
+# Micro SD-kaartje klaarmaken voor de Raspberry Pi 3B+
 
 *We gaan een Micro SD-kaartje klaarmaken voor de Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server erop. Dit betekent dat we een speciaal soort computerprogramma op het kaartje gaan installeren. Ubuntu Server is gemaakt om te helpen bij het uitvoeren van taken op een computer.*
 
@@ -12,7 +12,7 @@ Om een Micro SD kaartje te maken voor een Raspberry Pi 3B+, heb je het volgende 
 
 - Een computer met een slot voor een Micro SD kaarthouder.
 - Een [Micro SD](https://elektronicavoorjou.nl/product/transcend-micro-sd-rpi-os/) kaartje, bijvoorbeeld een van 32GB.
-- Een Micro SD-kaarthouder, die meestal wordt deze meegeleverd met het Micro SD kaartje.
+- Een Micro SD-kaarthouder, meestal wordt deze meegeleverd met het Micro SD kaartje.
 - Het Raspberry Pi Imager programma.
 - Naam van je Wifi-netwerk.
 - Wachtwoord van je Wifi-netwerk.
