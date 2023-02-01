@@ -2,6 +2,10 @@
 
 ## 2023
 
+### 01-02-2023
+
+De les "Website bouwen met Node-RED" is klaar. We gaan leren hoe we gegevens van websites kunnen gebruiken. Dit wordt gedaan door een API te gebruiken. Soms moeten we een account aanmaken om de gegevens te kunnen gebruiken en het is niet altijd gratis. Maar, in deze les maken we een eigen website over Honden en halen we plaatjes van de honden van andere website. Ook leren we hoe we onze website er op elk apparaat hetzelfde uit kan laten zien.
+
 ### 25-01-2023
 
 De les over hoe je Node-RED installeert is nu klaar.
