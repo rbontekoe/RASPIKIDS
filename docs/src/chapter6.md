@@ -108,8 +108,8 @@ Zo is er de website [Dogs](https://dog.ceo/api/breeds/image/random) die steeds d
    ```
    In de `<head>` sectie kun je de titel van je website zetten. In de `<body>` sectie kun je de HTML voor de website zetten.
    
-   Klik [hier](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/) voor een lijst met API's.
-   
+   Klik [hier voor een lijst met API's](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/).
+
 6. Test het resultaat in de browser: `IP_adres_raspberry_pi:1880/toon`.
 
 ## Stap 3: Personaliseer je website
