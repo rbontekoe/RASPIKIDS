@@ -55,7 +55,7 @@ Met "http in" vertel je hoe mensen naar een specifieke pagina op je website kunn
 
 Een API is een manier voor computers om met elkaar te praten en informatie uit te wisselen. Ze doen dit door verzoeken en antwoorden uit te wisselen. JSON is een manier om informatie op te slaan en uit te wisselen die zowel door computers als door mensen begrepen wordt.
 
-Zo is er de website [Dogs](https://dog.ceo/api/breeds/image/random) die steeds de URL van een ander plaatje van een hond geeft als JSON-object:
+Zo is er de website [Dogs](https://dog.ceo/api/breeds/image/random) die steeds de URL van een ander plaatje van een hond geeft in JSON formaat:
 
 ```
 {
@@ -63,6 +63,14 @@ Zo is er de website [Dogs](https://dog.ceo/api/breeds/image/random) die steeds d
   "message":"https://images.dog.ceo/breeds/segugio-italian/n02090722_002.jpg"
 }
 ```
+
+De code bevat twee delen: een sleutel en een waarde gescheiden door een dubbele punt (:). De sleutel is aan de linkerkant en de waarde is aan de rechterkant.
+
+De eerste sleutel is "status" en de waarde is "success". Dit betekent dat alles goed is gegaan en er geen fouten zijn opgetreden.
+
+De tweede sleutel is "message" en de waarde is een URL "https://images.dog.ceo/breeds/segugio-italian/n02090722_002.jpg". Dit is een link naar een afbeelding op het internet.
+
+Dus dit stuk code bevat informatie over de status van een bepaalde actie en een link naar een afbeelding.
 
 **Voer de volgende stappen uit:**
 
