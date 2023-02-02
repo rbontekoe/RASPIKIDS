@@ -166,6 +166,11 @@ Web responsive design (WRD) betekent dat je website op elk apparaat, zoals je co
    
    ![Mijn Eerste Honden Pagina](assets/hs.jpg)
 
+!!! info
+    Een vast IP-adres op wifi is zoals een huisadres voor je apparaat. Het is uniek en zorgt ervoor dat je apparaat altijd hetzelfde adres heeft wanneer het aan het wifi-netwerk is verbonden. Dit maakt het makkelijker voor andere apparaten om contact met jouw apparaat te maken.
+
+    Om een vast IP-adres te krijgen, moet je naar de instellingen van je wifi-router gaan. Daar moet je de instellingen van je apparaat veranderen zodat het altijd hetzelfde IP-adres krijgt wanneer het aan het wifi-netwerk is verbonden. Als je niet weet hoe dat moet, vraag het dan aan iemand die daar verstand van heeft.
+
 ## Samenvatting
 
 We gaan een website maken met Node-RED op een Raspberry Pi. Je moet een aantal programma's hebben geïnstalleerd en verbinding hebben met de Raspberry Pi via wifi. Tijdens het maken van de website leer je ook werken met HTML-code. We gaan stap voor stap de website maken, waarbij we beginnen met een "Hallo wereld!"-voorbeeld en later ga je de website verbeteren met Bootstrap. Ook leer je hoe je met API's (manieren voor computers om met elkaar te communiceren) kunt werken en foto's van honden op de website kunt zetten.
