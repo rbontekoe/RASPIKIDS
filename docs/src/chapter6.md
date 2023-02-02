@@ -83,7 +83,7 @@ Dus dit stuk code bevat informatie over de status van een bepaalde actie en een 
    - `http response`
    - `debug`
 
-   Een `http request` gebruik je als je op internet iets vraagt aan een website, zoals de honden website. Het antwoord dat je terugkrijgt is in het formaat van "JSON object". Als je "debug" gebruikt, kun je het antwoord dat je hebt opgehaald bekijken.
+   Een `http request` gebruik je als je op internet iets vraagt aan een website, zoals de honden website. Het antwoord dat je terugkrijgt is in het formaat van "JSON". Als je "debug" gebruikt, kun je het antwoord dat je hebt opgehaald bekijken.
 
 2. Verbind de knooppunten net als op de tekening:
    
