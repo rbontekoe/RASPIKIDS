@@ -142,8 +142,21 @@ Web responsive design (WRD) betekent dat je website op elk apparaat, zoals je co
      </body>
    </html>
    ```
+   Dit is een stuk code in het HTML formaat. Het bevat instructies voor een website om weer te geven op internet.
+   
+   De eerste regel <!DOCTYPE html> zegt de browser welk soort code de website bevat.
+   
+   De volgende regel <html> markeert het begin van de HTML-code.
+   
+   Daarna hebben we de <head> en <body> secties. In de <head> sectie staat informatie over de website, zoals de titel van de website en de bronnen voor stijlen en scripts.
+   
+   In de <body> sectie staat de inhoud van de website die we willen weergeven aan de gebruiker. Bijvoorbeeld een knop om naar een volgend plaatje te gaan, een koptekst "Mijn Honden Pagina" en een plaatje van een hond.
+   
+   De code maakt gebruik van Bootstrap, een toolkit voor het maken van mooie en responsieve websites.
 
 3. Test de website op je computer door het venster van de browser smaller te maken: `IP_adres_raspberry_pi:1880/toon`.
+   
+   ![mysite](assets/hs.jpeg)
 
 ## Samenvatting
 
