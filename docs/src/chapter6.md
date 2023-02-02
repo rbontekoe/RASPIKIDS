@@ -156,7 +156,7 @@ Web responsive design (WRD) betekent dat je website op elk apparaat, zoals je co
 
 3. Test de website op je computer door het venster van de browser smaller te maken: `IP_adres_raspberry_pi:1880/toon`.
    
-   ![mysite](assets/hs.jpeg)
+   ![mysite](assets/hs.jpg)
 
 ## Samenvatting
 
