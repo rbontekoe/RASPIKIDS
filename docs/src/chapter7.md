@@ -12,4 +12,6 @@ Pages = ["chapter7.md"]
 
 ## Wat je gaat doen
 
+docker run -it --name mosquitto -p 1883:1883 -v $(pwd)/mosquitto:/mosquitto/ eclipse-mosquitto
+
 ## Ssmenvatting
