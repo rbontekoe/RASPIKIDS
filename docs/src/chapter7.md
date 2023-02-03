@@ -16,7 +16,7 @@ Pages = ["chapter7.md"]
 ## Wat je gaat doen
 
 - Stap 1: ChatGPT om docker-compose.yml bestand vragen.
-- Stap 2: Installerem Mosquittto.
+- Stap 2: Installeren Mosquittto.
 
 ## Stap 1 - ChatGPT om docker-compose.yml bestand vragen
 
@@ -43,7 +43,7 @@ volumes:
 
 Deze configuratie maakt gebruik van de officiële Eclipse Mosquitto Docker-afbeelding (image) en maakt verbinding op poort 1883. Het configureert ook twee Docker-volumes voor de gegevens en configuratie van Mosquitto, zodat deze na het verwijderen van de container behouden blijven.
 
-## Stap 2 - Installerem Mosquittto
+## Stap 2 - Installeren Mosquittto
 
 |Stap        | Actie      | Opmerking |
 |:---------- | :---------- |:---------- |
@@ -60,6 +60,6 @@ Deze configuratie maakt gebruik van de officiële Eclipse Mosquitto Docker-afbee
 
 En dat is het! Je zou nu een werkende Mosquitto MQTT-broker moeten hebben binnen een Docker stack die beheerd wordt door Portainer. 
 
-## Ssmenvatting
+## Samenvatting
 
 Je gaat een MQTT broker installeren op je Raspberry Pi computer die Ubuntu Server 22.04 als besturingssysteem heeft. Hiermee kun je gegevens uitwisselen tussen verschillende computers of sensoren. Je gaat dit doen door eerst een bestand te maken (door ChatGPT te vragen om hulp) dat "docker-compose.yml" heet en daarna Mosquitto installeren met behulp van Portainer. Dit alles zorgt ervoor dat je een werkende MQTT broker krijgt.
