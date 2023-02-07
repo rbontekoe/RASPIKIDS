@@ -74,11 +74,11 @@ We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We z
 |:---------- | :---------- |
 | 1 | Selecteer de code in [boot.py](#boot.py) en kopieer het naar het klembord met Ctrl-C. |
 | 2 | Klik in het meest linkse venster `Files` met je rechter muistoets en kies voor "New directory... |
-| 3 | Typ "dht22" en klik op de toets `OK`. ``\\``[fig_8_5](assets/fig_8_5.png) |
+| 3 | Typ "dht22" en klik op de toets `OK`. ``\\``![fig_8_5](assets/fig_8_5.png) |
 | 4 | Maak een nieuw leeg bestand met Ctrl-N. |
 | 5 | Plak de code die je in stap 1 naar het klembord het gekopieerd in het venster met Ctrl-V. |
 | 6 | Geef in regel 6 de naam van het wifi netwerk en het wachtwoord op. |
-| 7 | Bewaar het bestand met Ctrl-S, selecteer de folder "dht22" en geeft als naam op "boot.py". ``\\``[fig_8_6](assets/fig_8_6.png) |
+| 7 | Bewaar het bestand met Ctrl-S, selecteer de folder "dht22" en geeft als naam op "boot.py". ``\\``![fig_8_6](assets/fig_8_6.png) |
 | 8 | Voer de stappen 1 en 4 nogmaals uit voor [main.py](#main.py). |
 | 9 | Bewaar het bestand met Ctrl-S, selecteer de folder "dht22" en geef als naam op "main.py". |
 
