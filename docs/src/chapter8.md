@@ -58,12 +58,12 @@ Dit zijn de stappen om de ESP8266-driver te installeren en te controleren of dez
 | 3 | Klik op de link in het plaatje. |
 | 4 | Kies uit de lijst voor de laatste release en download het. ``\\``Bij mij was dat op 6 febr. 2023: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
 | 5 | Sluit de ESP8266 met behulp van de "USB A naar Micro USB kabel" aan op je laptop. |
-| 6 | Start Thonny op |
-| 7 | Klik op `Tools > Options...` en ga naar de Tab `Interperter` |
-| 8 | Kies als interperter/device voor `MicroPython (ESP8266)` ``\\``![fig_8_3](assets/fig_8_3.png). |
-| 9 | Klik op de link `Install or update`|
-| 10 | Kies in het veld `firmware` voor het bestand dat je in stap 4 hebt gedownload, bijvoorbeeld `esp8266-20220618-v1.19.1.bin`. ``\\``![fig_8_4](assets/fig_8_4.png). |
-| 11 | Klik op de knop `Install` | 
+| 6 | Start Thonny op. |
+| 7 | Druk op "Tools > Options..." en ga naar de tab "Interpreter". |
+| 8 | Kies als interpreter/device "MicroPython (ESP8266)". ``\\``![fig_8_3](assets/fig_8_3.png). |
+| 9 | Druk op de link "Install or update".|
+| 10 | Kies in het veld genaamd "firmware" het bestand dat je in stap 4 hebt gedownload, bijvoorbeeld `esp8266-20220618-v1.19.1.bin`. ``\\``![fig_8_4](assets/fig_8_4.png). |
+| 11 | Druk op de knop Install.| 
 
 ## Stap 3 - Software in Thonny zetten
 
@@ -73,15 +73,15 @@ We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We z
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Selecteer de code in [boot.py](#boot.py) en kopieer het naar het klembord met Ctrl-C. |
-| 2 | Klik in het meest linkse venster `Files` met je rechter muistoets en kies voor "New directory... |
-| 3 | Typ "dht22" en klik op de toets `OK`. ``\\``![fig_8_5](assets/fig_8_5.png) |
+| 1 | Selecteer de code in [boot.py](#boot.py) en kopieer het naar het klembord door Ctrl-C te gebruiken. |
+| 2 | Klik in het linkerste venster genaamd "Files" met je rechtermuisknop en kies "New directory...". |
+| 3 | Typ "dht22" en druk op de OK knop. ``\\``![fig_8_5](assets/fig_8_5.png) |
 | 4 | Maak een nieuw leeg bestand met Ctrl-N. |
-| 5 | Plak de code die je in stap 1 naar het klembord het gekopieerd in het venster met Ctrl-V. |
-| 6 | Geef in regel 6 de naam van het wifi netwerk en het wachtwoord op. |
-| 7 | Bewaar het bestand met Ctrl-S, selecteer de folder "dht22" en geeft als naam op "boot.py". ``\\``![fig_8_6](assets/fig_8_6.png) |
+| 5 | Plak de code die je in stap 1 naar het klembord hebt gekopieerd in het venster door Ctrl-V te gebruiken. |
+| 6 | Vul op regel 6 de naam van jouw wifi-netwerk en het bijbehorende wachtwoord in. |
+| 7 | Sla het bestand op door Ctrl-S te drukken, kies de map "dht22" en geef het bestand de naam "boot.py". ``\\``![fig_8_6](assets/fig_8_6.png) |
 | 8 | Voer de stappen 1 en 4 nogmaals uit voor [main.py](#main.py). |
-| 9 | Bewaar het bestand met Ctrl-S, selecteer de folder "dht22" en geef als naam op "main.py". |
+| 9 | Sla het bestand op door Ctrl-S te drukken, kies de map "dht22" en geef het bestand de naam "main.py". |
 | 10 | Sluit Thonny. |
 ||
 
@@ -188,11 +188,15 @@ Als er tijdens het verzenden van gegevens een fout optreedt, zal de code probere
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Sluit de DHT22 aan op de ESP8266. |
-| 2 | Selecteer `boot.py` in de Thonny "dht22" folrder. |
-| 3 | Start Thonny. Klik eventueel op het "Stop" symbool in het menu. |
-| 4 | Open the "dht22" folder en selecteer `boot.py`. |
-| 5 | Geef via het menu "File > Save as...". De "Where to save" dialog box verschijnt. ``\\``[Where to save](assets/fig_8_7.png) |
+| 1 | Verbind de DHT22 in de ESP8266. |
+| 2 | Kies boot.py uit de Thonny map "dht22". |
+| 3 | Open Thonny. Als het programma aanstaat, klik dan eventueel op het "Stop" symbool in het menu. |
+| 4 | OGa naar de map "dht22" en kies `boot.py`. |
+| 5 | Kies via het menu "File > Save as...". Er verschijnt dan een pop-up met "Where to save".``\\``![Where to save](assets/fig_8_7.png) |
+| 6 | Klik op de knop die "MicroPython device" heet. |
+| 7 | Neem het bestand "main.py" en plaats het op dezelfde manier op de ESP8266. |
+| 8 | Klik op het groene rondje met de pijl rechts om de code te laten werken. Je ziet op het scherm om de beurt de temperatuur in graden Celsius en de hoeveelheid vocht in de lucht in procenten. ``\\``![fig_8_8](assets/fig_8_8.png) |
+||
 
 
 ## Samenvatting
