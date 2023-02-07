@@ -53,20 +53,38 @@ Dit zijn de stappen om de ESP8266-driver te installeren en te controleren of dez
 |Stap        | Actie      |
 |:---------- | :---------- |
 | 1 | Ga naar [MicroPython downloads](https://micropython.org/download/) |
-| 2 | Zoek naar naar het plaatje met de tekst `ESP8266 with 2MiB+ flash Espressif`. ``\\``![fig_8_1](assets/fig_5.png)|
+| 2 | Zoek naar naar het plaatje met de tekst `ESP8266 with 2MiB+ flash Espressif`. ``\\``![fig_8_1](assets/fig_8_1.png)|
 | 3 | Klik op de link in het plaatje. |
-| 4 | Kies uit de lijst voor de laatste release en download het. ``\\``Bij mij was dat: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
-| 8 | Klik op de link `Install or update`|
-| 5 | Start Thonny op |
-| 6 | Klik op `Tools > Options...` en ga naar de Tab `Interperter` |
-| 7 | Kies als Interperter voor `MicroPython (ESP8266)` ``\\``![Mijn Eerste Honden Pagina](assets/hs.jpg). ``\\``*Tijdelijk plaatje! Ik ga elke stap ervan voorzien.* |
-| 9 | Kies in het veld `firmware` voor het bestand dat je in stap 4 hebt gedownload, bijvoorbeeld `esp8266-20220618-v1.19.1.bin`. |
-| 10 | Klik op de knop `Install` | 
+| 4 | Kies uit de lijst voor de laatste release en download het. ``\\``Bij mij was dat op 6 febr. 2023: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
+| 5 | Sluit de ESP8266 met behulp van de "USB A naar Micro USB kabel" aan op je laptop. |
+| 6 | Start Thonny op |
+| 7 | Klik op `Tools > Options...` en ga naar de Tab `Interperter` |
+| 8 | Kies als interperter/device voor `MicroPython (ESP8266)` ``\\``![fig_8_3](assets/fig_8_3.png). |
+| 9 | Klik op de link `Install or update`|
+| 10 | Kies in het veld `firmware` voor het bestand dat je in stap 4 hebt gedownload, bijvoorbeeld `esp8266-20220618-v1.19.1.bin`. ``\\``![fig_8_4](assets/fig_8_4.png). |
+| 11 | Klik op de knop `Install` | 
 
 ## Stap 3 - Software op ESP8266 zetten
 
 [Documentatie ESP8266](https://docs.micropython.org/en/latest/esp8266/quickref.html).
 
+We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We zetten beide bestanden in een folder "dht22" op de laptop.
+
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Selecteer de code in [boot.py](#boot.py) en kopieer het naar het klembord met Ctrl-C. |
+| 2 | Klik in het meest linkse venster `Files` met je rechter muistoets en kies voor "New directory... |
+| 3 | Typ "dht22" en klik op de toets `OK`. ``\\``[fig_8_5](assets/fig_8_5.png) |
+| 4 | Maak een nieuw leeg bestand met Ctrl-N. |
+| 5 | Plak de code die je in stap 1 naar het klembord het gekopieerd in het venster met Ctrl-V. |
+| 6 | Geef in regel 6 de naam van het wifi netwerk en het wachtwoord op. |
+| 7 | Bewaar het bestand met Ctrl-S, selecteer de folder "dht22" en geeft als naam op "boot.py". ``\\``[fig_8_6](assets/fig_8_6.png) |
+| 8 | Voer de stappen 1 en 4 nogmaals uit voor [main.py](#main.py). |
+| 9 | Bewaar het bestand met Ctrl-S, selecteer de folder "dht22" en geef als naam op "main.py". |
+
+
+
+### boot.py
 ```
 # boot.py - connect to WiFi
 def connect():
@@ -88,6 +106,7 @@ De code bevat één functie, genaamd 'connect'. Als we deze functie aanroepen, z
 
 Als de verbinding is gemaakt, zal het IP-adres dat is toegewezen aan de microcontroller worden weergegeven.
 
+### main.py
 ```
 # main.py - read sensor DHT22
 
