@@ -53,7 +53,7 @@ Dit zijn de stappen om de ESP8266-driver te installeren en te controleren of dez
 |Stap        | Actie      |
 |:---------- | :---------- |
 | 1 | Ga naar [MicroPython downloads](https://micropython.org/download/) |
-| 2 | Zoek naar naar het plaatje met de tekst `ESP8266 with 2MiB+ flash Espressif`. |
+| 2 | Zoek naar naar het plaatje met de tekst `ESP8266 with 2MiB+ flash Espressif`. ``\\``![fig_8_1](assets/fig_8_1.png)|
 | 3 | Klik op de link in het plaatje. |
 | 4 | Kies uit de lijst voor de laatste release en download het. ``\\``Bij mij was dat: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
 | 8 | Klik op de link `Install or update`|
