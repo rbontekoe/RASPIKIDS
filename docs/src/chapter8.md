@@ -21,7 +21,8 @@ Thonny is een softwareprogramma speciaal gemaakt voor kinderen en beginners om t
 
 - Stap 1: Installeren Thonny.
 - Stap 2: Thonny instellen voor de ESP8266.
-- Stap 3: Software op ESP8266 zetten.
+- Stap 3: Software in Thonny zetten.
+- Stap 4: Software naar ESP8266 kopieren.
 
 ## Stap 1 - Installeren Thonny
 
@@ -64,7 +65,7 @@ Dit zijn de stappen om de ESP8266-driver te installeren en te controleren of dez
 | 10 | Kies in het veld `firmware` voor het bestand dat je in stap 4 hebt gedownload, bijvoorbeeld `esp8266-20220618-v1.19.1.bin`. ``\\``![fig_8_4](assets/fig_8_4.png). |
 | 11 | Klik op de knop `Install` | 
 
-## Stap 3 - Software op ESP8266 zetten
+## Stap 3 - Software in Thonny zetten
 
 [Documentatie ESP8266](https://docs.micropython.org/en/latest/esp8266/quickref.html).
 
@@ -81,7 +82,8 @@ We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We z
 | 7 | Bewaar het bestand met Ctrl-S, selecteer de folder "dht22" en geeft als naam op "boot.py". ``\\``![fig_8_6](assets/fig_8_6.png) |
 | 8 | Voer de stappen 1 en 4 nogmaals uit voor [main.py](#main.py). |
 | 9 | Bewaar het bestand met Ctrl-S, selecteer de folder "dht22" en geef als naam op "main.py". |
-
+| 10 | Sluit Thonny. |
+||
 
 
 ### boot.py
@@ -181,5 +183,16 @@ De code maakt gebruik van een microcontroller (bijvoorbeeld een ESP8266 of ESP32
 De MQTT-broker heeft een IP-adres 'IP_adres_Raspberry_Pi' en de gegevens worden gepubliceerd op twee verschillende topics: 'temperature2' voor de temperatuur en 'humidity2' voor de luchtvochtigheid.
 
 Als er tijdens het verzenden van gegevens een fout optreedt, zal de code proberen om opnieuw verbinding te maken met de MQTT-broker. Als dit na 10 seconden nog steeds niet lukt, wordt de microcontroller opnieuw gestart.
+
+## Stap 4 - Software naar ESP8266 kopieren
+
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Sluit de DHT22 aan op de ESP8266. |
+| 2 | Selecteer `boot.py` in de Thonny "dht22" folrder. |
+| 3 | Start Thonny. Klik eventueel op het "Stop" symbool in het menu. |
+| 4 | Open the "dht22" folder en selecteer `boot.py`. |
+| 5 | Geef via het menu "File > Save as...". De "Where to save" dialog box verschijnt. ``\\``[Where to save](assets/fig_8_7.png) |
+
 
 ## Samenvatting
