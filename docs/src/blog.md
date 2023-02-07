@@ -1,6 +1,10 @@
 # Blog
 
-## 2023
+## 2023 
+
+### 07-02-2023
+
+De les "Temperatuur meten" is klaar. Ik wil de hele les nog een keer testen en kijken of het geod is.
 
 ### 01-02-2023
 
