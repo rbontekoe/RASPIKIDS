@@ -10,10 +10,11 @@ Pages = ["chapter8.md"]
 
 ## Wat je nodig hebt
 
-- [ESP8266](https://elektronicavoorjou.nl/product/nodemcu-esp8266-wifi-board/)
-- [DHT22](https://elektronicavoorjou.nl/product/dht22-temp-vocht-sensor/)
-- [USB A naar Micro USB kabel](https://elektronicavoorjou.nl/product/micro-usb-kabel-1m/)
-- [Thonny](https://thonny.org/)
+- [ESP8266](https://elektronicavoorjou.nl/product/nodemcu-esp8266-wifi-board/).
+- [DHT22](https://elektronicavoorjou.nl/product/dht22-temp-vocht-sensor/).
+- [USB A naar Micro USB kabel](https://elektronicavoorjou.nl/product/micro-usb-kabel-1m/).
+- [Voeding voor de ESP8266](https://elektronicavoorjou.nl/product/raspberry-pi-3b-voedingsadapter-micro-usb-schakelaar/).
+- [Thonny](https://thonny.org/).
 
 Thonny is een softwareprogramma speciaal gemaakt voor kinderen en beginners om te programmeren. Het is eenvoudig te gebruiken en biedt hulpmiddelen die het makkelijker maken om te leren programmeren. Het is bedoeld om jou te helpen leren hoe je computers kunt laten doen wat jij wilt door het schrijven van code.
 
@@ -28,24 +29,15 @@ Thonny is een softwareprogramma speciaal gemaakt voor kinderen en beginners om t
 
 Om Thonny te installeren, moet je de volgende stappen volgen:
 
-1. Open een webbrowser en zoek naar de [Thonny-website](https://thonny.org/).
-2. Klik op de knop "Download" om het installatiebestand te downloaden.
-3. Ga naar de map waarin het installatiebestand is gedownload en dubbelklik op het bestand.
-4. Volg de stappen in de installatie-wizard om Thonny te installeren op je computer.
-5. Nadat de installatie is voltooid, kun je Thonny openen door op het icoon te klikken dat is gemaakt op je bureaublad of door het te vinden via het startmenu.
-6. En daar heb je het! Nu kun je Thonny gebruiken om te programmeren en te leren hoe computers werken. Veel plezier!
-
-Stap 3, het installeren van de ESP8266-driver, is belangrijk om verbinding te maken tussen de ESP8266 en je computer via de USB-kabel. Hier is een gedetailleerde uitleg:
-
-Ga naar de Thonny-website: Ga naar de Thonny-website en klik op de knop "Download".
-
-Download de ESP8266-driver: Klik op de link naar de downloadpagina voor de ESP8266-driver en download het bestand.
-
-Installeer de driver: Dubbelklik op het gedownloade bestand en volg de stappen in de installatiewizard om de ESP8266-driver te installeren. Het is belangrijk dat je de wizard tot het einde doorloopt om ervoor te zorgen dat de driver correct geïnstalleerd is.
-
-Controleer of de driver geïnstalleerd is: Ga naar "Apparaatbeheer" op je computer en controleer of de ESP8266 in de lijst staat met "USB-apparaten". Als je de driver correct hebt geïnstalleerd, moet het apparaat worden herkend door je computer.
-
-Dit zijn de stappen om de ESP8266-driver te installeren en te controleren of deze correct is geïnstalleerd. Na het installeren van de driver kun je verder gaan met de volgende stappen in Thonny.
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Open een webbrowser en zoek naar de [Thonny-website](https://thonny.org/). |
+| 2 | Klik op de knop "Download" om het installatiebestand te downloaden. |
+| 3 | Ga naar de map waarin het installatiebestand is gedownload en dubbelklik op het bestand. |
+| 4 | Volg de stappen in de installatie-wizard om Thonny te installeren op je computer. |
+| 5 | Nadat de installatie is voltooid, kun je Thonny openen door op het icoon te klikken dat is gemaakt op je bureaublad of door het te vinden via het startmenu. |
+| 6 | En daar heb je het! Nu kun je Thonny gebruiken om te programmeren en te leren hoe computers werken. Veel plezier! |
+||
 
 ## Stap 2 - Thonny instellen voor de ESP8266
 
@@ -67,7 +59,7 @@ Dit zijn de stappen om de ESP8266-driver te installeren en te controleren of dez
 
 ## Stap 3 - Software in Thonny zetten
 
-[Documentatie ESP8266](https://docs.micropython.org/en/latest/esp8266/quickref.html).
+[Meer documentatie ESP8266](https://docs.micropython.org/en/latest/esp8266/quickref.html).
 
 We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We zetten beide bestanden in een folder "dht22" op de laptop.
 
