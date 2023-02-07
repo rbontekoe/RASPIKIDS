@@ -182,7 +182,7 @@ Als er tijdens het verzenden van gegevens een fout optreedt, zal de code probere
 | 2 | Kies boot.py uit de Thonny map "dht22". |
 | 3 | Open Thonny. Als het programma aanstaat, klik dan eventueel op het "Stop" symbool in het menu. |
 | 4 | OGa naar de map "dht22" en kies `boot.py`. |
-| 5 | Kies via het menu "File > Save as...". Er verschijnt dan een pop-up met "Where to save to".``\\``![Where to save to](assets/fig_8_7.png) |
+| 5 | Kies via het menu "File > Save as...". Er verschijnt dan een pop-up met "Where to save to".``\\``![Where to save to?](assets/fig_8_7.png) |
 | 6 | Klik op de knop die "MicroPython device" heet. |
 | 7 | Neem het bestand "main.py" en plaats het op dezelfde manier op de ESP8266. |
 | 8 | Klik op het groene rondje met de pijl rechts om de code te laten werken. Je ziet op het scherm om de beurt de temperatuur in graden Celsius en de hoeveelheid vocht in de lucht in procenten. ``\\``![fig_8_8](assets/fig_8_8.png) |
