@@ -47,9 +47,9 @@ Om Thonny te installeren, moet je de volgende stappen volgen:
 |:---------- | :---------- |
 | 1 | Ga naar [MicroPython downloads](https://micropython.org/download/) |
 | 2 | Zoek naar naar het plaatje met de tekst `ESP8266 with 2MiB+ flash Espressif`. ``\\``![fig_8_1](assets/fig_8_1.png)|
-| 3 | Klik op de link in het plaatje. |
-| 4 | Kies uit de lijst voor de laatste release en download het. ``\\``Bij mij was dat op 6 febr. 2023: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
-| 5 | Sluit de ESP8266 met behulp van de "USB A naar Micro USB kabel" aan op je laptop. |
+| 3 | Druk op het plaatje waar er een link staat. |
+| 4 | Kijk in de lijst en vind de meest recente versie. Download die dan. ``\\``Bij mij was dat op 6 febr. 2023: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
+| 5 | Maak de ESP8266 aan je laptop vast met een speciale kabel "USB A naar Micro USB kabel".. |
 | 6 | Start Thonny op. |
 | 7 | Druk op "Tools > Options..." en ga naar de tab "Interpreter". |
 | 8 | Kies als interpreter/device "MicroPython (ESP8266)". ``\\``![fig_8_3](assets/fig_8_3.png). |
