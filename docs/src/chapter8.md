@@ -190,3 +190,5 @@ Als er tijdens het verzenden van gegevens een fout optreedt, zal de code probere
 
 
 ## Samenvatting
+
+We gaan de temperatuur meten met een ESP8266 en een DHT22. ESP8266 is een klein computerboardje dat gegevens via WiFi kan versturen en ontvangen. DHT22 is een sensor die temperatuur en luchtvochtigheid kan meten. We gaan het programmeren met een programma dat Thonny heet. Eerst moeten we het installeren. Dan moeten we de ESP8266-driver installeren en controleren of deze correct geïnstalleerd is. Ten slotte moeten we MicroPython downloaden en installeren via Thonny en vervolgens het programma naar de ESP8266 kopiëren.
