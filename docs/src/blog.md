@@ -4,7 +4,7 @@
 
 ### 07-02-2023
 
-De les "Temperatuur meten" is klaar. Ik wil de hele les nog een keer testen en kijken of het geod is.
+De les "Temperatuur meten" is klaar. Ik wil de hele les nog een keer testen en kijken of het goed is.
 
 ### 01-02-2023
 
