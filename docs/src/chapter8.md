@@ -20,18 +20,18 @@ Thonny is een softwareprogramma speciaal gemaakt voor kinderen en beginners om t
 
 ## Wat je gaat doen
 
-- Stap 1: Installeren Thonny.
-- Stap 2: Thonny instellen voor de ESP8266.
-- Stap 3: Software in Thonny zetten.
-- Stap 4: Software naar ESP8266 kopieren.
+- Stap 1: Download en installeer Thonny.
+- Stap 2: Zet Thonny klaar voor het gebruik met de ESP8266.
+- Stap 3: Voeg programma's toe aan Thonny.
+- Stap 4: Stuur de programma's naar de ESP8266.
 
-## Stap 1 - Installeren Thonny
+## Stap 1 - Download en installeer Thonny
 
 Om Thonny te installeren, moet je de volgende stappen volgen:
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Open een webbrowser en zoek naar de [Thonny-website](https://thonny.org/). |
+| 1 | De Thonny-website is te vinden op [https://thonny.org](https://thonny.org/). Klik op de link klikken om naar toe te gaan. |
 | 2 | Klik op de knop "Download" om het installatiebestand te downloaden. |
 | 3 | Ga naar de map waarin het installatiebestand is gedownload en dubbelklik op het bestand. |
 | 4 | Volg de stappen in de installatie-wizard om Thonny te installeren op je computer. |
@@ -39,14 +39,14 @@ Om Thonny te installeren, moet je de volgende stappen volgen:
 | 6 | En daar heb je het! Nu kun je Thonny gebruiken om te programmeren en te leren hoe computers werken. Veel plezier! |
 ||
 
-## Stap 2 - Thonny instellen voor de ESP8266
+## Stap 2 - Zet Thonny klaar voor het gebruik met ESP8266.
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Ga naar [MicroPython downloads](https://micropython.org/download/) |
-| 2 | Zoek naar naar het plaatje met de tekst `ESP8266 with 2MiB+ flash Espressif`. ``\\``![fig_8_1](assets/fig_8_1.png)|
-| 3 | Druk op het plaatje waar er een link staat. |
-| 4 | Kijk in de lijst en vind de meest recente versie. Download die dan. ``\\``Bij mij was dat op 6 febr. 2023: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
+| 1 | Ga naar de website van [MicroPython downloads](https://micropython.org/download/) door op de link te klikken. |
+| 2 | Zoek naar het plaatje met de tekst `ESP8266 with 2MiB+ flash Espressif`. ``\\``![fig_8_1](assets/fig_8_1.png)|
+| 3 | Klik op de link in het plaatje. |
+| 4 | Zoek in de lijst naar het nieuwste item. Download die dan. ``\\``Bij mij was dat op 6 febr. 2023: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
 | 5 | Maak de ESP8266 aan je laptop vast met een speciale kabel "USB A naar Micro USB kabel".. |
 | 6 | Start Thonny op. |
 | 7 | Druk op "Tools > Options..." en ga naar de tab "Interpreter". |
@@ -55,7 +55,7 @@ Om Thonny te installeren, moet je de volgende stappen volgen:
 | 10 | Kies in het veld genaamd "firmware" het bestand dat je in stap 4 hebt gedownload, bijvoorbeeld `esp8266-20220618-v1.19.1.bin`. ``\\``![fig_8_4](assets/fig_8_4.png). |
 | 11 | Druk op de knop Install.| 
 
-## Stap 3 - Software in Thonny zetten
+## Stap 3 - Voeg programma's toe aan Thonny
 
 [Meer documentatie ESP8266](https://docs.micropython.org/en/latest/esp8266/quickref.html).
 
@@ -174,7 +174,7 @@ De MQTT-broker heeft een IP-adres 'IP_adres_Raspberry_Pi' en de gegevens worden 
 
 Als er tijdens het verzenden van gegevens een fout optreedt, zal de code proberen om opnieuw verbinding te maken met de MQTT-broker. Als dit na 10 seconden nog steeds niet lukt, wordt de microcontroller opnieuw gestart.
 
-## Stap 4 - Software naar ESP8266 kopieren
+## Stap 4 - Stuur de programma's naar de ESP8266
 
 |Stap        | Actie      |
 |:---------- | :---------- |
