@@ -2,7 +2,7 @@
 
 *Een MQTT broker is een programma waarmee we gegevens kunnen uitwisselen tussen verschillende computers of sensoren.*
 
-### Contents
+### Inhoud
 
 ```@contents
 Pages = ["chapter7.md"]

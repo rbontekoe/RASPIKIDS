@@ -2,7 +2,7 @@
 
 *We willen de gegevens over hoeveel stroom en gas we verbruiken willen laten zien in het overzicht waar we alle gegevens kunnen bekijken.*
 
-### Contents
+### Inhoud
 
 ```@contents
 Pages = ["chapter11.md"]

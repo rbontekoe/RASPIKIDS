@@ -9,7 +9,7 @@ Je gaat een [dashboard](https://flows.nodered.org/node/node-red-dashboard) maken
 
 ![Node-RED](assets/fig_9_1.png) ![UI](assets/fig_9_2.png)
 
-### Contents
+### Inhoud
 
 ```@contents
 Pages = ["chapter9.md"]

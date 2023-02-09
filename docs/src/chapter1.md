@@ -2,6 +2,8 @@
 
 *We gaan een Micro SD-kaartje klaarmaken voor de Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server erop. Dit betekent dat we een speciaal soort computerprogramma op het kaartje gaan installeren. Ubuntu Server is gemaakt om te helpen bij het uitvoeren van taken op een computer.*
 
+### Inhoud
+
 ```@contents
 Pages = ["chapter1.md"]
 ```

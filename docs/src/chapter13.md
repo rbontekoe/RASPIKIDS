@@ -6,7 +6,7 @@ InfluxDB is een programma waarmee je gegevens kunt opslaan en beheren. Stel je v
 
 Grafana en InfluxDB worden vaak samen gebruikt. Met Grafana kun je de gegevens die in InfluxDB zijn opgeslagen visualiseren, zodat je ze gemakkelijk kunt begrijpen en analyseren. Bijvoorbeeld, als je de temperatuur in een kamer wilt bekijken gedurende een week, kun je de gegevens van de temperatuur in InfluxDB opslaan.*
 
-### Contents
+### Inhoud
 
 ```@contents
 Pages = ["chapter13.md"]

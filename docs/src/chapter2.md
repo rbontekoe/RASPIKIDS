@@ -2,7 +2,7 @@
 
 *In dit hoofdstuk leer je hoe je een klein computertje, genaamd de Raspberry Pi, kan gebruiken. Het moet een verinding met het Internet hebben, zodat je nieuwe programma's kan downloaden. Je kan met de Raspberry Pi praten met een USB-toetsenbord en een monitor met een HDMI-aansluiting, bijvoorbeeld een TV. Maar je kan ook praten met de Raspberry Pi via je laptop. Ook kan je later je wifi instellen.*
 
-### Contents
+### Inhoud
 
 ```@contents
 Pages = ["chapter2.md"]

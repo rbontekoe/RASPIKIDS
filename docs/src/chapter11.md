@@ -2,7 +2,7 @@
 
 *We gaan een slimme meter aansluiten. Een slimme meter is een meter die we gebruiken om te meten hoeveel stroom en gas we verbruiken in huis. We gaan dit doen met behulp van een Domoticz container. We leren ook hoe we de gegevens als MQTT bericht naar de Node-red broker kunnen versturen.*
 
-### Contents
+### Inhoud
 
 ```@contents
 Pages = ["chapter10.md"]
