@@ -15,9 +15,11 @@ Pages = ["chapter7.md"]
 
 ## Wat je gaat doen
 
-- Stap 1: ChatGPT om docker-compose.yml bestand vragen.
-- Stap 2: Installeren Mosquittto.
-- Stap 3: Testen MQTT broker.
+Stap 1: ChatGPT om docker-compose.yml bestand vragen.
+
+Stap 2: Installeren Mosquittto.
+
+Stap 3: Testen MQTT broker.
 
 ## Stap 1 - ChatGPT om docker-compose.yml bestand vragen
 

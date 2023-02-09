@@ -20,10 +20,13 @@ Thonny is een softwareprogramma speciaal gemaakt voor kinderen en beginners om t
 
 ## Wat je gaat doen
 
-- Stap 1: Download en installeer Thonny.
-- Stap 2: Zet Thonny klaar voor het gebruik met de ESP8266.
-- Stap 3: Voeg programma's toe aan Thonny.
-- Stap 4: Stuur de programma's naar de ESP8266.
+Stap 1: Download en installeer Thonny.
+
+Stap 2: Zet Thonny klaar voor het gebruik met de ESP8266.
+
+Stap 3: Voeg programma's toe aan Thonny.
+
+Stap 4: Stuur de programma's naar de ESP8266.
 
 ## Stap 1 - Download en installeer Thonny
 

@@ -15,9 +15,11 @@ Pages = ["chapter6.md"]
 
 ## Wat je gaat doen
 
-- Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld.
-- Stap 2: Werken met API's.
-- Stap 3: Personaliseer je website.
+Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld.
+
+Stap 2: Werken met API's.
+
+Stap 3: Personaliseer je website.
 
 ## Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld
 

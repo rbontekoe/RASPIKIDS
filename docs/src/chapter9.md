@@ -28,10 +28,10 @@ Pages = ["chapter9.md"]
 - Stap 2: Het dashboard samenstellen.
 - Stap 3: Weergegevens ophalen en op dashboard weergeven.
 
-## Stap 1 - De Node-RED Dashboard module downloaden
+Stap 1 - De Node-RED Dashboard module downloaden
 
-## Stap 2 - Het dashboard samenstellen
+Stap 2 - Het dashboard samenstellen
 
-## Stap 3 - Weergegevens ophalen en op dashboard weergeven
+Stap 3 - Weergegevens ophalen en op dashboard weergeven
 
 ## Samenvatting
