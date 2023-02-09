@@ -29,15 +29,15 @@ Oké, dus soms hebben we een programma nodig om dingen van het internet af te ha
 
 We willen een programma op onze computer gebruiken dat 'Docker' heet. Op onze Raspberry Pi 3B+ draait 'Ubuntu Server 22.04'. We doen dat door de volgende stappen te volgen:
 
-|Stap        | Actie      | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | ssh ubuntu@<ip-adres Raspberry pi> | Maak een verbinding met je Raspberry Pi. Lees stap 3 in het vorige hoofdstuk om te zien hoe je het internetadres van je Raspberry Pi kunt vinden.|
-| 2 | sudo apt-get update | Software lijst updaten naar de nieuwste versies. |
-| 3 | sudo apt-get remove docker docker-engine docker.io | Oudere versions van Docker verwijderen. |
-| 4 | curl -sSL https://get.docker.com \| sh| Docker installeren met officieel online script. |
-| 5 | sudo usermod -aG docker \$USER | voeg de omgevingsvariabele USER (= ubuntu, contoleer het met `echo $USER`) toe aan de docker groep. |
-| 6 | sudo docker version | Controleer  de versie van [Docker Engine](https://docs.docker.com/engine/release-notes/). Zou versie 20.10.22 of hoger moeten zijn. |
-| 7 | sudo reboot | Herstart de Raspberry Pi. |
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Maak verbinding met je Raspberry Pi-computer door dit commando te typen: ssh ubuntu@<ip-adres Raspberry pi>. Je moet het internetadres van je Raspberry Pi weten, dus kijk in stap 3 van het vorige hoofdstuk om te zien hoe je dat kunt vinden. |
+| 2 | Zorg dat de softwarelijst up-to-date is door dit commando te typen: `sudo apt-get update`. |
+| 3 | Verwijder oudere versies van Docker door dit commando te typen: `sudo apt-get remove docker docker-engine docker.io`. |
+| 4 | Installeer Docker door dit commando te typen: `curl -sSL https://get.docker.com | sh`. |
+| 5 | Maak zeker dat je computer weet dat jij mag werken met Docker door dit commando te typen: `sudo usermod -aG docker $USER`. |
+| 6 | Controleer de versie van [Docker Engine](https://docs.docker.com/engine/release-notes/) door dit commando te typen: `sudo docker version`. Het moet versie 20.10.22 of hoger zijn. |
+| 7 | Herstart je Raspberry Pi door dit commando te typen: `sudo reboot`. |
 ||
 
 Nu is Docker geïnstalleerd en gestart op je Raspberry Pi 3B+ met Ubuntu Server 22.04. Je kan met het installeren van Docker-images en -containers beginnen door de docker commando's te gebruiken.

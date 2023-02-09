@@ -64,35 +64,36 @@ Net zoals elk loket in het gemeentehuis een specifieke functie heeft, hebben poo
 
 Je gaat met behulp van Portainer een stack maken voor de Node-RED container. Een stack staat beschreven wat de container moet doen en heet meestal docker-compose.yml. Het beschrijft wat het image is dat gebruikt moet worden. Een image is te vergelijken met een template. Veel images met name van bekende programma's vind je op [Docker Hub](https://hub.docker.com/) een soort algemene bibliotheek. 
 
-|Stap        | Actie      | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | Type: ssh IP-adres_Raspberry_Pi:9000 | Dit zorgt dat je Portainer in je browser opent. |
-| 2 | Klik op 'stacks" | Hierdoor opent het menu. |
-| 3 | Klik in het menu op Stack | Hierdoor zie je een overzicht van de stacks. |
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Typ `ssh IP-adresRaspberryPi:9000` in je browser. Dit zorgt dat je Portainer opent in je internetbrowser, zoals Chrome of Firefox. |
+| 2 | Klik op 'Stacks' in Portainer. Dit zorgt dat een nieuw menu opent. |
+| 3 | Klik in het menu op 'Stack'. Hierdoor zie je een lijst met verschillende stacks en wat ze doen. |
 ||
+
 
 ## Stap 2: De docker-compose.yml gegevens naar het klembord kopieren
 
 Je gaat de tekst uit het bestand "docker-compose.yml" kopiëren naar het klembord..
 
-|Stap        | Actie      | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | Klik op de link: [docker-compose.yml](#docker-compose.yml)| Hier staat de code die je nodig hebt. |
-| 2 | Selecteer alle tekst met je muis | Regels die beginnen met "#" zijn commentaarregels en hoef je niet te selecteren. |
-| 3 | Druk op `Ctrl-C` | Dit kopieert de tekst naar het klembord. |
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Klik op deze link: [docker-compose.yml](#docker-compose.yml)/ Daar staat de code die je moet hebben. |
+| 2 | Selecteer alle tekst met je muis. Regels die beginnen met "#" zijn notitieregels en hoef je niet te selecteren. |
+| 3 | Druk op `Ctrl-C`. Dit zet de tekst naar het klembord, zodat je het later gemakkelijk kunt plakken. |
 ||
 
 ## Stap 3: De docker-compose.yml in de stack plakken
 
 In deze stap ga je een pagina maken waarin je de gegevens van de stack vermeldt.
 
-|Stap        | Actie      | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | Klik op de knop `Add stack` |  |
-| 2 | Type `nodered` in het veld "Name"| Geef de stack een naam. |
-| 3 | Klik op de eerste regel in het veld "Web-editor" | Hier komt de tekst uit docker-compose.yml te staan. |
-| 5 | Druk op `Ctrl-V` | Plak de tekst van het klembord in het veld. |
-| 6 | Klik op de knop "Deploy the stack" | De knop staat helemaal onderaan de pagina. |
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Klik op de knop `Add stack` |
+| 2 | Type `nodered` in het veld "Name". De naam van de stack. |
+| 3 | Klik op de eerste regel in het veld "Web-editor". Hier moet de tekst uit docker-compose.yml komen te staan. |
+| 5 | Druk op `Ctrl-V`. Hiermee plak je de tekst van het klembord in het veld. |
+| 6 | Helemaal onderaan de pagina, klik op de knop "Deploy the stack".  |
 ||
 
 ## Samenvatting

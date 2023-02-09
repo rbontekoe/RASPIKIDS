@@ -42,15 +42,13 @@ Stap 4: Later WiFi instellen.
 
 Om een micro SD-kaartje te gebruiken in een Raspberry Pi 3B+, volg je deze stappen:
 
-1. Zoek de SD-kaartlezer op de Raspberry Pi. Dit is een kleine rechthoekige opening links in het midden van de Raspberry Pi.
-
-2. Neem het micro SD-kaartje en kijk naar beide kanten. Er zal op één kant tekst staan.
-
-3. Houd het kaartje met de kant met de tekst naar beneden gericht en stop het in de SD-kaartlezer.
-
-4. Duw het kaartje zachtjes in de kaartlezer totdat het op zijn plaats zit.
-
-5. Als je het kaartje wilt verwijderen, trek je het kaartje naar buiten.
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Zoek de SD-kaartlezer op de Raspberry Pi. Dit is een kleine rechthoekige opening links in het midden van de Raspberry Pi. |
+| 2 | Neem het micro SD-kaartje en kijk naar beide kanten. Er zal op één kant tekst staan. |
+| 3 | Houd het kaartje met de kant met de tekst naar beneden gericht en stop het in de SD-kaartlezer. |
+| 4 | Duw het kaartje zachtjes in de kaartlezer totdat het op zijn plaats zit. |
+| 5 | Als je het kaartje wilt verwijderen, trek je het kaartje naar buiten. |
 
 ## Stap 2 - Sluit de adapter voor de stroom aan op de Raspberry Pi
 

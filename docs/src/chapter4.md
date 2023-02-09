@@ -31,15 +31,14 @@ Met dit commando wordt een container gemaakt, die uitgevoerd wordt in de achterg
 
 Als we eenmaal Portainer hebben geinstalleerd kunnen we er ook containers mee installeren.
 
-|Stap        | Actie      | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | ssh ubuntu@<ip-adres Raspberry Pi> | Bijvoorbeeld: `ssh ubuntu@192.168.2.49`. |
-| 2 | sudo docker run -d -p 9000:9000 --name=portainer --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest | Installeren van Portainer. We gebruiken `--restart=unless-stopped` optie om de container eventueel te kunnen verwijderen, bij 'always' lukt dat namelijk niet.|
-| 3 | In webbrowser: http://<ip-adres Raspberry Pi>:9000 | Ga naar de web interface, bijvoorbeeld met `192.168.2.49:9000`. |
-| 4 | Geef een gebruikersnaam op: admin | Naam wel noteren voor later. |
-| 5 | En... een wachtwoord: ... | Mag jezelf bedenken... Wel noteren voor later. |
-| 6 | Klik in het rechtervlak op "stacks" |  |
-| 7 | Klik in het menu (links) op "containers" | Je krijgt een overzicht van alle containers die onder Docker draaien te zien. Nu is er nog maar één: 'portainer'. |
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Maak verbinding met je Raspberry Pi-computer door dit commando te typen: `ssh ubuntu@IP-adres Raspberry Pi`. Bijvoorbeeld: `ssh ubuntu@192.168.2.49`. |
+| 2 | Installeer iets genaamd Portainer door dit commando te typen: `sudo docker run -d -p 9000:9000 –name=portainer –restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest`. ``\\`` ``\\``We gebruiken de optie "--restart=unless-stopped" om Portainer weg te kunnen halen als we hem stoppen. Ga naar de Portainer website door `http://IP-adres Raspberry Pi:9000` in de adresbalk van je webbrowser te typen. Bijvoorbeeld: http://192.168.2.49:9000. |
+| 3 | Maak een account aan met gebruikersnaam "admin". Zorg dat je de gebruikersnaam opschrijft. |
+| 4 | Kies een wachtwoord, zorg dat je opschrijft. |
+| 5 | Klik op "stacks" in het rechter scherm. |
+| 6 | Klik op "containers" in het menu links en je krijgt een lijst te zien van alle containers die draaien onder Docker. Nu is er maar één: "portainer". |
 ||
 
 !!! info
