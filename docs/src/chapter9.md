@@ -97,6 +97,6 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 16 | Druk op de toets "Done". |
 | 17 | Dubbelklik op de derde "functie" en geef het de naam: "windsnelheid". |
 | 18 | Typ op de eerste regel: "return { payload : Math.floor((msg.payload.currentConditions.windspeed+5)/5) };" Hiermee converteren we de windsnelheid (m/sec) naar Beaufort. |
-| 20 | 
+|| 
 
 ## Samenvatting
