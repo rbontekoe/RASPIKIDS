@@ -29,19 +29,18 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 
 ## Stap 1 - Installeer het Imager programma op je computer
 
-- Ga naar [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/) en download het programma Imager.
-
-- Installeer het programma.
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Ga naar [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/) en download het programma Imager. |
+| 2 | Installeer het programma. |
+||
 
 ## Stap 2 - Maak het Micro SD kaartje klaar met Ubuntu Server
 
-- Kijk of je een **32 bit** of **64 bit** Raspberry Pi 3B+ Hebt.
-
-!!! info
-    Om te zien hoeveel "bits" je Raspberry Pi heeft, kun je het volgende doen:
-
-    Kijk op het printplaatje van je Raspberry Pi naar het modelnummer. Dit staat meestal naast de microprocessor.
-    Als het modelnummer eindigt op "v7", "v7l" of "v7b", betekent dit dat je Raspberry Pi een 32 bit processor heeft. Als het modelnummer eindigt op "v8" of "v8l", betekent dit dat je Raspberry Pi een 64 bit processor heeft.
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Kijk of je een **32 bit** of **64 bit** Raspberry Pi 3B+ Hebt. ``\\``Om te zien hoeveel "bits" je Raspberry Pi heeft, kun je het volgende doen:``\\``Kijk op het printplaatje van je Raspberry Pi naar het modelnummer. Dit staat meestal naast de microprocessor. Als het modelnummer eindigt op "v7", "v7l" of "v7b", betekent dit dat je Raspberry Pi een 32 bit processor heeft. Als het modelnummer eindigt op "v8" of "v8l", betekent dit dat je Raspberry Pi een 64 bit processor heeft. |
+||
 
 - Doe het Micro SD-kaartje in de kaarthouder.
 
