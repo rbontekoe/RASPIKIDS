@@ -5,9 +5,9 @@ Deze module geeft je een set nodes (knooppunten) in [Node-RED](https://flows.nod
 Je gaat een dashboard maken dat de volgende dingen laat zien:
 - Hoe warm het is en hoe vochtig de lucht in huis is.
 - Hoe de temperatuur buiten verandert.
-- Hoe hard de wind waait en in welke richting.
+- Hoe hard de wind waait en vanuit welke richting.
 
-![Node-RED](assets/fig_9_1.png) ![UI](assets/fig_9_2.png)
+![UI](assets/fig_9_2.png)
 
 ### Inhoud
 
@@ -46,7 +46,7 @@ Node-RED heeft al veel verschillende soorten knoppen, maar soms wil je iets extr
 ## Stap 2 - Het dashboard samenstellen
 
 Als je het adres `IP_adres_raspberry_pi:1880/ui` intypt in je web browser, kan je gegevens zien van de "dashboard module". We zullen verwijzen naar de MQTT broker met het onderwerp (topic) "temperatuur2".
-![UI](assets/fig_9_2.png).
+![UI](assets/fig_9_3.png).
 
 Volg deze stappen om het werk te doen:
  
@@ -54,7 +54,7 @@ Volg deze stappen om het werk te doen:
 |:---------- | :---------- |
 | 1 | Sleep de node "mqtt in" uit de groep "network" naar je werkblad. |
 | 2 | Sleep de node "gauge" uit de groep "dashboard" naar je werkblad en maak verbinding met "mqtt in". |
-| 3 | Dubbelklik op "mqtt in" en typ het adres van je Raspberry Pi in het vak "Server". Bijvoorbeeld: 192.168.2.49. |
+| 3 | Dubbelklik op "mqtt in" en typ het IP adres van je Raspberry Pi in het vak "Server". Bijvoorbeeld: 192.168.2.49. |
 | 4 | Typ in het vak "Topic" het woord `temperatuur2`. |
 | 5 | Typ in het vak "Name" de zin `Temp huiskamer`. |
 | 6 | Sleep de node "mqtt in" uit de groep "network" naar je werkblad. |
@@ -73,9 +73,30 @@ Volg deze stappen om het werk te doen:
 
 We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" heet. Hiervoor moeten we eerst een account maken op de website. Als we een account hebben, krijgen we een "API key". Dit is een soort code die we nodig hebben om de informatie op te halen. We hebben in onze les "Website bouwen met Node-RED" al geleerd hoe je met een API omgaat. We mogen de informatie gratis opvragen, maar we moeten er wel voor zorgen dat we niet te vaak op een dag informatie opvragen. Als we het opvragen van informatie onder de 1000 keer per dag houden, is het gratis. Ik vraag zelf de informatie elke 15 minuten op, dus ik vraag het in totaal 4 x 24 = 96 keer per dag op, dus veel minder dan het maximum.
 
+!!! info
+    Zorg dat je je persoonlijke "API key" klaar hebt liggen voordat je de steppen gaat uitvoeren.
+
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Sleep de nodes "timestamp", "http request", 3x functie en uit de groep dashboard "chart" en 3x "text". Confiugreer de nodes volgens onderstaand schema. ``\\``![schema](assets/fig_9_1.png) |
-| 2 | Stel de node "timestamp" in: ``\\``
+| 1 | Sleep de nodes "timestamp", "http request", 3x functie en uit de groep dashboard "chart" en 3x "text". Confiugreer de nodes volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
+| 2 | Dubbelkik op "timestamp" |
+| 3 | Klik op het keuzevakje "once after". |
+| 4 | Kies bij de Repeat groep voor: Interval. |
+| 5 | Type in het veld "every": 30. | 
+| 6 | Kies als eenheid: minutes. |
+| 7 | Klik op de toets Done. |
+| 7 | Dubbelklik op "http request". |
+| 8 | Type in het veld "URL": https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=JAPI_KEY&contentType=json,
+| 9 | Kies in het keuze veld "Return" voor: "a parsed JSON object".
+| 10 | Druk op de toets "Done". |
+| 11 | Dubbelklik op de eerste "functie" en geef het de naam: "get_actual_temp". |
+| 12 | Typ op de eerste regel: "return { payload : "msg.payload.currentConditions.conditions };". `conditions` is tekst die het type weer aangeeft. Bijvoorbeeld "overcast", wil zeggen dat het bewolkt is. |
+| 13 | Druk op de toets "Done". |
+| 14 | Dubbelklik op de tweede "functie" en geef het de naam: "windrichting". |
+| 15 | Typ op de eerste regel: "return { payload : msg.payload.currentConditions.temDe wip };". `tmp` is de buitentemperatuur. | 
+| 16 | Druk op de toets "Done". |
+| 17 | Dubbelklik op de derde "functie" en geef het de naam: "windsnelheid". |
+| 18 | Typ op de eerste regel: "return { payload : Math.floor((msg.payload.currentConditions.windspeed+5)/5) };" Hiermee converteren we de windsnelheid (m/sec) naar Beaufort. |
+| 20 | 
 
 ## Samenvatting
