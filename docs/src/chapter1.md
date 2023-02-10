@@ -23,11 +23,11 @@ Om een Micro SD kaartje te maken voor een Raspberry Pi 3B+, heb je het volgende 
 
 Om Ubuntu Server te installeren op je Raspberry Pi, volg je deze stappen:
 
-Stap 1: Installeer het Imager programma op je computer.
+Stap 1: Installeer het Raspberry Pi Imager programma op je computer.
 
 Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 
-## Stap 1 - Installeer het Imager programma op je computer
+## Stap 1 - Installeer het Raspberry Pi Imager programma op je computer
 
 |Stap        | Actie      |
 |:---------- | :---------- |
