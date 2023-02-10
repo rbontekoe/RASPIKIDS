@@ -31,10 +31,10 @@ We willen een programma op onze computer gebruiken dat 'Docker' heet. Op onze Ra
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Maak verbinding met je Raspberry Pi-computer door dit commando te typen: ssh ubuntu@<ip-adres Raspberry pi>. Je moet het internetadres van je Raspberry Pi weten, dus kijk in stap 3 van het vorige hoofdstuk om te zien hoe je dat kunt vinden. |
-| 2 | Zorg dat de softwarelijst up-to-date is door dit commando te typen: `sudo apt-get update`. |
-| 3 | Verwijder oudere versies van Docker door dit commando te typen: `sudo apt-get remove docker docker-engine docker.io`. |
-| 4 | Installeer Docker door dit commando te typen: `curl -sSL https://get.docker.com | sh`. |
+| 1 | Maak verbinding met je Raspberry Pi-computer door dit commando te typen: `ssh ubuntu@IP_adres_Raspberry_pi`. Je moet het internetadres van je Raspberry Pi weten, dus kijk in stap 3 van het vorige hoofdstuk om te zien hoe je dat kunt vinden. |
+| 2 | Zorg dat de softwarelijst up-to-date is door dit commando te typen: `sudo apt update`. |
+| 3 | Verwijder oudere versies van Docker door dit commando te typen: `sudo apt remove docker docker-engine docker.io`. |
+| 4 | Installeer Docker door dit commando te typen: `curl -sSL https://get.docker.com \| sh`. |
 | 5 | Maak zeker dat je computer weet dat jij mag werken met Docker door dit commando te typen: `sudo usermod -aG docker $USER`. |
 | 6 | Controleer de versie van [Docker Engine](https://docs.docker.com/engine/release-notes/) door dit commando te typen: `sudo docker version`. Het moet versie 20.10.22 of hoger zijn. |
 | 7 | Herstart je Raspberry Pi door dit commando te typen: `sudo reboot`. |
@@ -52,9 +52,9 @@ Windows Subsystem for Linux (WSL) is een tool waarmee je Linux-programma's op je
 
 ```
 # Open een WSL venster en tik het ssh commando in. Er wordt
-# de eerste keer gevraagd of je verder wilt gaan, tik 'yes' in. 
+# de eerste keer gevraagd of je verder wilt gaan, tik "yes" in. 
 # Daarna wordt er gevraagd om het wachtwoord van de Raspberry Pi.
-ssh ubuntu@<ipadres Raspberry Pi>
+ssh ubuntu@IP_adres_Raspberry_Pi
 ```
 
 !!! info
@@ -75,8 +75,10 @@ ssh ubuntu@<ipadres Raspberry Pi>
 Mac OS is een soort software die je computer laat werken, net zoals Linux. Er zijn veel dingen die hetzelfde zijn tussen Mac OS en Linux. Dit betekent dat je veel van dezelfde opdrachten kunt geven op een Mac als op Linux. Maar er zijn ook dingen die anders zijn tussen Mac OS en Linux, dus sommige opdrachten die je op een Linux computer kunt geven, werken niet op een Mac.
 
 ```
-# Open een terminal sessie met Ctrl+Alt-T en type:
-ssh ubuntu@<ipadres Raspberry Pi>
+# Open een terminal sessie met Ctrl+Alt-T.
+# de eerste keer gevraagd of je verder wilt gaan, tik "yes" in. 
+# Daarna wordt er gevraagd om het wachtwoord van de Raspberry Pi.
+ssh ubuntu@IP_adres_Raspberry_Pi
 
 # Test de connectie
 docker version
@@ -85,8 +87,10 @@ docker version
 ### Ubuntu (Linux)
 
 ```
-# Open een terminal sessie met Ctrl+Alt-T en type:
-ssh ubuntu@<ipadres Raspberry Pi>
+# Open een terminal sessie met Ctrl+Alt-T.
+# de eerste keer gevraagd of je verder wilt gaan, tik "yes" in. 
+# Daarna wordt er gevraagd om het wachtwoord van de Raspberry Pi.
+ssh ubuntu@IP_adres_Raspberry_Pi
 
 # Test de connectie
 docker version
