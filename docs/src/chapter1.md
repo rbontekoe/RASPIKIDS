@@ -43,7 +43,7 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 | 2 | Doe het Micro SD-kaartje in de kaarthouder. |
 | 3 | Doe de kaarthouder in je laptop. |
 | 4 | Start het programma Imager. ``\\``![fig_1_1](https://assets.raspberrypi.com/static/md-bfd602be71b2c1099b91877aed3b41f0.png) |
-| 5 | Druk op de knop **Choose OS**. |
+| 5 | Druk op de knop **CHOOSE OS**. |
 | 6 | Kies **Other general-purpose OS**. |
 | 7 | Kies **Ubuntu**. |
 | 8 | Kies **Ubuntu Server 22.04.1 LTS (32 bit** als je Raspberry Pi een 32 bit processor heeft, of **Ubuntu Server 22.04.1 LTS (64 bit)** als je Raspberry Pi een 64 bit processor heeft. |
@@ -64,7 +64,7 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 | 23 | Verander 'Time Zone' in `Europe/Amsterdam`. |
 | 24 | Druk op knop "SAVE". |
 | 25 | Nu zijn we klaar om Ubuntu op een Micro SD kaart te zetten. Dit programma zorgt ervoor dat onze computer werkt. |
-| 26 | Druk op de knop **Choose Storage**. |
+| 26 | Druk op de knop **CHOOSE STORAGE**. |
 | 27 | Kies **Internal SD card reader**. ``\\``Ubuntu Server wordt op je micro SD kaartje gezet. Als dat gebeurd is wordt het geheel nog een keer getest. |
 | 28 | Haal de kaarthouder met de Micro SD kaart uit je computer. |
 ||
