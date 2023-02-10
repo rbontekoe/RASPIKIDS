@@ -31,7 +31,7 @@ We willen een programma op onze computer gebruiken dat 'Docker' heet. Op onze Ra
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Maak verbinding met je Raspberry Pi-computer door dit commando te typen: `ssh ubuntu@IP_adres_Raspberry_pi`. Je moet het internetadres van je Raspberry Pi weten, dus kijk in stap 3 van het vorige hoofdstuk om te zien hoe je dat kunt vinden. |
+| 1 | Maak verbinding met je Raspberry Pi-computer door dit commando te typen: `ssh ubuntu@IP_adres_Raspberry_pi`. Je moet het internetadres van je Raspberry Pi weten, dus kijk in [stap 3 van het vorige hoofdstuk](chapter3/#Stap-3-Benader-de-Raspberry-Pi-vanuit-je-laptop) om te zien hoe je dat kunt vinden. |
 | 2 | Zorg dat de softwarelijst up-to-date is door dit commando te typen: `sudo apt update`. |
 | 3 | Verwijder oudere versies van Docker door dit commando te typen: `sudo apt remove docker docker-engine docker.io`. |
 | 4 | Installeer Docker door dit commando te typen: `curl -sSL https://get.docker.com \| sh`. |
