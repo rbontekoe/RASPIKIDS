@@ -39,58 +39,35 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Kijk of je een **32 bit** of **64 bit** Raspberry Pi 3B+ Hebt. ``\\``Om te zien hoeveel "bits" je Raspberry Pi heeft, kun je het volgende doen:``\\``Kijk op het printplaatje van je Raspberry Pi naar het modelnummer. Dit staat meestal naast de microprocessor. Als het modelnummer eindigt op "v7", "v7l" of "v7b", betekent dit dat je Raspberry Pi een 32 bit processor heeft. Als het modelnummer eindigt op "v8" of "v8l", betekent dit dat je Raspberry Pi een 64 bit processor heeft. |
+| 1 | Kijk of je een **32 bit** of **64 bit** Raspberry Pi 3B+ Hebt. ``\\``Om te zien hoeveel "bits" je Raspberry Pi heeft, kun je het volgende doen:``\\``Kijk op het printplaatje van je Raspberry Pi naar het modelnummer. Dit staat meestal naast de microprocessor. Als het modelnummer eindigt op "**v7**", "**v7l**" of "**v7b**", betekent dit dat je Raspberry Pi een 32 bit processor heeft. Als het modelnummer eindigt op "**v8**" of "**v8l**", betekent dit dat je Raspberry Pi een 64 bit processor heeft. |
+| 2 | Doe het Micro SD-kaartje in de kaarthouder. |
+| 3 | Doe de kaarthouder in je laptop. |
+| 4 | Start het programma Imager. ``\\``![fig_1_1](https://assets.raspberrypi.com/static/md-bfd602be71b2c1099b91877aed3b41f0.png) |
+| 5 | Druk op de knop **Choose OS**. |
+| 6 | Kies **Other general-purpose OS**. |
+| 7 | Kies **Ubuntu**. |
+| 8 | Kies **Ubuntu Server 22.04.1 LTS (32 bit** als je Raspberry Pi een 32 bit processor heeft, of **Ubuntu Server 22.04.1 LTS (64 bit)** als je Raspberry Pi een 64 bit processor heeft. |
+| 9 | We gaan naar een plek waar we kunnen veranderen hoe onze computer werkt. We komen daar door op een knop met een tandwiel erop te drukken. Daar kunnen we bijvoorbeeld WiFi istellen, de naam van onze computer veranderen en een wachtwoord instellen zodat we vanaf een andere plek op onze computer kunnen werken. ``\\``![fig_1_2](https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/3X/3/f/3f95678d7eef60678d413adff5a41836e4437b4c_2_690x448.png) |
+| 10 | Druk op de knop met het tandwiel (rechts onderin). |
+| 11 | Klik op het keuzevakje dat voor 'Set hostname' en verander de naam in 'ubuntu'. |
+| 12 | Klik op het keuzevakje dat voor 'SSH' staat. |
+| 13 | Klik op het keuzerondje 'Use password authentication'. |
+| 14 | Scrol verder naar beneden en klik op het keuzevakje 'Set username and password'. |
+| 15 | Verander de naam in: `ubuntu`. |
+| 16 | En geef een wachtwoord op. Noteer het wachtwoord op een papiertje voor het geval je het vergeet. |
+| 17 | Klik op het keuzevakje 'Configure wireless wan'. |
+| 18 | Verander de naam in de naam van je WiFi netwerk. |
+| 19 | Geef ook het wachtwoord op. |
+| 20 | Klik op het keuzevakje 'Show password' en controleer of het juist is. |
+| 21 | Verander de landcode in 'NL'. |
+| 22 | Klik op het keuzevakje 'Set local setting'. |
+| 23 | Verander 'Time Zone' in `Europe/Amsterdam`. |
+| 24 | Druk op knop "SAVE". |
+| 25 | Nu zijn we klaar om Ubuntu op een Micro SD kaart te zetten. Dit programma zorgt ervoor dat onze computer werkt. |
+| 26 | Druk op de knop **Choose Storage**. |
+| 27 | Kies **Internal SD card reader**. ``\\``Ubuntu Server wordt op je micro SD kaartje gezet. Als dat gebeurd is wordt het geheel nog een keer getest. |
+| 28 | Haal de kaarthouder met de Micro SD kaart uit je computer. |
 ||
-
-- Doe het Micro SD-kaartje in de kaarthouder.
-
-- Doe de kaarthouder in je laptop.
-
-- Start het programma Imager.
-
-```@raw html
-<img src="https://assets.raspberrypi.com/static/md-bfd602be71b2c1099b91877aed3b41f0.png" alt="MicroPython logo" width="400">
-```
-
-- Klik op de toets **Choose OS**.
-
-- Kies **Other general-purpose OS**.
-
-- Kies **Ubuntu**.
-
-- Kies **Ubuntu Server 22.04.1 LTS (32 bit** als je Raspberry Pi een 32 bit processor heeft, of **Ubuntu Server 22.04.1 LTS (64 bit)** als je Raspberry Pi een 64 bit processor heeft.
-
-```@raw html
-<img src="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/3X/3/f/3f95678d7eef60678d413adff5a41836e4437b4c_2_690x448.png" alt="MicroPython logo" width="400">
-```
-We gaan naar een plek waar we kunnen veranderen hoe onze computer werkt. We komen daar door op een knop met een tandwiel erop te drukken. Daar kunnen we bijvoorbeeld WiFi istellen, de naam van onze computer veranderen en een wachtwoord instellen zodat we vanaf een andere plek op onze computer kunnen werken.
-
-- Klik op de knop met het tandwiel.
-- Klik op het keuzevakje dat voor 'Set hostname' en verander de naam in 'ubuntu'.
-- Klik op het keuzevakje dat voor 'SSH' staat.
-- Klik op het keuzerondje 'Use password authentication'.
-
-- Scrol verder naar beneden en klik op het keuzevakje 'Set username and password'.
-- Verander de naam in: `ubuntu`
-- En geef een wachtwoord op. Noteer het wachtwoord op een papiertje voor het geval je het vergeet.
-
-- Klik op het keuzevakje 'Configure wireless wan'.
-- Verander de naam in de naam van je WiFi netwerk.
-- Geef ook het wachtwoord op.
-- Klik op het keuzevakje 'Show password' en controleer of het juist is.
-
-- Verander de landcode in 'NL'.
-- Klik op het keuzevakje 'Set local setting'.
-- Verander 'Time Zone' in `Europe/Amsterdam`.
-- Klik op de `SAVE' toets.
-
-Nu zijn we klaar om Ubuntu op een Micro SD kaart te zetten. Dit programma zorgt ervoor dat onze computer werkt.
-
-- Klik op de toets **Choose Storage**.
-
-- Kies **Internal SD card reader**. Ubuntu Server wordt op je micro SD kaartje gezet. Als dat gebeurd is wordt het geheel nog een keer getest.
-
-- Haal de kaarthouder met de Micro SD kaart uit je computer.
 
 ## Samenvatting
 
