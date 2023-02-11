@@ -89,14 +89,75 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 8 | Type in het veld "URL": `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=JOUW_API_KEY&contentType=json`.
 | 9 | Kies in het keuze veld "Return" voor: `a parsed JSON object`.
 | 10 | Druk op de toets "Done". |
-| 11 | Dubbelklik op de eerste "functie" en geef het de naam: `get_actual_temp`. |
-| 12 | Typ op de eerste regel: `return { payload : "msg.payload.currentConditions.conditions };`. "conditions" is tekst die het type weer aangeeft. Bijvoorbeeld "overcast", wil zeggen dat het bewolkt is. |
+| 11 | Dubbelklik op de eerste "functie" en geef het de naam: `get_actual_temp`. ``\\``![get_actual_temp](assets/fig_9_7.png) |
+| 12 | Typ op de eerste regel: `return { payload : "msg.payload.currentConditions.conditions };`. "conditions" is de tekst die het type weer aangeeft. Bijvoorbeeld "overcast", betekent dat het bewolkt is. |
 | 13 | Druk op de toets "Done". |
-| 14 | Dubbelklik op de tweede "functie" en geef het de naam: "windrichting". |
-| 15 | Typ op de eerste regel: "return { payload : msg.payload.currentConditions.temDe wip };". `tmp` is de buitentemperatuur. | 
+| 14 | Dubbelklik op de tweede "functie" en geef het de naam: "windrichting". ``\\``![windrichting](assets/fig_9_8.png) |
+| 15 | Kopieer de tekst uit ["Javascript code windrichting"](#Javascript-code-windrichting) naar het code blok.
 | 16 | Druk op de toets "Done". |
 | 17 | Dubbelklik op de derde "functie" en geef het de naam: "windsnelheid". |
-| 18 | Typ op de eerste regel: "return { payload : Math.floor((msg.payload.currentConditions.windspeed+5)/5) };" Hiermee converteren we de windsnelheid (m/sec) naar Beaufort. |
+| 18 | Kopieer de tekst uit [Javascript code windsnelheid in Beaufort](#javascript-code-windsnelheid-in-beaufort). Hiermee converteren we de windsnelheid (m/sec) naar Beaufort. De tabel vind je [hier](https://www.kuijntjes.nl/weer/windsnelheid.htm). |
 || 
+
+### Javascript code windrichting
+```
+let test = msg.payload.currentConditions.winddir;
+let result = '';
+
+if (test < 22.5 && test >= (360-22.5)) {
+    result = 'N';
+} else if (test >= 325-22.5 && test <= 325+22.5) {
+    result = 'NW';
+} else if (test >= 270-22.5 && test <= 270+22.5) {
+    result = 'W'
+} else if (test >= 225-22.5 && test <= 225+22.5) {
+    result = 'ZW';
+} else if (test >= 180-22.5 && test <= 180+22.5) {
+    result = 'Z';
+} else if (test >= 135-22.5 && test <= 135+22.5) {
+    result = 'ZO';
+} else if (test >=  90-22.5  && test <= 90+22.5) {
+    result = 'O';
+} else if (test >=  45-22.5  && test <= 45+22.5) {
+    result = 'NO';
+}
+
+return { payload : result };
+```
+
+### Javascript code windsnelheid in Beaufort
+```
+let test = msg.payload.currentConditions.winddir;
+let result = '';
+
+if (test <= 1) {
+    result = '0';
+} else if (test > 1 && test <= 5) {
+    result = '1';
+} else if (test > 5 && test <= 11) {
+    result = '2'
+} else if (test > 11 && test <= 19) {
+    result = '3';
+} else if (test > 19 && test <= 28) {
+    result = '4';
+} else if (test > 28 && test <= 38) {
+    result = '5';
+} else if (test > 38  && test <= 49) {
+    result = '6';
+} else if (test > 49  && test <= 61) {
+    result = '7';
+} else if (test > 61  && test <= 74) {
+    result = '8';
+} else if (test > 74  && test <= 88) {
+    result = '9';
+} else if (test > 88  && test <= 102) {
+    result = '10';
+} else if (test > 102  && test <= 117) {
+    result = '11';
+} else if (test > 117 ) {
+    result = '12';
+
+return { payload : result };
+```
 
 ## Samenvatting
