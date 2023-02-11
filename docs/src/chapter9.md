@@ -79,18 +79,18 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 |Stap        | Actie      |
 |:---------- | :---------- |
 | 1 | Sleep de nodes "timestamp", "http request", 3x functie en uit de groep dashboard "chart" en 3x "text". Confiugreer de nodes volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
-| 2 | Dubbelkik op "timestamp" |
-| 3 | Klik op het keuzevakje "once after". |
-| 4 | Kies bij de Repeat groep voor: Interval. |
-| 5 | Type in het veld "every": 30. | 
-| 6 | Kies als eenheid: minutes. |
-| 7 | Klik op de toets Done. |
-| 7 | Dubbelklik op "http request". |
-| 8 | Type in het veld "URL": https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=JAPI_KEY&contentType=json,
-| 9 | Kies in het keuze veld "Return" voor: "a parsed JSON object".
+| 2 | Dubbelkik op "timestamp" ``\\``![fig_9_5 timestamp](assets/fig_9_5.png)|
+| 3 | Klik op het keuzevakje `once after`. |
+| 4 | Kies bij de Repeat groep voor: `interval`. |
+| 5 | Type in het veld "every": `30`. | 
+| 6 | Kies als eenheid: `minutes`. |
+| 7 | Druk op de toets "Done". |
+| 7 | Dubbelklik op "http request". ``\\``![fig_9_6 visual crossing](assets/fig_9_6.png)|
+| 8 | Type in het veld "URL": `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=JOUW_API_KEY&contentType=json`.
+| 9 | Kies in het keuze veld "Return" voor: `a parsed JSON object`.
 | 10 | Druk op de toets "Done". |
-| 11 | Dubbelklik op de eerste "functie" en geef het de naam: "get_actual_temp". |
-| 12 | Typ op de eerste regel: "return { payload : "msg.payload.currentConditions.conditions };". `conditions` is tekst die het type weer aangeeft. Bijvoorbeeld "overcast", wil zeggen dat het bewolkt is. |
+| 11 | Dubbelklik op de eerste "functie" en geef het de naam: `get_actual_temp`. |
+| 12 | Typ op de eerste regel: `return { payload : "msg.payload.currentConditions.conditions };`. "conditions" is tekst die het type weer aangeeft. Bijvoorbeeld "overcast", wil zeggen dat het bewolkt is. |
 | 13 | Druk op de toets "Done". |
 | 14 | Dubbelklik op de tweede "functie" en geef het de naam: "windrichting". |
 | 15 | Typ op de eerste regel: "return { payload : msg.payload.currentConditions.temDe wip };". `tmp` is de buitentemperatuur. | 
