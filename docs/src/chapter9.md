@@ -78,7 +78,7 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Sleep de nodes "timestamp", "http request", debug, 3x functie en uit de groep dashboard "chart" en 3x "text". Confiugreer de nodes volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
+| 1 | Sleep de nodes "timestamp", "http request", "debug", 3x "function" en uit de groep dashboard "chart" en 3x "text". Confiugreer de nodes volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
 | 2 | Dubbelkik op "timestamp" ``\\``![fig_9_5 timestamp](assets/fig_9_5.png)|
 | 3 | Klik op het keuzevakje `once after`. |
 | 4 | Kies bij de Repeat groep voor: `interval`. |
@@ -86,79 +86,83 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 6 | Kies als eenheid: `minutes`. |
 | 7 | Druk op de toets "Done". |
 | 7 | Dubbelklik op "http request". ``\\``![fig_9_6 visual crossing](assets/fig_9_6.png)|
-| 8 | Type in het veld "URL": `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=JOUW_API_KEY&contentType=json`.
+| 8 | Type in het veld "URL": https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=**JOUW\_API\_KEY**&contentType=json
 | 9 | Kies in het keuze veld "Return" voor: `a parsed JSON object`.
 | 10 | Druk op de toets "Done". |
-| 11 | Debug geef een JSON object zodra je op het meest linkse grijze vierkantje klikt van timestamp. Een groep is "currentConditions. Dit zijn de gegevens die we willen gebruiken op het dashboard. Je krijgt ze te zien als je in het venster geheel rechts kies voor de tab "Debug messages". ``\\``![fig_9_16](assets/fig_9_16.png) |
-| 12 | Dubbelklik op de eerste "functie" en geef het de naam: `get_actual_temp`. ``\\``![get_actual_temp](assets/fig_9_7.png) |
-| 13 | Typ op de eerste regel: `return { payload : "msg.payload.currentConditions.temp };`. "temp" is de temperatuur. ``\\``Een payload is een belangrijk onderdeel van computers en technologie. Het is een term die gebruikt wordt om iets te beschrijven dat wordt verstuurd via internet, een computer-netwerk of in ons geval in de flow. Denk bijvoorbeeld aan het versturen van een e-mail naar iemand. De boodschap die je verstuurt, bijvoorbeeld je tekst en eventuele afbeeldingen, is de payload. Het wordt verzonden via het internet naar de ontvanger, zoals jij wilt dat het wordt ontvangen. ``\\``Met "msg.payload" wordt verwezen naar het bericht wat Visual Crossing verzendt. Het vervolg ".currentConditions.temp" verwijst naar de buitentemperatuur. ``\\``![fig_9_17](assets/fig_9_17.png) |
+| 11 | Debug ontvangt van de node "visualcrossing" een JSON object zodra je op het meest linkse grijze vierkantje klikt van timestamp. Een subgroep is "currentConditions". Dit bevat de gegevens die we willen gebruiken op het dashboard. Je krijgt ze te zien als je in het venster geheel rechts kies voor de tweede tab van rechts "Debug messages". ``\\``![fig_9_16](assets/fig_9_16.png)``\\``*Klik op het driehoekjes om het volledige JSON object te bekijken.*|
+| 12 | Dubbelklik op de eerste "functie" en geef het de naam: `buitentemp`. ``\\``![get_actual_temp](assets/fig_9_7.png) ``\\``*Wat je hier ziet is JavaScript code. Elke uitdukking eindigt met een ";". Iets ingesloten door accolades {...} verwijst naar een JSON-object.* |
+| 13 | Typ op de eerste regel: `return { payload : "msg.payload.currentConditions.temp };`. "temp" is de buitentemperatuur. ``\\``Een payload is een belangrijk onderdeel van computers en technologie. Het is een term die gebruikt wordt om iets te beschrijven dat wordt verstuurd via internet, een computer-netwerk of in ons geval in een Node-RED flow. Denk bijvoorbeeld aan het versturen van een e-mail naar iemand. De boodschap die je verstuurt, bijvoorbeeld je tekst en eventuele afbeeldingen, is de payload. Het wordt verzonden via het internet naar de ontvanger, zoals jij wilt dat het wordt ontvangen. ``\\``Met "msg.payload" wordt verwezen naar het bericht wat Visual Crossing verzendt. Het vervolg ".currentConditions.temp" verwijst naar de buitentemperatuur. ``\\``![fig_9_17](assets/fig_9_17.png) |
 | 14 | Druk op de toets "Done". |
 | 15 | Dubbelklik op de tweede "functie" en geef het de naam: "windrichting". ``\\``![windrichting](assets/fig_9_8.png) |
 | 16 | Kopieer de tekst uit ["Javascript code windrichting"](#Javascript-code-windrichting) naar het code blok.
 | 17 | Druk op de toets "Done". |
-| 18 | Dubbelklik op de derde "functie" en geef het de naam: "windsnelheid". |
-| 19 | Kopieer de tekst uit [Javascript code windsnelheid in Beaufort](#Javascript-code-windsnelheid-in-Beaufort). Hiermee converteren we de windsnelheid (km/uur) naar Beaufort. De tabel vind je [hier](https://www.kuijntjes.nl/weer/windsnelheid.htm). |
+| 18 | Dubbelklik op de derde "functie" en geef het de naam: "windsnelheid".  ``\\``![fig_9_9](assets/fig_9_9.png)| |
+| 19 | Kopieer de tekst uit [Javascript code windsnelheid in Beaufort](#Javascript-code-windsnelheid-in-Beaufort). Hiermee converteren we de windsnelheid (km/uur) naar Beaufort. De tabel vind je [hier](https://www.kuijntjes.nl/weer/windsnelheid.htm).
+| 20 | Druk op de toets "Done". |
+| 21 | Druk op de knop "Deploy". |
+| 22 | Druk op de laatste tab rechts en kies voor "Dashboard". ``\\``![fig_9_18](asserts/fig_9_18.png)
 || 
 
 ### Javascript code windrichting
 ```
 let test = msg.payload.currentConditions.winddir;
-let result = '';
+let windrichting = '';
 
 if (test < 22.5 && test >= (360-22.5)) {
-    result = 'N';
+    windrichting = 'N';
 } else if (test >= 325-22.5 && test <= 325+22.5) {
-    result = 'NW';
+    windrichting = 'NW';
 } else if (test >= 270-22.5 && test <= 270+22.5) {
-    result = 'W'
+    windrichting = 'W'
 } else if (test >= 225-22.5 && test <= 225+22.5) {
-    result = 'ZW';
+    windrichting = 'ZW';
 } else if (test >= 180-22.5 && test <= 180+22.5) {
-    result = 'Z';
+    windrichting = 'Z';
 } else if (test >= 135-22.5 && test <= 135+22.5) {
-    result = 'ZO';
+    windrichting = 'ZO';
 } else if (test >=  90-22.5  && test <= 90+22.5) {
-    result = 'O';
+    windrichting = 'O';
 } else if (test >=  45-22.5  && test <= 45+22.5) {
-    result = 'NO';
+    windrichting = 'NO';
 }
 
-return { payload : result };
+return { payload : windrichting };
 ```
 
 ### Javascript code windsnelheid in Beaufort
 ```
 let test = msg.payload.currentConditions.winddir;
-let result = '';
+let windsnelheid = '';
 
 if (test <= 1) {
-    result = '0';
+    windsnelheid = '0';
 } else if (test > 1 && test <= 5) {
-    result = '1';
+    windsnelheid = '1';
 } else if (test > 5 && test <= 11) {
-    result = '2'
+    windsnelheid = '2'
 } else if (test > 11 && test <= 19) {
-    result = '3';
+    windsnelheid = '3';
 } else if (test > 19 && test <= 28) {
-    result = '4';
+    windsnelheid = '4';
 } else if (test > 28 && test <= 38) {
-    result = '5';
+    windsnelheid = '5';
 } else if (test > 38  && test <= 49) {
-    result = '6';
+    windsnelheid = '6';
 } else if (test > 49  && test <= 61) {
-    result = '7';
+    windsnelheid = '7';
 } else if (test > 61  && test <= 74) {
-    result = '8';
+    windsnelheid = '8';
 } else if (test > 74  && test <= 88) {
-    result = '9';
+    windsnelheid = '9';
 } else if (test > 88  && test <= 102) {
-    result = '10';
+    windsnelheid = '10';
 } else if (test > 102  && test <= 117) {
-    result = '11';
+    windsnelheid = '11';
 } else if (test > 117 ) {
-    result = '12';
+    windsnelheid = '12';
+}
 
-return { payload : result };
+return { payload : windsnelheid };
 ```
 
 ## Samenvatting
