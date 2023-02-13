@@ -91,13 +91,13 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 10 | Druk op de toets "Done". |
 | 11 | Debug geef een JSON object zodra je op het meest linkse grijze vierkantje klikt van timestamp. Een groep is "currentConditions. Dit zijn de gegevens die we willen gebruiken op het dashboard. Je krijgt ze te zien als je in het venster geheel rechts kies voor de tab "Debug messages". ``\\``![fig_9_16](assets/fig_9_16.png) |
 | 12 | Dubbelklik op de eerste "functie" en geef het de naam: `get_actual_temp`. ``\\``![get_actual_temp](assets/fig_9_7.png) |
-| 13 | Typ op de eerste regel: `return { payload : "msg.payload.currentConditions.temp };`. "temp" is de de temperatuur. ``\\``Een payload is een belangrijk onderdeel van computers en technologie. Het is een term die gebruikt wordt om iets te beschrijven dat wordt verstuurd via internet of een computer-netwerk. Denk bijvoorbeeld aan het versturen van een e-mail naar iemand. De boodschap die je verstuurt, bijvoorbeeld je tekst en eventuele afbeeldingen, is de payload. Het wordt verzonden via het internet naar de ontvanger, zoals jij wilt dat het wordt ontvangen. Met "msg.payload" wordt verwezen naar het bericht wat Visual Crossing verzend. Het vervolg ".currentConditions.temp" verwijs naar de buitentemperatuur waar we in geinteresseerd zijn. ``\\``![fig_9_17](assets/fig_9_17.png) |
+| 13 | Typ op de eerste regel: `return { payload : "msg.payload.currentConditions.temp };`. "temp" is de temperatuur. ``\\``Een payload is een belangrijk onderdeel van computers en technologie. Het is een term die gebruikt wordt om iets te beschrijven dat wordt verstuurd via internet, een computer-netwerk of in ons geval in de flow. Denk bijvoorbeeld aan het versturen van een e-mail naar iemand. De boodschap die je verstuurt, bijvoorbeeld je tekst en eventuele afbeeldingen, is de payload. Het wordt verzonden via het internet naar de ontvanger, zoals jij wilt dat het wordt ontvangen. ``\\``Met "msg.payload" wordt verwezen naar het bericht wat Visual Crossing verzendt. Het vervolg ".currentConditions.temp" verwijst naar de buitentemperatuur. ``\\``![fig_9_17](assets/fig_9_17.png) |
 | 14 | Druk op de toets "Done". |
 | 15 | Dubbelklik op de tweede "functie" en geef het de naam: "windrichting". ``\\``![windrichting](assets/fig_9_8.png) |
 | 16 | Kopieer de tekst uit ["Javascript code windrichting"](#Javascript-code-windrichting) naar het code blok.
 | 17 | Druk op de toets "Done". |
 | 18 | Dubbelklik op de derde "functie" en geef het de naam: "windsnelheid". |
-| 19 | Kopieer de tekst uit [Javascript code windsnelheid in Beaufort](#javascript-code-windsnelheid-in-beaufort). Hiermee converteren we de windsnelheid (m/sec) naar Beaufort. De tabel vind je [hier](https://www.kuijntjes.nl/weer/windsnelheid.htm). |
+| 19 | Kopieer de tekst uit [Javascript code windsnelheid in Beaufort](#Javascript-code-windsnelheid-in-Beaufort). Hiermee converteren we de windsnelheid (km/uur) naar Beaufort. De tabel vind je [hier](https://www.kuijntjes.nl/weer/windsnelheid.htm). |
 || 
 
 ### Javascript code windrichting
