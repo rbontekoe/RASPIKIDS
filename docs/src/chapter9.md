@@ -100,7 +100,8 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 19 | Kopieer de tekst uit [Javascript code windsnelheid in Beaufort](#Javascript-code-windsnelheid-in-Beaufort). Hiermee converteren we de windsnelheid (km/uur) naar Beaufort. De tabel vind je [hier](https://www.kuijntjes.nl/weer/windsnelheid.htm).
 | 20 | Druk op de toets "Done". |
 | 21 | Druk op de knop "Deploy". |
-| 22 | Druk op de laatste tab rechts en kies voor "Dashboard". ``\\``![fig_9_18](asserts/fig_9_18.png)
+| 22 | Druk op de laatste tab rechts en kies voor "Dashboard". ``\\``![fig_9_18](assets/fig_9_18.png) |
+| 23 | Klik in de groep "Tab & Links" op de tab "+tab". ``\\``![fig_9_19](assets/fig_9_19.png) |
 || 
 
 ### Javascript code windrichting
