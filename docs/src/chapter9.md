@@ -107,8 +107,9 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 26 | Druk op de toets "Update". |
 | 27 | Klik op de tab en je ziet alle Dashboard items. ``\\``![fig_9_21](assets/fig_9_20.png) |
 | 28 | Verschuif de items in de volgorde zoals je ze wilt zien. |
-| 29 | Ga naar IP_adres_raspberry_pi:1880\ui om het resultaat te bekijken. ``\\``![fig_9_2](assets/fig_9_2.png) |
-|| 
+||
+
+Ga naar `IP_adres_raspberry_pi:1880/ui` om het resultaat te bekijken. ``\\``![fig_9_21](assets/fig_9_2.png)
 
 ### Javascript code windrichting
 ```
