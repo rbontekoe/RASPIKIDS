@@ -2,6 +2,10 @@
 
 ## 2023 
 
+## 14-02-2023
+
+In de les "Node-RED dashboard programma maken" is klaar. Je leert hoe je een dashboard opzet met Node-RED.
+
 ### 07-02-2023
 
 De les "Temperatuur meten" is klaar. Ik wil de hele les nog een keer testen en kijken of het goed is.

@@ -32,7 +32,7 @@ Stap 3: Weergegevens ophalen en op dashboard weergeven.
 
 ## Stap 1 - De Node-RED Dashboard module downloaden
 
-Node-RED heeft al veel verschillende soorten knoppen, maar soms wil je iets extra's. Dat kan door het toevoegen van nieuwe knoppen. Een populaire toevoeging is de [dashboard](https://flows.nodered.org/node/node-red-dashboard) module. Deze module bestaat uit verschillende knoppen die speciaal zijn gemaakt voor het maken van dashboards. Bijvoorbeeld, er is een knop voor het laten zien van een gegeven in een meter of gegevens in een grafiek. Ook is er een knop voor het laten zien van gegevens als tekst. De module moet je toevoegen, het wordt namelijk niet standaard meegeleverd:
+Node-RED heeft al veel verschillende soorten nodes, maar soms wil je iets extra's. Dat kan door het toevoegen van nieuwe nodes. Een populaire toevoeging is de [dashboard](https://flows.nodered.org/node/node-red-dashboard) module. Deze module bestaat uit verschillende nodes die speciaal zijn gemaakt voor het maken van dashboards. Bijvoorbeeld, er is een node voor het laten zien van een gegeven in een meter of gegevens in een grafiek. Ook is er een node voor het laten zien van gegevens als tekst. De module moet je toevoegen, het wordt namelijk niet standaard meegeleverd:
 
 |Stap        | Actie      |
 |:---------- | :---------- |
@@ -52,20 +52,20 @@ Volg deze stappen om het werk te doen:
  
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Sleep de node "mqtt in" uit de groep "network" naar je werkblad. |
-| 2 | Sleep de node "gauge" uit de groep "dashboard" naar je werkblad en maak verbinding met "mqtt in". |
-| 3 | Dubbelklik op "mqtt in" en typ het IP adres van je Raspberry Pi in het vak "Server". Bijvoorbeeld: 192.168.2.49. |
-| 4 | Typ in het vak "Topic" het woord `temperatuur2`. |
-| 5 | Typ in het vak "Name" de zin `Temp huiskamer`. |
-| 6 | Sleep de node "mqtt in" uit de groep "network" naar je werkblad. |
-| 7 | Sleep de node "text" uit de groep "dashboard" naar je werkblad en maak verbinding met "mqtt in". |
-| 8 | Dubbelklik op "mqtt in" en typ het adres van je Raspberry Pi in het vak "Server". Bijvoorbeeld: 192.168.2.49. |
-| 9 | Typ in het vak "Topic" het woord `humidity2`. |
-| 10 | Typ in het vak "Name" de zin `Hum huiskamer`. |
+| 1 | Pak de "mqtt in", "gauge" en "text" nodes en zet ze op je werkblad. |
+| 2 | Verbind de "mqtt in" node met de "gauge" en de "text" node. |
+| 3 | Dubbelklik op "mqtt in" en typ het IP adres van je Raspberry Pi in het vak "Server". Het poortnummer "1883" wordt automatisch toegevoegd. ``\\``![fig_9_22](assets/fig_9_22.png) |
+| 4 | Typ `temperature2` in het "Topic" vak van de "mqtt in" node. |
+| 5 | Typ `Temp huiskamer` in het "Label" vak van de "gauge" node. ``\\``![fig_9_22](assets/fig_9_23.png)|
+| 6 | Pak opnieuw een "mqtt in" en "text" nodes en zet ze op je werkblad. |
+| 7 | Verbind de "mqtt in" blok met de "text" blok. |
+| 8 | Typ het IP adres van je Raspberry Pi in het "Server" vak van de "mqtt in" node. |
+| 9 | Typ `humidity2` in het "Topic" vak van de "mqtt in" blok. |
+| 10 | Typ `Hum huiskamer` in het "Name" vak van de "text" blok. |
 | 11 | Dubbelklik op "Text" en typ in het vak "Value format" `{{msg.payload}} %`. |
-| 12 | Kies bij "Layout" voor het vierde voorbeeld. |
-| 13 | Klik op de knop "Deploy" om de code te maken. |  
-| 14 | Typ in de adresbalk van je browser `IP_adres_raspberry_pi:1880/ui` en druk op Enter. |
+| 12 | Kies het vierde voorbeeld bij "Layout". ``\\``![fig_9_24](assets/fig_9_24.png) |
+| 13 | Klik op de "Deploy" knop om alles in te stellen. |  
+| 14 | Typ `IP_adres_raspberry_pi:1880/ui` in de adresbalk van je browser en druk op Enter om de informatie te zien. ``\\``![fig_9_22](assets/fig_9_25.png) |
 ||
 
 
