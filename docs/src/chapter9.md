@@ -102,6 +102,12 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 21 | Druk op de knop "Deploy". |
 | 22 | Druk op de laatste tab rechts en kies voor "Dashboard". ``\\``![fig_9_18](assets/fig_9_18.png) |
 | 23 | Klik in de groep "Tab & Links" op de tab "+tab". ``\\``![fig_9_19](assets/fig_9_19.png) |
+| 24 | Druk op de "edit" knop om de tab te openen. ``\\``![fig_9_20](assets/fig_9_21.png) |
+| 25 | Verander de naam van de tab in: "Cursus". |
+| 26 | Druk op de toets "Update". |
+| 27 | Klik op de tab en je ziet alle Dashboard items. ``\\``![fig_9_21](assets/fig_9_20.png) |
+| 28 | Verschuif de items in de volgorde zoals je ze wilt zien. |
+| 29 | Ga naar "IP_adres_raspberry_pi:1880\ui" om het resultaat te bekijken. ``\\``![fig_9_2](assets/fig_9_2.png) |
 || 
 
 ### Javascript code windrichting
@@ -129,6 +135,13 @@ if (test < 22.5 && test >= (360-22.5)) {
 
 return { payload : windrichting };
 ```
+
+Deze code doet net alsof het een windwijzer is. Het krijgt een nummer dat vertelt waar de wind vandaan komt en geeft dan een letter die past bij die richting.
+
+Bijvoorbeeld, als de wind uit het noorden komt, zal de code de letter "N" teruggeven.
+
+De code bekijkt het nummer om te zien welke richting het dichtstbij ligt en kiest dan de letter voor die richting. Tot slot geeft het de letter terug, zodat we die ergens anders kunnen gebruiken.
+
 
 ### Javascript code windsnelheid in Beaufort
 ```
@@ -166,4 +179,14 @@ if (test <= 1) {
 return { payload : windsnelheid };
 ```
 
+Deze code laat zien hoe hard de wind waait. Het krijgt een nummer dat vertelt hoe de wind waait in km/uur en geeft dan een cijfer dat past bij de kracht van de wind uitgedrukt in Beaufort.
+
+Bijvoorbeeld, als de wind heel zachtjes waait, zal de code het cijfer "0" teruggeven. "0" beteket windstil. Als de wind heel hard waait, kan het het cijfer "12" teruggeven. "12" betekent orkaankracht. 
+
+Tot slot geeft het dat cijfer terug, zodat we dat ergens anders kunnen gebruiken.
+
+Hoe hard de wind waait heb ik bepaald met de gegevens uit deze [tabel](https://www.kuijntjes.nl/weer/windsnelheid.htm). 
+
 ## Samenvatting
+
+Met Node-RED Dashboard module kun je een dashboard maken om live data te visualiseren. Het dashboard kan informatie over de temperatuur, vochtigheid en windrichting binnen en buiten tonen. Om dit te doen, heb je een Raspberry Pi 3B+ met Ubuntu Server 22.04 nodig, evenals geïnstalleerde Docker, Portainer, Node-RED en MQTT broker. Je hebt ook een ESP8266 met een DHT22-sensor nodig die gegevens naar de MQTT broker stuurt. Om het dashboard te maken, download je de Node-RED Dashboard module en stel je vervolgens het dashboard samen door de mqtt in- en gauge-nodes te slepen, de IP-adressen van de Raspberry Pi in te voeren en de juiste gegevens en namen in te voeren. Je kunt ook weergegevens van Visual Crossing ophalen met een API-sleutel en de informatie visualiseren.
