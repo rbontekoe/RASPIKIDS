@@ -1,10 +1,14 @@
 # Blog
 
-## 2023 
+## 2023
 
-## 14-02-2023
+### 15-02-2023
 
-In de les "Node-RED dashboard programma maken" is klaar. Je leert hoe je een dashboard opzet met Node-RED.
+De les "Domoticz installeren" is klaar. In de hierop volgende lessen leer je hoe je Domoticz instelt voor je Slimme Meter.
+
+### 14-02-2023
+
+De les "Node-RED dashboard programma maken" is klaar. Je leert hoe je een dashboard opzet met Node-RED.
 
 ### 07-02-2023
 
