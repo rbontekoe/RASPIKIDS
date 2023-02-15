@@ -181,7 +181,7 @@ Als er tijdens het verzenden van gegevens een fout optreedt, zal de code probere
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Verbind de DHT22 in de ESP8266. En sluit de ESP8266 aan op de laptop. ``\\``![DHT22-ESP8266](assets/fig_8_10.png) |
+| 1 | Verbind de DHT22 met de ESP8266. En sluit de ESP8266 aan op de laptop. ``\\``![DHT22-ESP8266](assets/fig_8_10.png) |
 | 2 | Open Thonny. Als het programma aanstaat, klik dan eventueel op het "Stop" symbool in het menu. |
 | 3 | Ga naar de map "dht22" en kies `boot.py`. |
 | 4 | Kies via het menu "File > Save as...". Er verschijnt dan een pop-up met "Where to save to".``\\``![Where to save to?](assets/fig_8_7.png) |
