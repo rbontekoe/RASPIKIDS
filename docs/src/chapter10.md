@@ -22,7 +22,7 @@ Pages = ["chapter10.md"]
 
 ### Stap 1 - Je computer met SSH verbinden met de Raspberry Pi
 
-Verbind je compoter met de Raspberry Pi en log in.
+Verbind je computer met de Raspberry Pi en log in.
 ```
 ssh ubuntu@<ip-adres van de Raspberry Pi>
 ```
