@@ -32,15 +32,15 @@ Stap 3: Weergegevens ophalen en op dashboard weergeven.
 
 ## Stap 1 - De Node-RED Dashboard module downloaden
 
-Node-RED heeft al veel verschillende soorten nodes, maar soms wil je iets extra's. Dat kan door het toevoegen van nieuwe nodes. Een populaire toevoeging is de [dashboard](https://flows.nodered.org/node/node-red-dashboard) module. Deze module bestaat uit verschillende nodes die speciaal zijn gemaakt voor het maken van dashboards. Bijvoorbeeld, er is een node voor het laten zien van een gegeven in een meter of gegevens in een grafiek. Ook is er een node voor het laten zien van gegevens als tekst. De module moet je toevoegen, het wordt namelijk niet standaard meegeleverd:
+Node-RED heeft al veel verschillende onderdelen (nodes) om te gebruiken, maar soms wil je nog meer. Dan kun je nieuwe onderdelen toevoegen. Een handige toevoeging is de [dashboard](https://flows.nodered.org/node/node-red-dashboard) module. Deze module bestaat uit verschillende onderdelen die speciaal zijn gemaakt om een dashboard te maken. Bijvoorbeeld, er is een onderdeel om een metertje te maken of om gegevens in een grafiek te laten zien. Ook is er een onderdeel om gegevens als tekst weer te geven. Je moet de module wel zelf toevoegen, want het zit niet automatisch al in Node-RED.
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Klik op het menu in de rechter bovenhoek en ga naar "Manage Palette". |
-| 2 | Zoek in de zoekbalk naar "node-red-dashboard" en klik op het resultaat. |
-| 3 | Klik op de witte knop "Install" om de dashboard nodes te installeren. |
-| 4 | Je krijgt een melding. Klik op de rode knop met "Install" om de dashboard nodes te installeren. |
-| 5 | Na het installeren kun je de dashboard nodes vinden in het linkermenu onder de categorie "dashboard". |
+| 1 | Als je naar "Manage Palette" wilt gaan, kun je op het menu klikken dat in de rechterbovenhoek van het scherm staat. Of je kunt de toetsen Shift+Alt+P indrukken. |
+| 2 | Ga naar de "Instal" tab en zoek naar "node-red-dashboard" in de zoekbalk.  |
+| 3 | Als je de dashboard onderdelen wilt krijgen, moet je op de witte knop met "Install" erop klikken. ``\\``![fig_9_22](assets/fig_9_28.png) |
+| 4 | Je ziet een berichtje op je scherm. Druk op de rode knop waar "Install" op staat om de dashboard onderdelen te krijgen. ``\\``![fig_9_22](assets/fig_9_27.png) |
+| 5 | Als je de dashboard onderdelen hebt geïnstalleerd, kun je ze vinden in het linkermenu onder het kopje "dashboard". |
 ||
 
 ## Stap 2 - Het dashboard samenstellen
