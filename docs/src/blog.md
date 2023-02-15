@@ -4,7 +4,9 @@
 
 ### 15-02-2023
 
-De les "Domoticz installeren" is klaar. In de hierop volgende lessen leer je hoe je Domoticz instelt voor je Slimme Meter.
+Goed nieuws! We hebben de les "Domoticz installeren" afgerond. In de volgende lessen gaan we leren hoe we Domoticz kunnen gebruiken met je Slimme Meter.
+
+En er is nog meer goed nieuws! We hebben ook de les "Slimme meter aansluiten" afgerond. Ik heb zelfs een paar nieuwe schermen toegevoegd van Domoticz.
 
 ### 14-02-2023
 

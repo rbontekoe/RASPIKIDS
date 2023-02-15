@@ -34,11 +34,13 @@ Sluit de voeding aan op de Raspery Pi en steek de voeding in het stopcontact.
 
 Even wachten totdat de Raspberry Pi is opgestart en steek vervolgens de andere kant van de P1 kabel in de Slimme Meter.
 
-Ga naar je internet browser en typ <ip-adres van de Raspberry Pi>:8081.
+Ga naar je internet browser en typ `IP-adres_Raspberry_Pi:8081`.
 
 Klik op het tabblad **Setup** en kies **Hardware**.
 
 Maak dan een P1 verbinding met de volgende informatie:
+
+![fig_11_1](assets/fig_11_1.png)
 
 - Enabled schakelaar: Aan (=groen)
 - Naam: p1
@@ -55,6 +57,8 @@ Druk op de toets **Add**.
 ### Stap 4 - Maak een device aan voor power en voor gas
 
 Kies op de **Setup** tab voor **Devices**.
+
+![fig_11_1](assets/fig_11_2.png)
 
 Activeer **Power** en **Gas** door op het groene pijltje naar rechts te klikken.
 
