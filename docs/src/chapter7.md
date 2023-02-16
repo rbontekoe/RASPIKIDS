@@ -54,7 +54,7 @@ Deze configuratie maakt gebruik van de officiële Eclipse Mosquitto Docker-afbee
 | 3 | Zoek in de browser naar "stacks" en klik erop. Hierdoor opent het menu. ``\\``![fig_7_1](assets/fig_7_1.png)|
 | 4 | Klik in het menu op "Stacks" om een overzicht te zien. ``\\``![fig_7_2](assets/fig_7_2.png) |
 | 5 | Klik op de knop "Add Stack". ``\\``![fig_7_3](assets/fig_7_3.png) |
-| 6 | Geef de Stack een naam door `mosquittto` in het veld "Name" te typen.| 
+| 6 | Geef de Stack een naam door `mosquitto` in het veld "Name" te typen.| 
 | 7 | Klik op de eerste regel in het veld "Web-editor" en plak de tekst van het klembord door Ctrl+V te drukken. |
 | 8 | Klik op de knop "Deploy the stack" die onderaan de pagina staat.``\\``![fig_7_4](assets/fig_7_4.png) |
 | 9 | Ga naar het menu "containers" en kijk of de container begint .|
