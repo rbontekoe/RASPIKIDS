@@ -19,14 +19,13 @@ Stap 1: ChatGPT om docker-compose.yml bestand vragen.
 
 Stap 2: Installeren Mosquittto.
 
-Stap 3: Testen MQTT broker.
-
 ## Stap 1 - ChatGPT om docker-compose.yml bestand vragen
 
 Stel de volgende vraag aan chatGPT: maak een docker-compose.yml bestand voor mosquitto.
 
 Ik kreeg als antwoord:
 
+### docker-compose.yml
 ```
 version: '3'
 services:
@@ -48,17 +47,17 @@ Deze configuratie maakt gebruik van de officiële Eclipse Mosquitto Docker-afbee
 
 ## Stap 2 - Installeren Mosquittto
 
-|Stap        | Actie      | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | Maak een kopie van de gegevens uit stap 1 door op Ctrl-C te drukken |  |
-| 2 | Open de browser en type in de adresbalk: IP-adres_Raspberry_Pi:9000 | Dit zorgt dat je Portainer in je browser opent. |
-| 3 | Zoek in de browser naar "stacks" en klik erop | Hierdoor opent het menu. |
-| 4 | Klik in het menu op "Stack" om een overzicht te zien.|  |
-| 5 | Klik op de knop "Add Stack" |  |
-| 6 | Geef de Stack een naam door "mosquittto" in het veld "Name" te typen |  |
-| 7 | Klik op de eerste regel in het veld "Web-editor" en plak de tekst van het klembord door Ctrl-V te drukken" |  |
-| 8 | Klik op de knop "Deploy the Stack" die onderaan de pagina staat |  |
-| 9 | Ga naar het menu "containers" en kijk of de container begint |  |
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Kopieeer de gegevens uit [docker-compose.yml](#docker-compose.yml) naar het klembord. |
+| 2 | Open de browser en type in de adresbalk: `IP-adres_Raspberry_Pi:9000`. Dit zorgt dat je Portainer in je browser opent. |
+| 3 | Zoek in de browser naar "stacks" en klik erop. Hierdoor opent het menu. ``\\``![fig_7_1](assets/fig_7_1.png)|
+| 4 | Klik in het menu op "Stacks" om een overzicht te zien. ``\\``![fig_7_2](assets/fig_7_2.png) |
+| 5 | Klik op de knop "Add Stack". ``\\``![fig_7_3](assets/fig_7_3.png) |
+| 6 | Geef de Stack een naam door `mosquittto` in het veld "Name" te typen.| 
+| 7 | Klik op de eerste regel in het veld "Web-editor" en plak de tekst van het klembord door Ctrl+V te drukken. |
+| 8 | Klik op de knop "Deploy the stack" die onderaan de pagina staat.``\\``![fig_7_4](assets/fig_7_4.png) |
+| 9 | Ga naar het menu "containers" en kijk of de container begint .|
 ||
 
 En dat is het! Je zou nu een werkende Mosquitto MQTT-broker moeten hebben binnen een Docker stack die beheerd wordt door Portainer. 
