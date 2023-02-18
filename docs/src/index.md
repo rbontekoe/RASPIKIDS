@@ -1,6 +1,6 @@
 # Toepassingen met de Raspberry Pi
 
-*In deze cursus leert u werken met de Raspberry Pi en Docker containers.*
+*In deze cursus leer je werken met de Raspberry Pi en Docker containers.*
 
 !!! info
     Kijk in de Blog voor de laatste opmerkingen!
