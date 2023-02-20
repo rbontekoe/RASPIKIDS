@@ -1,6 +1,6 @@
-# Communiceren met de Raspberry Pi en achteraf WiFi instellen
+# Communiceren met de Raspberry Pi en achteraf wifi instellen
 
-*In dit hoofdstuk leer je hoe je een klein computertje, genaamd de Raspberry Pi, kan gebruiken. Het moet een verinding met het Internet hebben, zodat je nieuwe programma's kan downloaden. Je kan met de Raspberry Pi praten met een USB-toetsenbord en een monitor met een HDMI-aansluiting, bijvoorbeeld een TV. Maar je kan ook praten met de Raspberry Pi via je laptop. Ook kan je later je wifi instellen.*
+*In dit hoofdstuk leer je hoe je de Raspberry Pi kan gebruiken. Het moet een verinding met het Internet hebben, zodat je nieuwe programma's kan downloaden. Je kan met de Raspberry Pi praten met een USB-toetsenbord en een monitor met een HDMI-aansluiting, bijvoorbeeld een TV. Maar je kan ook praten met de Raspberry Pi via je laptop. Ook kan je later je wifi instellen.*
 
 ### Inhoud
 
@@ -13,28 +13,26 @@ Pages = ["chapter2.md"]
 Om een Raspberry Pi te gebruiken, heb je het volgende nodig:
 
 - Een [Raspberry Pi 3B+](https://www.sossolutions.nl/raspberry-pi-3-model-b-plus) computer.
-- Een klaargemaakt micro SD-kaartje voor de Raspberry Pi, zie vorige hoofdstuk.
+- Een klaargemaakt micro SD-kaartje voor de Raspberry Pi, dit is in het vorige hoofdstuk besproken.
 - Een adapter om stroom aan de Raspberry Pi te geven.
-- Naam van je Wifi-netwerk.
-- Wachtwoord van je Wifi-netwerk.
+- De naam van je wifi-netwerk.
+- Het wachtwoord van je wifi-netwerk.
 
-Als je later WiFi wilt instellen dan heb je ook nodig:
+Als je later wifi wilt instellen dan heb je ook nodig:
 
 - Een scherm met HDMI aansluiting, zoals een TV of de [UCtronics 7 Inch touchscreen](https://www.sossolutions.nl/uctronics-7-inch-ips-touchscreen-for-raspberry-pi-with-prop-stand-1024-600-capacitive-hdmi-lcd-monitor-portable-display-for-raspberry-pi-4-3-b-windows-10-8-7-free-driver).
-- Een [USB-toetsenbord US](https://www.sossolutions.nl/officiele-raspberry-pi-toetsenbord-muis-zwart-grijs),
+- Een [USB-toetsenbord US](https://www.sossolutions.nl/officiele-raspberry-pi-toetsenbord-muis-zwart-grijs) met muis,
 om te typen op de Raspberry Pi.
-
-
 
 ## Wat ga je doen
 
 Stap 1: Stop het SD-kaartje in de Raspberry Pi.
 
-Stap 2: Sluit de adapter voor de stroom aan op de Raspberry Pi.
+Stap 2: Sluit de adapter aan op de Raspberry Pi, zodat hij stroom krijgt.
 
-Stap 3: Maak verbinding met de Raspberry Pi vanaf een andere computer via SSH.
+Stap 3: Gebruik een andere computer om verbinding te maken met de Raspberry Pi via SSH.
 
-Stap 4: Later WiFi instellen.
+Stap 4: Later wifi instellen.
 
 ## Stap 1: Stop het SD-kaartje in de Raspberry Pi
 
@@ -50,19 +48,21 @@ Om een micro SD-kaartje te gebruiken in een Raspberry Pi 3B+, volg je deze stapp
 | 4 | Duw het kaartje zachtjes in de kaartlezer totdat het op zijn plaats zit. |
 | 5 | Als je het kaartje wilt verwijderen, trek je het kaartje naar buiten. |
 
-## Stap 2 - Sluit de adapter voor de stroom aan op de Raspberry Pi
+## Stap 2 - Sluit de adapter aan op de Raspberry Pi, zodat hij stroom krijgt
 
-Om de Raspberry Pi 3B+ te laten werken, sluit je de adapter voor de stroom aan op de micro USB-aansluiting aan de linkerkant onderaan het bord. Steek vervolgens de stekker van de adapter in het stopcontact. Je zal op het scherm zien dat de Raspberry Pi opstart. Uiteindelijk zal het systeem je vragen om een gebruikersnaam. Tik de gebruikersnaam "ubuntu" in en druk op de Enter-toets.
+Om de Raspberry Pi 3B+ te laten werken, moet je eerst de stroomadapter aansluiten op de micro USB-aansluiting aan de linkerkant onderaan het bord. Vervolgens moet je de stekker van de adapter in het stopcontact steken.
 
-## Stap 3 - Maak verbinding met de Raspberry Pi vanaf een andere computer via SSH
+Als je een monitor en een toetsenbord hebt aangesloten dan zal je op het scherm zien dat de Raspberry Pi aan het opstarten is. Uiteindelijk zal het systeem je vragen om een gebruikersnaam in te voeren. Voer de gebruikersnaam "ubuntu" in en druk op de Enter-toets.
+
+## Stap 3 - Gebruik een andere computer om verbinding te maken met de Raspberry Pi via SSH
 
 Om verbinding te maken met een Raspberry Pi vanuit een andere computer met SSH, heb je eerst een aantal dingen nodig:
 
 De Raspberry Pi moet aan het stroomnetwerk zijn aangesloten en aan staan.
 
-Je moet weten wat het IP-adres is van de Raspberry Pi. Dit is een uniek nummer dat aan elke computer en elk apparaat op het internet is toegewezen.
+Je moet weten wat het IP-adres is van de Raspberry Pi. Dit is een uniek nummer dat aan elke computer en elk apparaat op het internet of wifi is toegewezen.
 
-Je moet ook weten wat het gebruikersnaam en wachtwoord zijn voor de Raspberry Pi. In het vorige hoofdstuk heb je ubuntu opgegeven met als wachtwoord dat je opgeschreven hebt tijdens het maken van het micro SD kaartje.
+Je moet ook weten wat het gebruikersnaam en wachtwoord zijn voor de Raspberry Pi. In het vorige hoofdstuk heb je 'ubuntu' als gebruikersnaam opgegeven met als wachtwoord dat je opgeschreven hebt tijdens het maken van het micro SD kaartje.
 
 Je moet op de andere computer een programma hebben geïnstalleerd dat SSH ondersteunt, zoals PuTTY (voor Windows) of Terminal (voor MacOS en Linux).
 
@@ -77,22 +77,15 @@ Gebruik de volgende stappen volgen om een verbinding te maken met de Raspberry P
     192.168.2.49
     ```
 
-Open met `Ctrl+Alt-T` een terminal sessie voor de Mac of de laptop die je bij de CoderDojo wordt gebruikt.
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Open met `Ctrl+Alt-T` een terminal sessie voor de Mac of de laptop die je bij de CoderDojo wordt gebruikt. |
+| 2 | Voer het commando `ssh ubuntu@IP_adres_Raspberry_Pi` in in het programma. Bijvoorbeeld `ssh ubuntu@192.168.2.49`. |
+| 3 | Vul de naam en het wachtwoord in die je gebruikt voor je Raspberry Pi. Als alles goed is gegaan, dan moet je nu verbonden zijn met de Raspberry Pi vanaf een andere computer. Dan kan je opdrachten geven aan de Raspberry Pi en bestanden uitwisselen tussen de twee computers. |
+| 4 | Als je windows gebruikt, dan moet je een programma genaamd Putty installeren. Met dat programma kan je een [verbinding](https://www.ssh.com/academy/ssh/putty/windows/install) maken. |
+||
 
-Voer het commando ssh ubuntu@<IP-adres Raspberry Pi> in in het programma.
-
-```
-# bijvoorbeeld
-ssh ubuntu@192.168.2.49
-```
-
-Vul de naam en het wachtwoord in die je gebruikt voor je Raspberry Pi.
-
-Als alles goed is gegaan, dan moet je nu verbonden zijn met de Raspberry Pi vanaf een andere computer. Dan kan je opdrachten geven aan de Raspberry Pi en bestanden uitwisselen tussen de twee computers.
-
-Als je windows gebruikt, dan moet je een programma genaamd Putty installeren. Met dat programma kan je een [verbinding](https://www.ssh.com/academy/ssh/putty/windows/install) maken.
-
-## Stap 4 - Later WiFi instellen
+## Stap 4 - Later wifi instellen
 
 Als de Raspberry Pi nog niet aangesloten is op het internet, dan kan je er alleen mee werken als je een toetsenbord en een beeldscherm met een HDMI kabel hebt.
 
@@ -137,9 +130,11 @@ network:
             dhcp4: true
 ```
 
+Als je een .yml-bestand maakt, moet je ervoor zorgen dat je tekst er netjes uitziet. Je moet bijvoorbeeld goed opletten hoe je tekst begint en hoeveel spaties je gebruikt. Het is belangrijk om geen tab te gebruiken, maar in plaats daarvan spaties te gebruiken om de tekst te laten inspringen.
+
 ## Stap 5 - Gebruik speciale bevelen om dingen te doen met de Raspberry Pi
 
-De terminal is een programma op je computer waarmee je speciale opdrachten kunt geven aan de computer. Bijvoorbeeld als je een bestand wilt downloaden via WiFi.
+De terminal is een programma op je computer waarmee je speciale opdrachten kunt geven aan de computer. Bijvoorbeeld als je een bestand wilt downloaden via wifi.
 
 Ubuntu is een speciaal computer programma dat helpt om met je computer te werken en om programma's te gebruiken. Soms komen er nieuwe versies van programma's of worden er fouten in programma's opgelost. Als je Ubuntu gebruikt, kan het handig zijn om deze nieuwe versies te installeren of om fouten te repareren. Je kan dit doen door een opdracht te geven aan Ubuntu met hulp van de terminal:
 
@@ -159,7 +154,7 @@ We gebruiken vaak het programma "Nano" om bestanden te maken of te veranderen. A
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Om WiFi te laten werken, moet je de juiste informatie invullen in een bestand genaamd 50-cloud-init.yaml, zie hiervoor het voorbeeld in [50-cloud-init.yaml](#cloud-init.yaml). Helaas moet je alles zelf typen. (later als je een verbinding maakt met de Raspberry Pi vanuit je eigen computer, kunnen je de "kopieer-plak" commando's gebruiken.) Let er wel op dat je niet de tab-toets gebruikt, maar in plaats daarvan twee of vier spaties intypt.
+Om wifi te laten werken, moet je de juiste informatie invullen in een bestand genaamd 50-cloud-init.yaml, zie hiervoor het voorbeeld in [50-cloud-init.yaml](#cloud-init.yaml). Helaas moet je alles zelf typen. (later als je een verbinding maakt met de Raspberry Pi vanuit je eigen computer, kunnen je de "kopieer-plak" commando's gebruiken.) Let er wel op dat je niet de tab-toets gebruikt, maar in plaats daarvan twee of vier spaties intypt.
 
 ## Samenvatting
 

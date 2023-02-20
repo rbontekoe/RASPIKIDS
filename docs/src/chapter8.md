@@ -1,6 +1,6 @@
 # Temperatuur meten
 
-*We gaan de temperatuur meten met een ESP8266 en een DHT22. De ESP8266 is een klein computerboardje waarmee we gegevens kunnen versturen en ontvangen via WiFi. De DHT22 is een sensor die we kunnen gebruiken om de temperatuur en luchtvochtigheid te meten.*
+*We gaan de temperatuur meten met een ESP8266 en een DHT22. De ESP8266 is een klein computerboardje waarmee we gegevens kunnen versturen en ontvangen via wifi. De DHT22 is een sensor die we kunnen gebruiken om de temperatuur en luchtvochtigheid te meten.*
 
 ### Inhoud
 
@@ -81,7 +81,7 @@ We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We z
 
 ### boot.py
 ```
-# boot.py - connect to WiFi
+# boot.py - connect to wifi
 def connect():
     import network
     station = network.WLAN(network.STA_IF)
@@ -95,9 +95,9 @@ def connect():
 connect()
 ```
 
-Dit is een stuk code geschreven in de programmeertaal Python. Het doel van de code is om je microcontroller (bijvoorbeeld een ESP8266 of ESP32) te verbinden met een WiFi-netwerk.
+Dit is een stuk code geschreven in de programmeertaal Python. Het doel van de code is om je microcontroller (bijvoorbeeld een ESP8266 of ESP32) te verbinden met een wifi-netwerk.
 
-De code bevat één functie, genaamd 'connect'. Als we deze functie aanroepen, zal de microcontroller verbinding maken met het WiFi-netwerk met de naam 'Naam_wifi_netwerk' en het wachtwoord 'Wachtwoord_wifi_netwerk'.
+De code bevat één functie, genaamd 'connect'. Als we deze functie aanroepen, zal de microcontroller verbinding maken met het wifi-netwerk met de naam 'Naam_wifi_netwerk' en het wachtwoord 'Wachtwoord_wifi_netwerk'.
 
 Als de verbinding is gemaakt, zal het IP-adres dat is toegewezen aan de microcontroller worden weergegeven.
 
