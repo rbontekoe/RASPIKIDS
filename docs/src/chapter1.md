@@ -71,4 +71,8 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 
 ## Samenvatting
 
-We gaan naar de Raspberry Pi website, downloaden het programma Imager en installeren het. Daarna gaan we ons Micro SD kaartje klaarmaken met Ubuntu Server. We gebruiken de versie 22.04 van Ubuntu, die speciaal gemaakt is voor de Raspberry Pi. Vooraf kijken we of we een 32 bit of 64 bit Raspberry Pi 3B+ hebben. Als we dat weten, doen we het Micro SD kaartje in de kaarthouder en in onze laptop. We starten het programma, kiezen Ubuntu als ons besturingssysteem, en kiezen de juiste versie voor onze Raspberry Pi. Dan stellen we WiFi in en slaan we alles op.
+Dit hoofdstuk gaat over het voorbereiden van een Micro SD-kaartje voor de Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server erop. Ubuntu Server is gemaakt om te helpen bij het uitvoeren van taken op een computer. Om het kaartje klaar te maken, heb je een computer nodig met een Micro SD kaarthouder, een Micro SD kaartje van 32GB, en het Raspberry Pi Imager programma. Je hebt ook de naam en het wachtwoord van je wifi-netwerk nodig.
+
+Om Ubuntu Server te installeren, moet je het Raspberry Pi Imager programma op je computer installeren. Vervolgens moet je het Micro SD kaartje klaarmaken met Ubuntu Server. Om dit te doen, moet je het kaartje in de kaarthouder doen en deze in je laptop plaatsen. Daarna moet je het Imager-programma starten en de stappen volgen om Ubuntu Server op het kaartje te zetten.
+
+Je moet ook enkele instellingen wijzigen om ervoor te zorgen dat Ubuntu Server correct werkt. Dit omvat het veranderen van de naam van je computer naar 'ubuntu', het instellen van een wachtwoord en het configureren van je wifi-netwerk. Als je deze stappen hebt voltooid en Ubuntu Server op het Micro SD kaartje is geïnstalleerd, haal je de kaarthouder uit je computer en ben je klaar om je Raspberry Pi 3B+ te gebruiken.

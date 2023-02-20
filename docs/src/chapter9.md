@@ -52,8 +52,8 @@ Volg deze stappen om het werk te doen:
  
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Pak de "mqtt in", "gauge" en "text" nodes en zet ze op je werkblad. |
-| 2 | Verbind de "mqtt in" node met de "gauge" en de "text" node. |
+| 1 | Pak de 2x de "mqtt in", 1x de "gauge" en 1x de "text" nodes en zet ze op je werkblad. |
+| 2 | Verbind de "mqtt in" node met de "gauge" node en de andere "mqtt in" node met de "text" node. |
 | 3 | Dubbelklik op "mqtt in" en typ het IP adres van je Raspberry Pi in het vak "Server". Het poortnummer "1883" wordt automatisch toegevoegd. ``\\``![fig_9_22](assets/fig_9_22.png) |
 | 4 | Typ `temperature2` in het "Topic" vak van de "mqtt in" node. |
 | 5 | Typ `Temp huiskamer` in het "Label" vak van de "gauge" node. ``\\``![fig_9_22](assets/fig_9_23.png)|
@@ -192,4 +192,12 @@ Hoe hard de wind waait heb ik bepaald met de gegevens uit deze [tabel](https://w
 
 ## Samenvatting
 
-Met Node-RED Dashboard module kun je een dashboard maken om live data te visualiseren. Het dashboard kan informatie over de temperatuur, vochtigheid en windrichting binnen en buiten tonen. Om dit te doen, heb je een Raspberry Pi 3B+ met Ubuntu Server 22.04 nodig, evenals geïnstalleerde Docker, Portainer, Node-RED en MQTT broker. Je hebt ook een ESP8266 met een DHT22-sensor nodig die gegevens naar de MQTT broker stuurt. Om het dashboard te maken, download je de Node-RED Dashboard module en stel je vervolgens het dashboard samen door de mqtt in- en gauge-nodes te slepen, de IP-adressen van de Raspberry Pi in te voeren en de juiste gegevens en namen in te voeren. Je kunt ook weergegevens van Visual Crossing ophalen met een API-sleutel en de informatie visualiseren.
+Met Node-RED Dashboard module kun je een dashboard maken om live data te visualiseren. Het dashboard kan informatie over de temperatuur, vochtigheid en windrichting binnen en buiten tonen. Om dit te doen, heb je een Raspberry Pi 3B+ met Ubuntu Server 22.04 nodig, evenals geïnstalleerde Docker, Portainer, Node-RED en MQTT broker. Je hebt ook een ESP8266 met een DHT22-sensor nodig die gegevens naar de MQTT broker stuurt. Om het dashboard te maken, download je de Node-RED Dashboard module en stel je vervolgens het dashboard samen door de mqtt in- en gauge-nodes te slepen, de IP-adressen van de Raspberry Pi in te voeren en de juiste gegevens en namen in te voeren. Je kunt ook weergegevens van Visual Crossing ophalen met een API-sleutel en de informatie visualiseren.In dit hoofdstuk leer je hoe je met Node-RED snel een live data dashboard kunt maken. Dit dashboard kan informatie laten zien zoals de temperatuur, luchtvochtigheid, windrichting en -snelheid. Om dit te doen, heb je een Raspberry Pi 3B+ nodig met Ubuntu Server 22.04, geïnstalleerde Docker, Portainer, Node-RED en MQTT broker, een ESP8266 met een DHT22 die gegevens stuurt naar de MQTT broker en een wifi-netwerk waar alle onderdelen op aangesloten zijn.
+
+Stap 1: De Node-RED Dashboard module downloaden. Deze module biedt verschillende onderdelen, zoals een metertje, een grafiek en tekstweergave, die speciaal zijn ontworpen om een dashboard te maken. Je moet deze module zelf toevoegen aan Node-RED.
+
+Stap 2: Het dashboard samenstellen. Hier leer je hoe je verschillende onderdelen kunt toevoegen aan je dashboard en hoe je deze kunt verbinden met de MQTT broker. Je voegt bijvoorbeeld een "mqtt in", "gauge" en "text" node toe om de temperatuur en luchtvochtigheid weer te geven.
+
+Stap 3: Weergegevens ophalen en op dashboard weergeven. Je leert hoe je gegevens over het weer in Leusden kunt ophalen van een website en deze kunt integreren in je dashboard. Om je dashboard te bekijken, typ je het IP-adres van je Raspberry Pi in je webbrowser, gevolgd door /ui.
+
+Met deze stappen kun je snel en gemakkelijk een dashboard maken om live data te visualiseren en te monitoren.

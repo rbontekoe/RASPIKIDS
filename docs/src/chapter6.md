@@ -175,7 +175,7 @@ Web responsive design (WRD) betekent dat je website op elk apparaat, zoals je co
 
 ## Samenvatting
 
-We gaan een website maken met Node-RED op een Raspberry Pi. Je moet een aantal programma's hebben geïnstalleerd en verbinding hebben met de Raspberry Pi via wifi. Tijdens het maken van de website leer je ook werken met HTML-code. We gaan stap voor stap de website maken, waarbij we beginnen met een "Hallo wereld!"-voorbeeld en later ga je de website verbeteren met Bootstrap. Ook leer je hoe je met API's (manieren voor computers om met elkaar te communiceren) kunt werken en foto's van honden op de website kunt zetten.
+Dit hoofdstuk gaat over het bouwen van een website met Node-RED. Node-RED is een programma waarmee je websites kunt maken en leren hoe HTML-code werkt. De website werkt alleen op het WiFi-netwerk waarmee je verbonden bent. Je hebt een Raspberry Pi 3B+ nodig met het besturingssysteem Ubuntu Server 22.04, Docker, Portainer en Node-RED geïnstalleerd. Om een eenvoudige website te maken met Node-RED heb je 3 knooppunten nodig, namelijk "http in", "template" en "http response". Met deze knooppunten maak je een flow die als een soort programma werkt. Je leert ook hoe je kunt werken met API's, waarmee computers met elkaar kunnen communiceren en informatie kunnen uitwisselen. JSON is een manier om informatie op te slaan en uit te wisselen tussen computers en mensen. Er wordt stapsgewijs uitgelegd hoe je een eenvoudige website maakt en hoe je verbinding maakt met de Dogs API om informatie over honden op te halen en deze informatie op de website te tonen.
 
 
 
