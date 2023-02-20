@@ -116,25 +116,27 @@ Ga naar `IP_adres_raspberry_pi:1880/ui` om het resultaat te bekijken. ``\\``![fi
 let test = msg.payload.currentConditions.winddir;
 let windrichting = '';
 
-if (test < 22.5 && test >= (360-22.5)) {
+if (test >= 360 - 22.5) {
     windrichting = 'N';
-} else if (test >= 325-22.5 && test <= 325+22.5) {
+} else if (test < 22.5) {
+    windrichting = 'N';
+} else if (test >= 325 - 22.5 && test <= 325 + 22.5) {
     windrichting = 'NW';
-} else if (test >= 270-22.5 && test <= 270+22.5) {
+} else if (test >= 270 - 22.5 && test <= 270 + 22.5) {
     windrichting = 'W'
-} else if (test >= 225-22.5 && test <= 225+22.5) {
+} else if (test >= 225 - 22.5 && test <= 225 + 22.5) {
     windrichting = 'ZW';
-} else if (test >= 180-22.5 && test <= 180+22.5) {
+} else if (test >= 180 - 22.5 && test <= 180 + 22.5) {
     windrichting = 'Z';
-} else if (test >= 135-22.5 && test <= 135+22.5) {
+} else if (test >= 135 - 22.5 && test <= 135 + 22.5) {
     windrichting = 'ZO';
-} else if (test >=  90-22.5  && test <= 90+22.5) {
+} else if (test >= 90 - 22.5 && test <= 90 + 22.5) {
     windrichting = 'O';
-} else if (test >=  45-22.5  && test <= 45+22.5) {
+} else if (test >= 45 - 22.5 && test <= 45 + 22.5) {
     windrichting = 'NO';
 }
 
-return { payload : windrichting };
+return { payload: windrichting };
 ```
 
 Deze code doet net alsof het een windwijzer is. Het krijgt een nummer dat vertelt waar de wind vandaan komt en geeft dan een letter die past bij die richting.
