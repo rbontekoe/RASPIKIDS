@@ -18,9 +18,11 @@ Pages = ["chapter10.md"]
 
 ## Wat je gaat doen
 
-- Stap 1: Je computer met SSH verbinden met de Raspberry Pi.
-- Stap 2: Container starten met "docker compose".
-- Stap 3: Domoticz benaderen met een browser.
+Stap 1: Je computer met SSH verbinden met de Raspberry Pi.
+
+Stap 2: Container starten met "docker compose".
+
+Stap 3: Domoticz benaderen met een browser.
 
 ### Stap 1 - Je computer met SSH verbinden met de Raspberry Pi
 
