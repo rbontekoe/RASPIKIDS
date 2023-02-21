@@ -50,11 +50,11 @@ Om Thonny te installeren, moet je de volgende stappen volgen:
 | 2 | Zoek naar het plaatje met de tekst `ESP8266 with 2MiB+ flash Espressif`. ``\\``![fig_8_1](assets/fig_8_1.png)|
 | 3 | Klik op de link in het plaatje. |
 | 4 | Zoek in de lijst naar het nieuwste item. Download die dan. ``\\``Bij mij was dat op 6 febr. 2023: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
-| 5 | Maak de ESP8266 aan je laptop vast met een speciale kabel "USB A naar Micro USB kabel".. |
+| 5 | Maak de ESP8266 aan je laptop vast met de speciale "USB A naar Micro USB" kabel. |
 | 6 | Start Thonny op. |
 | 7 | Druk op "Tools > Options..." en ga naar de tab "Interpreter". |
 | 8 | Kies als interpreter/device "MicroPython (ESP8266)". ``\\``![fig_8_3](assets/fig_8_3.png). |
-| 9 | Druk op de link "Install or update".|
+| 9 | Klik op de link "Install or update".|
 | 10 | Kies in het veld genaamd "firmware" het bestand dat je in stap 4 hebt gedownload, bijvoorbeeld `esp8266-20220618-v1.19.1.bin`. ``\\``![fig_8_4](assets/fig_8_4.png). |
 | 11 | Druk op de knop Install.| 
 
@@ -66,15 +66,15 @@ We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We z
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Selecteer de code in [boot.py](#boot.py) en kopieer het naar het klembord door Ctrl-C te gebruiken. |
-| 2 | Klik in het linkerste venster genaamd "Files" met je rechtermuisknop en kies "New directory...". |
-| 3 | Typ "dht22" en druk op de OK knop. ``\\``![fig_8_5](assets/fig_8_5.png) |
-| 4 | Maak een nieuw leeg bestand met Ctrl-N. |
-| 5 | Plak de code die je in stap 1 naar het klembord hebt gekopieerd in het venster door Ctrl-V te gebruiken. |
+| 1 | Selecteer de code in [boot.py](#boot.py) en kopieer het naar het klembord met "Ctrl-C". |
+| 2 | Maak een nieuwe map door met je rechtermuisknop te klikken in het meest linkse venster "Files" en "New directory..." te kiezen. Als je dat venster niet kunt zien, klik dan eerst op "View > Files" in het menu. |
+| 3 | Typ "dht22" en druk op de OK. ``\\``![fig_8_5](assets/fig_8_5.png) |
+| 4 | Maak een leeg bestand door op "Ctrl-N" te drukken. |
+| 5 | Plak de code die je hebt gekopieerd in stap 1 in het lege venster door op "Ctrl-V" te drukken. |
 | 6 | Vul op regel 6 de naam van jouw wifi-netwerk en het bijbehorende wachtwoord in. |
-| 7 | Sla het bestand op door Ctrl-S te drukken, kies de map "dht22" en geef het bestand de naam "boot.py". ``\\``![fig_8_6](assets/fig_8_6.png) |
-| 8 | Voer de stappen 1 en 4 nogmaals uit voor [main.py](#main.py). |
-| 9 | Sla het bestand op door Ctrl-S te drukken, kies de map "dht22" en geef het bestand de naam "main.py". |
+| 7 | Sla het bestand op door "Ctrl-S" te drukken, kies de map "dht22" en geef het bestand de naam "boot.py". ``\\``![fig_8_6](assets/fig_8_6.png) |
+| 8 | Herhaal stap 1 en 4 voor [main.py](#main.py). |
+| 9 | Sla het bestand op door op "Ctrl-S" te drukken, kies de map "dht22" en geef het bestand de naam "main.py". |
 | 10 | Sluit Thonny. |
 ||
 
@@ -97,7 +97,7 @@ connect()
 
 Dit is een stuk code geschreven in de programmeertaal Python. Het doel van de code is om je microcontroller (bijvoorbeeld een ESP8266 of ESP32) te verbinden met een wifi-netwerk.
 
-De code bevat één functie, genaamd 'connect'. Als we deze functie aanroepen, zal de microcontroller verbinding maken met het wifi-netwerk met de naam 'Naam_wifi_netwerk' en het wachtwoord 'Wachtwoord_wifi_netwerk'.
+De code bevat één functie, genaamd 'connect'. Als we deze functie aanroepen, zal de microcontroller verbinding maken met het wifi-netwerk met de naam 'Naam\_wifi\_netwerk' en het wachtwoord 'Wachtwoord\_wifi\_netwerk'.
 
 Als de verbinding is gemaakt, zal het IP-adres dat is toegewezen aan de microcontroller worden weergegeven.
 
