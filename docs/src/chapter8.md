@@ -34,7 +34,7 @@ Om Thonny te installeren, moet je de volgende stappen volgen:
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | De Thonny-website is te vinden op [https://thonny.org](https://thonny.org/). Klik op de link klikken om naar toe te gaan. |
+| 1 | De Thonny-website is te vinden op [https://thonny.org](https://thonny.org/). Klik op de link om er naar toe te gaan. |
 | 2 | Klik op de knop "Download" om het installatiebestand te downloaden. |
 | 3 | Ga naar de map waarin het installatiebestand is gedownload en dubbelklik op het bestand. |
 | 4 | Volg de stappen in de installatie-wizard om Thonny te installeren op je computer. |
