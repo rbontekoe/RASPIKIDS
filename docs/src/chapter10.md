@@ -1,6 +1,6 @@
 # Domoticz installeren
 
-*Domoticz is een programma dat je kunt gebruiken om het "slimme" huis te beheren. Als je een slimme meter hebt, is het handig om Domoticz te gebruiken om het energieverbruik in huis te bekijken en om op afstand het energieverbruik te controleren. Domoticz is een programma dat je kunt gebruiken om het "slimme" huis te beheren. Als je een slimme meter hebt, is het handig om Domoticz te gebruiken om het energieverbruik in huis te bekijken en om op afstand het energieverbruik te controleren.*
+*Domoticz is een programma dat je kunt gebruiken om het "slimme" huis te beheren. Als je een slimme meter hebt, is het handig om Domoticz te gebruiken om het energieverbruik in huis te bekijken en om op afstand het energieverbruik te controleren.*
 
 ![fig_10_1](assets/fig_10_1.png)
 
@@ -12,9 +12,10 @@ Pages = ["chapter10.md"]
 
 ## Wat je nodig hebt
 
-- Een Raspberry Pi installatie die staat in sectie 1.
-- De Raspberry Pi heeft verbiding met het Internet.
-- PC die een SSH verbinding heeft met de Raspberry Pi.
+- Een Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server 22.04.
+- Docker en Portainer zijn geinstalleerd.
+- De Raspberry Pi heeft verbinding met het Internet.
+- Een PC die een SSH verbinding heeft met de Raspberry Pi.
 
 ## Wat je gaat doen
 
@@ -102,4 +103,18 @@ Je krijgt je Domoticz openingspagina te zien, maar nog niet het verbruik van het
 
 ## Samenvatting
 
-In deze les leer je hoe je Domoticz installeert. We gebruiken een Docker container dat Domoticz al heeft. We hebben hiervoor een bestand nodig dat docker-compose.yml heeft. Dit bestand stelt ons in staat om de Domoticz container te installeren op onze Raspberry Pi. In het bestand staat ook hoe we een verbinding kunnen maken met onze USB-verbinding via - /dev/ttyUSB0:/dev/ttyUSB0.
+Domoticz is een programma dat je helpt om je "slimme" huis te beheren en bijvoorbeeld het energieverbruik te monitoren en controleren. Om Domoticz te gebruiken, heb je een Raspberry Pi 3B+ nodig met het besturingssysteem Ubuntu Server 22.04, Docker en Portainer geïnstalleerd en een computer die verbinding heeft met de Raspberry Pi via SSH.
+
+Om Domoticz te installeren, maak je gebruik van een bestand genaamd docker-compose.yml. Dit bestand vertelt Docker welke software er geïnstalleerd moet worden en hoe het gebruikt moet worden. In dit geval willen we Domoticz installeren en ervoor zorgen dat het altijd blijft draaien, tenzij we het expliciet stoppen.
+
+We willen dat Domoticz toegang heeft tot een specifiek apparaat, bijvoorbeeld een slimme meter dat is aangesloten op de USB-poort van onze computer. Dit kan via de "devices" regel in het docker-compose.yml-bestand. Zo wordt het apparaat doorgegeven aan de container waarin Domoticz draait.
+
+Verder willen we dat Domoticz toegankelijk is via onze webbrowser, zodat we het energieverbruik kunnen monitoren en controleren. Dit kan via de poorten die worden doorgestuurd van de Raspberry Pi naar de computer. We slaan ook belangrijke instellingen op, zoals onze tijdzone en de locatie waar we gegevens willen opslaan.
+
+Nadat we alles hebben ingesteld in het docker-compose.yml-bestand, geven we de opdracht om het programma te starten en Domoticz zal worden geïnstalleerd en geconfigureerd zoals we hebben aangegeven in het bestand.
+
+Om Domoticz te starten, maak je een folder aan onder de folder "projects" met de naam "domoticz" en maak je een leeg bestand aan met de naam "docker-compose.yml". Hierin kopieer je de code die eerder in het artikel is gegeven en sla je het bestand op.
+
+Vervolgens start je de Domoticz container door de opdracht "docker compose up" uit te voeren. Je kunt vervolgens Domoticz openen in je webbrowser door het IP-adres van de Raspberry Pi te gebruiken, gevolgd door de poort 8081.
+
+Met deze stappen kun je Domoticz gebruiken om het energieverbruik in je slimme huis te monitoren en te controleren.

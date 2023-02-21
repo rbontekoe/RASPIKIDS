@@ -9,8 +9,9 @@ Pages = ["chapter10.md"]
 ```
 
 ## Wat je nodig hebt
-- Een Raspberry Pi installatie die staat in sectie 1.
-- De Raspberry Pi heeft verbiding met het Internet.
+- Een Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server 22.04.
+- Docker, Portainer en Domoticz zijn geinstalleerd.
+- De Raspberry Pi heeft verbinding met het Internet.
 - [P1 Slimme meter kabel](https://www.sossolutions.nl/slimme-meter-kabel).
 
 !!! info
@@ -25,8 +26,6 @@ Stap 2 - Voeding aanzetten van de Raspberry Pi.
 Stap 3 - Ander gedeelte van de kabel aansluiten op je Slimme Meter.
 
 Stap 4 - Maak een device aan voor power en voor gas.
-
-Stap 5 - USB van de kabel op de Raspberry Pi aansluiten
 
 De P1-kabel wordt gebruikt om de gegevens van de slimme meter naar de Raspberry Pi te verzenden, zodat je in Domoticz kunt zien hoeveel elektriciteit of gas je hebt verbruikt.
 
@@ -76,4 +75,4 @@ Druk op de toets **Add**.
 
 ## Samenvatting
 
-Als je weet hoe je iets moet instellen, wordt het super makkelijk. Ik heb geprobeerd genoeg informatie te geven zodat je kan slagen.
+We gaan een slimme meter aansluiten, die meet hoeveel stroom en gas we gebruiken in huis. Dit doen we met een Domoticz container en sturen de gegevens als MQTT bericht naar de Node-red broker. Om dit te doen hebben we een Raspberry Pi nodig die verbinding heeft met het internet en een P1 slimme meter kabel. Voordat we beginnen, moeten we controleren of onze slimme meter in de lijst van kabels staat en wat de snelheid van de omzetting moet zijn (9600 of 115200). We gebruiken een kabel met een USB-aansluiting aan de ene kant en een telefoonaansluiting (rj11-connector) aan de andere kant. Als we dit hebben, kunnen we beginnen met het installeren van Domoticz en het aansluiten van de slimme meter op de Raspberry Pi. Daarna kunnen we de gegevens naar de Node-red broker sturen en bekijken hoeveel stroom en gas we gebruiken in ons huis.
