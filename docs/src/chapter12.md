@@ -16,11 +16,11 @@ Pages = ["chapter11.md"]
 
 ## Wat je gaat doen
 
-Stap 1: Dommoticz gegevens aan de MQTT broker doorgeven.
+Stap 1: Domoticz gegevens aan de MQTT broker doorgeven.
 
 Stap 2: Domoticz gegevens op het Dashboard weergegeven.
 
-## Stap 1 - Dommoticz gegevens aan de MQTT broker doorgeven
+## Stap 1 - Domoticz gegevens aan de MQTT broker doorgeven
 
 Soms wil je misschien weten hoeveel gas en elektriciteit je gebruikt. Om deze informatie te krijgen, kun je deze ook naar onze "MQTT broker" sturen. Je hebt een speciale instelling in Domoticz nodig die een "MQTT client gateway with LAN interface" heet. Die ervoor zorgt ervoor dat de informatie naar de MQTT broker wordt gestuurd.
 
