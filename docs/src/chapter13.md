@@ -24,6 +24,8 @@ Stap 3: Grafana aan InfluxDB koppelen.
 
 Stap 4: Sensor_data database maken.
 
+Stap 5: Data naar database wegschrijven
+
 ## Stap 1 - Stack met Grafana en Influxdb maken
 
 ### docker-compose.yml
@@ -94,7 +96,6 @@ De standaard gebruikers naam en het wachtwoord zijn respectievelijk admin/admin.
 
 ![fig_13_4](assets/fig_13_4.png)
 
-## Stap 4 - Sensor_data database maken
 
 
 ## Samenvatting
