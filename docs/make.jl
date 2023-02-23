@@ -28,9 +28,9 @@ makedocs(
             "Stroom- en gasverbruik op het dashboard weergeven" => "chapter12.md"
         ],
         "Sectie 5 - InfluxDB en Grafana" => [
-            "Grafana en InfluxDB installeren" => "chapter12.md",
-            "Gegevens opslaan in Influx met Node-RED" => "chapter13.md",
-            "Gegevens grafisch weergeven met Grafana" => "chapter14.md"
+            "Grafana en InfluxDB installeren" => "chapter13.md",
+            "Gegevens opslaan in Influx met Node-RED" => "chapter14.md",
+            "Gegevens grafisch weergeven met Grafana" => "chapter15.md"
         ],
         "Bijlage" => "appendix.md",
         "References" => "references.md"
