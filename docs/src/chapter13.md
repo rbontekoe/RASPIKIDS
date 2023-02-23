@@ -96,5 +96,6 @@ De standaard gebruikers naam en het wachtwoord zijn respectievelijk admin/admin.
 
 ## Stap 3 - InfluxDB module in Node-RED maken
 
+![fig_13_4](assets/fig_13_5.png)
 
 ## Samenvatting
