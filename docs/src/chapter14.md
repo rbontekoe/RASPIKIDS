@@ -12,5 +12,10 @@ Pages = ["chapter14.md"]
 
 ## Wat je gaat doen
 
+## Stap 1 - InfluxDB module in Node-RED maken
+
+![fig_13_4](assets/fig_13_5.png)
+
+
 ## Samenvatting
 

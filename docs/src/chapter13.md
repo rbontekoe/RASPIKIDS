@@ -22,7 +22,7 @@ Stap 2: Wachtwoord Grafana wijzigen.
 
 Stap 3: Grafana aan InfluxDB koppelen.
 
-Stap 4: Influxdb module in Node-RED maken.
+Stap 4: Sensor_data database maken.
 
 ## Stap 1 - Stack met Grafana en Influxdb maken
 
@@ -94,8 +94,7 @@ De standaard gebruikers naam en het wachtwoord zijn respectievelijk admin/admin.
 
 ![fig_13_4](assets/fig_13_4.png)
 
-## Stap 3 - InfluxDB module in Node-RED maken
+## Stap 4 - Sensor_data database maken
 
-![fig_13_4](assets/fig_13_5.png)
 
 ## Samenvatting
