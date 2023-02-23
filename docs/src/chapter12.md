@@ -46,8 +46,8 @@ Eerder heb je geleerd hoe je informatie op een Dashboard kunt laten zien. Dit is
 
 1. Stel de volgende flows op: ``\\``![fig_12_2](assets/fig_12_2.png)
 2. Kies "domoticz/out" als het onderwerp waarover je informatie wilt verzamelen.
-3. Gebruik de code uit deze link voor [functie 9](#javacsript-code-functie-9). Dit is als een speciaal stukje code dat ervoor zorgt dat de informatie wordt opgehaald en op de juiste manier wordt weergegeven.
-4. Gebruik de code uit deze link voor [functie 10](#javacsript-code-functie-10). Dit zorgt ervoor dat de informatie wordt opgehaald en weergegeven op de juiste plek.
+3. Gebruik de code uit deze link voor [functie 9](#Javacsript-code-functie-9). Dit is als een speciaal stukje code dat ervoor zorgt dat de informatie wordt opgehaald en op de juiste manier wordt weergegeven.
+4. Gebruik de code uit deze link voor [functie 10](#Javacsript-code-functie-10). Dit zorgt ervoor dat de informatie wordt opgehaald en weergegeven op de juiste plek.
 5. Voor "Electra momenteel" moet je deze instellingen gebruiken: ``\\``![fig_12_3](assets/fig_12_3.png)
 6. Voor "Gas per 1-1-2023" moet je deze instellingen gebruiken:  ``\\``![fig_12_4](assets/fig_12_4.png)
 
