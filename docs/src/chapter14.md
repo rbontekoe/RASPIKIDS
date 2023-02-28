@@ -10,9 +10,14 @@ Pages = ["chapter14.md"]
 
 ## Wat je nodig hebt
 
+- Een Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server 22.04.
+- Docker, Portainer, Node-RED, InfluxDB en Grafana zijn geinstalleerd.
+- Node-RED programma uit de les 9 [Node-RED dashboard programma maken](../chapter9/index.html).
+- De Raspberry Pi heeft verbinding met het Internet.
+
 ## Wat je gaat doen
 
-Stap 1: nfluxDB module in Node-RED maken.
+Stap 1: InfluxDB module in Node-RED maken.
 
 Stap 2: Sensor_data database maken.
 

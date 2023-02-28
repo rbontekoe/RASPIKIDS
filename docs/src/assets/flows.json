@@ -1,0 +1,3022 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "542dc611.18b618",
+        "type": "tab",
+        "label": "Weather Station",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "83e57a59.196fd8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "17ced1b99fa6ef00",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ca133ec8.b81cb",
+        "type": "subflow",
+        "name": "My subflow",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "ff0a2d53.6e2d4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.2.49",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e8603ae2.65eda8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "414046f.b5638b8",
+        "type": "ui_group",
+        "name": "Thuis",
+        "tab": "2f623d0f077232d3",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d8b31f9614f9221e",
+        "type": "influxdb",
+        "hostname": "192.168.2.49",
+        "port": "8086",
+        "protocol": "http",
+        "database": "sensor_data",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "d8111a08d8743f7e",
+        "type": "ui_spacer",
+        "z": "f6f2187d.f17ca8",
+        "name": "spacer",
+        "group": "414046f.b5638b8",
+        "order": 5,
+        "width": "1",
+        "height": "1"
+    },
+    {
+        "id": "a8c62e847f43767b",
+        "type": "ui_group",
+        "name": "Cursus",
+        "tab": "27770ce453e605a2",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27770ce453e605a2",
+        "type": "ui_tab",
+        "name": "Cursus",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2f623d0f077232d3",
+        "type": "ui_tab",
+        "name": "Thuis 2",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4c355397.47291c",
+        "type": "http in",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "url": "test/:name",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "194cc02.9aa8f4"
+            ]
+        ]
+    },
+    {
+        "id": "194cc02.9aa8f4",
+        "type": "template",
+        "z": "ca133ec8.b81cb",
+        "name": "index.html",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "    <!DOCTYPE html>\n    <html lang=”en”>\n     <head>\n    <title>Response Named Parameters</title>\n    </head>\n    <h1>Page found Named Parameters {{req.params.name}}</h1>\n    </html>",
+        "output": "str",
+        "x": 450,
+        "y": 80,
+        "wires": [
+            [
+                "359280f1.30e0e"
+            ]
+        ]
+    },
+    {
+        "id": "359280f1.30e0e",
+        "type": "http response",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1af19e5e.d49fa2",
+        "type": "function",
+        "z": "ca133ec8.b81cb",
+        "name": "Json",
+        "func": "msg.payload = \"data to post\";\nmsg.headers = {};\nmsg.headers['content-type'] = 'application/json';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "baefc476.833f68"
+            ]
+        ]
+    },
+    {
+        "id": "9b010d69.2907d",
+        "type": "http in",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "url": "jsonpage",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "1af19e5e.d49fa2"
+            ]
+        ]
+    },
+    {
+        "id": "baefc476.833f68",
+        "type": "http response",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9759836d.d75bd",
+        "type": "http in",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "url": "test2",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "21ab32e3.d5ecce"
+            ]
+        ]
+    },
+    {
+        "id": "c78955d4.b67f08",
+        "type": "http response",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "21ab32e3.d5ecce",
+        "type": "file in",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "filename": "index.html",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "c78955d4.b67f08"
+            ]
+        ]
+    },
+    {
+        "id": "9bc76128.5c655",
+        "type": "http in",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "url": "adressen",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 380,
+        "wires": [
+            [
+                "2601741e.a929ac"
+            ]
+        ]
+    },
+    {
+        "id": "fa78c0d.be32d4",
+        "type": "http response",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "2601741e.a929ac",
+        "type": "template",
+        "z": "ca133ec8.b81cb",
+        "name": "index.html",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "    <!DOCTYPE html>\n    <html lang=”en”>\n     <head>\n       <title>Adressen</title>\n       <style>\n         table {border-collapse: collapse;}\n         tr    {border-bottom: 0.5pt solid black;}\n      </style>\n</head>\n    </head>\n    <h1>Adressen{{req.params.name}}</h1>\n    <!-- Hello {{req.query.first}} {{req.query.last}}! -->\n    <table>\n        <th>Naam</th><th>Adres</th><th>Email</th><th>Verjaardag</th><th>Opmerking</th>\n        <tr><td>Achmea Alarm</td><td></td><td></td><td></td><td></td></tr>\n        <tr><td>Ada van Leest</td><td>Koolzaadland 27, 3833 CJ Leusden</td><td></td><td></td><td></td></tr>\n        <tr><td>Anneke Brandon</td><td>Wegastraat 27, 1223 CN Hilversum</td><td>n.brandon@kpnplanet.nl</td><td>4 feb</td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015</td></tr>\n        <tr><td>Annemarie en Barry van Os</td><td>Tasmaniëstraat 99, 1339 PA Almere</td><td></td><td></td><td>Kerstkaart 2012, 2018, 2019</td></tr>\n        <tr><td>Annie en Henk van de Hoef</td><td>Stationsweg 33, 3981 AB Bunnik</td><td>ahoef@casema.nl</td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016</td></tr>\n        <tr><td>Ans Gortzak- de Wit</td><td>Laan van Eikenrode 36, 1231 BP Loosdrecht</td><td>gortzak@dutch.nl</td><td>2 jun</td><td>Kerstkaart 2010</td></tr>\n        <tr><td>Ans Leliaert</td><td>Veendamstraat 34, 1324 AX Almere-Stad</td><td>fam.leliaert@kpnmail.nl</td><td>8 okt</td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Auto Versteeg Buurman</td><td></td><td>033 2858586</td><td></td><td></td></tr>\n        <tr><td>Babs en Martin Polman</td><td>Landweg 203, 3833 VG Leusden</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019</td></tr>\n        <tr><td>Ben Rob</td><td>Klantnummer: 104449</td><td></td><td></td><td></td></tr>\n        <tr><td>Ben Wil</td><td>Klantnummer: BEN000261614</td><td></td><td></td><td>Inlog: wfaber Wachtwoord: Bontekoe1</td></tr>\n        <tr><td>Bianca de Regt en Hugo Holtslag</td><td>Zandpad 123, 3621 NJ Breukelen</td><td></td><td></td><td></td></tr>\n        <tr><td>Cobi en<br>Erik van der Schaar</td><td>Bremlaan 15, 1213 SW Hilversum</td><td>cobivdschaar@gmail.com</td><td>18 mei<br>29 mrt</td><td>Kerstkaart 2010, 2012, 2013, 2014, 2015, 2016, 2018, 2019</td></tr>\n        <tr><td>Dita van Gangelen</td><td>Poolsterstraat 21, 1223 AX Hilversum</td><td></td><td></td><td></td></tr>\n        <tr><td>Ditte en Frank Scherpenisse</td><td>Landweg 64. 3833 VM Leusden</td><td></td><td></td><td>Kaart 2011, 2012, 2013, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Els en<br>Peter de Wit</td><td>Nwe. 's Gravelandseweg 43a, 1406 NA Bussum</td><td>elspeet@casema.nl</td><td>21 nov<br>9 jun</td><td>Kerstkaart 2011, 2012, 2013</td></tr>\n        <tr><td>Eric en Thelma Viveen</td><td>Verl. Scholtenskanaal Oz 45, 7881 JS Emmercompascuem</td><td>famviveen@casema.nl - www.hopeofcadbury.nl</td><td></td><td>Kerstkaart 2011</td></tr>\n        <tr><td>Erwin van der Kolk</td><td>Landweg 70, 3833 VM Leusden</td><td>vanderkolkerwin@gmail.com</td><td>'8 sep</td><td>Kerstkaart 2011, 2012, 2013, 2015, 2016</td></tr>\n        <tr><td>Fattoria La Vialla</td><td>Via di Meliciano 26 - 52029 Castiglion Fibocchi, Arezzo Italia</td><td>fattoria@lavialla.it<br>bestellen: www.bestelkaart.lavialla.it</td><td></td><td>Inlog code: rob en wil wachtwoord: DPE763</td></tr>\n        <tr><td>Ferdinand Vroom</td><td>Smetanalaan 14, 3055 TM Rotterdam</td><td>info@ferdinandvroom.nl</td><td>30 jan</td><td></td></tr>\n        <tr><td>Fiorella Moro</td><td>Le Ghiaie 2/D, Salutio 52020, Arezzo Italia</td><td>Fiorella fiemoro@gmail.com</td><td>14 nov<br>Gianni 30 apr</td><td></td></tr>\n        <tr><td>Gerben Bontekoe</td><td>Mezenpad 6, 3815RP, Amersfoort</td><td>info@studiobontekoe.nl</td><td>27 nov</td><td></td></tr>\n        <tr><td>Grace van der Kooi</td><td>12 Railway Street Corrimal, NSW 2518 Australia</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018</td></tr>\n        <tr><td>Hans en Irene van der Moolen</td><td>Lepelaar 24, 3831 DE Leusden</td><td>Irenevandermoolen@gmail.com<br>hansvandermoolen@gmail.com</td><td></td><td></td></tr>\n        <tr><td>Harmen van der Schaar</td><td>Lijsterlaan 136, 3145 VM Maassluis</td><td></td><td>15 jul</td><td>Kerstkaart 2011, 2012, 2013</td></tr>\n        <tr><td>Harry en Tonja Kost</td><td>Aviatik 14, 3769 JL Soesterberg</td><td>tonja.kost@kpnmail.nl</td><td>18 jul, 8 mrt</td><td>Kerstkaart 2011, 2012, 2013, 2015, 2018, 2019</td></tr>\n        <tr><td>Harry Heijkoop<br>Marja van der Wolf</td><td>Rua do Campo da Bola16 2540-000; Carvalhal Bombarral, Portugall<br>Van Asch van Wijckskade 2 bis A, 3512 VM Utrecht</td><td>hheijkoop@daringvof.net</td><td>18 feb</td><td>Kerstkaart 2013, 2017</td></tr>\n        <tr><td>Helly Lioni</td><td>Willem de Zwijgerlaan 82/11,1056 JT Amsterdam</td><td>lioni@scarlet.nl</td><td>1 jul</td><td>Kerstkaart 2010, 2011, 2012, 2015</td></tr>\n        <tr><td>Huisarts G. van der Wetering</td><td>Korte Geer 8, 3833 VV Leusden</td><td></td><td></td><td></td></tr>\n        <tr><td>Ingrid Hulst</td><td>Landweg 70, 3833 VM Leusden</td><td>hulstingrid@gmail.com</td><td>18 aug</td><td>Kerstkaart 2011, 2012, 2016, 2017, 2018</td></tr>\n        <tr><td>Jaap en Marja Stokvis</td><td>Landweg 76, 3833 VM Leusden</td><td>jaapmarjastokvis@gmail.com</td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2019</td></tr>\n        <tr><td>Jeroen Brandon en Jill Mulder</td><td>Heuvellaan 27, 1217 JL Hilversum</td><td></td><td></td><td></td></tr>\n        <tr><td>Jeroen Keet</td><td>Graalpad 2,  3813 GB  Amersfoort</td><td></td><td>31 jan</td><td></td></tr>\n        <tr><td>Jessica Roelfsema</td><td>Nieuwe Zijds Burgwal 43, 1141TG Monnickendam</td><td>jessica_roelfsema@hotmail.com</td><td>16 jun</td><td></td></tr>\n        <tr><td>Jochem leliaert, Naomi en Julian</td><td>Samoastraat 1, 1339 PB Almere</td><td></td><td>Jochem 2 sept, julian 7 mrt 2018 -  Liam Levi 26 mrt 2019</td><td></td></tr>\n        <tr><td>Joh. Faber</td><td>Holtlaan 145, 7824 SG Emmen</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Joke en Theo Kort</td><td>Izaak da Costalaan 8, 1401 BH Bussum</td><td></td><td>5 mrt; 6 jul</td><td></td></tr>\n        <tr><td>Joke van Tergouw</td><td>Benedictijnehove 61, 3834 ZC Leusden</td><td></td><td>26 okt</td><td></td></tr>\n        <tr><td>Joop Fidder</td><td>Patrijslaan 4, 3738 GD Maartensdijk</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014</td></tr>\n        <tr><td>Joop Roodenrijs en Mies de Jager</td><td>Oude Torenstraat 25, 1211 BV Hilversum</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014</td></tr>\n        <tr><td>Karen van der Moolen<br>Hoite Polkamp</td><td></td><td></td><td></td><td></td></tr>\n        <tr><td>Ruth de Wijs</td><td>Balistraat 19, 3818 AJ Amersfoort</td><td>keesdewijs@cs.com<br>ewijsre@gmail.com</td><td></td><td></td></tr>\n        <tr><td>Tiny van Rijn</td><td>Schakel 22, 1231 SW Loosdrecht</td><td>tinyvanrijn@gmail.com</td><td>23 mrt</td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Landman</td><td>van Ginkellaan 35, 3931 WD Woudenberg</td><td>jurgen@johanlandman.nl</td><td></td><td>Voor onderhoud en reparatie huis.</td></tr>\n        <tr><td>Lenie Ooms</td><td>Fuchsiastraat 71, 1214 GH Hilversum</td><td>lenie.ooms@xs4all.nl</td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014</td></tr>\n        <tr><td>Mariena Serné</td><td>Noordeinde 33, 2425 AD Zevenhoven</td><td></td><td></td><td></td></tr>\n        <tr><td>Marike en Maarten Teuben</td><td>Boomklever 20, 3738 SG Maartensdijk</td><td>maarten@marenmaa.nl</td><td></td><td>Kerstkaart 2015, 2017</td></tr>\n        <tr><td>Marjon Leliaert</td><td>Basilicumweg 158, 1314 HE Almere</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Marleen Bontekoe<br>Dennis Moohnen</td><td>Neuweg 18, 1211LW, Hilversum</td><td>marleenbontekoe@gmail.com; marleen@burobontekoe.nl</td><td>15 okt<br>29 jul</td><td>Kerstkaart 2012, 2015, 2016, 2018</td></tr>\n        <tr><td>Marnix Kemme en Frans van Croonenborg</td><td></td><td>Marnix@kemme.net</td><td></td><td></td></tr>\n        <tr><td>Nella Bandringa</td><td>Landweg 225, 3833 VG Leusden</td><td></td><td>21 jul</td><td>Kerstkaart 2011, 2012, 2013, 2015, 2016, 2018 - 2019</td></tr>\n        <tr><td>Paul en Jeanette van Rooyen</td><td>Troubadour 15, 1188 CX Amstelveen</td><td>adriaantje.stolk@hotmail.com</td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015</td></tr>\n        <tr><td>Peter Geesinken<br>Elly Geesink</td><td>Van Tetslaan 3, 3707 VA Zeist</td><td>pwgeesink@gmail.com<br>ellygeesink@gmail.com</td><td></td><td>Kerstkaart 2012, 2013, 2015, 2016</td></tr>\n        <tr><td>Richard van der Klei</td><td>Vrijheid 3, 1231 TK Loosdrecht</td><td></td><td>2 jun</td><td></td></tr>\n        <tr><td>Henk en<br>Shiela van den Akker<br>Wanjiku</td><td>Landweg 72, 3833 VM Leusden</td><td>sheila_and_henk@bigfoot.com</td><td>13 jul<br>-<br>3 mei</td><td>Kerstkaart 2011, 2012</td></tr>\n        <tr><td>Steffen en Marlies Chang</td><td>Landweg 201, 3833 VG Leusden</td><td></td><td></td><td></td></tr>\n        <tr><td>Tandarts Roppe</td><td></td><td>033 494 6352</td033 494 6352><td></td><td></td></tr>\n        <tr><td>Tanja en Taco Walstra-Brandon</td><td>Noorderweg 154, 1222 PH Hilversum</td><td></td><td></td><td></td></tr>\n        <tr><td>Tanja en Sylvia FransenSylvia FransenTed Tammer</td><td>Landweg 68, 3833 VM Leusden</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Tea<br>Wessel Le Mahieu</td><td>Oud Loosdrechtsedijk 131, WS 01, 1231 OT Loosdrecht</td><td>tewemahieu@casema.nl</td><td>5 apr<br>4 mrt</td><td></td></tr>\n        <tr><td>Thea Geijsberts</td><td>De Zijlmakerij 80, 3831 CW Leusden</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Theo en<br>Marjanne Tijmense</td><td>Zaaier 58, 3833 VW Leusden</td><td>theotheo53@gmail.com</td><td></td><td>Kerstkaart 2012, 2013, 2018, 2019</td></tr>\n        <tr><td>Tine Heeren</td><td>Schuttersweg 13, 1217 PV Hilversum</td><td></td><td>31 jul</td><td>Kerstkaart 2010</td></tr> \n        <tr><td>Sylvia Fransen</td><td>Voorburgstraat 16, 3634 AW Loenersloot</td><td></td><td>6 jan</td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Villa Monica Sorrento</td><td>Via campitielo 14, 80067 Sorrento. Italia</td><td></td><td></td><td></td></tr>\n        <tr><td>Vrijbuiter Kantoor</td><td></td><td></td><td></td><td>inlog code Web site: Bontekoe-Faber wachtwoord: Februari09</td></tr>\n        <tr><td>Vrijbuiter; Mark Kroneman</td><td>Oud Loosdrechtsedijk 137, 1231 LT Loosdrecht</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013</td></tr>\n        <tr><td>Walter Keff</td><td></td><td>walter.keff@telfort.nl</td><td></td><td></td></tr>\n        <tr><td>Warris Hamersveld Groep</td><td>Van Diepenheim Scheltuslaan 7, 3832 EE LEUSDEN</td><td>info@warrishamersveldgroep.nl</td><td></td><td></td></tr>\n        <tr><td>Wil en Wim Grob</td><td>Augustinushof 57, 1216 LD Hilversum</td><td></td><td></td><td>Kerstkaart 2011, 2012</td></tr>\n        <tr><td>Wim en<br>Berry de Wit</td><td>Bloemendaalseweg 123a, 2061 CH Bloemendaal</td><td></td><td>9 dec<br>1 mei</td><td></td></tr>\n        <tr><td></td><td></td><td></td><td></td><td></td></tr>\n      <table>\n    </html>",
+        "output": "str",
+        "x": 450,
+        "y": 380,
+        "wires": [
+            [
+                "fa78c0d.be32d4",
+                "412cfa59.519d04"
+            ]
+        ]
+    },
+    {
+        "id": "412cfa59.519d04",
+        "type": "debug",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "70f0d7fc46c99c18",
+        "type": "http in",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "url": "/logboek",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "56a2c24cb688e68c"
+            ]
+        ]
+    },
+    {
+        "id": "56a2c24cb688e68c",
+        "type": "template",
+        "z": "ca133ec8.b81cb",
+        "name": "index.html",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "    <!DOCTYPE html>\n    <html lang=”en”>\n     <head>\n       <title>Logboek</title>\n       <style>\n         table {border-collapse: collapse;\n                width: 100%;\n         }\n         tr    {border-bottom: 0.5pt solid black;}\n      </style>\n</head>\n    </head>\n    <h1>Logboek{{req.params.name}}</h1>\n    <!-- Hello {{req.query.first}} {{req.query.last}}! -->\n    <table>\n        <th>Onderwerp</th><th>Datum</th><th>Klacht</th><th>Oplossing</th>\n        <tr><td>TV kamer Marleen</td><td>10-05-2022</td><td>Lade van de DVD speler gaat niet open.<td>Nieuwe batterijen in de afstandsbediening gezet.</td></tr>\n        <tr><td>Node-Red MicroK8s App</td><td>20-05-2022</td><td>Hoe Sts yaml opzetten met Sqlite?<td>Zie mynodered.yaml in /projects/microk8s/mynodered, </br>volumeMounts:</br>&nbsp;- name: nr-data\n          </br>&nbsp;&nbsp;&nbsp;&nbsp;mountPath: /data</td></tr>\n        <tr><td>Gratis G-Suite</td><td>24-05-2022</td><td>Waar link naar Admin page voor personal use?<td>Screenshot gemaakt. In 5e alinea, laatste regel op 'hier' klikken: https://support.google.com/a/answer/2855120?hl=nl#zippy=%2Cbusiness-starter</td></tr>\n        <tr><td>Coursera</td><td>21-05-2022</td><td>Link naar cursus<td>https://www.coursera.org/learn/machine-teaching-ai/home/week/2</td></tr>\n        <tr><td>Milestome</td><td>14-06-2022</td><td>Probleem met thermostaten</td><td>Zie:  https://www.startpagina.nl/v/wonen/vraag/265958/koud-aanvoelt-huis-nadat-thermostaat/</td></tr>\n        <tr><td>Raspberry Pi 3B+</td><td>30-10-2022</td><td>UCTronics HDMI monitor doet het niet</td><td>Zie:  https://www.uctronics.com/download/Amazon/U6104.pdf</td></tr>\n      <table></html>\n     ",
+        "output": "str",
+        "x": 450,
+        "y": 520,
+        "wires": [
+            [
+                "689d42f16a2d5d03"
+            ]
+        ]
+    },
+    {
+        "id": "689d42f16a2d5d03",
+        "type": "http response",
+        "z": "ca133ec8.b81cb",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3cc11d24.ff01a2",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "WARNING: please check you have started this container with a volume that is mounted to /data\\n otherwise any flow changes are lost when you redeploy or upgrade the container\\n (e.g. upgrade to a more recent node-red docker image).\\n  If you are using named volumes you can ignore this warning.\\n Double click or see info side panel to learn how to start Node-RED in Docker to save your work",
+        "info": "\nTo start docker with a bind mount volume (-v option), for example:\n\n```\ndocker run -it -p 1880:1880 -v /home/user/node_red_data:/data --name mynodered nodered/node-red\n```\n\nwhere `/home/user/node_red_data` is a directory on your host machine where you want to store your flows.\n\nIf you do not do this then you can experiment and redploy flows, but if you restart or upgrade the container the flows will be disconnected and lost. \n\nThey will still exist in a hidden data volume, which can be recovered using standard docker techniques, but that is much more complex than just starting with a named volume as described above.",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a8218656839c87d7",
+        "type": "http in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "url": "/hallo",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 280,
+        "wires": [
+            [
+                "704701fc2f7ad2f0"
+            ]
+        ]
+    },
+    {
+        "id": "1ee83ff1784b1345",
+        "type": "http response",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 490,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "704701fc2f7ad2f0",
+        "type": "template",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<h1>Hallo wereld!</h1>\n<p>Een website maak je met de HTML-tags. Een tag staat tussen een kleiner (<) en een groter (>) teken.<p>\n<p>Een HTML tag wordt afgesloten met dezelfde naam voorafgegaan door het slash (/) teken.</p>\n<p>Voor de kopteksten gebruik je tags h1 tot en met h6.</p>\n<p>Gewone tekst zet je tussen de p-tags.</p>\n<p>Veel plezier met het maken van je website, Rob.</p>",
+        "output": "str",
+        "x": 340,
+        "y": 280,
+        "wires": [
+            [
+                "1ee83ff1784b1345"
+            ]
+        ]
+    },
+    {
+        "id": "3cce26b00f8ec5c0",
+        "type": "http request",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://dog.ceo/api/breeds/image/random",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "5b87303914099738",
+                "a80b6a029506ebc7"
+            ]
+        ]
+    },
+    {
+        "id": "d8d6cb3760ce2fc2",
+        "type": "http response",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5b87303914099738",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "8318c1377bd315fa",
+        "type": "http in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "url": "/toon",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 460,
+        "wires": [
+            [
+                "3cce26b00f8ec5c0"
+            ]
+        ]
+    },
+    {
+        "id": "a80b6a029506ebc7",
+        "type": "template",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "  <title>Bootstrap Example</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\"></script>\n</head>\n<body>\n  \n<div class=\"container\">\n  <button onclick=\"location.reload();\">Volgende plaatje</button>\n  <h1 style=\"text-align:center\">Mijn Eerste Honden Pagina</h1>\n  <img src=\"{{payload.message}}\" width=\"100%\"/>          \n</div>\n\n</body>\n</html>",
+        "output": "str",
+        "x": 560,
+        "y": 460,
+        "wires": [
+            [
+                "d8d6cb3760ce2fc2"
+            ]
+        ]
+    },
+    {
+        "id": "cb2bb9e60465bf44",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 940,
+        "wires": [
+            [
+                "effd977896c2bf92"
+            ]
+        ]
+    },
+    {
+        "id": "effd977896c2bf92",
+        "type": "http request",
+        "z": "f6f2187d.f17ca8",
+        "name": "visualcrossing.com",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=27NNB9GMB6PG6QQZYSAN736JK&contentType=json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 940,
+        "wires": [
+            [
+                "c11f397616ad174c",
+                "5a9db9b5487a6c66",
+                "19b149d9a338b0f0"
+            ]
+        ]
+    },
+    {
+        "id": "b29a6b10d4f8f7cf",
+        "type": "ui_chart",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "group": "a8c62e847f43767b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Buitentemperatuur",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccb6f5e6c906ccdf",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Buitentemp",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "x": 770,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "c11f397616ad174c",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "buitentemp",
+        "func": "return { payload : msg.payload.currentConditions.temp };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 860,
+        "wires": [
+            [
+                "ccb6f5e6c906ccdf",
+                "b29a6b10d4f8f7cf",
+                "63f6e9c2545e5587"
+            ]
+        ]
+    },
+    {
+        "id": "5a9db9b5487a6c66",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "windrichting",
+        "func": "let test = msg.payload.currentConditions.winddir;\nlet windrichting = '';\n\nif (test >= 360 - 22.5) {\n    windrichting = 'N';\n} else if (test < 22.5) {\n    windrichting = 'N';\n} else if (test >= 325 - 22.5 && test <= 325 + 22.5) {\n    windrichting = 'NW';\n} else if (test >= 270 - 22.5 && test <= 270 + 22.5) {\n    windrichting = 'W'\n} else if (test >= 225 - 22.5 && test <= 225 + 22.5) {\n    windrichting = 'ZW';\n} else if (test >= 180 - 22.5 && test <= 180 + 22.5) {\n    windrichting = 'Z';\n} else if (test >= 135 - 22.5 && test <= 135 + 22.5) {\n    windrichting = 'ZO';\n} else if (test >= 90 - 22.5 && test <= 90 + 22.5) {\n    windrichting = 'O';\n} else if (test >= 45 - 22.5 && test <= 45 + 22.5) {\n    windrichting = 'NO';\n}\n\nreturn { payload: windrichting };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 940,
+        "wires": [
+            [
+                "72db465e9bf0c398"
+            ]
+        ]
+    },
+    {
+        "id": "72db465e9bf0c398",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Windrichting",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 770,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "19b149d9a338b0f0",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "windsnelheid",
+        "func": "let test = msg.payload.currentConditions.windspeed;\nlet windsnelheid = '';\n\nif (test <= 1) {\n    windsnelheid = '0';\n} else if (test > 1 && test <= 5) {\n    windsnelheid = '1';\n} else if (test > 5 && test <= 11) {\n    windsnelheid = '2'\n} else if (test > 11 && test <= 19) {\n    windsnelheid = '3';\n} else if (test > 19 && test <= 28) {\n    windsnelheid = '4';\n} else if (test > 28 && test <= 38) {\n    windsnelheid = '5';\n} else if (test > 38 && test <= 49) {\n    windsnelheid = '6';\n} else if (test > 49 && test <= 61) {\n    windsnelheid = '7';\n} else if (test > 61 && test <= 74) {\n    windsnelheid = '8';\n} else if (test > 74 && test <= 88) {\n    windsnelheid = '9';\n} else if (test > 88 && test <= 102) {\n    windsnelheid = '10';\n} else if (test > 102 && test <= 117) {\n    windsnelheid = '11';\n} else if (test > 117) {\n    windsnelheid = '12';\n}\n\nreturn { payload: windsnelheid };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1020,
+        "wires": [
+            [
+                "fb2502fba233b908"
+            ]
+        ]
+    },
+    {
+        "id": "fb2502fba233b908",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Windkracht",
+        "label": "Windkracht",
+        "format": "{{msg.payload}} Bft",
+        "layout": "row-spread",
+        "className": "",
+        "x": 770,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "475fcb6249daa737",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "Temp Huiskamer",
+        "topic": "esp8266/dht22/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "ed683f775e4ef166",
+                "c8a85bad37f3a8bc"
+            ]
+        ]
+    },
+    {
+        "id": "ed683f775e4ef166",
+        "type": "ui_gauge",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "group": "a8c62e847f43767b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp Huiskamer",
+        "label": "C",
+        "format": "{{value}}",
+        "min": "-20",
+        "max": "50",
+        "colors": [
+            "#f1f514",
+            "#1ec23a",
+            "#ca3838"
+        ],
+        "seg1": "16",
+        "seg2": "30",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c3d3b4e.116d848",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "Hum huiskamer",
+        "topic": "esp8266/dht22/humidity",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 700,
+        "wires": [
+            [
+                "783324d3.3efd7c"
+            ]
+        ]
+    },
+    {
+        "id": "783324d3.3efd7c",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hum Huiskamer",
+        "format": "{{msg.payload}} %",
+        "layout": "row-spread",
+        "className": "",
+        "x": 360,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "a6d8185ee8e616d5",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "domoticz/out",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1260,
+        "wires": [
+            [
+                "1de71ec412c8f7fd",
+                "eac8e8238f831098"
+            ]
+        ]
+    },
+    {
+        "id": "1de71ec412c8f7fd",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "function 9",
+        "func": "var myval = msg.payload;\nif (myval.name == 'Power') {\n  msg.payload.value = Number(myval.svalue5);\n  return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1220,
+        "wires": [
+            [
+                "edb1f8cd2b7c8e0f"
+            ]
+        ]
+    },
+    {
+        "id": "eac8e8238f831098",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "function 10",
+        "func": "let myvalNew = msg.payload;\nlet myvalOld = 0;\nlet myvalStart = 3545.60\n\nif (myvalNew.name == 'Gas') {\n  \n  msg.payload = ((Number(myvalNew.svalue1-myvalOld)/1000) - myvalStart).toFixed(2);\n  myvalOld = myvalNew.svalue1;\n  return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1300,
+        "wires": [
+            [
+                "205718526037d01c"
+            ]
+        ]
+    },
+    {
+        "id": "205718526037d01c",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Gas per 1-1-2023",
+        "format": "{{msg.payload}} m³",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "edb1f8cd2b7c8e0f",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Electra momenteel",
+        "format": "{{msg.payload.value}} W",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "15abdf54920ac65a",
+        "type": "influxdb out",
+        "z": "f6f2187d.f17ca8",
+        "influxdb": "d8b31f9614f9221e",
+        "name": "",
+        "measurement": "test",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1040,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "63f6e9c2545e5587",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "function 11",
+        "func": "var myval = msg.payload;\nmsg.payload = {\n    temp: Number(myval),\n    type: \"temp\",\n    locatie: \"buiten\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 760,
+        "wires": [
+            [
+                "15abdf54920ac65a",
+                "8ccbb603c6e46db5"
+            ]
+        ]
+    },
+    {
+        "id": "8ccbb603c6e46db5",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "c8a85bad37f3a8bc",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "function 12",
+        "func": "var myval = msg.payload;\nmsg.payload = {\n    temp: Number(myval),\n    type: \"temp\",\n    locatie: \"huiskamer\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 560,
+        "wires": [
+            [
+                "3f1176511267dab6"
+            ]
+        ]
+    },
+    {
+        "id": "3f1176511267dab6",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "dc70ca.9836af38",
+        "type": "inject",
+        "z": "542dc611.18b618",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "f19e8eb4.45e46"
+            ]
+        ]
+    },
+    {
+        "id": "9405fff7.5802a",
+        "type": "inject",
+        "z": "542dc611.18b618",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "f19e8eb4.45e46"
+            ]
+        ]
+    },
+    {
+        "id": "f19e8eb4.45e46",
+        "type": "mqtt out",
+        "z": "542dc611.18b618",
+        "name": "",
+        "topic": "home/office/rpi/12",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ff0a2d53.6e2d4",
+        "x": 450,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d18eeb18.f0fe18",
+        "type": "mqtt in",
+        "z": "542dc611.18b618",
+        "name": "",
+        "topic": "home/office/rpi/12",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "b25e254e.224f98"
+            ]
+        ]
+    },
+    {
+        "id": "b25e254e.224f98",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "Switch led",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "12d944e0.f5c9bb",
+        "type": "mqtt in",
+        "z": "542dc611.18b618",
+        "name": "Temp Huiskamer",
+        "topic": "esp8266/dht22/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 680,
+        "wires": [
+            [
+                "8f0b9438.13ce58",
+                "b28adea1.070a3",
+                "2a8359fc926692c3"
+            ]
+        ]
+    },
+    {
+        "id": "443d7686.ebbbc8",
+        "type": "mqtt in",
+        "z": "542dc611.18b618",
+        "name": "",
+        "topic": "esp32/bme280/pressure",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 380,
+        "wires": [
+            [
+                "c75e71b2.ef096",
+                "3ef5f6dd.297a4a",
+                "bd99e2e301d3e62b"
+            ]
+        ]
+    },
+    {
+        "id": "64e6d492.08d80c",
+        "type": "mqtt in",
+        "z": "542dc611.18b618",
+        "name": "Temp Study",
+        "topic": "esp32/bme280/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "a8ae465c.380238",
+                "b28adea1.070a3",
+                "ee4cd36bc3f526ef"
+            ]
+        ]
+    },
+    {
+        "id": "fde34339.84334",
+        "type": "mqtt in",
+        "z": "542dc611.18b618",
+        "name": "",
+        "topic": "esp32/bme280/humidity",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 500,
+        "wires": [
+            [
+                "9d5d04ac.67a068"
+            ]
+        ]
+    },
+    {
+        "id": "5539a7cc.68dba8",
+        "type": "mqtt in",
+        "z": "542dc611.18b618",
+        "name": "Temp kamer voor",
+        "topic": "temperature2",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 880,
+        "wires": [
+            [
+                "4693fa42.f53044",
+                "b28adea1.070a3",
+                "dad76489844c30ae"
+            ]
+        ]
+    },
+    {
+        "id": "811f998f.e6b618",
+        "type": "mqtt in",
+        "z": "542dc611.18b618",
+        "name": "Hum kamer voor",
+        "topic": "humidity2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 960,
+        "wires": [
+            [
+                "e85eea3a.e9ba88"
+            ]
+        ]
+    },
+    {
+        "id": "efe868d9.2def08",
+        "type": "subflow:ca133ec8.b81cb",
+        "z": "542dc611.18b618",
+        "name": "",
+        "x": 140,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "25219393.a1b89c",
+        "type": "exec",
+        "z": "542dc611.18b618",
+        "command": "cat",
+        "addpay": "",
+        "append": "/home/pi/start_service.txt",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 140,
+        "y": 1820,
+        "wires": [
+            [
+                "55d35a62.6909b4"
+            ],
+            [
+                "55d35a62.6909b4"
+            ],
+            [
+                "55d35a62.6909b4"
+            ]
+        ]
+    },
+    {
+        "id": "55d35a62.6909b4",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "da08ca18.e440c8",
+        "type": "inject",
+        "z": "542dc611.18b618",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1920,
+        "wires": [
+            [
+                "25219393.a1b89c"
+            ]
+        ]
+    },
+    {
+        "id": "7dad20fb.47acd",
+        "type": "inject",
+        "z": "542dc611.18b618",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 2000,
+        "wires": [
+            [
+                "9096b369.1aad1"
+            ]
+        ]
+    },
+    {
+        "id": "9096b369.1aad1",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "count",
+        "func": "value = global.get('count') || 0;\nvalue ++;\nglobal.set('count', value);\nreturn {payload : value};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 2000,
+        "wires": [
+            [
+                "b446b4b3.465c78"
+            ]
+        ]
+    },
+    {
+        "id": "b446b4b3.465c78",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "76d514a4.932d5c",
+        "type": "inject",
+        "z": "542dc611.18b618",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 2060,
+        "wires": [
+            [
+                "2c28e3de.4a1c4c"
+            ]
+        ]
+    },
+    {
+        "id": "2c28e3de.4a1c4c",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "",
+        "func": "\nreturn { payload : flow.get('count') };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 2060,
+        "wires": [
+            [
+                "2041e6f6.58380a"
+            ]
+        ]
+    },
+    {
+        "id": "2041e6f6.58380a",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "5aebf1c.aedcd1",
+        "type": "link in",
+        "z": "542dc611.18b618",
+        "name": "",
+        "links": [
+            "43c90e0f.8712d"
+        ],
+        "x": 255,
+        "y": 2140,
+        "wires": [
+            [
+                "27c0c9cd.3fc8a6"
+            ]
+        ]
+    },
+    {
+        "id": "27c0c9cd.3fc8a6",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "1ce9550a.cc6b9b",
+        "type": "http request",
+        "z": "542dc611.18b618",
+        "name": "visualcrossing.com",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=27NNB9GMB6PG6QQZYSAN736JK&contentType=json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 1080,
+        "wires": [
+            [
+                "9537401b.aa4d7",
+                "58b26bbe.95a474",
+                "66ad4667.ef68a8",
+                "1747c513.094cbb",
+                "db5abee7.5f146",
+                "b6b9b5dd.6a8b48",
+                "2cbe34ae.fd453c",
+                "925ac8df7222a6a6",
+                "9584950e1e326aee"
+            ]
+        ]
+    },
+    {
+        "id": "6d32692.1d95898",
+        "type": "inject",
+        "z": "542dc611.18b618",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9537401b.aa4d7",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "get_actual_temp",
+        "func": "return { payload : msg.payload.currentConditions.temp };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1080,
+        "wires": [
+            [
+                "3306c04c.57bb3",
+                "f01befd9fbb85779"
+            ]
+        ]
+    },
+    {
+        "id": "58b26bbe.95a474",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "get_actual_hum",
+        "func": "return { payload : msg.payload.currentConditions.humidity };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1240,
+        "wires": [
+            [
+                "9582495b.017858"
+            ]
+        ]
+    },
+    {
+        "id": "c88e2173.93091",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "66ad4667.ef68a8",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "get_actual_windspeed",
+        "func": "let test = msg.payload.currentConditions.winddir;\nlet result = '';\n\nif (test <= 1) {\n    result = '0';\n} else if (test > 1 && test <= 5) {\n    result = '1';\n} else if (test > 5 && test <= 11) {\n    result = '2'\n} else if (test > 11 && test <= 19) {\n    result = '3';\n} else if (test > 19 && test <= 28) {\n    result = '4';\n} else if (test > 28 && test <= 38) {\n    result = '5';\n} else if (test > 38 && test <= 49) {\n    result = '6';\n} else if (test > 49 && test <= 61) {\n    result = '7';\n} else if (test > 61 && test <= 74) {\n    result = '8';\n} else if (test > 74 && test <= 88) {\n    result = '9';\n} else if (test > 88 && test <= 102) {\n    result = '10';\n} else if (test > 102 && test <= 117) {\n    result = '11';\n} else if (test > 117) {\n    result = '12';\n}\n\nreturn { payload: result };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1747c513.094cbb",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "get_actual_temp",
+        "func": "return { payload : msg.payload.currentConditions.conditions };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1020,
+        "wires": [
+            [
+                "aef16447.529688"
+            ]
+        ]
+    },
+    {
+        "id": "db5abee7.5f146",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "",
+        "func": "return { payload : '_'.repeat(38) };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1340,
+        "wires": [
+            [
+                "c91fb347.e7ef9"
+            ]
+        ]
+    },
+    {
+        "id": "b6b9b5dd.6a8b48",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "windrichting",
+        "func": "test = msg.payload.currentConditions.winddir;\nresult = '';\n\nif (test < 22.5 && test >= (360-22.5)) {\n    result = 'N';\n} else if (test >= 325-22.5 && test <= 325+22.5) {\n    result = 'NW';\n} else if (test >= 270-22.5 && test <= 270+22.5) {\n    result = 'W'\n} else if (test >= 225-22.5 && test <= 225+22.5) {\n    result = 'ZW';\n} else if (test >= 180-22.5 && test <= 180+22.5) {\n    result = 'Z';\n} else if (test >= 135-22.5 && test <= 135+22.5) {\n    result = 'ZO';\n} else if (test >=  90-22.5  && test <= 90+22.5) {\n    result = 'O';\n} else if (test >=  45-22.5  && test <= 45+22.5) {\n    result = 'NO';\n}\n\nreturn { payload : result };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2cbe34ae.fd453c",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "get_actual_precip",
+        "func": "return { payload : msg.payload.currentConditions.precip };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1400,
+        "wires": [
+            [
+                "7ac0ab9c.8c6c84"
+            ]
+        ]
+    },
+    {
+        "id": "861e0d72f7fe60b6",
+        "type": "http in",
+        "z": "542dc611.18b618",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 2280,
+        "wires": [
+            [
+                "f51b40a7e30a7686"
+            ]
+        ]
+    },
+    {
+        "id": "f51b40a7e30a7686",
+        "type": "template",
+        "z": "542dc611.18b618",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n  <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\"></script>\n</head>\n<body>\n\n<div class=\"container\">\n  <h1>My First Bootstrap Page</h1>\n  <p>This part is inside a .container class.</p>\n  <p>The .container class provides a responsive fixed width container.</p>\n</div>\n\n</body>\n</html>",
+        "output": "str",
+        "x": 340,
+        "y": 2280,
+        "wires": [
+            [
+                "dcdc5e49887a4309"
+            ]
+        ]
+    },
+    {
+        "id": "dcdc5e49887a4309",
+        "type": "http response",
+        "z": "542dc611.18b618",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "48418ceb3a65d388",
+        "type": "change",
+        "z": "542dc611.18b618",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "store time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 2380,
+        "wires": [
+            [
+                "f5ae6fbadfd8392d"
+            ]
+        ]
+    },
+    {
+        "id": "cf054090c371ecd5",
+        "type": "inject",
+        "z": "542dc611.18b618",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 2380,
+        "wires": [
+            [
+                "48418ceb3a65d388"
+            ]
+        ]
+    },
+    {
+        "id": "f5ae6fbadfd8392d",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "f4f1453b9bd2b92e",
+        "type": "file",
+        "z": "542dc611.18b618",
+        "name": "save data",
+        "filename": "/home/pi/testfile.txt",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 360,
+        "y": 2520,
+        "wires": [
+            [
+                "5789ccaa85805cd9"
+            ]
+        ]
+    },
+    {
+        "id": "1682a2664e0752c8",
+        "type": "inject",
+        "z": "542dc611.18b618",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "savetofile",
+        "payload": "Hello world!",
+        "payloadType": "str",
+        "x": 140,
+        "y": 2520,
+        "wires": [
+            [
+                "f4f1453b9bd2b92e"
+            ]
+        ]
+    },
+    {
+        "id": "5789ccaa85805cd9",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "925ac8df7222a6a6",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "get_actual_pressure",
+        "func": "return { payload : msg.payload.currentConditions.pressure };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1460,
+        "wires": [
+            [
+                "5c8410409ed98a12"
+            ]
+        ]
+    },
+    {
+        "id": "2a8359fc926692c3",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "function 1",
+        "func": "var myval = msg.payload;\nmsg.payload = {\n    temp: Number(myval),\n    location: \"LR\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee4cd36bc3f526ef",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "function 2",
+        "func": "var myval = msg.payload;\nmsg.payload = {\n    temp: Number(myval),\n    location: \"ST\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f01befd9fbb85779",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "function 3",
+        "func": "var myval = msg.payload;\nmsg.payload = {\n    temp: Number(myval),\n    location: \"VC\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dad76489844c30ae",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "function 4",
+        "func": "var myval = msg.payload;\nmsg.payload = {\n    temp: Number(myval),\n    location: \"KV\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd99e2e301d3e62b",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "function 5",
+        "func": "var myval = msg.payload;\nmsg.payload = {\n    temp: Number(myval),\n    location: \"PR\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9584950e1e326aee",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "b66a55967bbcae8c",
+        "type": "mqtt in",
+        "z": "542dc611.18b618",
+        "name": "",
+        "topic": "domoticz/out",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 870,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9507b4a8f5108df5",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "function 6",
+        "func": "var myval = msg.payload;\nif (myval.name == 'Power') {\n    msg.payload = {\n      \"value\": Number(myval.svalue5)\n    }\n  return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 540,
+        "wires": [
+            [
+                "2e2c202d010ceb6b"
+            ]
+        ]
+    },
+    {
+        "id": "d2e65bbc8cb30a48",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5058bc6240c8ace4",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "function 7",
+        "func": "let myvalNew = msg.payload;\nlet myvalOld = 0;\nlet myvalStart = 3545.60\n\nif (myvalNew.name == 'Gas') {\n  \n  msg.payload = ((Number(myvalNew.svalue1-myvalOld)/1000) - myvalStart).toFixed(2);\n  myvalOld = myvalNew.svalue1;\n  return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 620,
+        "wires": [
+            [
+                "e26ee591758b3632",
+                "fe49a2f357a04dda"
+            ]
+        ]
+    },
+    {
+        "id": "e26ee591758b3632",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "0e3e2b5f97e14172",
+        "type": "function",
+        "z": "542dc611.18b618",
+        "name": "function 8",
+        "func": "var myval = msg.payload;\nif (myval.name == 'Gas') {\n  msg.payload = myval;\n  return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 720,
+        "wires": [
+            [
+                "993529508455dac7"
+            ]
+        ]
+    },
+    {
+        "id": "993529508455dac7",
+        "type": "debug",
+        "z": "542dc611.18b618",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "b89bf107.28042",
+        "type": "ui_switch",
+        "z": "542dc611.18b618",
+        "name": "LED",
+        "label": "LED",
+        "tooltip": "",
+        "group": "414046f.b5638b8",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "f19e8eb4.45e46"
+            ]
+        ]
+    },
+    {
+        "id": "1a75d2c5.50c2fd",
+        "type": "ui_form",
+        "z": "542dc611.18b618",
+        "name": "",
+        "label": "",
+        "group": "414046f.b5638b8",
+        "order": 27,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name:",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Remark",
+                "value": "remark",
+                "type": "multiline",
+                "required": true,
+                "rows": 3
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "remark": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 150,
+        "y": 1540,
+        "wires": [
+            [
+                "c88e2173.93091"
+            ]
+        ]
+    },
+    {
+        "id": "a8ae465c.380238",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temp Studeerkamer",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "x": 460,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9d5d04ac.67a068",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Vochtigheid Studeerkamer",
+        "format": "{{msg.payload}} %",
+        "layout": "row-spread",
+        "className": "",
+        "x": 480,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4693fa42.f53044",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temp kamer voor",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "x": 450,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "e85eea3a.e9ba88",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hum kamer voor",
+        "format": "{{msg.payload}} %",
+        "layout": "row-spread",
+        "className": "",
+        "x": 440,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "3ef5f6dd.297a4a",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Luchtdruk",
+        "format": "{{msg.payload}} hPa",
+        "layout": "row-spread",
+        "className": "",
+        "x": 420,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9582495b.017858",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Luchtvochtigheid",
+        "format": "{{msg.payload}} %",
+        "layout": "row-spread",
+        "className": "",
+        "x": 830,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "aef16447.529688",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 790,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "c91fb347.e7ef9",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Externe data",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 810,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "7ac0ab9c.8c6c84",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 23,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Neerslag",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 800,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "5c8410409ed98a12",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 24,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Luchtdruk",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 800,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "fe49a2f357a04dda",
+        "type": "ui_text",
+        "z": "542dc611.18b618",
+        "group": "414046f.b5638b8",
+        "order": 25,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Gas",
+        "format": "{{msg.payload}} m³",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1190,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "8f0b9438.13ce58",
+        "type": "ui_gauge",
+        "z": "542dc611.18b618",
+        "name": "",
+        "group": "414046f.b5638b8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp Huiskamer",
+        "label": "C",
+        "format": "{{value}}",
+        "min": "-20",
+        "max": "50",
+        "colors": [
+            "#f1f514",
+            "#1ec23a",
+            "#ca3838"
+        ],
+        "seg1": "16",
+        "seg2": "30",
+        "className": "",
+        "x": 450,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2e2c202d010ceb6b",
+        "type": "ui_gauge",
+        "z": "542dc611.18b618",
+        "name": "",
+        "group": "414046f.b5638b8",
+        "order": 26,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Electricieit",
+        "label": "units",
+        "format": "{{msg.payload.value}} W",
+        "min": "100",
+        "max": "800",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1210,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b28adea1.070a3",
+        "type": "ui_chart",
+        "z": "542dc611.18b618",
+        "name": "",
+        "group": "414046f.b5638b8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Binnentemperatuur",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "5000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#b31e1e",
+            "#7db4fc",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 450,
+        "y": 680,
+        "wires": [
+            []
+        ],
+        "inputLabels": [
+            "Test"
+        ]
+    },
+    {
+        "id": "c75e71b2.ef096",
+        "type": "ui_chart",
+        "z": "542dc611.18b618",
+        "name": "pressure",
+        "group": "414046f.b5638b8",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "label": "Luchtdruk",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "30000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 420,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3306c04c.57bb3",
+        "type": "ui_chart",
+        "z": "542dc611.18b618",
+        "name": "",
+        "group": "414046f.b5638b8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Buitentemperatuur",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c69539885bec1b8d",
+        "type": "influxdb out",
+        "z": "542dc611.18b618",
+        "influxdb": "d8b31f9614f9221e",
+        "name": "",
+        "measurement": "myval",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 930,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "3242341e.1eb0fc",
+        "type": "inject",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "ddaeaf45.4378b"
+            ]
+        ]
+    },
+    {
+        "id": "ddaeaf45.4378b",
+        "type": "function",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "func": "\nreturn { payload : global.get('count') };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "6de2b504.aed07c"
+            ]
+        ]
+    },
+    {
+        "id": "6de2b504.aed07c",
+        "type": "debug",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b531b704.403288",
+        "type": "inject",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "837242fd.3a8f2"
+            ]
+        ]
+    },
+    {
+        "id": "837242fd.3a8f2",
+        "type": "delay",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [
+                "43c90e0f.8712d"
+            ]
+        ]
+    },
+    {
+        "id": "43c90e0f.8712d",
+        "type": "link out",
+        "z": "83e57a59.196fd8",
+        "name": "example",
+        "links": [
+            "5a2490a8.40abd",
+            "5aebf1c.aedcd1"
+        ],
+        "x": 525,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "e9a94f61267089ba",
+        "type": "http in",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "url": "/adressen",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 360,
+        "wires": [
+            [
+                "d60c6c548282b522"
+            ]
+        ]
+    },
+    {
+        "id": "d60c6c548282b522",
+        "type": "template",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "    <!DOCTYPE html>\n    <html lang=”en”>\n     <head>\n       <title>Adressen</title>\n       <style>\n         table {border-collapse: collapse;}\n         tr    {border-bottom: 0.5pt solid black;}\n      </style>\n</head>\n    </head>\n    <h1>Adressen{{req.params.name}}</h1>\n    <!-- Hello {{req.query.first}} {{req.query.last}}! -->\n    <table>\n        <th>Naam</th><th>Adres</th><th>Email</th><th>Verjaardag</th><th>Opmerking</th>\n        <tr><td>Achmea Alarm</td><td></td><td></td><td></td><td></td></tr>\n        <tr><td>Ada van Leest</td><td>Koolzaadland 27, 3833 CJ Leusden</td><td></td><td></td><td></td></tr>\n        <tr><td>Anneke Brandon</td><td>Wegastraat 27, 1223 CN Hilversum</td><td>n.brandon@kpnplanet.nl</td><td>4 feb</td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015</td></tr>\n        <tr><td>Annemarie en Barry van Os</td><td>Tasmaniëstraat 99, 1339 PA Almere</td><td></td><td></td><td>Kerstkaart 2012, 2018, 2019</td></tr>\n        <tr><td>Annie en Henk van de Hoef</td><td>Stationsweg 33, 3981 AB Bunnik</td><td>ahoef@casema.nl</td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016</td></tr>\n        <tr><td>Ans Gortzak- de Wit</td><td>Laan van Eikenrode 36, 1231 BP Loosdrecht</td><td>gortzak@dutch.nl</td><td>2 jun</td><td>Kerstkaart 2010</td></tr>\n        <tr><td>Ans Leliaert</td><td>Veendamstraat 34, 1324 AX Almere-Stad</td><td>fam.leliaert@kpnmail.nl</td><td>8 okt</td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Auto Versteeg Buurman</td><td></td><td>033 2858586</td><td></td><td></td></tr>\n        <tr><td>Babs en Martin Polman</td><td>Landweg 203, 3833 VG Leusden</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019</td></tr>\n        <tr><td>Ben Rob</td><td>Klantnummer: 104449</td><td></td><td></td><td></td></tr>\n        <tr><td>Ben Wil</td><td>Klantnummer: BEN000261614</td><td></td><td></td><td>Inlog: wfaber Wachtwoord: Bontekoe1</td></tr>\n        <tr><td>Bianca de Regt en Hugo Holtslag</td><td>Zandpad 123, 3621 NJ Breukelen</td><td></td><td></td><td></td></tr>\n        <tr><td>Cobi en<br>Erik van der Schaar</td><td>Bremlaan 15, 1213 SW Hilversum</td><td>cobivdschaar@gmail.com</td><td>18 mei<br>29 mrt</td><td>Kerstkaart 2010, 2012, 2013, 2014, 2015, 2016, 2018, 2019</td></tr>\n        <tr><td>Dita van Gangelen</td><td>Poolsterstraat 21, 1223 AX Hilversum</td><td></td><td></td><td></td></tr>\n        <tr><td>Ditte en Frank Scherpenisse</td><td>Landweg 64. 3833 VM Leusden</td><td></td><td></td><td>Kaart 2011, 2012, 2013, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Els en<br>Peter de Wit</td><td>Nwe. 's Gravelandseweg 43a, 1406 NA Bussum</td><td>elspeet@casema.nl</td><td>21 nov<br>9 jun</td><td>Kerstkaart 2011, 2012, 2013</td></tr>\n        <tr><td>Eric en Thelma Viveen</td><td>Verl. Scholtenskanaal Oz 45, 7881 JS Emmercompascuem</td><td>famviveen@casema.nl - www.hopeofcadbury.nl</td><td></td><td>Kerstkaart 2011</td></tr>\n        <tr><td>Erwin van der Kolk</td><td>Landweg 70, 3833 VM Leusden</td><td>vanderkolkerwin@gmail.com</td><td>'8 sep</td><td>Kerstkaart 2011, 2012, 2013, 2015, 2016</td></tr>\n        <tr><td>Fattoria La Vialla</td><td>Via di Meliciano 26 - 52029 Castiglion Fibocchi, Arezzo Italia</td><td>fattoria@lavialla.it<br>bestellen: www.bestelkaart.lavialla.it</td><td></td><td>Inlog code: rob en wil wachtwoord: DPE763</td></tr>\n        <tr><td>Ferdinand Vroom</td><td>Smetanalaan 14, 3055 TM Rotterdam</td><td>info@ferdinandvroom.nl</td><td>30 jan</td><td></td></tr>\n        <tr><td>Fiorella Moro</td><td>Le Ghiaie 2/D, Salutio 52020, Arezzo Italia</td><td>Fiorella fiemoro@gmail.com</td><td>14 nov<br>Gianni 30 apr</td><td></td></tr>\n        <tr><td>Gerben Bontekoe</td><td>Mezenpad 6, 3815RP, Amersfoort</td><td>info@studiobontekoe.nl</td><td>27 nov</td><td></td></tr>\n        <tr><td>Grace van der Kooi</td><td>12 Railway Street Corrimal, NSW 2518 Australia</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018</td></tr>\n        <tr><td>Hans en Irene van der Moolen</td><td>Lepelaar 24, 3831 DE Leusden</td><td>Irenevandermoolen@gmail.com<br>hansvandermoolen@gmail.com</td><td></td><td></td></tr>\n        <tr><td>Harmen van der Schaar</td><td>Lijsterlaan 136, 3145 VM Maassluis</td><td></td><td>15 jul</td><td>Kerstkaart 2011, 2012, 2013</td></tr>\n        <tr><td>Harry en Tonja Kost</td><td>Aviatik 14, 3769 JL Soesterberg</td><td>tonja.kost@kpnmail.nl</td><td>18 jul, 8 mrt</td><td>Kerstkaart 2011, 2012, 2013, 2015, 2018, 2019</td></tr>\n        <tr><td>Harry Heijkoop<br>Marja van der Wolf</td><td>Rua do Campo da Bola16 2540-000; Carvalhal Bombarral, Portugall<br>Van Asch van Wijckskade 2 bis A, 3512 VM Utrecht</td><td>hheijkoop@daringvof.net</td><td>18 feb</td><td>Kerstkaart 2013, 2017</td></tr>\n        <tr><td>Helly Lioni</td><td>Willem de Zwijgerlaan 82/11,1056 JT Amsterdam</td><td>lioni@scarlet.nl</td><td>1 jul</td><td>Kerstkaart 2010, 2011, 2012, 2015</td></tr>\n        <tr><td>Huisarts G. van der Wetering</td><td>Korte Geer 8, 3833 VV Leusden</td><td></td><td></td><td></td></tr>\n        <tr><td>Ingrid Hulst</td><td>Landweg 70, 3833 VM Leusden</td><td>hulstingrid@gmail.com</td><td>18 aug</td><td>Kerstkaart 2011, 2012, 2016, 2017, 2018</td></tr>\n        <tr><td>Jaap en Marja Stokvis</td><td>Landweg 76, 3833 VM Leusden</td><td>jaapmarjastokvis@gmail.com</td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2019</td></tr>\n        <tr><td>Jeroen Brandon en Jill Mulder</td><td>Heuvellaan 27, 1217 JL Hilversum</td><td></td><td></td><td></td></tr>\n        <tr><td>Jeroen Keet</td><td>Graalpad 2,  3813 GB  Amersfoort</td><td></td><td>31 jan</td><td></td></tr>\n        <tr><td>Jessica Roelfsema</td><td>Nieuwe Zijds Burgwal 43, 1141TG Monnickendam</td><td>jessica_roelfsema@hotmail.com</td><td>16 jun</td><td></td></tr>\n        <tr><td>Jochem leliaert, Naomi en Julian</td><td>Samoastraat 1, 1339 PB Almere</td><td></td><td>Jochem 2 sept, julian 7 mrt 2018 -  Liam Levi 26 mrt 2019</td><td></td></tr>\n        <tr><td>Joh. Faber</td><td>Holtlaan 145, 7824 SG Emmen</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Joke en Theo Kort</td><td>Izaak da Costalaan 8, 1401 BH Bussum</td><td></td><td>5 mrt; 6 jul</td><td></td></tr>\n        <tr><td>Joke van Tergouw</td><td>Benedictijnehove 61, 3834 ZC Leusden</td><td></td><td>26 okt</td><td></td></tr>\n        <tr><td>Joop Fidder</td><td>Patrijslaan 4, 3738 GD Maartensdijk</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014</td></tr>\n        <tr><td>Joop Roodenrijs en Mies de Jager</td><td>Oude Torenstraat 25, 1211 BV Hilversum</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014</td></tr>\n        <tr><td>Karen van der Moolen<br>Hoite Polkamp</td><td></td><td></td><td></td><td></td></tr>\n        <tr><td>Ruth de Wijs</td><td>Balistraat 19, 3818 AJ Amersfoort</td><td>keesdewijs@cs.com<br>ewijsre@gmail.com</td><td></td><td></td></tr>\n        <tr><td>Tiny van Rijn</td><td>Schakel 22, 1231 SW Loosdrecht</td><td>tinyvanrijn@gmail.com</td><td>23 mrt</td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Landman</td><td>van Ginkellaan 35, 3931 WD Woudenberg</td><td>jurgen@johanlandman.nl</td><td></td><td>Voor onderhoud en reparatie huis.</td></tr>\n        <tr><td>Lenie Ooms</td><td>Fuchsiastraat 71, 1214 GH Hilversum</td><td>lenie.ooms@xs4all.nl</td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014</td></tr>\n        <tr><td>Mariena Serné</td><td>Noordeinde 33, 2425 AD Zevenhoven</td><td></td><td></td><td></td></tr>\n        <tr><td>Marike en Maarten Teuben</td><td>Boomklever 20, 3738 SG Maartensdijk</td><td>maarten@marenmaa.nl</td><td></td><td>Kerstkaart 2015, 2017</td></tr>\n        <tr><td>Marjon Leliaert</td><td>Basilicumweg 158, 1314 HE Almere</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Marleen Bontekoe<br>Dennis Moohnen</td><td>Neuweg 18, 1211LW, Hilversum</td><td>marleenbontekoe@gmail.com; marleen@burobontekoe.nl</td><td>15 okt<br>29 jul</td><td>Kerstkaart 2012, 2015, 2016, 2018</td></tr>\n        <tr><td>Marnix Kemme en Frans van Croonenborg</td><td></td><td>Marnix@kemme.net</td><td></td><td></td></tr>\n        <tr><td>Nella Bandringa</td><td>Landweg 225, 3833 VG Leusden</td><td></td><td>21 jul</td><td>Kerstkaart 2011, 2012, 2013, 2015, 2016, 2018 - 2019</td></tr>\n        <tr><td>Paul en Jeanette van Rooyen</td><td>Troubadour 15, 1188 CX Amstelveen</td><td>adriaantje.stolk@hotmail.com</td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015</td></tr>\n        <tr><td>Peter Geesinken<br>Elly Geesink</td><td>Van Tetslaan 3, 3707 VA Zeist</td><td>pwgeesink@gmail.com<br>ellygeesink@gmail.com</td><td></td><td>Kerstkaart 2012, 2013, 2015, 2016</td></tr>\n        <tr><td>Richard van der Klei</td><td>Vrijheid 3, 1231 TK Loosdrecht</td><td></td><td>2 jun</td><td></td></tr>\n        <tr><td>Henk en<br>Shiela van den Akker<br>Wanjiku</td><td>Landweg 72, 3833 VM Leusden</td><td>sheila_and_henk@bigfoot.com</td><td>13 jul<br>-<br>3 mei</td><td>Kerstkaart 2011, 2012</td></tr>\n        <tr><td>Steffen en Marlies Chang</td><td>Landweg 201, 3833 VG Leusden</td><td></td><td></td><td></td></tr>\n        <tr><td>Tandarts Roppe</td><td></td><td>033 494 6352</td033 494 6352><td></td><td></td></tr>\n        <tr><td>Tanja en Taco Walstra-Brandon</td><td>Noorderweg 154, 1222 PH Hilversum</td><td></td><td></td><td></td></tr>\n        <tr><td>Tanja en Sylvia FransenSylvia FransenTed Tammer</td><td>Landweg 68, 3833 VM Leusden</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Tea<br>Wessel Le Mahieu</td><td>Oud Loosdrechtsedijk 131, WS 01, 1231 OT Loosdrecht</td><td>tewemahieu@casema.nl</td><td>5 apr<br>4 mrt</td><td></td></tr>\n        <tr><td>Thea Geijsberts</td><td>De Zijlmakerij 80, 3831 CW Leusden</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Theo en<br>Marjanne Tijmense</td><td>Zaaier 58, 3833 VW Leusden</td><td>theotheo53@gmail.com</td><td></td><td>Kerstkaart 2012, 2013, 2018, 2019</td></tr>\n        <tr><td>Tine Heeren</td><td>Schuttersweg 13, 1217 PV Hilversum</td><td></td><td>31 jul</td><td>Kerstkaart 2010</td></tr> \n        <tr><td>Sylvia Fransen</td><td>Voorburgstraat 16, 3634 AW Loenersloot</td><td></td><td>6 jan</td><td>Kerstkaart 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019</td></tr>\n        <tr><td>Villa Monica Sorrento</td><td>Via campitielo 14, 80067 Sorrento. Italia</td><td></td><td></td><td></td></tr>\n        <tr><td>Vrijbuiter Kantoor</td><td></td><td></td><td></td><td>inlog code Web site: Bontekoe-Faber wachtwoord: Februari09</td></tr>\n        <tr><td>Vrijbuiter; Mark Kroneman</td><td>Oud Loosdrechtsedijk 137, 1231 LT Loosdrecht</td><td></td><td></td><td>Kerstkaart 2011, 2012, 2013</td></tr>\n        <tr><td>Walter Keff</td><td></td><td>walter.keff@telfort.nl</td><td></td><td></td></tr>\n        <tr><td>Warris Hamersveld Groep</td><td>Van Diepenheim Scheltuslaan 7, 3832 EE LEUSDEN</td><td>info@warrishamersveldgroep.nl</td><td></td><td></td></tr>\n        <tr><td>Wil en Wim Grob</td><td>Augustinushof 57, 1216 LD Hilversum</td><td></td><td></td><td>Kerstkaart 2011, 2012</td></tr>\n        <tr><td>Wim en<br>Berry de Wit</td><td>Bloemendaalseweg 123a, 2061 CH Bloemendaal</td><td></td><td>9 dec<br>1 mei</td><td></td></tr>\n        <tr><td></td><td></td><td></td><td></td><td></td></tr>\n      <table>\n    </html>This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 400,
+        "y": 360,
+        "wires": [
+            [
+                "52e90f658f5a7d78"
+            ]
+        ]
+    },
+    {
+        "id": "52e90f658f5a7d78",
+        "type": "http response",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b14f99f78c33faae",
+        "type": "http in",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "url": "/logboek",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 460,
+        "wires": [
+            [
+                "3e2f5cf423d2ac9a"
+            ]
+        ]
+    },
+    {
+        "id": "3e2f5cf423d2ac9a",
+        "type": "template",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This i    <!DOCTYPE html>\n    <html lang=”en”>\n     <head>\n       <title>Logboek</title>\n       <style>\n         table {border-collapse: collapse;\n                width: 100%;\n         }\n         tr    {border-bottom: 0.5pt solid black;}\n      </style>\n</head>\n    </head>\n    <h1>Logboek{{req.params.name}}</h1>\n    <!-- Hello {{req.query.first}} {{req.query.last}}! -->\n    <table>\n        <th>Onderwerp</th><th>Datum</th><th>Klacht</th><th>Oplossing</th>\n        <tr><td>TV kamer Marleen</td><td>10-05-2022</td><td>Lade van de DVD speler gaat niet open.<td>Nieuwe batterijen in de afstandsbediening gezet.</td></tr>\n        <tr><td>Node-Red MicroK8s App</td><td>20-05-2022</td><td>Hoe Sts yaml opzetten met Sqlite?<td>Zie mynodered.yaml in /projects/microk8s/mynodered, </br>volumeMounts:</br>&nbsp;- name: nr-data\n          </br>&nbsp;&nbsp;&nbsp;&nbsp;mountPath: /data</td></tr>\n        <tr><td>Gratis G-Suite</td><td>24-05-2022</td><td>Waar link naar Admin page voor personal use?<td>Screenshot gemaakt. In 5e alinea, laatste regel op 'hier' klikken: https://support.google.com/a/answer/2855120?hl=nl#zippy=%2Cbusiness-starter</td></tr>\n        <tr><td>Coursera</td><td>21-05-2022</td><td>Link naar cursus<td>https://www.coursera.org/learn/machine-teaching-ai/home/week/2</td></tr>\n        <tr><td>Milestome</td><td>14-06-2022</td><td>Probleem met thermostaten</td><td>Zie:  https://www.startpagina.nl/v/wonen/vraag/265958/koud-aanvoelt-huis-nadat-thermostaat/</td></tr>\n        <tr><td>Raspberry Pi 3B+</td><td>30-10-2022</td><td>UCTronics HDMI monitor doet het niet</td><td>Zie:  https://www.uctronics.com/download/Amazon/U6104.pdf</td></tr>\n      <table></html>\n     s the payload: {{payload}} !",
+        "output": "str",
+        "x": 400,
+        "y": 460,
+        "wires": [
+            [
+                "fec6b4e317d2fe43"
+            ]
+        ]
+    },
+    {
+        "id": "fec6b4e317d2fe43",
+        "type": "http response",
+        "z": "83e57a59.196fd8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "616acda89e6976f5",
+        "type": "inject",
+        "z": "17ced1b99fa6ef00",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Rob\"}",
+        "payloadType": "json",
+        "x": 200,
+        "y": 160,
+        "wires": [
+            [
+                "6063725e9cfb257c"
+            ]
+        ]
+    },
+    {
+        "id": "6063725e9cfb257c",
+        "type": "debug",
+        "z": "17ced1b99fa6ef00",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "63d48fa9154a80eb",
+        "type": "complete",
+        "z": "17ced1b99fa6ef00",
+        "name": "",
+        "scope": [
+            "616acda89e6976f5"
+        ],
+        "uncaught": false,
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "18beec6f2e3f075b"
+            ]
+        ]
+    },
+    {
+        "id": "18beec6f2e3f075b",
+        "type": "debug",
+        "z": "17ced1b99fa6ef00",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "35ede8abde70b6e6",
+        "type": "catch",
+        "z": "17ced1b99fa6ef00",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "18beec6f2e3f075b"
+            ]
+        ]
+    }
+]

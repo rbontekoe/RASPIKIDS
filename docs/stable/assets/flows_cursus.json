@@ -1,0 +1,51 @@
+[
+    {
+        "id": "475fcb6249daa737",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "Temp Huiskamer",
+        "topic": "esp8266/dht22/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "ed683f775e4ef166",
+                "c8a85bad37f3a8bc"
+            ]
+        ]
+    },
+    {
+        "id": "ff0a2d53.6e2d4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.2.49",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
