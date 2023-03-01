@@ -3,7 +3,7 @@
 *Je leert hoe je gegevens uit de Influx database kunt gebruiken om grafieken te maken. Dit kan handig zijn om bijvoorbeeld trends te zien in de temperatuur of vochtigheid. We gebruiken het programma Grafana om de gegevens uit de Influx database te halen en om de grafieken te maken. Zo kunnen we gemakkelijk zien hoe de gegevens zich in de tijd hebben ontwikkeld.*
 
 ![fig_15_1](assets/fig_15_1.png)
-*Nieuws van 28 feb. 2023*
+*Nieuws van 1 mrt. 2023*
 
 ### Inhoud
 
