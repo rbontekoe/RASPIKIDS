@@ -25,32 +25,61 @@ Stap 3: Data naar database wegschrijven
 
 ## Stap 1 - InfluxDB module in Node-RED maken
 
-![fig_13_4](assets/fig_13_5.png)
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Open de webinterface van Node-RED met `IP_adres_Raspberry_Pi:1880`. |
+| 2 | Kies uit het menu voor "Manage palette". |
+| 3 | Klik op de "Install" tab en zoek naar "node-red-contrib-influxdb". ``//``![fig_14_4](assets/fig_14_4.png) |
+| 4 | Druk op de knop "Install". |
+| 5 | In het Node-RED menu vind je de drie nodes: ``\\``![fig_14_6](assets/fig_14_6.png) |
+||
 
 ## Stap 2 - Sensor_data database maken
 
-CREATE DATABASE sensor_data
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Ga naar de webinterface van Portainer en login: "IP_adres_Raspberry_Pi:9000". |
+| 2 | Klik op ">\_" symbool van de influxdb container. ``\\``![fig_14_7](assets/fig_14_7.png) |
+| 3 | Druk op de knop: "Connect". ``\\``![fig_14_8](assets/fig_14_8.png) |
+| 4 | Om de datum als "jjjj-mm-dd" weer te geven, type "influx -precision 'rfc3339'" en druk op Enter. |
+| 5 | Om de database "sensor_data" te maken, typ: `create database sensor_data" en druk op Enter. |
+| 6 | Verlaat de database interface met Ctrl-D. |
+| 7 | Verlaat de container interface met Ctrl_D. |
+||
 
 ## Stap 3 - Data naar database wegschrijven
 
-USE sensor_data
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Open Node-RED. |
+| 2 | Sleep een `function` en de `influx out` node naar je werkblad en verbind de nodes volgens het schema. ``\\``![fig_14_9](assets/fig_14_9.png) |
+| 3 | Open de `function` node en type de volgende code. ``\\``![fig_14_10](assets/fig_14_10.png) |
+| 4 | Druk op de toets "Done". |
+| 5 | Open de `influx out` node. |
+| 6 | Klik op het "potloodje". ``\\``![fig_14_11](assets/fig_14_11.png) ``\\``In Node-RED: JSON object creeert de tabel "test", die staat gedefinieerd in de node "influxdb out" onder "Measurments". Aantal items bepaalt aantal kolommen, naast de eerste kolom die datum en tijd bevat:
+          {
+              temp: Number(myval),   # de meting
+              type: "temp" ,         # additionele informatie
+              locatie: "LR"          # additionele informatie
+          }
 
-influx -precision 'rfc3339' # datum in yyyy-mm-dd formaat
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 7 | Vul het ip adres van je Raspberry Pi in en geef als naam van de database sensor\_data op. ![fig_14_12](assets/fig_14_12.png) |
+| 8 | Druk op de knop "Update". |
+| 9 | Druk op de knop "Done". |
+| 10 | Druk op de knop "Deploy". |
+||
 
-In Node-RED:
-JSON object creeert de tabel "test", die staat gedefinieerd in de node "influxdb out" onder measurments. Aantal items bepaalt aantal kolommen,
-naast de eerste kolom die datum en tijd bevat.
-{
-    temp: Number(myval),   # de meting
-    type: "temp" ,         # additionele informatie
-    locatie: "LR"          # additionele infromatie
-}
+Open de container interface en open de database interface met `influx -precision 'rfc3339' # datum in yyyy-mm-dd formaat`
 
-select * from test =>
-
-2023-02-23T14:10:11.630083951Z LR      17.9 temp
-2023-02-23T14:10:17.685277494Z LR      18   temp
-2023-02-23T14:10:23.700484434Z LR      17.9 temp
+Open database en typ `use sensor_data` en daarna `select * from test. Je krijg het volgende te zien:
+```
+2023-03-02T13:10:05.228259851Z buiten  10   temp
+2023-03-02T13:40:05.289277559Z buiten  10.1 temp
+2023-03-02T14:10:05.322618876Z buiten  10.1 temp
+```
 
 ## Samenvatting
 
+In deze les leer je hoe je gegevens zoals temperaturen en vochtigheid kunt opslaan in een Influx database met behulp van Node-RED. Om dit te doen heb je een Raspberry Pi 3B+ nodig met Docker, Portainer, Node-RED, InfluxDB en Grafana. Je moet ook het Node-RED dashboard programma hebben gemaakt en de Raspberry Pi moet verbinding hebben met het internet. Er zijn drie stappen om gegevens naar de Influx database te sturen: 1) een InfluxDB-module in Node-RED maken, 2) een sensor_data database maken, en 3) de data naar de database wegschrijven. Om deze stappen uit te voeren moet je verschillende acties ondernemen, zoals het openen van de webinterface van Node-RED, het zoeken naar de node-red-contrib-influxdb en het maken van een database. Je moet ook een functie- en influx-out node slepen naar je werkblad en deze verbinden volgens het schema. Ten slotte moet je het IP-adres van je Raspberry Pi invoeren en de naam van de database sensor_data opgeven, en daarna op de knop 'Deploy' drukken. Als je alles goed hebt gedaan, kun je later de gegevens gemakkelijk terugvinden en bekijken.
