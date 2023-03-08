@@ -44,7 +44,7 @@ Druk op de knop "Update" om het formulier bij te werken. Blijf daarna op het for
 
 Druk op de knop "Add" onderaan het "mqtt" formulier. Verander het formuliertype naar "Dummy (Does nothing, use for virtual switches only)". Geef het een naam "dummy" en druk op de knop "Update".
 
-Je ziet nu een knop genaamd "Create Virtual Sensors" in de "dummy" regel. Klik erop en vul de gegevens in zoals getoond in "figuur 6". Druk op "OK" als je klaar bent.
+Je ziet nu een knop genaamd "Create Virtual Sensors" in de "dummy" regel. Klik erop en vul de gegevens in zoals getoond in "figuur 6". Druk op "Update" als je klaar bent.
 
 ![fig_blog_6](assets/fig_blog_6.png) ``\\``*Figuur 6*
 
