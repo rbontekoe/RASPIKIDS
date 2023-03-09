@@ -1,4 +1,4 @@
-# Overview Linux Terminal
+# Overview Linux Terminal commando's
 
 # Overview Node-RED
 

@@ -8,6 +8,24 @@
 Ik heb zelf een Lenovo Legion Y520 Windows 10 laptop met Ubuntu 22.04 geïnstalleerd op een [Samsung portable SSD T5](#Install-Ubuntu-on-Samsung-T5-and-Lemovo-Legion-Y520-with-Windows-10) schijf. Ik start mijn machine op vanaf deze schijf.
 
 
+## Node-RED flows van de cursus importeren
+
+Zorg dat je vooraf de modules [Dashboard](../chapter9/index.html#Stap-1-De-Node-RED-Dashboard-module-downloaden) en [InfluxDB](../chapter13/index.html#Stap-1-Stack-met-Grafana-en-Influxdb-maken) hebt geinstalleerd.
+
+Volg de volgende stappen om de Node-RED flows te importeren.
+
+|Stap        | Actie      | Opmerking |
+|:---------- | :---------- |:---------- |
+| 1 | Klik op de link: [flows_cursus.json](assets/flows_cursus.json) | Open het bestand. |
+| 2 | Ctrl + A | Selecteer alle tekst. |
+| 3 | Ctrl + C | Kopieer de tekst naar het klembord. |
+| 4 | Ctrl + I | Open het import venster. |
+| 5 | Ctrl + V | Plak de code in het import ventser. |
+| 6 | Druk op de toets "Import" | Code wordt geïmporteerd. |
+||
+
+![fig_appendix_1](assets/fig_appendix_1.png)
+
 ## Voordelen en nadelen van containerisatie
 
 ### Nadelen
