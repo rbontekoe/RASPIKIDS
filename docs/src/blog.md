@@ -2,6 +2,10 @@
 
 ## 2023
 
+### 09-03-2023 - Les over Grafana en InfluxDB containers installeren is klaar
+
+Alle lessen zijn nu klaar en ik ga mijn werk controleren om te zien of alles klopt wat ik heb opgeschreven.
+
 ### 08-03-2023 - Temperatuur van de huiskamer in Domoticz weergeven
 
 Domoticz kan ook gegevens ontvangen van de MQTT-broker door zich te abonneren op het onderwerp "domoticz/in".

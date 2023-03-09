@@ -105,18 +105,26 @@ Net als Grafana heeft InfluxDB ook een "healthcheck" sectie die test of de conta
 
 ## Stap 2 - Wachtwoord Grafana wijzigen
 
-De standaard gebruikers naam en het wachtwoord zijn respectievelijk admin/admin. Als je daarmee inlogt wordt er gevraag of je wachtwoord wilt veranderen.
+Als je de eerste keer inlogt, moet je een gebruikersnaam en wachtwoord invullen. De standaard gebruikersnaam is "admin" en het wachtwoord is ook "admin". Maar het is belangrijk om je wachtwoord te veranderen zodat het veiliger is. Als je inlogt, zal er worden gevraagd of je je wachtwoord wilt veranderen. Zorg ervoor dat je een nieuw en sterk wachtwoord kiest dat niemand anders kan raden.
 
 ![fig_13_1](assets/fig_13_1.png)
 
 ## Stap 3 - Grafana aan InfluxDB koppelen
 
+Verbreed het menu door op het venster te verbreden door op ">" te klikken. Ga naar "Configuration" en klik op "Data sources".
+
 ![fig_13_2](assets/fig_13_2.png)
+
+Klik op de knop "Add data source".
 
 ![fig_13_3](assets/fig_13_3.png)
 
+ Kies voor "InfluxDB".
+
 ![fig_13_4](assets/fig_13_4.png)
 
-
+Grafana en InfluxDB werken nu samen.
 
 ## Samenvatting
+
+Grafana en InfluxDB zijn programma's die samen kunnen worden gebruikt om gegevens te visualiseren en op te slaan. Grafana helpt om deze gegevens op een grafiek te zetten, terwijl InfluxDB helpt om deze gegevens op te slaan en te beheren. De installatie van deze programma's kan worden gedaan door het uitvoeren van een aantal stappen op een Raspberry Pi 3B+ met het Ubuntu Server-besturingssysteem. Deze stappen omvatten het maken van een stapel met Grafana en InfluxDB, het wijzigen van het wachtwoord van Grafana en het koppelen van Grafana aan InfluxDB. De code toont de instellingen voor de containerdiensten Grafana en InfluxDB.
