@@ -2,6 +2,18 @@
 
 ## 2023
 
+### 10-03-2013 - CoderDojo Techlab Leusden
+
+Hé jij daar! Ben jij ook zo nieuwsgierig naar hoe computers werken en wil jij leren hoe je zelf kan programmeren? Dan is de [Coderdojo club van LeusdenZeT](https://www.leusdenzet.nl/techlab/coderdojo/) in Leusden echt iets voor jou!
+
+Bij de Coderdojo club kan je samen met andere kinderen van jouw leeftijd leren programmeren, robots bouwen en games maken. Dit doe je natuurlijk niet alleen! Onze mentoren zijn er om jou te helpen en te begeleiden, zodat jij alles goed begrijpt en lekker aan de slag kunt gaan.
+
+Weet je nog helemaal niks van programmeren? Geen probleem! Bij de Coderdojo club beginnen we altijd bij de basis en gaan we stap voor stap verder. Zo kan jij op jouw eigen tempo leren en uiteindelijk ook zelf jouw eigen projecten bedenken en maken.
+
+Maar niet alleen het leren programmeren is belangrijk. Bij de Coderdojo club kan je ook nieuwe vrienden maken en je creativiteit de vrije loop laten. En natuurlijk hebben we ook altijd heel veel lol!
+
+Ben jij tussen de 8 en 14 jaar oud en wil jij graag meer leren over programmeren? Schrijf je dan snel in bij de Coderdojo club van LeusdenZeT! Wij kunnen niet wachten om jou te verwelkomen en samen te ontdekken hoe leuk het is om te programmeren!
+
 ### 09-03-2023 - Les over Grafana en InfluxDB containers installeren is klaar
 
 Alle lessen zijn nu klaar en ik ga mijn werk controleren om te zien of alles klopt wat ik heb opgeschreven.
