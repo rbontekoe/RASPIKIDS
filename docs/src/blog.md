@@ -18,7 +18,7 @@ Sleep twee nodes naar het werkblad: eentje van een "function" en eentje van een 
 
 #### Stap 2 - "function" definiëren
 
-Bekijk figuur 2 goed en zorg dat de functie er precies zo uitziet. Misschien moet je de waarde van "idx" later nog veranderen, dat staat in een van de volgende stapen uitgelegd.
+Bekijk figuur 2 goed en zorg dat de functie er precies zo uitziet. Misschien moet je de waarde van "idx" later nog veranderen, dat staat in [Stap-7-Idx-in-de-function-aanpasssen](#Stap-7-Idx-in-de-function-aanpasssen) uitgelegd.
 
 ![fig_blog_2](assets/fig_blog_2.png) ``\\``*Figuur 2*
 
