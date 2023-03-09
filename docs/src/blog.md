@@ -18,7 +18,7 @@ Sleep twee nodes naar het werkblad: eentje van een "function" en eentje van een 
 
 #### Stap 2 - "function" definiëren
 
-Bekijk figuur 2 goed en zorg dat de functie er precies zo uitziet. Misschien moet je de waarde van "idx" later nog veranderen, dat staat in [Stap-7-Idx-in-de-function-aanpasssen](#Stap-7-Idx-in-de-function-aanpasssen) uitgelegd.
+Bekijk figuur 2 goed en zorg dat de functie er precies zo uitziet. Misschien moet je de waarde van "idx" later nog veranderen, dat staat in [Stap-6-Idx-in-de-function-aanpasssen](#Stap-6-Idx-in-de-function-aanpasssen) uitgelegd.
 
 ![fig_blog_2](assets/fig_blog_2.png) ``\\``*Figuur 2*
 
@@ -40,7 +40,7 @@ Scrol helemaal naar beneden op het formulier en zet bij "Topic in Prefix:" de te
 
 Druk op de knop "Update" om het formulier bij te werken. Blijf daarna op het formulier.
 
-#### Stap 6 - Maak een "dummy" temperatuurmeter aan in Domoticz
+#### Stap 5 - Maak een "dummy" temperatuurmeter aan in Domoticz
 
 Druk op de knop "Add" onderaan het "mqtt" formulier. Verander het formuliertype naar "Dummy (Does nothing, use for virtual switches only)". Geef het een naam "dummy" en druk op de knop "Update".
 
@@ -50,7 +50,7 @@ Je ziet nu een knop genaamd "Create Virtual Sensors" in de "dummy" regel. Klik o
 
 ![fig_blog_7](assets/fig_blog_7.png) ``\\``*Figuur 7*
 
-### Stap 7 - Idx in de function aanpasssen
+### Stap 6 - Idx in de function aanpasssen
 
 Ga naar "Setup" en klik op "Devices". Zoek naar de regel met de tekst "Temperatuur huiskamer" en noteer het "idx"-nummer dat erbij hoort.
 
