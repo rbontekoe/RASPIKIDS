@@ -24,7 +24,9 @@ Volg de volgende stappen om de Node-RED flows te importeren.
 | 6 | Druk op de toets "Import" | Code wordt geïmporteerd. |
 ||
 
+
 ![fig_appendix_1](assets/fig_appendix_1.png)
+
 
 ## Voordelen en nadelen van containerisatie
 
