@@ -12,7 +12,7 @@ Weet je nog helemaal niks van programmeren? Geen probleem! Bij de Coderdojo club
 
 Maar niet alleen het leren programmeren is belangrijk. Bij de Coderdojo club kan je ook nieuwe vrienden maken en je creativiteit de vrije loop laten. En natuurlijk hebben we ook altijd heel veel lol!
 
-Ben jij tussen de 8 en 14 jaar oud en wil jij graag meer leren over programmeren? Schrijf je dan snel in bij de Coderdojo club van LeusdenZeT! Wij kunnen niet wachten om jou te verwelkomen en samen te ontdekken hoe leuk het is om te programmeren!
+Ben jij tussen de 8 en 14 jaar oud en wil jij graag meer leren over programmeren? Schrijf je dan snel in bij de [Coderdojo club van LeusdenZeT](https://www.leusdenzet.nl/events-category/coderdojo/)! Wij kunnen niet wachten om jou te verwelkomen en samen te ontdekken hoe leuk het is om te programmeren!
 
 ### 09-03-2023 - Les over Grafana en InfluxDB containers installeren is klaar
 
