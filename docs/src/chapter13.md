@@ -15,7 +15,7 @@ Pages = ["chapter13.md"]
 ## Wat je nodig hebt
 
 - Een Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server 22.04.
-- Docker, Portainer en Node-RED zijn geinstalleerd.
+- Docker, Portainer en Node-RED zijn geïnstalleerd.
 - De Raspberry Pi heeft verbinding met het Internet.
 
 ## Wat je gaat doen

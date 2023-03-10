@@ -13,19 +13,19 @@ Pages = ["chapter10.md"]
 ## Wat je nodig hebt
 
 - Een Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server 22.04.
-- Docker en Portainer zijn geinstalleerd.
+- Docker en Portainer zijn geïnstalleerd.
 - De Raspberry Pi heeft verbinding met het Internet.
 - Een PC die een SSH verbinding heeft met de Raspberry Pi.
 
 ## Wat je gaat doen
 
-Stap 1: Je computer met SSH verbinden met de Raspberry Pi.
+Stap 1: Verbind je computer via SSH verbinden met de Raspberry Pi.
 
 Stap 2: Container starten met "docker compose".
 
 Stap 3: Domoticz benaderen met een browser.
 
-### Stap 1 - Je computer met SSH verbinden met de Raspberry Pi
+### Stap 1 - Verbind je computer via SSH verbinden met de Raspberry Pi
 
 Verbind je computer met de Raspberry Pi en log in.
 
@@ -71,24 +71,25 @@ Als we alles hebben ingesteld in het docker-compose.yml-bestand, kunnen we de op
 
 ### Stap 2 - Container starten met "docker compose"
 
-Maak een folder aan onder de folder projects met de naam domoticz.
+Maak een map "projects" op je computer en maak vervolgens een andere map binnen die map die "domoticz" heet.
 
 ```
+mkdir projects
 cd projects
 mkdir domoticz
 cd domoticz
 ```
 
-Maak een leeg bestand en open het met de nano editor.
+Maak een leeg bestand "docker-compose.yml" en open het met de nano editor.
 
 ```
 # Maak docker-compose.yml
 nano docker-compose.yml
 ```
 
-Ga naar de docker-compose.yml sectie [hierboven](#docker-compose.yml). Kopieer de code naar het klembord en plak het in de editor met Ctrl+V. Bewaar het bestand vervolgens met Ctrl+O en verlaat de editor met Ctr+X.
+Ga naar de docker-compose.yml sectie [hierboven](#docker-compose.yml). Kopieer de code naar het klembord en plak het in de editor met Ctrl + Shift + V. Bewaar het bestand vervolgens met Ctrl + O en verlaat de editor met Ctr + X.
 
-Maak dan de Domoticz comtainer met:
+Maak dan de Domoticz container met:
 
 ```
 # Maak Domoticz container
@@ -99,7 +100,7 @@ docker compose up
 
 Type in de adresbalk van je browser `IP_adres_Raspberry_Pi:8081` en druk op de Enter-toets.
 
-Je krijgt je Domoticz openingspagina te zien, maar nog niet het verbruik van het gas en de electriciteit. Daarvoor moet je de Raspberry Pi aansluiten op je Slimme meter.
+Je krijgt je Domoticz openingspagina te zien, maar nog niet het verbruik van het gas en de electriciteit. Daarvoor moet je de Raspberry Pi aansluiten op je slimme meter.
 
 ## Samenvatting
 

@@ -11,7 +11,7 @@ Pages = ["chapter11.md"]
 ## Wat je nodig hebt
 
 - Een Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server 22.04.
-- Docker, Portainer, Domoticz en Node-RED zijn geinstalleerd.
+- Docker, Portainer, Domoticz en Node-RED zijn geïnstalleerd.
 - De Raspberry Pi heeft verbinding met het Internet.
 
 ## Wat je gaat doen
@@ -22,10 +22,10 @@ Stap 2: Domoticz gegevens op het Dashboard weergegeven.
 
 ## Stap 1 - Domoticz gegevens aan de MQTT broker doorgeven
 
-Soms wil je misschien weten hoeveel gas en elektriciteit je gebruikt. Om deze informatie te krijgen, kun je deze ook naar onze "MQTT broker" sturen. Je hebt een speciale instelling in Domoticz nodig die een "MQTT client gateway with LAN interface" heet. Die ervoor zorgt ervoor dat de informatie naar de MQTT broker wordt gestuurd.
+Soms wil je misschien weten hoeveel gas en elektriciteit je gebruikt. Om deze informatie te krijgen, kun je deze ook naar onze "MQTT broker" sturen. Je hebt een speciale instelling in Domoticz nodig die een "MQTT client gateway with LAN interface" heet. Die ervoor zorgt dat de informatie naar de MQTT broker wordt gestuurd.
 
 1. Type in de adresbalk van je browser `IP_adres_Raspberry_Pi:8081` en druk op "Enter". Je ziet nu het beginscherm van Domoticz.
-2. Log in met de naam "Admin" en het wachtwoord "domoticz".
+2. Log in met de naam "admin" en het wachtwoord "domoticz".
 2. Klik op de tab "Setup" en kies dan "Hardware".
 3. Druk op de knop "Add" die onderaan de pagina staat. ``\\``![fig_12_1](assets/fig_12_1.png) ``\\``
    Vul de volgende waarden in:  ``\\``
@@ -46,13 +46,13 @@ Eerder heb je geleerd hoe je informatie op een Dashboard kunt laten zien. Dit is
 
 1. Stel de volgende flows op: ``\\``![fig_12_2](assets/fig_12_2.png)
 2. Kies "domoticz/out" als het onderwerp waarover je informatie wilt verzamelen.
-3. Gebruik de code uit deze link voor [functie 9](#Javacsript-code-functie-9). Dit is als een speciaal stukje code dat ervoor zorgt dat de informatie wordt opgehaald en op de juiste manier wordt weergegeven.
-4. Gebruik de code uit deze link voor [functie 10](#Javacsript-code-functie-10). Dit zorgt ervoor dat de informatie wordt opgehaald en weergegeven op de juiste plek.
+3. Gebruik de code uit deze link voor [functie 9](#JavaScript-code-functie-9). Dit is als een speciaal stukje code dat ervoor zorgt dat de informatie wordt opgehaald en op de juiste manier wordt weergegeven.
+4. Gebruik de code uit deze link voor [functie 10](#JavaScript-code-functie-10). Dit zorgt ervoor dat de informatie wordt opgehaald en weergegeven op de juiste plek.
 5. Voor "Electra momenteel" moet je deze instellingen gebruiken: ``\\``![fig_12_3](assets/fig_12_3.png)
 6. Voor "Gas per 1-1-2023" moet je deze instellingen gebruiken:  ``\\``![fig_12_4](assets/fig_12_4.png)
 
 
-### Javacsript code functie 9
+### JavaScript code functie 9
 
 ```
 var myval = msg.payload;
@@ -64,7 +64,7 @@ if (myval.name == 'Power') {
 
 De informatie die je krijgt, gaat altijd over wat er op dat moment gebeurt. Als je kijkt naar hoeveel stroom je gebruikt, zie je altijd hoeveel stroom je op dat moment verbruikt. En als je een apparaat uitzet, zie je het verschil in het stroomverbruik en weet je dus hoeveel Watt dat apparaat gebruikt.
 
-### Javacsript code functie 10
+### JavaScript code functie 10
 
 ```
 let myvalNew = msg.payload;

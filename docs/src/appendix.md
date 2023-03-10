@@ -84,11 +84,12 @@ Git is een vrij en open source gedistribueerd versiebeheersysteem, ontworpen om 
 Stap        | Actie      | Opmerking |
 | :---------- | :---------- | :---------- |
 | 1 | sudo apt install git | |
-| 2 | git config --global user.email "<your email address>" | Bijvoorbeeld: "rbontekoe@appligate.nl" |
-| 3 | git config --global user.name "<your first and last name>" | Bijvoorbeeld: "Rob Bontekoe" |
-| 4 | git config --global github.user "<your git hub name>" | Bijvoorbeeld: "rbontekoe" |
-| 5 | cat .gitconfig | Laat je git data zien. |
+| 2 | git config --global user.email "<Je email address>" | Bijvoorbeeld: "rbontekoe@appligate.nl" |
+| 3 | git config --global user.name "<Je voor- en achternaam>" | Bijvoorbeeld: "Rob Bontekoe" |
+| 4 | git config --global github.user "<Je git hub naam>" | Bijvoorbeeld: "rbontekoe" |
+| 5 | cat .gitconfig | Dit laat je git gegevens zien. Bestanden die met een punt beginnen zijn verborgen bestanden. Verborgen bestanden kun je zien met ```ls -al```. |
 ||
+
 
 ## Installeren Thonny
 

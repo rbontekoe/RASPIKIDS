@@ -11,7 +11,7 @@ Pages = ["chapter14.md"]
 ## Wat je nodig hebt
 
 - Een Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server 22.04.
-- Docker, Portainer, Node-RED, InfluxDB en Grafana zijn geinstalleerd.
+- Docker, Portainer, Node-RED, InfluxDB en Grafana zijn geïnstalleerd.
 - Node-RED programma uit de les 9 [Node-RED dashboard programma maken](../chapter9/index.html).
 - De Raspberry Pi heeft verbinding met het Internet.
 
@@ -41,8 +41,8 @@ Stap 3: Data naar database wegschrijven
 | 1 | Ga naar de webinterface van Portainer en login: "IP_adres_Raspberry_Pi:9000". |
 | 2 | Klik op ">\_" symbool van de influxdb container. ``\\``![fig_14_7](assets/fig_14_7.png) |
 | 3 | Druk op de knop: "Connect". ``\\``![fig_14_8](assets/fig_14_8.png) |
-| 4 | Om de datum als "jjjj-mm-dd" weer te geven, type "influx -precision 'rfc3339'" en druk op Enter. |
-| 5 | Om de database "sensor_data" te maken, typ: `create database sensor_data" en druk op Enter. |
+| 4 | Om de datum als "jjjj-mm-dd" weer te geven, typ: `influx -precision 'rfc3339'` en druk op Enter. |
+| 5 | Om de database "sensor\_data" te maken, typ: `create database sensor_data` en druk op Enter. |
 | 6 | Verlaat de database interface met Ctrl-D. |
 | 7 | Verlaat de container interface met Ctrl_D. |
 ||
@@ -58,9 +58,9 @@ Stap 3: Data naar database wegschrijven
 | 5 | Open de `influx out` node. |
 | 6 | Klik op het "potloodje". ``\\``![fig_14_11](assets/fig_14_11.png) ``\\``In Node-RED: JSON object creeert de tabel "test", die staat gedefinieerd in de node "influxdb out" onder "Measurments". Aantal items bepaalt aantal kolommen, naast de eerste kolom die datum en tijd bevat:
           {
-              temp: Number(myval),   # de meting
-              type: "temp" ,         # additionele informatie
-              locatie: "LR"          # additionele informatie
+              temp: Number(myval),   // de meting
+              type: "temp",          // extra informatie
+              locatie: "LR"          // extra informatie
           }
 
 |Stap        | Actie      |

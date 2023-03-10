@@ -1,6 +1,6 @@
 # Node-RED installeren
 
-*In deze les gaan we leren hoe je Node-RED installeert in een container met behulp van Portainer op een Raspberry Pi met het besturingssysteem Ubuntu 22.04 Server. Portainer is een programma dat het makkelijker maakt om containers te beheren. Node-RED is een tool die je helpt bij het maken van slimme toepassingen door middel van eenvoudige programma's die we "flows" noemen.*
+*In deze les gaan we leren hoe je Node-RED installeert in een container met behulp van Portainer op een Raspberry Pi. Portainer is een programma dat het makkelijker maakt om containers te beheren. Node-RED is een tool die je helpt bij het maken van slimme toepassingen door middel van eenvoudige programma's die we "flows" noemen.*
 
 ### Inhoud
 

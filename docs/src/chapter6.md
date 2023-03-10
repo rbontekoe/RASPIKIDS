@@ -23,7 +23,7 @@ Stap 3: Personaliseer je website.
 
 ## Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld
 
-Je hebt 3 knooppunten (nodes) nodig om een eenvoudige website te maken:
+Je hebt 3 nodes (knooppunt) nodig om een eenvoudige website te maken:
 - http in
 - template (staat in functie, 1 sectie hoger)
 - http response
@@ -33,23 +33,23 @@ Met "http in" vertel je hoe mensen naar een specifieke pagina op je website kunn
 **Voer de volgende stappen uit:**
 
 1. Ga met je browser naar `IP_adres_raspberry_pi:1880`.
-2. Sleep de knooppunten (nodes) naar je werkblad (canvas). Zie ook [Inleiding NodeRed](https://eelcodijkstra.github.io/iot-0/html/inleiding/nodered-inleiding.html) van Eelco Dijkstra.
+2. Sleep de nodes (knooppunt) naar je werkblad (canvas). Zie ook [Inleiding NodeRed](https://eelcodijkstra.github.io/iot-0/html/inleiding/nodered-inleiding.html) van Eelco Dijkstra.
     
    ![fig 1](assets/fig_1.png)
 
-3. Verbind de knooppunten met de muis aan elkaar. Steeds een eindpunt met een beginpunt. Als je alle knooppunten aan elkaar hebt geplakt, heb je een "Flow". Dit is een soort programma.
+3. Verbind de nodes met de muis aan elkaar. Steeds een eindpunt met een beginpunt. Als je alle nodes aan elkaar hebt geplakt, heb je een "Flow". Dit is een soort programma.
 4. Dubbelklik op het `http in` knooppunt en geef als URL op: `/hallo`.
 5. Dubbelklik op template en tik `<h1>Hallo wereld!</h1>` op de eerste regel van het veld "template".
    
-   ![fig 2](assets/fig_2.png)
+   ![figuur 2](assets/fig_2.png)
    
 6. Klik op de knop "Deploy" boven aan rechts om de code te maken voor je website.
 
-   ![fig_3](assets/fig_3.png)
+   ![figuur 3](assets/fig_3.png)
 
 7. Typ in de zoekbalk van je internet browser: `IP_adres_Raspberry_Pi:1880/hallo`. Als alles goed is gegaan, zie je 'Hallo wereld!' in vette letters verschijnen op het scherm.
     
-   ![fig_4](assets/fig_4.png)
+   ![figuur 4](assets/fig_4.png)
 
 8. Voeg meer tekst toe aan de website door ze tussen de `<p>` en `</p>` tags te zetten.
 

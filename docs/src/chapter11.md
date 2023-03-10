@@ -1,4 +1,4 @@
-# Slimme meter aansluiten
+# Slimme meter aansluitengeïnstalleerd
 
 *We gaan een slimme meter aansluiten. Een slimme meter is een meter die we gebruiken om te meten hoeveel stroom en gas we verbruiken in huis. We gaan dit doen met behulp van een Domoticz container. We leren ook hoe we de gegevens als MQTT bericht naar de Node-red broker kunnen versturen.*
 
@@ -10,7 +10,7 @@ Pages = ["chapter10.md"]
 
 ## Wat je nodig hebt
 - Een Raspberry Pi 3B+ met het besturingssysteem Ubuntu Server 22.04.
-- Docker, Portainer en Domoticz zijn geinstalleerd.
+- Docker, Portainer en Domoticz zijn geïnstalleerd.
 - De Raspberry Pi heeft verbinding met het Internet.
 - [P1 Slimme meter kabel](https://www.sossolutions.nl/slimme-meter-kabel).
 
