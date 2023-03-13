@@ -1,0 +1,727 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3cc11d24.ff01a2",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "WARNING: please check you have started this container with a volume that is mounted to /data\\n otherwise any flow changes are lost when you redeploy or upgrade the container\\n (e.g. upgrade to a more recent node-red docker image).\\n  If you are using named volumes you can ignore this warning.\\n Double click or see info side panel to learn how to start Node-RED in Docker to save your work",
+        "info": "\nTo start docker with a bind mount volume (-v option), for example:\n\n```\ndocker run -it -p 1880:1880 -v /home/user/node_red_data:/data --name mynodered nodered/node-red\n```\n\nwhere `/home/user/node_red_data` is a directory on your host machine where you want to store your flows.\n\nIf you do not do this then you can experiment and redploy flows, but if you restart or upgrade the container the flows will be disconnected and lost. \n\nThey will still exist in a hidden data volume, which can be recovered using standard docker techniques, but that is much more complex than just starting with a named volume as described above.",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a8218656839c87d7",
+        "type": "http in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "url": "/hallo",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "704701fc2f7ad2f0"
+            ]
+        ]
+    },
+    {
+        "id": "1ee83ff1784b1345",
+        "type": "http response",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 490,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "704701fc2f7ad2f0",
+        "type": "template",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<h1>Hallo wereld!</h1>\n<p>Een website maak je met de HTML-tags. Een tag staat tussen een kleiner (<) en een groter (>) teken.<p>\n<p>Een HTML tag wordt afgesloten met dezelfde naam voorafgegaan door het slash (/) teken.</p>\n<p>Voor de kopteksten gebruik je tags h1 tot en met h6.</p>\n<p>Gewone tekst zet je tussen de p-tags.</p>\n<p>Veel plezier met het maken van je website, Rob.</p>",
+        "output": "str",
+        "x": 340,
+        "y": 340,
+        "wires": [
+            [
+                "1ee83ff1784b1345"
+            ]
+        ]
+    },
+    {
+        "id": "3cce26b00f8ec5c0",
+        "type": "http request",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://dog.ceo/api/breeds/image/random",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "5b87303914099738",
+                "a80b6a029506ebc7"
+            ]
+        ]
+    },
+    {
+        "id": "d8d6cb3760ce2fc2",
+        "type": "http response",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5b87303914099738",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "8318c1377bd315fa",
+        "type": "http in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "url": "/toon",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 460,
+        "wires": [
+            [
+                "3cce26b00f8ec5c0"
+            ]
+        ]
+    },
+    {
+        "id": "a80b6a029506ebc7",
+        "type": "template",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "  <title>Bootstrap Example</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\"></script>\n</head>\n<body>\n  \n<div class=\"container\">\n  <button onclick=\"location.reload();\">Volgende plaatje</button>\n  <h1 style=\"text-align:center\">Mijn Eerste Honden Pagina</h1>\n  <img src=\"{{payload.message}}\" width=\"100%\"/>          \n</div>\n\n</body>\n</html>",
+        "output": "str",
+        "x": 560,
+        "y": 460,
+        "wires": [
+            [
+                "d8d6cb3760ce2fc2"
+            ]
+        ]
+    },
+    {
+        "id": "cb2bb9e60465bf44",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 940,
+        "wires": [
+            [
+                "effd977896c2bf92"
+            ]
+        ]
+    },
+    {
+        "id": "effd977896c2bf92",
+        "type": "http request",
+        "z": "f6f2187d.f17ca8",
+        "name": "visualcrossing.com",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=27NNB9GMB6PG6QQZYSAN736JK&contentType=json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 330,
+        "y": 940,
+        "wires": [
+            [
+                "c11f397616ad174c",
+                "5a9db9b5487a6c66",
+                "19b149d9a338b0f0",
+                "a4aefb40663ea052"
+            ]
+        ]
+    },
+    {
+        "id": "b29a6b10d4f8f7cf",
+        "type": "ui_chart",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "group": "a8c62e847f43767b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Buitentemperatuur",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccb6f5e6c906ccdf",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Buitentemp",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "x": 750,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "c11f397616ad174c",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "buitentemp",
+        "func": "return { payload : msg.payload.currentConditions.temp };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 880,
+        "wires": [
+            [
+                "ccb6f5e6c906ccdf",
+                "b29a6b10d4f8f7cf",
+                "63f6e9c2545e5587"
+            ]
+        ]
+    },
+    {
+        "id": "5a9db9b5487a6c66",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "windrichting",
+        "func": "let test = msg.payload.currentConditions.winddir;\nlet windrichting = '';\n\nif (test >= 360 - 22.5) {\n    windrichting = 'N';\n} else if (test < 22.5) {\n    windrichting = 'N';\n} else if (test >= 325 - 22.5 && test <= 325 + 22.5) {\n    windrichting = 'NW';\n} else if (test >= 270 - 22.5 && test <= 270 + 22.5) {\n    windrichting = 'W'\n} else if (test >= 225 - 22.5 && test <= 225 + 22.5) {\n    windrichting = 'ZW';\n} else if (test >= 180 - 22.5 && test <= 180 + 22.5) {\n    windrichting = 'Z';\n} else if (test >= 135 - 22.5 && test <= 135 + 22.5) {\n    windrichting = 'ZO';\n} else if (test >= 90 - 22.5 && test <= 90 + 22.5) {\n    windrichting = 'O';\n} else if (test >= 45 - 22.5 && test <= 45 + 22.5) {\n    windrichting = 'NO';\n}\n\nreturn { payload: windrichting };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 940,
+        "wires": [
+            [
+                "72db465e9bf0c398"
+            ]
+        ]
+    },
+    {
+        "id": "72db465e9bf0c398",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Windrichting",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 750,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "19b149d9a338b0f0",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "windsnelheid",
+        "func": "let test = msg.payload.currentConditions.windspeed;\nlet windsnelheid = '';\n\nif (test <= 1) {\n    windsnelheid = '0';\n} else if (test > 1 && test <= 5) {\n    windsnelheid = '1';\n} else if (test > 5 && test <= 11) {\n    windsnelheid = '2'\n} else if (test > 11 && test <= 19) {\n    windsnelheid = '3';\n} else if (test > 19 && test <= 28) {\n    windsnelheid = '4';\n} else if (test > 28 && test <= 38) {\n    windsnelheid = '5';\n} else if (test > 38 && test <= 49) {\n    windsnelheid = '6';\n} else if (test > 49 && test <= 61) {\n    windsnelheid = '7';\n} else if (test > 61 && test <= 74) {\n    windsnelheid = '8';\n} else if (test > 74 && test <= 88) {\n    windsnelheid = '9';\n} else if (test > 88 && test <= 102) {\n    windsnelheid = '10';\n} else if (test > 102 && test <= 117) {\n    windsnelheid = '11';\n} else if (test > 117) {\n    windsnelheid = '12';\n}\n\nreturn { payload: windsnelheid };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1000,
+        "wires": [
+            [
+                "fb2502fba233b908"
+            ]
+        ]
+    },
+    {
+        "id": "fb2502fba233b908",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Windkracht",
+        "label": "Windkracht",
+        "format": "{{msg.payload}} Bft",
+        "layout": "row-spread",
+        "className": "",
+        "x": 750,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "475fcb6249daa737",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "Temp Huiskamer",
+        "topic": "esp8266/dht22/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "ed683f775e4ef166",
+                "742117fd3c3005ca"
+            ]
+        ]
+    },
+    {
+        "id": "ed683f775e4ef166",
+        "type": "ui_gauge",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "group": "a8c62e847f43767b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp Huiskamer",
+        "label": "C",
+        "format": "{{value}}",
+        "min": "-20",
+        "max": "50",
+        "colors": [
+            "#f1f514",
+            "#1ec23a",
+            "#ca3838"
+        ],
+        "seg1": "16",
+        "seg2": "30",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c3d3b4e.116d848",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "Hum huiskamer",
+        "topic": "esp8266/dht22/humidity",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 700,
+        "wires": [
+            [
+                "783324d3.3efd7c"
+            ]
+        ]
+    },
+    {
+        "id": "783324d3.3efd7c",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hum Huiskamer",
+        "format": "{{msg.payload}} %",
+        "layout": "row-spread",
+        "className": "",
+        "x": 360,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "a6d8185ee8e616d5",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "domoticz/out",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "ff0a2d53.6e2d4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            [
+                "1de71ec412c8f7fd",
+                "eac8e8238f831098"
+            ]
+        ]
+    },
+    {
+        "id": "1de71ec412c8f7fd",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "function 9",
+        "func": "var myval = msg.payload;\nif (myval.name == 'Power') {\n  msg.payload.value = Number(myval.svalue5);\n  return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1120,
+        "wires": [
+            [
+                "edb1f8cd2b7c8e0f"
+            ]
+        ]
+    },
+    {
+        "id": "eac8e8238f831098",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "function 10",
+        "func": "let myvalNew = msg.payload;\nlet myvalOld = 0;\nlet myvalStart = 3545.60\n\nif (myvalNew.name == 'Gas') {\n  \n  msg.payload = ((Number(myvalNew.svalue1-myvalOld)/1000) - myvalStart).toFixed(2);\n  myvalOld = myvalNew.svalue1;\n  return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1200,
+        "wires": [
+            [
+                "205718526037d01c"
+            ]
+        ]
+    },
+    {
+        "id": "205718526037d01c",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Gas per 1-1-2023",
+        "format": "{{msg.payload}} m³",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "edb1f8cd2b7c8e0f",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "a8c62e847f43767b",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Electra momenteel",
+        "format": "{{msg.payload.value}} W",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "15abdf54920ac65a",
+        "type": "influxdb out",
+        "z": "f6f2187d.f17ca8",
+        "influxdb": "d8b31f9614f9221e",
+        "name": "",
+        "measurement": "test",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1020,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "63f6e9c2545e5587",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "function 11",
+        "func": "var myval = msg.payload;\nmsg.payload = {\n    temp: Number(myval),\n    type: \"temp\",\n    locatie: \"buiten\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 820,
+        "wires": [
+            [
+                "15abdf54920ac65a"
+            ]
+        ]
+    },
+    {
+        "id": "a4aefb40663ea052",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "47b76d031892fdf7",
+        "type": "mqtt out",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "domoticz/in",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ff0a2d53.6e2d4",
+        "x": 550,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "742117fd3c3005ca",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "function 12",
+        "func": "var myval = msg.payload;\nmsg.payload = {\n    \"idx\": 14,\n    \"nvalue\": 0,\n    \"svalue\": myval\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 560,
+        "wires": [
+            [
+                "47b76d031892fdf7"
+            ]
+        ]
+    },
+    {
+        "id": "d8111a08d8743f7e",
+        "type": "ui_spacer",
+        "z": "f6f2187d.f17ca8",
+        "name": "spacer",
+        "group": "414046f.b5638b8",
+        "order": 5,
+        "width": "1",
+        "height": "1"
+    },
+    {
+        "id": "a8c62e847f43767b",
+        "type": "ui_group",
+        "name": "Cursus",
+        "tab": "27770ce453e605a2",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ff0a2d53.6e2d4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.2.49",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d8b31f9614f9221e",
+        "type": "influxdb",
+        "hostname": "192.168.2.49",
+        "port": "8086",
+        "protocol": "http",
+        "database": "sensor_data",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "414046f.b5638b8",
+        "type": "ui_group",
+        "name": "Thuis",
+        "tab": "2f623d0f077232d3",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27770ce453e605a2",
+        "type": "ui_tab",
+        "name": "Cursus",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2f623d0f077232d3",
+        "type": "ui_tab",
+        "name": "Thuis 2",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    }
+]
