@@ -65,8 +65,9 @@ Stap 2: Maak het Micro SD kaartje klaar met Ubuntu Server.
 | 24 | Druk op knop "SAVE". |
 | 25 | Nu zijn we klaar om Ubuntu op een Micro SD kaart te zetten. Dit programma zorgt ervoor dat onze computer werkt. |
 | 26 | Druk op de knop **CHOOSE STORAGE**. |
-| 27 | Kies **Internal SD card reader**. ``\\``Ubuntu Server wordt op je micro SD kaartje gezet. Als dat gebeurd is wordt het geheel nog een keer getest. |
-| 28 | Haal de kaarthouder met de Micro SD kaart uit je computer. |
+| 27 | Kies **Internal SD card reader**.  |
+| 28 | Druk op de knop "WRITE" en dan op "YES". ``\\``Ubuntu Server wordt op je micro SD kaartje gezet. Als dat gebeurd is wordt het geheel nog een keer getest. |
+| 29 | Haal de kaarthouder met de Micro SD kaart uit je computer. |
 ||
 
 ## Samenvatting

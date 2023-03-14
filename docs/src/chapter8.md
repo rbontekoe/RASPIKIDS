@@ -186,10 +186,10 @@ Als er tijdens het verzenden van gegevens een fout optreedt, zal de code probere
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Verbind de DHT22 met de ESP8266 en sluit de ESP8266 aan op de laptop met de "USB A naar Micro USB" kabel. ``\\``![DHT22-ESP8266](assets/fig_8_10.png)  |
+| 1 | Verbind de DHT22 met de ESP8266 (DA1 met GPIO14 => sensor = dht.DHT22(Pin(14)) en sluit de ESP8266 aan op de laptop met de "USB A naar Micro USB" kabel. ``\\``![DHT22-ESP8266](assets/fig_8_10.png)  |
 | 2 | Open het programma Thonny op de laptop. Als het programma al loopt, klik dan eventueel op het "Stop" symbool in het menu of druk op "Ctrl + F2". |
 | 3 | Ga naar de map "dht22" en kies `boot.py`. |
-| 4 | Kies "File > Save as..." in het menu om het bestand op te slaan. Er verschijnt dan een pop-up met "Where to save to".``\\``![Where to save to?](assets/fig_8_7.png) |
+| 4 | Kies "File > Save as..." in het menu om het bestand op te slaan. Er verschijnt dan een pop-up met: **Where to save to?**.``\\``![Where to save to?](assets/fig_8_7.png) |
 | 5 | Klik op de knop die "MicroPython device" heet. |
 | 6 | Plaats het bestand "main.py" op dezelfde manier op de ESP8266. |
 | 7 | Klik op de groene knop met de pijl rechts of druk op "F5" om de code te laten werken. Je ziet op het scherm de temperatuur in graden Celsius en de hoeveelheid vocht in de lucht in procenten verschijnen, één voor één. ``\\``![fig_8_8](assets/fig_8_8.png) |
