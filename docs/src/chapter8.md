@@ -182,7 +182,7 @@ Als er tijdens het verzenden van gegevens een fout optreedt, zal de code probere
 ```@raw html
 <img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/05/ESP8266-NodeMCU-kit-12-E-pinout-gpio-pin.png?w=817&quality=100&strip=all&ssl=1" alt="Raspberry Pi logo" width="400">
 ```
-*De [ESP8266 12-E NodeMCU kit pinout diagram](https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/) volgens Random Tutorials*
+*De [ESP8266 12-E NodeMCU kit pinout diagram](https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/) volgens Random Nerd Tutorials*
 
 |Stap        | Actie      |
 |:---------- | :---------- |
