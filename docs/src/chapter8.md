@@ -69,12 +69,12 @@ We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We z
 | 1 | Selecteer de code in [boot.py](#boot.py) en kopieer het naar het klembord met "Ctrl-C". |
 | 2 | Maak een nieuwe map door met je rechtermuisknop te klikken in het meest linkse venster "Files" en "New directory..." te kiezen. Als je dat venster niet kunt zien, klik dan eerst op "View > Files" in het menu. |
 | 3 | Typ "dht22" en druk op de OK. ``\\``![fig_8_5](assets/fig_8_5.png) |
-| 4 | Maak een leeg bestand door op "Ctrl-N" te drukken. |
+| 4 | Maak een leeg bestand door op "Ctrl + N" te drukken. |
 | 5 | Plak de code die je hebt gekopieerd in stap 1 in het lege venster door op "Ctrl-V" te drukken. |
 | 6 | Vul op regel 6 de naam van jouw wifi-netwerk en het bijbehorende wachtwoord in. |
-| 7 | Sla het bestand op door "Ctrl-S" te drukken, kies de map "dht22" en geef het bestand de naam "boot.py". ``\\``![fig_8_6](assets/fig_8_6.png) |
+| 7 | Sla het bestand op door "Ctrl + S" te drukken, kies de map "dht22" en geef het bestand de naam "boot.py". ``\\``![fig_8_6](assets/fig_8_6.png) |
 | 8 | Herhaal stap 1 en 4 voor [main.py](#main.py). |
-| 9 | Sla het bestand op door op "Ctrl-S" te drukken, kies de map "dht22" en geef het bestand de naam "main.py". |
+| 9 | Sla het bestand op door op "Ctrl + S" te drukken, kies de map "dht22" en geef het bestand de naam "main.py". |
 | 10 | Sluit Thonny. |
 ||
 
@@ -187,7 +187,7 @@ Als er tijdens het verzenden van gegevens een fout optreedt, zal de code probere
 |Stap        | Actie      |
 |:---------- | :---------- |
 | 1 | Verbind de DHT22 met de ESP8266 en sluit de ESP8266 aan op de laptop met de "USB A naar Micro USB" kabel. ``\\``![DHT22-ESP8266](assets/fig_8_10.png)  |
-| 2 | Open het programma Thonny op de laptop. Als het programma al loopt, klik dan eventueel op het "Stop" symbool in het menu of druk op "Ctrl-F2". |
+| 2 | Open het programma Thonny op de laptop. Als het programma al loopt, klik dan eventueel op het "Stop" symbool in het menu of druk op "Ctrl + F2". |
 | 3 | Ga naar de map "dht22" en kies `boot.py`. |
 | 4 | Kies "File > Save as..." in het menu om het bestand op te slaan. Er verschijnt dan een pop-up met "Where to save to".``\\``![Where to save to?](assets/fig_8_7.png) |
 | 5 | Klik op de knop die "MicroPython device" heet. |

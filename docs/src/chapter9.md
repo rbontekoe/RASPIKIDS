@@ -36,7 +36,7 @@ Node-RED heeft al veel verschillende onderdelen (nodes) om te gebruiken, maar so
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Als je naar "Manage Palette" wilt gaan, kun je op het menu klikken dat in de rechterbovenhoek van het scherm staat. Of je kunt de toetsen Shift+Alt+P indrukken. |
+| 1 | Als je naar "Manage Palette" wilt gaan, kun je op het menu klikken dat in de rechterbovenhoek van het scherm staat. Of je kunt de toetsen Shift + Alt + P indrukken. |
 | 2 | Ga naar de "Install" tab en zoek naar "node-red-dashboard" in de zoekbalk.  |
 | 3 | Als je de dashboard onderdelen wilt krijgen, moet je op de witte knop met "Install" erop klikken. ``\\``![fig_9_22](assets/fig_9_28.png) |
 | 4 | Je ziet een berichtje op je scherm. Druk op de rode knop waar "Install" op staat om de dashboard onderdelen te krijgen. ``\\``![fig_9_22](assets/fig_9_27.png) |

@@ -80,7 +80,7 @@ Je gaat de tekst uit het bestand "docker-compose.yml" kopiëren naar het klembor
 |:---------- | :---------- |
 | 1 | Klik op deze link: [docker-compose.yml](#docker-compose.yml)/ Daar staat de code die je moet hebben. |
 | 2 | Selecteer alle tekst met je muis. Regels die beginnen met "#" zijn notitieregels en hoef je niet te selecteren. |
-| 3 | Druk op `Ctrl-C`. Dit zet de tekst naar het klembord, zodat je het later gemakkelijk kunt plakken. |
+| 3 | Druk op `Ctrl + C`. Dit zet de tekst naar het klembord, zodat je het later gemakkelijk kunt plakken. |
 ||
 
 ## Stap 3: De docker-compose.yml in de stack plakken
@@ -92,7 +92,7 @@ In deze stap ga je een pagina maken waarin je de gegevens van de stack vermeldt.
 | 1 | Klik op de knop `Add stack` |
 | 2 | Type `nodered` in het veld "Name". De naam van de stack. |
 | 3 | Klik op de eerste regel in het veld "Web-editor". Hier moet de tekst uit docker-compose.yml komen te staan. |
-| 5 | Druk op `Ctrl-V`. Hiermee plak je de tekst van het klembord in het veld. |
+| 5 | Druk op `Ctrl + V`. Hiermee plak je de tekst van het klembord in het veld. |
 | 6 | Helemaal onderaan de pagina, klik op de knop "Deploy the stack".  |
 ||
 

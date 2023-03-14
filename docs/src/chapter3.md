@@ -75,7 +75,7 @@ ssh ubuntu@IP_adres_Raspberry_Pi
 Mac OS is een soort software die je computer laat werken, net zoals Linux. Er zijn veel dingen die hetzelfde zijn tussen Mac OS en Linux. Dit betekent dat je veel van dezelfde opdrachten kunt geven op een Mac als op Linux. Maar er zijn ook dingen die anders zijn tussen Mac OS en Linux, dus sommige opdrachten die je op een Linux computer kunt geven, werken niet op een Mac.
 
 ```
-# Open een terminal sessie met Ctrl+Alt-T.
+# Open een terminal sessie met Ctrl + Alt + T.
 # de eerste keer gevraagd of je verder wilt gaan, tik "yes" in. 
 # Daarna wordt er gevraagd om het wachtwoord van de Raspberry Pi.
 ssh ubuntu@IP_adres_Raspberry_Pi
@@ -87,7 +87,7 @@ docker version
 ### Ubuntu (Linux)
 
 ```
-# Open een terminal sessie met Ctrl+Alt-T.
+# Open een terminal sessie met Ctrl + Alt + T.
 # de eerste keer gevraagd of je verder wilt gaan, tik "yes" in. 
 # Daarna wordt er gevraagd om het wachtwoord van de Raspberry Pi.
 ssh ubuntu@IP_adres_Raspberry_Pi
