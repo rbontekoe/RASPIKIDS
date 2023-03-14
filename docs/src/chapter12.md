@@ -86,7 +86,7 @@ Bij het gasverbruik krijg je de totale hoeveelheid die is gebruikt, dus vanaf he
 
 Deze les gaat over hoe je op een Dashboard kan zien hoeveel stroom en gas je verbruikt. Hiervoor heb je een Raspberry Pi 3B+ nodig met het besturingssysteem Ubuntu Server 22.04 en een aantal programma's zoals Docker, Portainer, Domoticz en Node-RED. Je moet ervoor zorgen dat de gegevens van Domoticz naar de "MQTT broker" worden gestuurd. Daarna kan je deze informatie ophalen en op de juiste manier weergeven op het Dashboard. Als je bijvoorbeeld kijkt naar hoeveel stroom je op dat moment verbruikt, dan zie je dat op het Dashboard. Bij het gasverbruik krijg je de totale hoeveelheid die is gebruikt, dus vanaf het begin. Daarom moet je de beginwaarde van het gasverbruik aftrekken om te weten hoeveel gas er sinds dat moment is gebruikt.
 
-Ik heb nog een post aan de blog [**Temperatuur van de huiskamer in Domoticz weergeven**](../blog/#03-2023-Temperatuur-van-de-huiskamer-in-Domoticz-weergeven) toegevoegd!
+Ik heb nog de post [**Temperatuur van de huiskamer in Domoticz weergeven**](../blog/#03-2023-Temperatuur-van-de-huiskamer-in-Domoticz-weergeven) aan de blog toegevoegd!
 
 
 
