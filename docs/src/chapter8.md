@@ -97,7 +97,7 @@ connect()
 
 Dit is een stuk code geschreven in de programmeertaal Python. Het doel van de code is om je microcontroller (bijvoorbeeld een ESP8266 of ESP32) te verbinden met een wifi-netwerk.
 
-De code bevat één functie, genaamd 'connect'. Als we deze functie aanroepen, zal de microcontroller verbinding maken met het wifi-netwerk met de naam 'Naam\_wifi\_netwerk' en het wachtwoord 'Wachtwoord\_wifi\_netwerk'.
+De code bevat één functie, die 'connect' heet. Als we deze functie aanroepen, zal de microcontroller verbinding maken met het wifi-netwerk met de naam 'Naam\_wifi\_netwerk' en het wachtwoord 'Wachtwoord\_wifi\_netwerk'.
 
 Als de verbinding is gemaakt, zal het IP-adres dat is toegewezen aan de microcontroller worden weergegeven.
 
