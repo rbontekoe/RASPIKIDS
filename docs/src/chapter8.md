@@ -179,9 +179,14 @@ Als er tijdens het verzenden van gegevens een fout optreedt, zal de code probere
 
 ## Stap 4 - Stuur de programma's naar de ESP8266
 
+```@raw html
+<img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/05/ESP8266-NodeMCU-kit-12-E-pinout-gpio-pin.png?w=817&quality=100&strip=all&ssl=1" alt="Raspberry Pi logo" width="400">
+```
+*De [ESP8266 12-E NodeMCU kit pinout diagram](https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/) volgens Random Tutorials*
+
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Verbind de DHT22 met de ESP8266 en sluit de ESP8266 aan op de laptop met de "USB A naar Micro USB" kabel. ``\\``![DHT22-ESP8266](assets/fig_8_10.png) |
+| 1 | Verbind de DHT22 met de ESP8266 en sluit de ESP8266 aan op de laptop met de "USB A naar Micro USB" kabel. ``\\``![DHT22-ESP8266](assets/fig_8_10.png)  |
 | 2 | Open het programma Thonny op de laptop. Als het programma al loopt, klik dan eventueel op het "Stop" symbool in het menu of druk op "Ctrl-F2". |
 | 3 | Ga naar de map "dht22" en kies `boot.py`. |
 | 4 | Kies "File > Save as..." in het menu om het bestand op te slaan. Er verschijnt dan een pop-up met "Where to save to".``\\``![Where to save to?](assets/fig_8_7.png) |
