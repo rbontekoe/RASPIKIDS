@@ -67,8 +67,8 @@ Je gaat met behulp van Portainer een stack maken voor de Node-RED container. Een
 |Stap        | Actie      |
 |:---------- | :---------- |
 | 1 | Typ `ssh IP-adresRaspberryPi:9000` in je browser. Dit zorgt dat je Portainer opent in je internetbrowser, zoals Chrome of Firefox. |
-| 2 | Klik op 'Stacks' in Portainer. Dit zorgt dat een nieuw menu opent. |
-| 3 | Klik in het menu op 'Stack'. Hierdoor zie je een lijst met verschillende stacks en wat ze doen. |
+| 2 | Klik op 'Stacks' in Portainer. Dit zorgt dat een nieuw menu opent. ``\\``![fig_5_1](assets/fig_5_1.png) |
+| 3 | Klik in het menu op 'Stack'. Hierdoor zie je een lijst met verschillende stacks en wat ze doen. ``\\``![fig_5_2](assets/fig_5_2.png) |
 ||
 
 
@@ -89,11 +89,11 @@ In deze stap ga je een pagina maken waarin je de gegevens van de stack vermeldt.
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Klik op de knop `Add stack` |
+| 1 | Klik op de knop `Add stack` ``\\``![fig_5_3](assets/fig_5_3.png) |
 | 2 | Type `nodered` in het veld "Name". De naam van de stack. |
 | 3 | Klik op de eerste regel in het veld "Web-editor". Hier moet de tekst uit docker-compose.yml komen te staan. |
-| 5 | Druk op `Ctrl + V`. Hiermee plak je de tekst van het klembord in het veld. |
-| 6 | Helemaal onderaan de pagina, klik op de knop "Deploy the stack".  |
+| 5 | Druk op `Ctrl + V`. Hiermee plak je de tekst van het klembord in het veld. ``\\``![fig_5_4](assets/fig_5_4.png) |
+| 6 | Helemaal onderaan de pagina, klik op de knop "Deploy the stack". ``\\``![fig_5_5](assets/fig_5_5.png) |
 ||
 
 ## Samenvatting
