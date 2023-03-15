@@ -23,7 +23,7 @@ Stap 3: Personaliseer je website.
 
 ## Stap 1: Introductie tot Node-RED en een "Hallo wereld!" voorbeeld
 
-Je hebt 3 nodes (knooppunt) nodig om een eenvoudige website te maken:
+Je hebt 3 knooppunten nodig om een eenvoudige website te maken:
 - http in
 - template (staat in functie, 1 sectie hoger)
 - http response
@@ -33,11 +33,11 @@ Met "http in" vertel je hoe mensen naar een specifieke pagina op je website kunn
 **Voer de volgende stappen uit:**
 
 1. Ga met je browser naar `IP_adres_raspberry_pi:1880`.
-2. Sleep de nodes (knooppunt) naar je werkblad (canvas). Zie ook [Inleiding NodeRed](https://eelcodijkstra.github.io/iot-0/html/inleiding/nodered-inleiding.html) van Eelco Dijkstra.
+2. Sleep de knooppunten naar je werkblad. Zie ook [Inleiding NodeRed](https://eelcodijkstra.github.io/iot-0/html/inleiding/nodered-inleiding.html) van Eelco Dijkstra.
     
    ![fig_6_1](assets/fig_6_1.png)
 
-3. Verbind de nodes met de muis aan elkaar. Steeds een eindpunt met een beginpunt. Als je alle nodes aan elkaar hebt geplakt, heb je een "Flow". Dit is een soort programma.
+3. Verbind de knooppunten met de muis aan elkaar. Steeds een eindpunt met een beginpunt. Als je alle knooppunten aan elkaar hebt geplakt, heb je een "Flow". Dit is een soort programma.
 4. Dubbelklik op het `http in` knooppunt en geef als URL op: `/hallo`.
 5. Dubbelklik op template en tik `<h1>Hallo wereld!</h1>` op de eerste regel van het veld "template".
    

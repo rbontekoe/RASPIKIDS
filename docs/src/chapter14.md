@@ -31,7 +31,7 @@ Stap 3: Data naar database wegschrijven
 | 2 | Kies uit het menu voor "Manage palette". |
 | 3 | Klik op de "Install" tab en zoek naar "node-red-contrib-influxdb". ``//``![fig_14_4](assets/fig_14_4.png) |
 | 4 | Druk op de knop "Install". |
-| 5 | In het Node-RED menu vind je de drie nodes: ``\\``![fig_14_6](assets/fig_14_6.png) |
+| 5 | In het Node-RED menu vind je de drie knooppunten: ``\\``![fig_14_6](assets/fig_14_6.png) |
 ||
 
 ## Stap 2 - Sensor_data database maken
@@ -52,11 +52,11 @@ Stap 3: Data naar database wegschrijven
 |Stap        | Actie      |
 |:---------- | :---------- |
 | 1 | Open Node-RED. |
-| 2 | Sleep een `function` en de `influx out` node naar je werkblad en verbind de nodes volgens het schema. ``\\``![fig_14_9](assets/fig_14_9.png) |
-| 3 | Open de `function` node en type de volgende code. ``\\``![fig_14_10](assets/fig_14_10.png) |
+| 2 | Sleep een `function` en het `influx out` knooppunt naar je werkblad en verbind de knooppunten volgens het schema. ``\\``![fig_14_9](assets/fig_14_9.png) |
+| 3 | Open het `function` knooppunt en type de volgende code. ``\\``![fig_14_10](assets/fig_14_10.png) |
 | 4 | Druk op de toets "Done". |
-| 5 | Open de `influx out` node. |
-| 6 | Klik op het "potloodje". ``\\``![fig_14_11](assets/fig_14_11.png) ``\\``In Node-RED: JSON object creeert de tabel "test", die staat gedefinieerd in de node "influxdb out" onder "Measurments". Aantal items bepaalt aantal kolommen, naast de eerste kolom die datum en tijd bevat:
+| 5 | Open het `influx out` knooppunt. |
+| 6 | Klik op het "potloodje". ``\\``![fig_14_11](assets/fig_14_11.png) ``\\``In Node-RED: JSON object creeert de tabel "test", die staat gedefinieerd in het knooppunt "influxdb out" onder "Measurments". Aantal items bepaalt aantal kolommen, naast de eerste kolom die datum en tijd bevat:
           {
               temp: Number(myval),   // de meting
               type: "temp",          // extra informatie
@@ -82,4 +82,4 @@ Open database en typ `use sensor_data` en daarna `select * from test. Je krijg h
 
 ## Samenvatting
 
-In deze les leer je hoe je gegevens zoals temperaturen en vochtigheid kunt opslaan in een Influx database met behulp van Node-RED. Om dit te doen heb je een Raspberry Pi 3B+ nodig met Docker, Portainer, Node-RED, InfluxDB en Grafana. Je moet ook het Node-RED dashboard programma hebben gemaakt en de Raspberry Pi moet verbinding hebben met het internet. Er zijn drie stappen om gegevens naar de Influx database te sturen: 1) een InfluxDB-module in Node-RED maken, 2) een sensor_data database maken, en 3) de data naar de database wegschrijven. Om deze stappen uit te voeren moet je verschillende acties ondernemen, zoals het openen van de webinterface van Node-RED, het zoeken naar de node-red-contrib-influxdb en het maken van een database. Je moet ook een functie- en influx-out node slepen naar je werkblad en deze verbinden volgens het schema. Ten slotte moet je het IP-adres van je Raspberry Pi invoeren en de naam van de database sensor_data opgeven, en daarna op de knop 'Deploy' drukken. Als je alles goed hebt gedaan, kun je later de gegevens gemakkelijk terugvinden en bekijken.
+In deze les leer je hoe je gegevens zoals temperaturen en vochtigheid kunt opslaan in een Influx database met behulp van Node-RED. Om dit te doen heb je een Raspberry Pi 3B+ nodig met Docker, Portainer, Node-RED, InfluxDB en Grafana. Je moet ook het Node-RED dashboard programma hebben gemaakt en de Raspberry Pi moet verbinding hebben met het internet. Er zijn drie stappen om gegevens naar de Influx database te sturen: 1) een InfluxDB-module in Node-RED maken, 2) een sensor_data database maken, en 3) de data naar de database wegschrijven. Om deze stappen uit te voeren moet je verschillende acties ondernemen, zoals het openen van de webinterface van Node-RED, het zoeken naar de node-red-contrib-influxdb en het maken van een database. Je moet ook een functie- en influx-out knooppunt slepen naar je werkblad en deze verbinden volgens het schema. Ten slotte moet je het IP-adres van je Raspberry Pi invoeren en de naam van de database sensor_data opgeven, en daarna op de knop 'Deploy' drukken. Als je alles goed hebt gedaan, kun je later de gegevens gemakkelijk terugvinden en bekijken.

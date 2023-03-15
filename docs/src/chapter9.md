@@ -1,6 +1,6 @@
 # Node-RED dashboard programma maken
 
-Deze module geeft je een set nodes (knooppunten) in [Node-RED](https://flows.nodered.org/node/node-red-dashboard) waarmee je snel een live data dashboard kunt maken.
+Deze module geeft je een set knooppunten in [Node-RED](https://flows.nodered.org/node/node-red-dashboard) waarmee je snel een live data dashboard kunt maken.
 
 Je gaat een dashboard maken dat de volgende dingen laat zien:
 - Hoe warm het is en hoe vochtig de lucht in huis is.
@@ -32,7 +32,7 @@ Stap 3: Weergegevens ophalen en op dashboard weergeven.
 
 ## Stap 1 - De Node-RED Dashboard module downloaden
 
-Node-RED heeft al veel verschillende onderdelen (nodes) om te gebruiken, maar soms wil je nog meer. Dan kun je nieuwe onderdelen toevoegen. Een handige toevoeging is de [dashboard](https://flows.nodered.org/node/node-red-dashboard) module. Deze module bestaat uit verschillende onderdelen die speciaal zijn gemaakt om een dashboard te maken. Bijvoorbeeld, er is een onderdeel om een metertje te maken of om gegevens in een grafiek te laten zien. Ook is er een onderdeel om gegevens als tekst weer te geven. Je moet de module wel zelf toevoegen, want het zit niet automatisch al in Node-RED.
+Node-RED heeft al veel verschillende knooppunten om te gebruiken, maar soms wil je nog meer. Dan kun je nieuwe onderdelen toevoegen. Een handige toevoeging is de [dashboard](https://flows.nodered.org/node/node-red-dashboard) module. Deze module bestaat uit verschillende onderdelen die speciaal zijn gemaakt om een dashboard te maken. Bijvoorbeeld, er is een onderdeel om een metertje te maken of om gegevens in een grafiek te laten zien. Ook is er een onderdeel om gegevens als tekst weer te geven. Je moet de module wel zelf toevoegen, want het zit niet automatisch al in Node-RED.
 
 |Stap        | Actie      |
 |:---------- | :---------- |
@@ -52,14 +52,14 @@ Volg deze stappen om het werk te doen:
  
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Pak de 2x de "mqtt in", 1x de "gauge" en 1x de "text" nodes en zet ze op je werkblad. |
-| 2 | Verbind de "mqtt in" node met de "gauge" node en de andere "mqtt in" node met de "text" node. |
+| 1 | Pak de 2x de "mqtt in", 1x de "gauge" en 1x de "text" knooppunt(en) en zet ze op je werkblad. |
+| 2 | Verbind de "mqtt in" knooppunt met het "gauge" knooppunt en de andere "mqtt in" knooppunt met het "text" knooppunt. |
 | 3 | Dubbelklik op "mqtt in" en typ het IP adres van je Raspberry Pi in het vak "Server". Het poortnummer "1883" wordt automatisch toegevoegd. ``\\``![fig_9_22](assets/fig_9_22.png) |
-| 4 | Typ `temperature2` in het "Topic" vak van de "mqtt in" node. |
-| 5 | Typ `Temp huiskamer` in het "Label" vak van de "gauge" node. ``\\``![fig_9_22](assets/fig_9_23.png)|
-| 6 | Pak opnieuw een "mqtt in" en "text" nodes en zet ze op je werkblad. |
-| 7 | Verbind de "mqtt in" blok met de "text" blok. |
-| 8 | Typ het IP adres van je Raspberry Pi in het "Server" vak van de "mqtt in" node. |
+| 4 | Typ `temperature2` in het "Topic" vak van het "mqtt in" knooppunt. |
+| 5 | Typ `Temp huiskamer` in het "Label" vak van het "gauge" knooppunt. ``\\``![fig_9_22](assets/fig_9_23.png)|
+| 6 | Pak opnieuw een "mqtt in" en een "text" knooppunt en zet ze op je werkblad. |
+| 7 | Verbind de "mqtt in" knooppunt met het "text" knooppunt. |
+| 8 | Typ het IP adres van je Raspberry Pi in het "Server" vak van de "mqtt in" knooppunt. |
 | 9 | Typ `humidity2` in het "Topic" vak van de "mqtt in" blok. |
 | 10 | Typ `Hum huiskamer` in het "Name" vak van de "text" blok. |
 | 11 | Dubbelklik op "Text" en typ in het vak "Value format" `{{msg.payload}} %`. |
@@ -78,7 +78,7 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Sleep de nodes "timestamp", "http request", "debug", 3x "function" en uit de groep dashboard "chart" en 3x "text". Confiugreer de nodes volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
+| 1 | Sleep de knooppunten "timestamp", "http request", "debug", 3x "function" en uit de groep dashboard "chart" en 3x "text". Confiugreer de knooppunten volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
 | 2 | Dubbelkik op "timestamp" ``\\``![fig_9_5 timestamp](assets/fig_9_5.png)|
 | 3 | Klik op het keuzevakje `once after`. |
 | 4 | Kies bij de Repeat groep voor: `interval`. |
@@ -89,7 +89,7 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 9 | Type in het veld "URL": https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=**JOUW\_API\_KEY**&contentType=json
 | 10 | Kies in het keuze veld "Return" voor: `a parsed JSON object`.
 | 11 | Druk op de toets "Done". |
-| 12 | Debug ontvangt van de node "visualcrossing" een JSON object zodra je op het meest linkse grijze vierkantje klikt van timestamp. Een subgroep is "currentConditions". Dit bevat de gegevens die we willen gebruiken op het dashboard. Je krijgt ze te zien als je in het venster geheel rechts kies voor de tweede tab van rechts "Debug messages". ``\\``![fig_9_16](assets/fig_9_16.png)``\\``*Klik op het driehoekjes om het volledige JSON object te bekijken.*|
+| 12 | Debug ontvangt van het knooppunt "visualcrossing" een JSON object zodra je op het meest linkse grijze vierkantje klikt van timestamp. Een subgroep is "currentConditions". Dit bevat de gegevens die we willen gebruiken op het dashboard. Je krijgt ze te zien als je in het venster geheel rechts kies voor de tweede tab van rechts "Debug messages". ``\\``![fig_9_16](assets/fig_9_16.png)``\\``*Klik op het driehoekjes om het volledige JSON object te bekijken.*|
 | 13 | Dubbelklik op de eerste "functie" en geef het de naam: `buitentemp`. ``\\``![get_actual_temp](assets/fig_9_7.png) ``\\``*Wat je hier ziet is JavaScript code. Elke uitdukking eindigt met een ";". Iets ingesloten door accolades {...} verwijst naar een JSON-object.* |
 | 14 | Typ op de eerste regel: `return { payload : "msg.payload.currentConditions.temp };`. "temp" is de buitentemperatuur. ``\\``Een payload is een belangrijk onderdeel van computers en technologie. Het is een term die gebruikt wordt om iets te beschrijven dat wordt verstuurd via internet, een computer-netwerk of in ons geval in een Node-RED flow. Denk bijvoorbeeld aan het versturen van een e-mail naar iemand. De boodschap die je verstuurt, bijvoorbeeld je tekst en eventuele afbeeldingen, is de payload. Het wordt verzonden via het internet naar de ontvanger, zoals jij wilt dat het wordt ontvangen. ``\\``Met "msg.payload" wordt verwezen naar het bericht dat Visual Crossing verzendt. Het vervolg ".currentConditions.temp" verwijst naar de buitentemperatuur. ``\\``![fig_9_17](assets/fig_9_17.png) |
 | 14 | Druk op de toets "Done". |
@@ -192,11 +192,11 @@ Hoe hard de wind waait heb ik bepaald met de gegevens uit deze [tabel](https://w
 
 ## Samenvatting
 
-Met Node-RED Dashboard module kun je een dashboard maken om live data te visualiseren. Het dashboard kan informatie over de temperatuur, vochtigheid en windrichting binnen en buiten tonen. Om dit te doen, heb je een Raspberry Pi 3B+ met Ubuntu Server 22.04 nodig, evenals geïnstalleerde Docker, Portainer, Node-RED en MQTT broker. Je hebt ook een ESP8266 met een DHT22-sensor nodig die gegevens naar de MQTT broker stuurt. Om het dashboard te maken, download je de Node-RED Dashboard module en stel je vervolgens het dashboard samen door de mqtt in- en gauge-nodes te slepen, de IP-adressen van de Raspberry Pi in te voeren en de juiste gegevens en namen in te voeren. Je kunt ook weergegevens van Visual Crossing ophalen met een API-sleutel en de informatie visualiseren.In dit hoofdstuk leer je hoe je met Node-RED snel een live data dashboard kunt maken. Dit dashboard kan informatie laten zien zoals de temperatuur, luchtvochtigheid, windrichting en -snelheid. Om dit te doen, heb je een Raspberry Pi 3B+ nodig met Ubuntu Server 22.04, geïnstalleerde Docker, Portainer, Node-RED en MQTT broker, een ESP8266 met een DHT22 die gegevens stuurt naar de MQTT broker en een wifi-netwerk waar alle onderdelen op aangesloten zijn.
+Met Node-RED Dashboard module kun je een dashboard maken om live data te visualiseren. Het dashboard kan informatie over de temperatuur, vochtigheid en windrichting binnen en buiten tonen. Om dit te doen, heb je een Raspberry Pi 3B+ met Ubuntu Server 22.04 nodig, evenals geïnstalleerde Docker, Portainer, Node-RED en MQTT broker. Je hebt ook een ESP8266 met een DHT22-sensor nodig die gegevens naar de MQTT broker stuurt. Om het dashboard te maken, download je de Node-RED Dashboard module en stel je vervolgens het dashboard samen door de mqtt in- en gauge-knooppunten te slepen, de IP-adressen van de Raspberry Pi in te voeren en de juiste gegevens en namen in te voeren. Je kunt ook weergegevens van Visual Crossing ophalen met een API-sleutel en de informatie visualiseren.In dit hoofdstuk leer je hoe je met Node-RED snel een live data dashboard kunt maken. Dit dashboard kan informatie laten zien zoals de temperatuur, luchtvochtigheid, windrichting en -snelheid. Om dit te doen, heb je een Raspberry Pi 3B+ nodig met Ubuntu Server 22.04, geïnstalleerde Docker, Portainer, Node-RED en MQTT broker, een ESP8266 met een DHT22 die gegevens stuurt naar de MQTT broker en een wifi-netwerk waar alle onderdelen op aangesloten zijn.
 
 Stap 1: De Node-RED Dashboard module downloaden. Deze module biedt verschillende onderdelen, zoals een metertje, een grafiek en tekstweergave, die speciaal zijn ontworpen om een dashboard te maken. Je moet deze module zelf toevoegen aan Node-RED.
 
-Stap 2: Het dashboard samenstellen. Hier leer je hoe je verschillende onderdelen kunt toevoegen aan je dashboard en hoe je deze kunt verbinden met de MQTT broker. Je voegt bijvoorbeeld een "mqtt in", "gauge" en "text" node toe om de temperatuur en luchtvochtigheid weer te geven.
+Stap 2: Het dashboard samenstellen. Hier leer je hoe je verschillende onderdelen kunt toevoegen aan je dashboard en hoe je deze kunt verbinden met de MQTT broker. Je voegt bijvoorbeeld een "mqtt in", "gauge" en "text" knooppunt toe om de temperatuur en luchtvochtigheid weer te geven.
 
 Stap 3: Weergegevens ophalen en op dashboard weergeven. Je leert hoe je gegevens over het weer in Leusden kunt ophalen van een website en deze kunt integreren in je dashboard. Om je dashboard te bekijken, typ je het IP-adres van je Raspberry Pi in je webbrowser, gevolgd door /ui.
 

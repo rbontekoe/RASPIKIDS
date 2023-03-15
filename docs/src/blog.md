@@ -28,7 +28,7 @@ Ik ga je laten zien hoe je Domoticz kan gebruiken om te zien hoe warm of koud he
 
 #### Stap 1: Node-RED applicatie uitbreiden
 
-Sleep twee nodes naar het werkblad: eentje van een "function" en eentje van een "mqtt out". Volg het plaatje in figuur 1 om ze goed in te stellen.
+Sleep twee knooppunten naar het werkblad: eentje van een "function" en eentje van een "mqtt out". Volg het plaatje in figuur 1 om ze goed in te stellen.
 
 ![fig_blog_1](assets/fig_blog_1.png) ``\\``*Figuur 1*
 
