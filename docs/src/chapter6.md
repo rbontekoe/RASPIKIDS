@@ -35,21 +35,21 @@ Met "http in" vertel je hoe mensen naar een specifieke pagina op je website kunn
 1. Ga met je browser naar `IP_adres_raspberry_pi:1880`.
 2. Sleep de nodes (knooppunt) naar je werkblad (canvas). Zie ook [Inleiding NodeRed](https://eelcodijkstra.github.io/iot-0/html/inleiding/nodered-inleiding.html) van Eelco Dijkstra.
     
-   ![fig 1](assets/fig_1.png)
+   ![fig_6_1](assets/fig_6_1.png)
 
 3. Verbind de nodes met de muis aan elkaar. Steeds een eindpunt met een beginpunt. Als je alle nodes aan elkaar hebt geplakt, heb je een "Flow". Dit is een soort programma.
 4. Dubbelklik op het `http in` knooppunt en geef als URL op: `/hallo`.
 5. Dubbelklik op template en tik `<h1>Hallo wereld!</h1>` op de eerste regel van het veld "template".
    
-   ![figuur 2](assets/fig_2.png)
+   ![fig_6_2](assets/fig_6_2.png)
    
 6. Klik op de knop "Deploy" boven aan rechts om de code te maken voor je website.
 
-   ![figuur 3](assets/fig_3.png)
+   ![fig_6_3](assets/fig_6_3.png)
 
 7. Typ in de zoekbalk van je internet browser: `IP_adres_Raspberry_Pi:1880/hallo`. Als alles goed is gegaan, zie je 'Hallo wereld!' in vette letters verschijnen op het scherm.
     
-   ![figuur 4](assets/fig_4.png)
+   ![fig_6_4](assets/fig_6_4.png)
 
 8. Voeg meer tekst toe aan de website door ze tussen de `<p>` en `</p>` tags te zetten.
 
@@ -89,7 +89,7 @@ Dus dit stuk code bevat informatie over de status van een bepaalde actie en een 
 
 2. Verbind de knooppunten net als op de tekening:
    
-   ![fig_5](assets/fig_5.png)
+   ![fig_6_5](assets/fig_6_5.png)
 
 3. Voer de volgende webadres in bij het invoerveld 'http in': `/toon`.
 
