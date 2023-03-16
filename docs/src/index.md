@@ -17,7 +17,7 @@ Ook werk ik graag met Node-RED. Dit is een programma waarmee we grafisch onze pr
 
 Ik gebruik verschillende sensors om dingen te meten, zoals de DHT22 om de temperatuur en luchtvochtigheid te meten. De ESP8266 en ESP32 zijn microcontrollers, hele kleine en goedkope computertjes die kunnen communiceren met andere computers via WiFi. Bijvoorbeeld met een MQTT broker.
 
-Een MQTT broker is een programma dat helpt bij het uitwisselen van informatie tussen andere computers. Dit gebeurt meestal via een WiFi-netwerk.
+Een MQTT broker is een programma dat helpt bij het uitwisselen van informatie tussen computers. Dit gebeurt meestal via een WiFi-netwerk.
 
 MicroPython is een computerprogramma dat ik gebruik voor de ESP's.
 
@@ -111,7 +111,7 @@ De ESP8266 en de [ESP32](https://nl.wikipedia.org/wiki/ESP32) zijn microcontroll
 <img src="https://elektronicavoorjou.nl/wp-content/uploads/2019/12/NodeMcu-Lua-WIFI-Board-ESP8266-CP2102-1.jpg" alt="ESP8266" width="300">
 ```
 
-**ESP8266 van [elektronicavoorjou.nl](https://elektronicavoorjou.nl/product/nodemcu-esp8266-wifi-board/) die ik gebruik om de output van een DHT22 naar mijn Raspberry Pi te sturen**
+*SP8266 van [elektronicavoorjou.nl](https://elektronicavoorjou.nl/product/nodemcu-esp8266-wifi-board/) die ik gebruik om de output van een DHT22 naar mijn Raspberry Pi te sturen*
 
 Ze hebben beide een wifi-verbinding, wat betekent dat ze kunnen communiceren met andere apparaten. Dit maakt ze handig voor projecten waarbij je wilt dat de microcontroller via wifi kan communiceren. Ze worden vaak gebruikt in elektronische projecten bijvoorbeeld in combinatie met een DHT22, om de temperatuur in een ruimte te meten en door te geven aan een MQTT-broker.
 
@@ -119,7 +119,7 @@ Ze hebben beide een wifi-verbinding, wat betekent dat ze kunnen communiceren met
 <img src="https://elektronicavoorjou.nl/wp-content/uploads/2021/01/DHT22-1.jpg" alt="DHT22" width="300">
 ```
 
-**DHT22 van [elektronicavoorjou.nl](https://elektronicavoorjou.nl/product/dht22-temp-vocht-sensor/) die de temperatuur en de luchtvochtigheidsgad meet**
+*DHT22 van [elektronicavoorjou.nl](https://elektronicavoorjou.nl/product/dht22-temp-vocht-sensor/) die de temperatuur en de luchtvochtigheidsgad meet*
 
 ## Wat is een sensor en een slimme meter?
 
@@ -135,7 +135,7 @@ Sensoren en slimme meters zijn dus apparaten die informatie kunnen detecteren of
 <img src="https://www.sossolutions.nl/media/catalog/product/cache/5df5c040ed8cd3972c59a8e190e44350/1/_/1.8m_kabel.png" alt="P1 kabel" width="300">
 ```
 
-**P1 Kabel van [www.sossolutions.nl](https://www.sossolutions.nl/slimme-meter-kabel) die ik gebruik om mijn Slimme Meter met mijn Raspberry Pi te koppelen**
+*P1 Kabel van [www.sossolutions.nl](https://www.sossolutions.nl/slimme-meter-kabel) die ik gebruik om mijn Slimme Meter met mijn Raspberry Pi te koppelen*
 
 ## Wat is MicroPython?
 
