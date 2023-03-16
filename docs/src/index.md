@@ -7,7 +7,7 @@
 
 ## Inleiding
 
-Ik heb een Raspberry Pi 3B+ thuis waarop verschillende programma's draaien. Zoals een programma om de temperatuur in de verschillende kamers in mijn huis te meten, een programma om gegevens over het weer op te halen van Visual Crossing, een programma om het stroom- en gasverbruik te bekijken en een receptendatabase met italiaanse recepten.
+Ik heb een Raspberry Pi 3B+ thuis waarop verschillende programma's draaien. Zoals een programma om de temperatuur in de verschillende kamers in mijn huis te meten, een programma om gegevens over het weer op te halen van Visual Crossing, een programma om het stroom- en gasverbruik te bekijken en een receptendatabase.
 
 Daarnaast heb ik meegewerkt aan [CoderDojo](https://www.leusdenzet.nl/techlab/coderdojo/) evenementen voor kinderen bij het Technisch Lab van LeusdenZet. Door Corona en mijn leeftijd ben ik hiermee gestopt, maar ik wil wel nog steeds graag een bijdrage leveren door middel van online cursusmateriaal.
 
