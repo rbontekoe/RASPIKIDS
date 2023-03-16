@@ -56,7 +56,7 @@ Scrol helemaal naar beneden op het formulier en zet bij "Topic in Prefix:" de te
 
 Druk op de knop "Update" om het formulier bij te werken. Blijf daarna op het formulier.
 
-#### Stap 5 - Maak een "dummy" temperatuurmeter aan in Domoticz
+#### Stap 5 - Maak een "dummy" thermometer aan in Domoticz
 
 Druk op de knop "Add" onderaan het "mqtt" formulier. Verander het formuliertype naar "Dummy (Does nothing, use for virtual switches only)". Geef het een naam "dummy" en druk op de knop "Update".
 
