@@ -32,12 +32,16 @@ Met dit commando wordt een container gemaakt, die uitgevoerd wordt in de achterg
 |Stap        | Actie      |
 |:---------- | :---------- |
 | 1 | Maak verbinding met je Raspberry Pi-computer door dit commando te typen: `ssh ubuntu@IP-adres Raspberry Pi`. Bijvoorbeeld: `ssh ubuntu@192.168.2.49`. |
-| 2 | Installeer Portainer met dit commando: `sudo docker run -d -p 9000:9000 --name=portainer --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest`. |
-| 3 | Ga naar de Portainer website door `IP_adres_Raspberry_Pi:9000` in de adresbalk van je webbrowser te typen. Bijvoorbeeld: 192.168.2.49:9000. |
-| 4 | Maak een account aan met gebruikersnaam "admin". Zorg dat je de gebruikersnaam opschrijft. |
-| 5 | Kies een wachtwoord, zorg dat je het opschrijft. |
-| 6 | Klik op "stacks" in het rechter venster. |
-| 7 | Klik op "containers" in het menu links en je krijgt een lijst te zien van alle containers die draaien onder Docker. Nu is er maar één: "portainer". |
+| 2 | We gaan werken met de "Docker Swarm" omgeving. Deze omgeving moet je eerst activeren. Typ: docker swarm init. |
+| 3 | Installeer Portainer met dit commando: `sudo docker run -d -p 9000:9000 --name=portainer --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest`. |
+| 4 | Ga naar de Portainer website door `IP_adres_Raspberry_Pi:9000` in de adresbalk van je webbrowser te typen. Bijvoorbeeld: 192.168.2.49:9000. |
+| 5 | Maak een account aan met gebruikersnaam "admin". Zorg dat je de gebruikersnaam opschrijft. |
+| 6 | Kies een wachtwoord, zorg dat je het opschrijft. |
+| 7 | Je gaat nu Portainer geschikt maken voor de Docker Swarm omgeving. Klik op "Add Environments". ``\\``![fig_4_4](assets/fig_4_4.png) |
+| 8 | Activeer "Swarm" door op het viekantje rechtsboven te klikken. ``\\``![fig_4_2](assets/fig_4_2.png) |
+| 9 | Ververs je browser met http://IP-adres Raspberry Pi:9000/, bijvoorbeeld: http://192.168.2.49:9000
+| 10 | Klik op "stacks" in het rechter venster. ``\\``![fig_4_3](assets/fig_4_3.png) |
+| 11 | Klik op "containers" in het menu links en je krijgt een lijst te zien van alle containers die draaien onder Docker. Nu is er maar één: "portainer". |
 ||
 
 !!! info

@@ -2,6 +2,17 @@
 
 ## 2023
 
+### 21-04-2023 - Gestart met testen
+
+Ik heb een Raspberry Pi 4 model B te leen gekregen van de LeusdenZeT om te testen. Thanks.
+
+Les 1 Micro SD-kaartje aanmaken ging goed.
+Les 2 Communiceren met de Raspberry Pi ging ook goed.
+Les 3 Docker installeren ging goed. Duurde wel lang.
+Les 4 Portainer installeren ging goed.
+Les 5 Node-RED installeren ging niet goed. Ik heb Node-RED draaiende gekregen door een de code in het bestand "docker-compose.yml" te zetten in de folder "home/ubuntu/projects/nodered" en te starten met docker compose up.
+Les 6 Website bouwen met Node-RED. Website bouwen met Node-RED ging goed. Stap 2: Werken met API's lukte niet. Ik heb nu het vermoeden dat er iets mis is met hetimage dat gedownload wordt. Over een paar dagen opnieuw proberen, misschien dat men het gecorrigeerd heeft. 
+
 ### 10-03-2023 - CoderDojo Techlab Leusden
 
 Hé jij daar! Ben jij ook zo nieuwsgierig naar hoe computers werken en wil jij leren hoe je zelf kan programmeren? Dan is de [Coderdojo club van LeusdenZeT](https://www.leusdenzet.nl/techlab/coderdojo/) in Leusden echt iets voor jou!

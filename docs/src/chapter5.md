@@ -66,8 +66,8 @@ Je gaat met behulp van Portainer een stack maken voor de Node-RED container. Een
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Typ `ssh IP-adresRaspberryPi:9000` in je browser. Dit zorgt dat je Portainer opent in je internetbrowser, zoals Chrome of Firefox. |
-| 2 | Klik op 'Stacks' in Portainer. Dit zorgt dat een nieuw menu opent. ``\\``![fig_5_1](assets/fig_5_1.png) |
+| 1 | Typ `IP-adresRaspberryPi:9000` in je browser, bijvoorbeeld: 192.168.2.49:9000. Dit zorgt dat je Portainer opent in je internetbrowser, zoals Chrome of Firefox. |
+| 2 | Klik op 'stacks' in Portainer. Dit zorgt dat een nieuw menu opent. ``\\``![fig_5_1](assets/fig_5_1.png) |
 | 3 | Klik in het menu op 'Stack'. Hierdoor zie je een lijst met verschillende stacks en wat ze doen. ``\\``![fig_5_2](assets/fig_5_2.png) |
 ||
 

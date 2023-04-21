@@ -35,7 +35,7 @@ We willen een programma op onze computer gebruiken dat 'Docker' heet. Op onze Ra
 | 2 | Zorg dat de softwarelijst up-to-date is door dit commando te typen: `sudo apt update`. |
 | 3 | Verwijder oudere versies van Docker door dit commando te typen: `sudo apt remove docker docker-engine docker.io`. |
 | 4 | Installeer Docker door dit commando te typen: `curl -sSL https://get.docker.com \| sh`. |
-| 5 | Maak zeker dat je computer weet dat jij mag werken met Docker door dit commando te typen: `sudo usermod -aG docker $USER`. |
+| 5 | Zorg dat je computer weet dat jij mag werken met Docker door dit commando te typen: `sudo usermod -aG docker $USER`. |
 | 6 | Controleer de versie van [Docker Engine](https://docs.docker.com/engine/release-notes/) door dit commando te typen: `sudo docker version`. Het moet versie 20.10.22 of hoger zijn. |
 | 7 | Herstart je Raspberry Pi door dit commando te typen: `sudo reboot`. |
 ||
