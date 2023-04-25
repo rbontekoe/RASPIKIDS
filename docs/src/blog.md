@@ -2,6 +2,10 @@
 
 ## 2023
 
+### 25-04-2023
+
+Ik heb het probleem met Les 6 opgelost! Ik hoefde niet `docker swarm init` te gebruiken, maar in plaats daarvan de optie `Docker Standalone`. Ik heb het materiaal voor de cursus aangepast en op GitHub geplaatst. Nu ga ik lessen 1 tot en met 6 opnieuw testen.
+
 ### 21-04-2023 - Gestart met testen
 
 Ik heb een Raspberry Pi 4 model B te leen gekregen van de LeusdenZeT om te testen. Thanks.
@@ -11,7 +15,7 @@ Les 2 Communiceren met de Raspberry Pi ging ook goed.
 Les 3 Docker installeren ging goed. Duurde wel lang.
 Les 4 Portainer installeren ging goed.
 Les 5 Node-RED installeren ging niet goed. Ik heb Node-RED draaiende gekregen door een de code in het bestand "docker-compose.yml" te zetten in de folder "home/ubuntu/projects/nodered" en te starten met docker compose up.
-Les 6 Website bouwen met Node-RED. Website bouwen met Node-RED ging goed. Stap 2: Werken met API's lukte niet. Ik heb nu het vermoeden dat er iets mis is met hetimage dat gedownload wordt. Over een paar dagen opnieuw proberen, misschien dat men het gecorrigeerd heeft. 
+Les 6 Website bouwen met Node-RED. Website bouwen met Node-RED ging goed. Stap 2: Werken met API's lukte niet. Ik heb nu het vermoeden dat er iets mis is met het image dat gedownload wordt. Over een paar dagen opnieuw proberen, misschien dat men het gecorrigeerd heeft. 
 
 ### 10-03-2023 - CoderDojo Techlab Leusden
 
