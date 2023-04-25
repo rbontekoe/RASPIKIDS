@@ -37,13 +37,11 @@ Met dit commando wordt een container gemaakt, die uitgevoerd wordt in de achterg
 | 5 | Ga naar de Portainer website door `IP_adres_Raspberry_Pi:9000` in de adresbalk van je webbrowser te typen. Bijvoorbeeld: 192.168.2.49:9000. |
 | 6 | Maak een account aan met gebruikersnaam "admin". Zorg dat je de gebruikersnaam opschrijft. |
 | 7 | Kies een wachtwoord, zorg dat je het opschrijft. |
-| 8 | Je gaat nu Portainer geschikt maken voor de Docker Swarm omgeving. Klik op "Add Environments". ``\\``![fig_4_4](assets/fig_4_4.png) |
+| 8 | Je gaat nu Portainer geschikt maken voor de Docker Standalone. Klik op "Add Environments". ``\\``![fig_4_4](assets/fig_4_4.png) |
 | 9 | Activeer "Docker Standalone" door op het viekantje rechtsboven te klikken. ``\\``![fig_4_2](assets/fig_4_2.png) |
-| 10 | Kopieer de tekst naar het klembord door op de toets "Copy Command" te klikken. ``\\``![fig_4_6](assets/fig_4_6.png) |
-| 11 | Plak de tekst in de prompt van de Raspberry Pi en druk op de toets Enter. |
-| 12 | Ververs je browser met http://IP-adres Raspberry Pi:9000/, bijvoorbeeld: http://192.168.2.49:9000
-| 13 | Klik op "stacks" in het rechter venster. ``\\``![fig_4_3](assets/fig_4_3.png) |
-| 14 | Klik op "containers" in het menu links en je krijgt een lijst te zien van alle containers die draaien onder Docker. Nu zijn er maar twee "portainer" en "portainer_agent". |
+| 10 | Ververs je browser met http://IP-adres Raspberry Pi:9000/, bijvoorbeeld: http://192.168.2.49:9000
+| 11 | Klik op "stacks" in het rechter venster. ``\\``![fig_4_3](assets/fig_4_3.png) |
+| 12 | Klik op "containers" in het menu links en je krijgt een lijst te zien van alle containers die draaien onder Docker. ``\\``![fig_4_9](assets/fig_4_9.png) |
 ||
 
 !!! info

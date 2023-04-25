@@ -2,6 +2,17 @@
 
 ## 2023
 
+### 26-04-2023
+
+Testen van de lessen.
+
+- Les 1 Micro SD-kaartje aanmaken ging goed.
+- Les 2 Communiceren met de Raspberry Pi ging ook goed.
+- Les 3 Docker installeren ging goed. Duurde wel lang.
+- Les 4 Portainer installeren ging goed.
+- Les 5 Node-RED installeren ginggoed.
+- Les 6 Website bouwen met Node-RED. Website bouwen met Node-RED ging goed. Stap 2: Werken met API's ging ook goed.
+
 ### 25-04-2023
 
 Ik heb het probleem met Les 6 opgelost! Je moet niet `docker swarm init` te gebruiken, maar in plaats daarvan de optie `Docker Standalone`. Ik heb het materiaal voor de cursus aangepast en op GitHub geplaatst. Nu ga ik les 1 tot en met 6 opnieuw testen.

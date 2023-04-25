@@ -23,7 +23,26 @@ Stap 3: Benader de Raspberry Pi vanuit je laptop.
 
 ## Stap 1 - curl installeren
 
-Oké, dus soms hebben we een programma nodig om dingen van het internet af te halen. Het heet 'curl'. Als je wilt weten of het al op je computer staat, kun je dat controleren door `curl -h` te typen. Als het niet op je computer staat, dan kun je het installeren door dit te typen: `sudo apt install curl`.
+Oké, dus soms hebben we een programma nodig om dingen van het internet af te halen. Het heet 'curl'. Als je wilt weten of het al op je computer staat, kun je dat controleren door `curl -h` te typen. Als het niet op je computer staat, dan kun je het installeren door dit te typen (commentaarregels die beginnen met een # hoef je niet te typen): 
+```
+# Maak verbinding met je Raspberry Pi en stel dat het IP-adres 192.168.2.49 is. Zie stap 3 uit de vorige les!
+ssh ubuntu@192.168.2.49
+
+# Maak softwarelijst up-to-date en update Ubuntu server software
+sudo apt update && sudo apt full-upgrade
+
+# Installeer curl
+sudo apt install curl
+```
+
+!!! info
+    "sudo apt update && sudo apt full-upgrade" is eigenlijk een combinatie van twee commando's die je kunt gebruiken op een computer die Linux gebruikt, zoals de Raspberry Pi.
+
+    Het eerste commando, "sudo apt update", zorgt ervoor dat de computer kan controleren of er nieuwe programma's beschikbaar zijn om te downloaden en te gebruiken. Het is alsof je jouw speelgoeddoos up-to-date houdt met nieuwe speeltjes.
+
+    Het tweede commando, "sudo apt full-upgrade", is als het upgraden van je speelgoed. Het zorgt ervoor dat alle programma's die je hebt gedownload worden bijgewerkt naar de nieuwste versies.
+
+    Dus, door het uitvoeren van deze twee commando's samen, kun je ervoor zorgen dat je altijd toegang hebt tot de nieuwste en beste programma's die beschikbaar zijn, en dat deze programma's ook worden bijgewerkt naar de nieuwste versies. Het is als het hebben van een bijgewerkte speelgoeddoos met de nieuwste en beste speeltjes die je kunt gebruiken om te spelen en te leren!
 
 ## Stap 2 - docker installeren
 

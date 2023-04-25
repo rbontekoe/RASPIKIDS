@@ -93,7 +93,7 @@ Dus dit stuk code bevat informatie over de status van een bepaalde actie en een 
 
 3. Voer de volgende webadres in bij het invoerveld 'http in': `/toon`.
 
-4. Geef het webadres voor een foto van een hond op: `https://dog.ceo/api/breeds/image/random`.
+4. Geef het webadres voor een foto van een hond op: `https://dog.ceo/api/breeds/image/random`. Stel "**<-**Return" in op "a parsed JSON object".
 
 5. Je krijgt een plaatje van een willekeurige hond te zien met de HTML code: `<img src="{{payload}}.message">`.
 
