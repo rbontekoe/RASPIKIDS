@@ -35,7 +35,7 @@ Om Thonny te installeren, moet je de volgende stappen volgen:
 |Stap        | Actie      |
 |:---------- | :---------- |
 | 1 | De Thonny-website is te vinden op [https://thonny.org](https://thonny.org/). Klik op de link om er naar toe te gaan. |
-| 2 | Klik op de knop "Download" om het installatiebestand te downloaden. |
+| 2 | Klik op de juiste Download link om het installatiebestand te downloaden. ``\\``![fig_8_11](assets/fig_8_11.png) |
 | 3 | Ga naar de map waarin het installatiebestand is gedownload en dubbelklik op het bestand. |
 | 4 | Volg de stappen in de installatie-wizard om Thonny te installeren op je computer. |
 | 5 | Nadat de installatie is voltooid, kun je Thonny openen door op het icoon te klikken dat is gemaakt op je bureaublad of door het te vinden via het startmenu. |
@@ -49,14 +49,13 @@ Om Thonny te installeren, moet je de volgende stappen volgen:
 | 1 | Ga naar de website van [MicroPython downloads](https://micropython.org/download/) door op de link te klikken. |
 | 2 | Zoek naar het plaatje met de tekst `ESP8266 with 2MiB+ flash Espressif`. ``\\``![fig_8_1](assets/fig_8_1.png)|
 | 3 | Klik op de link in het plaatje. |
-| 4 | Zoek in de lijst naar het nieuwste item. Download die dan. ``\\``Bij mij was dat op 6 febr. 2023: `v1.19.1 (2022-06-18) .bin [.elf] [.map] [Release notes] (latest)`. ``\\``Het voordeel van de laatste versie is dat de software voor de DHT22 ook geinstalleerd is. |
-| 5 | Maak de ESP8266 aan je laptop vast met de speciale "USB A naar Micro USB" kabel. |
-| 6 | Start Thonny op. |
-| 7 | Druk op "Tools > Options..." en ga naar de tab "Interpreter". |
-| 8 | Kies als interpreter/device "MicroPython (ESP8266)". ``\\``![fig_8_3](assets/fig_8_3.png). |
-| 9 | Klik op de link "Install or update".|
-| 10 | Kies in het veld genaamd "firmware" het bestand dat je in stap 4 hebt gedownload, bijvoorbeeld `esp8266-20220618-v1.19.1.bin`. ``\\``![fig_8_4](assets/fig_8_4.png). |
-| 11 | Druk op de knop Install.| 
+| 4 | Zoek in de lijst naar het nieuwste item. Download die dan. Het voordeel van de laatste versie is dat de software voor de DHT22 ook toegevoegd is. Bij mij was dat op 6 febr. 2023: ``\\``![fig_8_12](assets/fig_8_12.png) |
+| 5 | Start Thonny op. |
+| 6 | Druk op "Tools > Options..." en ga naar de tab "Interpreter". |
+| 7 | Kies als interpreter/device "MicroPython (ESP8266)". ``\\``![fig_8_3](assets/fig_8_3.png). |
+| 8 | Klik op de link "Install or update".|
+| 9 | Kies in het veld genaamd "Firmware" het bestand dat je in stap 4 hebt gedownload, bijvoorbeeld `esp8266-20220618-v1.19.1.bin`. ``\\``![fig_8_4](assets/fig_8_4.png). |
+| 10 | Druk op de knop Install.| 
 
 ## Stap 3 - Voeg programma's toe aan Thonny
 
@@ -74,8 +73,9 @@ We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We z
 | 6 | Vul op regel 6 de naam van jouw wifi-netwerk en het bijbehorende wachtwoord in. |
 | 7 | Sla het bestand op door "Ctrl + S" te drukken, kies de map "dht22" en geef het bestand de naam "boot.py". ``\\``![fig_8_6](assets/fig_8_6.png) |
 | 8 | Herhaal stap 1 en 4 voor [main.py](#main.py). |
-| 9 | Sla het bestand op door op "Ctrl + S" te drukken, kies de map "dht22" en geef het bestand de naam "main.py". |
-| 10 | Sluit Thonny. |
+| 9 | In regel 12 van de code moet je het woord **IP\_adres\_Raspberry\_Pi** veranderen in het echte IP-adres van jouw Raspberry Pi, bijvoorbeeld: `192.168.2.49`. Het is belangrijk om te weten dat de aanduidingen om de DHT22 te verbinden kunnen verschillen bij elke DHT22. |
+| 10 | Sla het bestand op door op "Ctrl + S" te drukken, kies de map "dht22" en geef het bestand de naam "main.py". |
+| 11 | Sluit Thonny. |
 ||
 
 

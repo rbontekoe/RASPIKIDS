@@ -10,8 +10,9 @@ Testen van de lessen.
 - Les 2 Communiceren met de Raspberry Pi ging ook goed.
 - Les 3 Docker installeren ging goed. Duurde wel lang.
 - Les 4 Portainer installeren ging goed.
-- Les 5 Node-RED installeren ginggoed.
+- Les 5 Node-RED installeren ging goed.
 - Les 6 Website bouwen met Node-RED. Website bouwen met Node-RED ging goed. Stap 2: Werken met API's ging ook goed.
+- Les 7 MQTT broker installeren. Ging goed.
 
 ### 25-04-2023
 

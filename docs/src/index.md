@@ -111,7 +111,7 @@ De ESP8266 en de [ESP32](https://nl.wikipedia.org/wiki/ESP32) zijn microcontroll
 <img src="https://elektronicavoorjou.nl/wp-content/uploads/2019/12/NodeMcu-Lua-WIFI-Board-ESP8266-CP2102-1.jpg" alt="ESP8266" width="300">
 ```
 
-*SP8266 van [elektronicavoorjou.nl](https://elektronicavoorjou.nl/product/nodemcu-esp8266-wifi-board/) die ik gebruik om de output van een DHT22 naar mijn Raspberry Pi te sturen*
+*ESP8266 van [elektronicavoorjou.nl](https://elektronicavoorjou.nl/product/nodemcu-esp8266-wifi-board/) die ik gebruik om de output van een DHT22 naar mijn Raspberry Pi te sturen*
 
 Ze hebben beide een wifi-verbinding, wat betekent dat ze kunnen communiceren met andere apparaten. Dit maakt ze handig voor projecten waarbij je wilt dat de microcontroller via wifi kan communiceren. Ze worden vaak gebruikt in elektronische projecten bijvoorbeeld in combinatie met een DHT22, om de temperatuur in een ruimte te meten en door te geven aan een MQTT-broker.
 

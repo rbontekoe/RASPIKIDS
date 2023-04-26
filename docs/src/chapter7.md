@@ -19,6 +19,8 @@ Stap 1: ChatGPT om docker-compose.yml bestand vragen.
 
 Stap 2: Installeren Mosquittto.
 
+Stap 3: Toegang aan iedereen geven.
+
 ## Stap 1 - ChatGPT om docker-compose.yml bestand vragen
 
 Stel de volgende vraag aan chatGPT: maak een docker-compose.yml bestand voor mosquitto.
@@ -61,6 +63,15 @@ Deze configuratie maakt gebruik van de officiële Eclipse Mosquitto Docker-afbee
 ||
 
 En dat is het! Je zou nu een werkende Mosquitto MQTT-broker moeten hebben binnen een Docker stack die beheerd wordt door Portainer. 
+
+### Stap 3 - Toegang aan iedereen geven
+
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Start Protainer en ga naar Containers. |
+| 2 | Je gaat het configuratie bestand van Mosquitto veranderen zodat iedereen toegang tot de broker heeft. Klik op het vierde icoon achter "mosquitto\-mosquitto\-1" om in de container te komen. ``\\``![fig_7_5](assets/fig_7_5.png) |
+| 3 | Kies als in het veld Command voor "/bin/sh". Klik op de toets "Connect". ``\\``![fig_7_6](assets/fig_7_6.png) |
+||
 
 ## Samenvatting
 
