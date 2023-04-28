@@ -68,11 +68,15 @@ En dat is het! Je zou nu een werkende Mosquitto MQTT-broker moeten hebben binnen
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Start Protainer en ga naar Containers. |
-| 2 | Je gaat het configuratie bestand van Mosquitto veranderen zodat iedereen toegang tot de broker heeft. Klik op het vierde icoon achter "mosquitto\-mosquitto\-1" om in de container te komen. ``\\``![fig_7_5](assets/fig_7_5.png) |
-| 3 | Kies als in het veld Command voor "/bin/sh". Klik op de toets "Connect". ``\\``![fig_7_6](assets/fig_7_6.png) |
+| 1 | Open het programma Protainer en ga naar "Containers". |
+| 2 | We gaan iets veranderen in de Mosquitto-instellingen zodat iedereen erbij kan. Klik op het vierde plaatje achter "mosquitto-mosquitto-1" om in de container naar binnen te gaan. ``\\``![fig_7_5](assets/fig_7_5.png) |
+| 3 | Kies in het veld "Command" voor "/bin/sh". Druk op de knop "Connect". ``\\``![fig_7_6](assets/fig_7_6.png) |
+| 4 | Genereer een lijst met folders en de bestanden, typ: `ls -l`. Je ziet het bestand "mosquitto-no-auth.conf". |
+| 5 | Als je wilt weten wat er in het bestand staat, typ dan `cat mosquitto-no-auth.conf` en druk op de toets "Enter". De zin "allow_anonymous true" betekent dat je niet hoeft in te loggen. ``\\``![fig_7_7](assets/fig_7_7.png) |
+| 6 | We gaan het bestand kopiëren naar de map "/mosquitto/config/". Typ hiervoor: `cp mosquitto-no-auth.conf /mosquitto/config/mosquitto.conf`. |
+| 7 | Vink het hokje aan voor de container en klik op de knop "Restart". ``\\``![fig_7_8](assets/fig_7_8.png) 
 ||
 
 ## Samenvatting
 
-Dit hoofdstuk gaat over het installeren van een programma genaamd MQTT broker, waarmee je gegevens kan uitwisselen tussen verschillende computers of sensoren. Om dit te doen heb je een Raspberry Pi 3B+ nodig met het besturingssysteem Ubuntu Server 22.04 en moet je Docker, Portainer en Node-RED geïnstalleerd hebben. Stap 1 is om ChatGPT te vragen om een docker-compose.yml bestand voor Mosquitto, de MQTT broker. Stap 2 is om de gegevens uit docker-compose.yml te kopiëren, Portainer te openen en een nieuwe stack aan te maken met de naam Mosquitto. Vervolgens plak je de gekopieerde tekst in het veld "Web-editor" en klik je op "Deploy the stack". Als alles goed gaat, zou je nu een werkende Mosquitto MQTT-broker moeten hebben binnen een Docker stack die beheerd wordt door Portainer.
+Deze les gaat over het installeren van het programma Mosquittto, een MQTT broker, waarmee gegevens tussen verschillende computers en sensoren uitgewisseld kunnen worden. Om dit te doen, heb je een Raspberry Pi 3B+ nodig met het besturingssysteem Ubuntu Server 22.04 en de programma's Docker, Portainer en Node-RED geïnstalleerd. Om Mosquitto te installeren, moet je de inhoud van het bestand "docker-compose.yml" in Portainer plakken. Vervolgens moet je in de container Mosquitto de instellingen zo aanpassen dat iedereen erbij kan, door het bestand "mosquitto-no-auth.conf" naar de map "/mosquitto/config" te kopiëren en de container opnieuw opstarten. Zo heb je een werkende MQTT-broker die gegevens kan uitwisselen.
