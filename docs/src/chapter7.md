@@ -77,6 +77,11 @@ En dat is het! Je zou nu een werkende Mosquitto MQTT-broker moeten hebben binnen
 | 7 | Vink het hokje aan voor de container en klik op de knop "Restart". ``\\``![fig_7_8](assets/fig_7_8.png) 
 ||
 
+!!! info
+    **Automatisch aanvulling/auto-complete**
+    
+    In Linux is er een handige functie die auto-complete heet en die je helpt om sneller en makkelijker commando's in te typen in de terminal. Stel je voor dat je een lang woord moet typen, zoals "cp mosquitto-no-auth.conf /mosquitto/config/mosquitto.conf". In plaats van het hele woord te typen, kun je de eerste paar letters typen, zoals "cp mo", en dan op de tab-toets drukken. Linux zal dan het woord "cp mo" automatisch voor je afmaken als er geen andere woorden zijn die met "cp mo" beginnen. Als je twee keer snel op de tab-toets drukt, dan krijg je een overzicht van alle mogelijke woorden die beginnen met "cp mo". In ons geval zie je dan bijvoorbeeld "cp mosquitto-no-auth.conf" en "/mosquitto". Als je daarna op de "-" toets drukt gevolgd door de tab-toets, dan maakt Linux het hele woord voor je af. Dit bespaart tijd en voorkomt fouten als je lange woorden moet typen. Auto-complete is dus een handige functie die het werken in de terminal veel makkelijker en sneller maakt.
+
 ## Samenvatting
 
 In deze les leer je hoe je Mosquitto installeert, een programma dat helpt bij het delen van informatie tussen verschillende computers en sensoren. Om dit te doen heb je een Raspberry Pi 3B+ met Ubuntu Server 22.04 besturingssysteem nodig en de programma's Docker, Portainer en Node-RED. Je moet de inhoud van een bestand genaamd "docker-compose.yml" in Portainer plakken om Mosquitto te kunnen installeren. Vervolgens moet je een paar instellingen aanpassen, zodat programma's niet hoeven in te loggen. Dit doe je door het bestand "mosquitto-no-auth.conf" te kopiëren naar een speciale map en de container opnieuw op te starten. En kijk, je hebt nu een werkende MQTT-broker die informatie kan delen tussen verschillende apparaten!

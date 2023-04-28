@@ -76,8 +76,7 @@ We hebben twee bestanden met Python software nodig: `boot.py` en `main.py`. We z
 | 9 | In regel 12 van de code moet je het woord **IP\_adres\_Raspberry\_Pi** veranderen in het echte IP-adres van jouw Raspberry Pi, bijvoorbeeld: `192.168.2.49`. Het is belangrijk om te weten dat de aanduidingen om de DHT22 te verbinden kunnen verschillen bij elke DHT22. |
 | 10 | Sla het bestand op door op "Ctrl + S" te drukken, kies de map "dht22" en geef het bestand de naam "main.py". |
 | 11 | Sluit Thonny. |
-||
-
+|| 
 
 ### boot.py
 ```
