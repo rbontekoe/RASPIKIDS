@@ -72,15 +72,20 @@ En dat is het! Je zou nu een werkende Mosquitto MQTT-broker moeten hebben binnen
 | 2 | We gaan iets veranderen in de Mosquitto-instellingen zodat iedereen erbij kan. Klik op het vierde plaatje achter "mosquitto-mosquitto-1" om in de container naar binnen te gaan. ``\\``![fig_7_5](assets/fig_7_5.png) |
 | 3 | Kies in het veld "Command" voor "/bin/sh". Druk op de knop "Connect". ``\\``![fig_7_6](assets/fig_7_6.png) |
 | 4 | Genereer een lijst met folders en de bestanden, typ: `ls -l`. Je ziet het bestand "mosquitto-no-auth.conf". |
-| 5 | Als je wilt weten wat er in het bestand staat, typ dan `cat mosquitto-no-auth.conf` en druk op de toets "Enter". De zin "allow_anonymous true" betekent dat je niet hoeft in te loggen. ``\\``![fig_7_7](assets/fig_7_7.png) |
+| 5 | Als je wilt weten wat er in het bestand staat, typ dan `cat mosquitto-no-auth.conf` en druk op de toets "Enter". De zin "allow\_anonymous true" betekent dat je niet hoeft in te loggen. ``\\``![fig_7_7](assets/fig_7_7.png) |
 | 6 | We gaan het bestand kopiëren naar de map "/mosquitto/config/". Typ hiervoor: `cp mosquitto-no-auth.conf /mosquitto/config/mosquitto.conf`. |
-| 7 | Verlaat de contaner met "Ctrl-D". |
+| 7 | Verlaat de contaner met "Ctrl+D". |
 | 8 | Vink het hokje aan voor de container en klik op de knop "Restart". ``\\``![fig_7_8](assets/fig_7_8.png) 
 ||
 
-!!! info
-    #### Automatisch aanvulling/auto-complete
-    In Linux is er een handige functie die auto-complete heet en die je helpt om sneller en makkelijker commando's in te typen in de terminal. Stel je voor dat je een lang woord moet typen, zoals "cp mosquitto-no-auth.conf /mosquitto/config/mosquitto.conf". In plaats van het hele woord te typen, kun je de eerste paar letters typen, zoals "cp mo", en dan op de tab-toets drukken. Linux zal dan het woord "cp mo" automatisch voor je afmaken als er geen andere woorden zijn die met "cp mo" beginnen. Als je twee keer snel op de tab-toets drukt, dan krijg je een overzicht van alle mogelijke woorden die beginnen met "cp mo". In ons geval zie je dan bijvoorbeeld "cp mosquitto-no-auth.conf" en "/mosquitto". Als je daarna op de "-" toets drukt gevolgd door de tab-toets, dan maakt Linux het hele woord voor je af. Dit bespaart tijd en voorkomt fouten als je lange woorden moet typen. Auto-complete is dus een handige functie die het werken in de terminal veel makkelijker en sneller maakt.
+!!! info "Tip"
+    #### Auto-complete/Automatisch aanvulling
+    In Linux is er een handige functie die auto-complete heet en die je helpt om sneller en makkelijker commando's in te typen in de terminal. Stel je voor dat je een lang woord moet typen, zoals "cp mosquitto-no-auth.conf /mosquitto/config/mosquitto.conf". In plaats van het hele woord te typen, kun je de eerste paar letters typen, zoals "cp mo", en dan op de tab-toets drukken. Linux zal dan het woord "cp mo" automatisch voor je afmaken als er geen andere woorden zijn die met "mo" beginnen. Als je de tweede keer op de tab-toets drukt, dan krijg je een overzicht van alle mogelijke woorden die beginnen met "mosquitto". In ons geval zie je dan bijvoorbeeld "mosquitto-no-auth.conf" en "mosquitto/": ``\\``    
+    ![fig_7_9](assets/fig_7_9.png)
+
+    Als je daarna op de "-" toets drukt gevolgd door de tab-toets, dan maakt Linux het hele woord voor je af. Dit bespaart tijd en voorkomt fouten als je lange woorden moet typen. Auto-complete is dus een handige functie die het werken in de terminal veel makkelijker en sneller maakt.
+
+    Een command breek je af met "Ctrl+C".
 
 ## Samenvatting
 

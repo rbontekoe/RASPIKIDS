@@ -2,7 +2,7 @@
 
 ## 2023
 
-### 26-04-2023
+### 03-05-2023
 
 Testen van de lessen.
 
@@ -12,7 +12,9 @@ Testen van de lessen.
 - Les 4 Portainer installeren ging goed.
 - Les 5 Node-RED installeren ging goed.
 - Les 6 Website bouwen met Node-RED. Website bouwen met Node-RED ging goed. Stap 2: Werken met API's ging ook goed.
-- Les 7 MQTT broker installeren. Ging goed.
+- Les 7 MQTT broker installeren. Ging goed. Les uitgebreid met Stap 3 - Toegang aan iedereen geven.
+- Les 8 Temperatuur meten. Niet getest.
+- Les 9 Node-RED dashboard programma maken. Er is nogal wat veranderd in het dashboard. De les erop aangepast.
 
 ### 25-04-2023
 

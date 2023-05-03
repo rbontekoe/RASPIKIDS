@@ -68,7 +68,7 @@ Je moet op de andere computer een programma hebben geïnstalleerd dat SSH onders
 
 Gebruik de volgende stappen volgen om een verbinding te maken met de Raspberry Pi vanuit een andere computer.
 
-!!! info
+!!! info "Info Fing"
     ![Fing](https://www.fing.com/img/logo.png)
     
     Je hebt het ip-adres van de Raspberry Pi nodig om een SSH verbinding met de Raspberry Pi te maken. Het makkelijkste is om de app Fling op je smartphone te instaleren. Zoek 'ubuntu' op, de naam die je gegeven hebt aan de Raspberry Pi in het vorige hoofdstuk. Je ziet dan bijvoorbeeld staan:

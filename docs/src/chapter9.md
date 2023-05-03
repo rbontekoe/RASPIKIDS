@@ -7,7 +7,7 @@ Je gaat een dashboard maken dat de volgende dingen laat zien:
 - Hoe de temperatuur buiten verandert.
 - Hoe hard de wind waait en vanuit welke richting.
 
-![UI](assets/fig_9_2.png)
+![UI](assets/fig_9_20.png)
 
 ### Inhoud
 
@@ -26,9 +26,11 @@ Pages = ["chapter9.md"]
 
 Stap 1: De Node-RED Dashboard module downloaden.
 
-Stap 2: Het dashboard samenstellen.
+Stap 2: Indeling van een dashboard.
 
-Stap 3: Weergegevens ophalen en op dashboard weergeven.
+Stap 3: Het dashboard samenstellen.
+
+Stap 4: Weergegevens ophalen en op dashboard weergeven.
 
 ## Stap 1 - De Node-RED Dashboard module downloaden
 
@@ -40,10 +42,45 @@ Node-RED heeft al veel verschillende knooppunten om te gebruiken, maar soms wil 
 | 2 | Ga naar de "Install" tab en zoek naar "node-red-dashboard" in de zoekbalk.  |
 | 3 | Als je de dashboard onderdelen wilt krijgen, moet je op de witte knop met "Install" erop klikken. ``\\``![fig_9_22](assets/fig_9_28.png) |
 | 4 | Je ziet een berichtje op je scherm. Druk op de rode knop waar "Install" op staat om de dashboard onderdelen te krijgen. ``\\``![fig_9_22](assets/fig_9_27.png) |
-| 5 | Als je de dashboard onderdelen hebt geïnstalleerd, kun je ze vinden in het linkermenu onder het kopje "dashboard". |
+| 5 | Klik op de toets "Close". |
+| 6 | Als je de dashboard onderdelen hebt geïnstalleerd, kun je ze vinden in het linkermenu onder het kopje "dashboard". |
 ||
 
-## Stap 2 - Het dashboard samenstellen
+## Stap 2 - Indeling van een dashoard
+
+Een dashboard kan bestaan uit verschillende tabs. Een tab kan verschillende groepen of secties hebben. Het is goed om hierover vooraf al een beeld te vormen.
+
+Een gebruiker kan maar één tab actief hebben. 
+
+Ons dashboard bestaat uit de tabs en groepen:
+- Binnen
+  - Woonkamer
+  - Kamer van Rob
+- Buiten
+  - Leusden
+
+Opzetten van de structuur.
+
+|Stap        | Actie      |
+|:---------- | :---------- |
+| 1 | Druk op de laatste tab rechts en kies voor "Dashboard". ``\\``![fig_9_18](assets/fig_9_18.png) |
+| 2 | Klik in de groep "Tab & Links" op de tab "+tab". ``\\``![fig_9_19](assets/fig_9_19.png) |
+| 3 | Druk op de "edit" knop om de tab te openen. ``\\``![fig_9_20](assets/fig_9_21.png) |
+| 4 | Verander de naam van de tab in: "Binnen". |
+| 5 | Maak nog een tab aan en noem die "Buiten" 
+| 6 | Selecteer de tab "Binnen" en klik op "+group". |
+| 7 | Klik op de "edit" knop am de groep te openen. |
+| 8 | Noem de groep "Huiskamer". |
+| 9 | Druk opde toets "Update". |
+| 10 | Herhaal stap 6 en 7 en noem de groep "Kamer van Rob". |
+| 11 | Druk opde toets "Update". |
+| 12 | Klik op de tab "Buiten" en klik op "+group". |
+| 13 | Klik op de "edit" knop om de groep te openen. |
+| 14 | Noen de groep "Leusden". |
+| 11 | Druk opde toets "Update". ``\\``![fig_9_31](assets/fig_9_31.png) ``\\``*Eindresultaat dashboard*|
+||
+
+## Stap 3 - Het dashboard samenstellen
 
 Als je het adres `IP_adres_raspberry_pi:1880/ui` intypt in je web browser, kan je gegevens zien van de "dashboard module". We zullen verwijzen naar de MQTT broker met het onderwerp (topic) "temperatuur2".
 ![UI](assets/fig_9_3.png).
@@ -52,24 +89,30 @@ Volg deze stappen om het werk te doen:
  
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Pak de 2x de "mqtt in", 1x de "gauge" en 1x de "text" knooppunt(en) en zet ze op je werkblad. |
-| 2 | Verbind de "mqtt in" knooppunt met het "gauge" knooppunt en de andere "mqtt in" knooppunt met het "text" knooppunt. |
-| 3 | Dubbelklik op "mqtt in" en typ het IP adres van je Raspberry Pi in het vak "Server". Het poortnummer "1883" wordt automatisch toegevoegd. ``\\``![fig_9_22](assets/fig_9_22.png) |
-| 4 | Typ `temperature2` in het "Topic" vak van het "mqtt in" knooppunt. |
-| 5 | Typ `Temp huiskamer` in het "Label" vak van het "gauge" knooppunt. ``\\``![fig_9_22](assets/fig_9_23.png)|
-| 6 | Pak opnieuw een "mqtt in" en een "text" knooppunt en zet ze op je werkblad. |
-| 7 | Verbind de "mqtt in" knooppunt met het "text" knooppunt. |
-| 8 | Typ het IP adres van je Raspberry Pi in het "Server" vak van de "mqtt in" knooppunt. |
-| 9 | Typ `humidity2` in het "Topic" vak van de "mqtt in" blok. |
-| 10 | Typ `Hum huiskamer` in het "Name" vak van de "text" blok. |
-| 11 | Dubbelklik op "Text" en typ in het vak "Value format" `{{msg.payload}} %`. |
-| 12 | Kies het vierde voorbeeld bij "Layout". ``\\``![fig_9_24](assets/fig_9_24.png) |
-| 13 | Klik op de "Deploy" knop om alles in te stellen. |  
-| 14 | Typ `IP_adres_raspberry_pi:1880/ui` in de adresbalk van je browser en druk op Enter om de informatie te zien. ``\\``![fig_9_22](assets/fig_9_25.png) |
+| 1 | Pak de een "mqtt in" en een "gauge" knooppunt en zet ze op je werkblad. |
+| 2 | Verbind de het "mqtt in" knooppunt met het "gauge" knooppunt. |
+| 3 | Dubbelklik op "mqtt in" en klik op het potloodje achter het veld "Server". **Een nieuw venster wordt geopend**. ``\\``![fig_9_22](assets/fig_9_30.png) |
+| 4 | Typ het IP adres van je Raspberry Pi in het vak "Server". Het poortnummer "1883" wordt automatisch toegevoegd. **Klik op de knop "Add"**. ``\\``![fig_9_29](assets/fig_9_29.png) |
+| 5 | Typ `temperature2` in het "Topic" vak van het "mqtt in" knooppunt. ``\\``![fig_9_22](assets/fig_9_22.png) |
+| 6 | Typ `Temp huiskamer` in het "Name" vak van het "gauge" knooppunt. ``\\``![fig_9_23](assets/fig_9_23.png)|
+| 7 | Klik op de toets "Done". |
+| 8 | Dubbelklik op het "gauge" knooppunt. Vul het in volgens onderstaand figuur. ``\\``![fig_9_32](assets/fig_9_32.png) |
+| 9 | Klik op de toets "Done". |
+| 10 | Pak opnieuw een "mqtt in" en een "text" knooppunt en zet ze op je werkblad. |
+| 11 | Verbind de "mqtt in" knooppunt met het "text" knooppunt. |
+| 12 | Het IP adres van je Raspberry Pi staat al goed in het "Server" vak van het "mqtt in" knooppunt. |
+| 13 | Typ `humidity2` in het "Topic" vak van het "mqtt in". |
+| 14 | Typ `Hum huiskamer` in het "Name" vak van de "mqtt in". |
+| 15 | Klik op "Done". |
+| 16 | Dubbelklik op "text" en Vul het in volgens onderstaand figuur. ``\\``![fig_9_24](assets/fig_9_24.png). |
+| 17 | Kies het vierde voorbeeld bij "Layout".  |
+| 18 | Klik op "Done". |
+| 19 | Klik op de "Deploy" knop om alles in te stellen. |
+| 20 | Typ `IP_adres_raspberry_pi:1880/ui` in de adresbalk van je browser en druk op Enter om de informatie te zien. ``\\``![fig_9_22](assets/fig_9_25.png) |
 ||
 
 
-## Stap 3 - Weergegevens ophalen en op dashboard weergeven
+## Stap 4 - Weergegevens ophalen en op dashboard weergeven
 
 We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" heet. Hiervoor moeten we eerst een account maken op de website. Als we een account hebben, krijgen we een "API key". Dit is een soort code die we nodig hebben om de informatie op te halen. We hebben in onze les "Website bouwen met Node-RED" al geleerd hoe je met een API omgaat. We mogen de informatie gratis opvragen, maar we moeten er wel voor zorgen dat we niet te vaak op een dag informatie opvragen. Als we het opvragen van informatie onder de 1000 keer per dag houden, is het gratis. Ik vraag zelf de informatie elke 15 minuten op, dus ik vraag het in totaal 4 x 24 = 96 keer per dag op, dus veel minder dan het maximum.
 
@@ -78,9 +121,9 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Sleep de knooppunten "timestamp", "http request", "debug", 3x "function" en uit de groep dashboard "chart" en 3x "text". Confiugreer de knooppunten volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
+| 1 | Sleep de knooppunten "inject", "http request", "debug", 3x "function" en uit de groep dashboard "chart" en 3x "text". Confiugreer de knooppunten volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
 | 2 | Dubbelkik op "timestamp" ``\\``![fig_9_5 timestamp](assets/fig_9_5.png)|
-| 3 | Klik op het keuzevakje `once after`. |
+| 3 | Klik op het keuzevakje `inject once after`. |
 | 4 | Kies bij de Repeat groep voor: `interval`. |
 | 5 | Type in het veld "every": `30`. | 
 | 6 | Kies als eenheid: `minutes`. |
@@ -89,9 +132,9 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 9 | Type in het veld "URL": https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Leusden?unitGroup=metric&key=**JOUW\_API\_KEY**&contentType=json
 | 10 | Kies in het keuze veld "Return" voor: `a parsed JSON object`.
 | 11 | Druk op de toets "Done". |
-| 12 | Debug ontvangt van het knooppunt "visualcrossing" een JSON object zodra je op het meest linkse grijze vierkantje klikt van timestamp. Een subgroep is "currentConditions". Dit bevat de gegevens die we willen gebruiken op het dashboard. Je krijgt ze te zien als je in het venster geheel rechts kies voor de tweede tab van rechts "Debug messages". ``\\``![fig_9_16](assets/fig_9_16.png)``\\``*Klik op het driehoekjes om het volledige JSON object te bekijken.*|
+| 12 | Debug ontvangt van het knooppunt "visualcrossing" een JSON object zodra je op het meest linkse grijze vierkantje klikt van timestamp (en eerst op "Deploy" hebt gedrukt). Een subgroep is "currentConditions". Dit bevat de gegevens die we willen gebruiken op het dashboard. Je krijgt ze te zien als je in het venster geheel rechts kies voor de derde tab van links "Debug messages". ``\\``![fig_9_16](assets/fig_9_16.png)``\\``*Klik op het driehoekjes om het volledige JSON object te bekijken.*|
 | 13 | Dubbelklik op de eerste "functie" en geef het de naam: `buitentemp`. ``\\``![get_actual_temp](assets/fig_9_7.png) ``\\``*Wat je hier ziet is JavaScript code. Elke uitdukking eindigt met een ";". Iets ingesloten door accolades {...} verwijst naar een JSON-object.* |
-| 14 | Typ op de eerste regel: `return { payload : "msg.payload.currentConditions.temp };`. "temp" is de buitentemperatuur. ``\\``Een payload is een belangrijk onderdeel van computers en technologie. Het is een term die gebruikt wordt om iets te beschrijven dat wordt verstuurd via internet, een computer-netwerk of in ons geval in een Node-RED flow. Denk bijvoorbeeld aan het versturen van een e-mail naar iemand. De boodschap die je verstuurt, bijvoorbeeld je tekst en eventuele afbeeldingen, is de payload. Het wordt verzonden via het internet naar de ontvanger, zoals jij wilt dat het wordt ontvangen. ``\\``Met "msg.payload" wordt verwezen naar het bericht dat Visual Crossing verzendt. Het vervolg ".currentConditions.temp" verwijst naar de buitentemperatuur. ``\\``![fig_9_17](assets/fig_9_17.png) |
+| 14 | Typ op de eerste regel: `return { payload : msg.payload.currentConditions.temp };`. "temp" is de buitentemperatuur. ``\\``Een payload is een belangrijk onderdeel van computers en technologie. Het is een term die gebruikt wordt om iets te beschrijven dat wordt verstuurd via internet, een computer-netwerk of in ons geval in een Node-RED flow. Denk bijvoorbeeld aan het versturen van een e-mail naar iemand. De boodschap die je verstuurt, bijvoorbeeld je tekst en eventuele afbeeldingen, is de payload. Het wordt verzonden via het internet naar de ontvanger, zoals jij wilt dat het wordt ontvangen. ``\\``Met "msg.payload" wordt verwezen naar het bericht dat Visual Crossing verzendt. Het vervolg ".currentConditions.temp" verwijst naar de buitentemperatuur. ``\\``![fig_9_17](assets/fig_9_17.png) |
 | 14 | Druk op de toets "Done". |
 | 15 | Dubbelklik op de tweede "functie" en geef het de naam: "windrichting". ``\\``![windrichting](assets/fig_9_8.png) |
 | 16 | Kopieer de tekst uit ["Javascript code windrichting"](#Javascript-code-windrichting) naar het code blok.
@@ -99,17 +142,11 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 | 18 | Dubbelklik op de derde "functie" en geef het de naam: "windsnelheid".  ``\\``![fig_9_9](assets/fig_9_9.png)| |
 | 19 | Kopieer de tekst uit [Javascript code windsnelheid in Beaufort](#Javascript-code-windsnelheid-in-Beaufort). Hiermee converteren we de windsnelheid (km/uur) naar Beaufort. De tabel vind je [hier](https://www.kuijntjes.nl/weer/windsnelheid.htm).
 | 20 | Druk op de toets "Done". |
-| 21 | Druk op de knop "Deploy". |
-| 22 | Druk op de laatste tab rechts en kies voor "Dashboard". ``\\``![fig_9_18](assets/fig_9_18.png) |
-| 23 | Klik in de groep "Tab & Links" op de tab "+tab". ``\\``![fig_9_19](assets/fig_9_19.png) |
-| 24 | Druk op de "edit" knop om de tab te openen. ``\\``![fig_9_20](assets/fig_9_21.png) |
-| 25 | Verander de naam van de tab in: "Cursus". |
-| 26 | Druk op de toets "Update". |
-| 27 | Klik op de tab en je ziet alle Dashboard items. ``\\``![fig_9_21](assets/fig_9_20.png) |
-| 28 | Verschuif de items in de volgorde zoals je ze wilt zien. |
+| 21 | Dubbelklik op "chart" en verander: ``\\``\- Group: [Buiten] Leusden ``\\``\- Label: Buitentemperatuur ``\\``![fig_9_33](assets/fig_9_33.png) |
+| 22 | Druk op de toets "Done". |
+| 23 | Voor de "text" knooppunten, verander de "Group" in "[Buiten] Leusden" en het "Label" in wat het doet. |
+| 24 | Als je klaar bent, druk dan op de knop "Deploy"en laat het resultaat in je browser zien. De drie horizontale streepjes is het menu-symbool. ``\\``![fig_9_20](assets/fig_9_20.png) |
 ||
-
-Ga naar `IP_adres_raspberry_pi:1880/ui` om het resultaat te bekijken. ``\\``![fig_9_21](assets/fig_9_2.png)
 
 ### Javascript code windrichting
 ```
@@ -148,7 +185,7 @@ De code bekijkt het nummer om te zien welke richting het dichtstbij ligt en kies
 
 ### Javascript code windsnelheid in Beaufort
 ```
-let test = msg.payload.currentConditions.winddir;
+let test = msg.payload.currentConditions.windspeed;
 let windsnelheid = '';
 
 if (test <= 1) {
