@@ -34,74 +34,53 @@ Stap 5: Data naar database wegschrijven
 
 ### docker-compose.yml
 ```
-version: '3.6'
+version: '3'
 
 services:
-  grafana:
-    container_name: grafana
-    image: grafana/grafana
-    restart: unless-stopped
-    user: "0"
-    ports:
-    - "3000:3000"
-    environment:
-    - TZ=Etc/UTC
-    - GF_PATHS_DATA=/var/lib/grafana
-    - GF_PATHS_LOGS=/var/log/grafana
-    volumes:
-    - ./volumes/grafana/data:/var/lib/grafana
-    - ./volumes/grafana/log:/var/log/grafana
-    healthcheck:
-      test: ["CMD", "wget", "-O", "/dev/null", "http://localhost:3000"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 30s
-
   influxdb:
+    image: influxdb
     container_name: influxdb
-    image: "influxdb:1.8"
     restart: unless-stopped
     ports:
-    - "8086:8086"
+      - "8086:8086"
     environment:
-    - TZ=Etc/UTC
-    - INFLUXDB_HTTP_FLUX_ENABLED=false
-    - INFLUXDB_REPORTING_DISABLED=false
-    - INFLUXDB_HTTP_AUTH_ENABLED=false
-    - INFLUXDB_MONITOR_STORE_ENABLED=FALSE
-  # - INFLUX_USERNAME=dba
-  # - INFLUX_PASSWORD=supremo
-  # - INFLUXDB_UDP_ENABLED=false
-  # - INFLUXDB_UDP_BIND_ADDRESS=0.0.0.0:8086
-  # - INFLUXDB_UDP_DATABASE=udp
+      - INFLUXDB_DB=mydb
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=password
+      - INFLUXDB_USER=myuser
+      - INFLUXDB_USER_PASSWORD=mypassword
     volumes:
-    - ./volumes/influxdb/data:/var/lib/influxdb
-    - ./backups/influxdb/db:/var/lib/influxdb/backup
-    healthcheck:
-      test: ["CMD", "curl", "http://localhost:8086"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
+      - influxdb_data:/var/lib/influxdb
 
-      start_period: 30s
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=password
+    volumes:
+      - grafana_data:/var/lib/grafana
+
+volumes:
+  influxdb_data:
+  grafana_data:
 ```
 
-Deze code gaat over twee services die "Grafana" en "InfluxDB" heten.
+Dit is een bestand dat aan Docker vertelt hoe het twee programma's moet starten en ze laten samenwerken.
 
-Laten we beginnen met Grafana. De "services" sectie vertelt ons dat we een service hebben die Grafana heet. Het gebruikt een "image" genaamd "grafana/grafana", wat betekent dat het Grafana-pakket van Docker Hub zal worden gebruikt.
+Het eerste programma heet InfluxDB en het tweede heet Grafana.
 
-De "restart" sectie vertelt de container om opnieuw op te starten tenzij er een specifieke stopopdracht wordt gegeven. De "user" sectie stelt de gebruiker in de container in op 0, wat betekent dat het als de rootgebruiker wordt uitgevoerd.
+Voor elk programma staat er een stukje code dat vertelt hoe Docker het moet starten en hoe het met andere programma's kan communiceren.
 
-Dan hebben we de "ports" sectie die ons vertelt dat we de poorten 3000:3000 moeten openen, wat betekent dat verkeer naar de poort 3000 van de container zal worden omgeleid naar poort 3000 op de hostmachine.
+Voor InfluxDB, vertelt de code Docker om de "influxdb" te starten. Het gebruikt een image van InfluxDB dat al bestaat en zet het in een container genaamd "influxdb". Het vertelt ook Docker om de container te laten communiceren via poortnummer 8086 op de computer waar het op draait. Er worden ook gegevens opgeslagen in een speciale map genaamd "influxdb_data". Dit programma zal altijd opnieuw opstarten als het per ongeluk vastloopt.
 
-De "environment" sectie vertelt ons welke omgevingsvariabelen we moeten instellen. "TZ" is de tijdzone en "GF_PATHS_DATA" en "GF_PATHS_LOGS" zijn de paden naar de gegevens- en logbestanden van Grafana. De "volumes" sectie vertelt ons dat we lokale mappen moeten koppelen aan mappen in de container.
+Voor Grafana, vertelt de code Docker om de "grafana" te starten. Het gebruikt een plaatje van Grafana dat al bestaat en zet het in een container genaamd "grafana". Het vertelt ook Docker om de container te laten communiceren via poortnummer 3000 op de computer waar het op draait. Er worden ook gegevens opgeslagen in een speciale map genaamd "grafana_data". Dit programma zal ook altijd opnieuw opstarten als het per ongeluk vastloopt.
 
-Ten slotte hebben we de "healthcheck" sectie die ons vertelt hoe we kunnen controleren of Grafana correct werkt. Het test de container elke 30 seconden door een opdracht uit te voeren en als de test niet slaagt, zal het nog twee keer proberen voordat het de container als niet-gezond beschouwt.
-
-InfluxDB volgt een vergelijkbaar formaat als Grafana. We hebben een container genaamd "influxdb" die de "influxdb:1.8" image gebruikt. Het opent poort 8086, stelt enkele omgevingsvariabelen in en koppelt mappen.
-
-Net als Grafana heeft InfluxDB ook een "healthcheck" sectie die test of de container correct werkt door het elke 30 seconden te testen.
+Het bestand sluit af met een lijst van de speciale mappen die Docker moet maken om gegevens op te slaan.
 
 ## Stap 2 - Wachtwoord Grafana wijzigen
 

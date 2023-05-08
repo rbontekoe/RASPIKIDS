@@ -27,11 +27,11 @@ makedocs(
             "11 Slimme meter aansluiten" => "chapter11.md",
             "12 Stroom- en gasverbruik op het dashboard weergeven" => "chapter12.md"
         ],
-        "Sectie 5 - InfluxDB en Grafana" => [
-            "13 Grafana en InfluxDB installeren" => "chapter13.md",
-            "14 Gegevens opslaan in Influx met Node-RED" => "chapter14.md",
-            "15 Gegevens grafisch weergeven met Grafana" => "chapter15.md"
-        ],
+    #    "Sectie 5 - InfluxDB en Grafana" => [
+    #        "13 Grafana en InfluxDB installeren" => "chapter13.md",
+    #        "14 Gegevens opslaan in Influx met Node-RED" => "chapter14.md",
+    #        "15 Gegevens grafisch weergeven met Grafana" => "chapter15.md"
+    #    ],
         "Bijlage" => "appendix.md",
         "References" => "references.md"
     ]
