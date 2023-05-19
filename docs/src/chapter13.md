@@ -64,6 +64,11 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=password
     volumes:
       - grafana_data:/var/lib/grafana
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://localhost:3000/login"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
 volumes:
   influxdb_data:

@@ -33,6 +33,27 @@ De P1-kabel wordt gebruikt om de gegevens van de slimme meter naar de Raspberry 
 
 Sluit de P1 kabel aan op de Raspberry Pi.
 
+!!! info
+    Wanneer je een USB P1-kabel aansluit op een Raspberry Pi 3B+, wordt de seriële poort (ook bekend als ttyUSB0) toegewezen aan de verbinding. Hier is een uitleg over hoe dit werkt:
+
+    USB P1-kabel: Een USB P1-kabel is een specifiek type USB-kabel dat wordt gebruikt om verbinding te maken met slimme energiemeters, zoals de Nederlandse P1 Slimme Meter. Deze kabels hebben aan de ene kant een USB-connector en aan de andere kant een RJ11-connector die in de P1-poort van de energiemeter wordt gestoken.
+
+    Raspberry Pi 3B+: De Raspberry Pi 3B+ is een populaire single-board computer die verschillende I/O-poorten en interfaces heeft, waaronder USB-poorten. Deze USB-poorten kunnen worden gebruikt om externe apparaten, zoals de USB P1-kabel, aan te sluiten.
+
+    TTY: TTY staat voor "teletypewriter" en verwijst naar de seriële poorten op een computer of microcontroller. In Linux-systemen, zoals de Raspberry Pi, worden seriële poorten vaak weergegeven als /dev/ttyUSB0, /dev/ttyUSB1, enz., afhankelijk van het aantal aangesloten apparaten.
+
+    Wanneer je de USB P1-kabel op een vrije USB-poort van de Raspberry Pi 3B+ aansluit, zal het besturingssysteem van de Raspberry Pi de kabel detecteren en automatisch een apparaatbestand toewijzen, zoals /dev/ttyUSB0. Dit bestand vertegenwoordigt de verbinding met de P1-poort van de slimme energiemeter.
+
+    Je kunt dit apparaatbestand gebruiken om gegevens van de slimme energiemeter te lezen. Bijvoorbeeld, als je programma's of scripts schrijft, kun je de /dev/ttyUSB0-interface gebruiken om te communiceren met de slimme energiemeter en gegevens zoals energieverbruik, spanning of stroomsterkte uit te lezen.
+
+    Het is belangrijk op te merken dat het toewijzen van de ttyUSB0-aanduiding niet uniek is voor de Raspberry Pi 3B+. Het hangt af van het besturingssysteem en de configuratie. Het kan variëren afhankelijk van het aantal aangesloten USB-apparaten en de volgorde waarin ze worden gedetecteerd. Dus als je meerdere USB-apparaten hebt aangesloten op je Raspberry Pi, kan het zijn dat de P1-kabel een andere ttyUSB-poort toegewezen krijgt, zoals ttyUSB1.
+
+
+
+
+
+
+
 ### Stap 2 - Voeding aanzetten van de Raspberry Pi
 
 Sluit de voeding aan op de Raspery Pi en steek de stekker van de voeding in het stopcontact. 
