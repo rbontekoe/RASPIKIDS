@@ -2,6 +2,10 @@
 
 ## 2023
 
+### 06-07-2023 - Raspberry Pi 4 ontvangen
+
+Gistereen heb ik mijn Raspberry Pi 4 met 4GB RAM ontvangen. Ik had al een nieuwe SD kaartje van 16GB aangemaakt met Raspberry Pi OS lite (64 bit) om te testen of je de cursus ook met dit besturingssysteem kunt gebruiken in plaats van Ubuntu 22.04 server. Tot dusver gaat het goed! Portainer en Node-RED succesvol geinstalleerd. 
+
 ### 08-05-2023 - Verwijderen van de lessen over Grafana en InfluxDB
 
 Ik heb de lessen over Grafana en InfluxDB verwijderd omdat ik een betere manier heb gevonden om Grafana te gebruiken met de MQTT-broker. Het lijkt me heel interessant om dat te leren. Ik ga uitzoeken hoe dat werkt voordat we weer verder gaan met de les over grafana.
