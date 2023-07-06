@@ -10,7 +10,7 @@ Gisteren kreeg ik mijn Raspberry Pi 4 met 4GB RAM. Ik had al een nieuw geheugenk
 
 Ik heb de lessen over Grafana en InfluxDB verwijderd omdat ik een betere manier heb gevonden om Grafana te gebruiken met de MQTT-broker. Het lijkt me heel interessant om dat te leren. Ik ga uitzoeken hoe dat werkt voordat we weer verder gaan met de les over grafana.
 
-Ik heb nog niet de Slimme Meter sectie getest. Nu test ik met van een Raspberry Pi 4. Deze heb ik geleend van de Coderdojo club. Ik heb zelf ook zo'n computer besteld en als ik die heb ontvangen, wil ik graag proberen om de Slimme Meter sectie ermee te testen.
+De Slimme Meter sectie heb ik nog niet getest. Nu test ik met van een Raspberry Pi 4. Deze heb ik geleend van de Coderdojo club. Ik heb zelf ook zo'n computer besteld en als ik die heb ontvangen, wil ik graag proberen om de Slimme Meter sectie ermee te testen.
 
 ### 03-05-2023 - Testen van de lessen.
 
