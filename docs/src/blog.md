@@ -4,7 +4,7 @@
 
 ### 06-07-2023 - Raspberry Pi 4 ontvangen
 
-Gistereen heb ik mijn Raspberry Pi 4 met 4GB RAM ontvangen. Ik had al een nieuwe SD kaartje van 16GB aangemaakt met Raspberry Pi OS lite (64 bit) om te testen of je de cursus ook met dit besturingssysteem kunt gebruiken in plaats van Ubuntu 22.04 server. Tot dusver gaat het goed! Portainer en Node-RED succesvol geinstalleerd. 
+Gisteren kreeg ik mijn Raspberry Pi 4 met 4GB RAM. Ik had al een nieuw geheugenkaartje van 16GB met Raspberry Pi OS lite (64 bit) gemaakt om te zien of ik de cursus ook kon volgen met dat besturingssysteem in plaats van Ubuntu 22.04 server. Tot nu toe gaat het goed! Ik heb Portainer en Node-RED succesvol geïnstalleerd.
 
 ### 08-05-2023 - Verwijderen van de lessen over Grafana en InfluxDB
 
