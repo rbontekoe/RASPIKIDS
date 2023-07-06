@@ -111,7 +111,7 @@ Dus dit stuk code bevat informatie over de status van een bepaalde actie en een 
    </head>
    <body>
 
-     <img src="{{payload}}.message">
+     <img src="{{payload.message}}">
 
    </body>
    </html>

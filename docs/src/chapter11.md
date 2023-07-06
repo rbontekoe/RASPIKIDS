@@ -48,12 +48,6 @@ Sluit de P1 kabel aan op de Raspberry Pi.
 
     Het is belangrijk op te merken dat het toewijzen van de ttyUSB0-aanduiding niet uniek is voor de Raspberry Pi 3B+. Het hangt af van het besturingssysteem en de configuratie. Het kan variëren afhankelijk van het aantal aangesloten USB-apparaten en de volgorde waarin ze worden gedetecteerd. Dus als je meerdere USB-apparaten hebt aangesloten op je Raspberry Pi, kan het zijn dat de P1-kabel een andere ttyUSB-poort toegewezen krijgt, zoals ttyUSB1.
 
-
-
-
-
-
-
 ### Stap 2 - Voeding aanzetten van de Raspberry Pi
 
 Sluit de voeding aan op de Raspery Pi en steek de stekker van de voeding in het stopcontact. 

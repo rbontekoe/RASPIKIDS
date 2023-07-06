@@ -15,11 +15,11 @@ Om een Raspberry Pi te gebruiken, heb je het volgende nodig:
 - Een [Raspberry Pi 3B+](https://www.sossolutions.nl/raspberry-pi-3-model-b-plus) computer.
 - Een klaargemaakt micro SD-kaartje voor de Raspberry Pi, dit is in het vorige hoofdstuk besproken.
 - Een adapter om stroom aan de Raspberry Pi te geven.
-- De naam van je wifi-netwerk.
-- Het wachtwoord van je wifi-netwerk.
 
 Als je later wifi wilt instellen dan heb je ook nodig:
 
+- De naam van je wifi-netwerk.
+- Het wachtwoord van je wifi-netwerk.
 - Een scherm met HDMI aansluiting, zoals een TV of de [UCtronics 7 Inch touchscreen](https://www.sossolutions.nl/uctronics-7-inch-ips-touchscreen-for-raspberry-pi-with-prop-stand-1024-600-capacitive-hdmi-lcd-monitor-portable-display-for-raspberry-pi-4-3-b-windows-10-8-7-free-driver).
 - Een [USB-toetsenbord US](https://www.sossolutions.nl/officiele-raspberry-pi-toetsenbord-muis-zwart-grijs) met muis,
 om te typen op de Raspberry Pi.
