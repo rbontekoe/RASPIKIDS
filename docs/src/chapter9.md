@@ -123,7 +123,7 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 
 |Stap        | Actie      |
 |:---------- | :---------- |
-| 1 | Sleep de knooppunten "inject", "http request", "debug", 3x "function" en uit de groep dashboard "chart" en 3x "text". Confiugreer de knooppunten volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
+| 1 | Sleep de knooppunten "inject", "http request", "debug", 3x "function" en uit de groep dashboard "chart" en 3x "text". Configureer de knooppunten volgens onderstaand schema. ``\\``![schema](assets/fig_9_4.png) |
 | 2 | Dubbelkik op "timestamp" ``\\``![fig_9_5 timestamp](assets/fig_9_5.png)|
 | 3 | Klik op het keuzevakje `inject once after`. |
 | 4 | Kies bij de Repeat groep voor: `interval`. |
