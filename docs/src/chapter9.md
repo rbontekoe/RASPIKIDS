@@ -118,7 +118,7 @@ We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" 
 
 !!! info "Visual Crossing: Weather Data & Weather API"
     Zorg dat je jouw persoonlijke "API key" klaar hebt liggen voordat je de stappen gaat uitvoeren. Je kunt dat doen door een account aan te maken op de website van [Visual Crossing: Weather Data & Weather API](https://www.visualcrossing.com).
-
+    
     Je API key vind je, nadat je bent ingelogd onder "Key" als je klik op: ``\\``![key](assets/fig_9_34.png)
 
 |Stap        | Actie      |
