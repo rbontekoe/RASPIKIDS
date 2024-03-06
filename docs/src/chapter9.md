@@ -116,7 +116,7 @@ Volg deze stappen om het werk te doen:
 
 We gaan weergegevens over Leusden ophalen van een website die "Visual Crossing" heet. Hiervoor moeten we eerst een account maken op de website. Als we een account hebben, krijgen we een "API key". Dit is een soort code die we nodig hebben om de informatie op te halen. We hebben in onze les [Website bouwen met Node-RED](../chapter6/#Stap-2:-Werken-met-API\'s) al geleerd hoe je met een API omgaat. We mogen de informatie gratis opvragen, maar we moeten er wel voor zorgen dat we niet te vaak op een dag informatie opvragen. Als we het opvragen van informatie onder de 1000 keer per dag houden, is het gratis. Ik vraag zelf de informatie elke 15 minuten op, dus ik vraag het in totaal 4 x 24 = 96 keer per dag op, dus veel minder dan het maximum.
 
-!!! info "Visual Crossing: Weather Data & Weather API"
+!!! info "Visual Crossing: Weather Data & API"
     Zorg dat je jouw persoonlijke "API key" klaar hebt liggen voordat je de stappen gaat uitvoeren. Je kunt dat doen door een account aan te maken op de website van [Visual Crossing: Weather Data & API](https://www.visualcrossing.com).
     
     Je API key vind je, nadat je bent ingelogd onder "</>**Key**" als je klikt op: ``\\``![key](assets/fig_9_34.png)
