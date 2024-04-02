@@ -1,5 +1,11 @@
 # Blog
 
+## 2024
+
+### 02-04-2024 - Lessen over Grafana en InfluxDB terug gezet
+
+Ik ben er niet aan toegekomen om het uit te zoeken en heb daarom de lessen weer toegankelijk gemaakt.
+
 ## 2023
 
 ### 06-07-2023 - Raspberry Pi 4 ontvangen
