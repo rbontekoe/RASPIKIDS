@@ -1,0 +1,23 @@
+version: "3.9" # Use the latest version of the Docker Compose file format
+
+services:
+  jupyter-notebook:
+    image: continuumio/miniconda3
+    ports:
+      - "8888:8888"
+    command: 
+      - /bin/bash
+      - "-c"
+      - |
+        conda install jupyter -y --quiet && \
+        mkdir -p /opt/notebooks && \
+        jupyter notebook \
+          --notebook-dir=/opt/notebooks \
+          --ip='*' \
+          --port=8888 \
+          --no-browser \
+          --allow-root
+    volumes:
+      - ./notebooks:/opt/notebooks 
+    tty: true
+    stdin_open: true

@@ -8,27 +8,7 @@
 Ik heb zelf een Lenovo Legion Y520 Windows 10 laptop met Ubuntu 22.04 geïnstalleerd op een [Samsung portable SSD T5](#Install-Ubuntu-on-Samsung-T5-and-Lemovo-Legion-Y520-with-Windows-10) schijf. Ik start mijn machine op vanaf deze schijf.
 
 
-## Node-RED flows van de cursus importeren
-
-Zorg dat je vooraf de modules [Dashboard](../chapter9/index.html#Stap-1-De-Node-RED-Dashboard-module-downloaden) en [InfluxDB](../chapter13/index.html#Stap-1-Stack-met-Grafana-en-Influxdb-maken) hebt geinstalleerd.
-
-Volg de volgende stappen om de Node-RED flows te importeren.
-
-|Stap        | Actie      | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | Klik op de link: [flows_cursus.json](assets/flows_cursus.json) | Open het bestand. |
-| 2 | Ctrl + A | Selecteer alle tekst. |
-| 3 | Ctrl + C | Kopieer de tekst naar het klembord. |
-| 4 | Ctrl + I | Open het import venster. |
-| 5 | Ctrl + V | Plak de code in het import ventser. |
-| 6 | Druk op de toets "Import" | Code wordt geïmporteerd. |
-||
-
-
-![fig_appendix_1](assets/fig_appendix_1.png)
-
-
-## Voordelen en nadelen van containerisatie
+# Voordelen en nadelen van containerisatie
 
 ### Nadelen
 Er zijn een aantal nadelen verbonden aan containerisatie, waaronder:
@@ -60,90 +40,6 @@ Er zijn een aantal voordelen verbonden aan containerisatie, waaronder:
 5. Continu integratie en deployment: De containerisatie-technologie kan gebruikt worden voor continu integratie en deployment, waardoor het gemakkelijker is om updates en nieuwe versies van applicaties te implementeren.
 
 6. Beheer: Containerisatie kan het beheer van applicaties vergemakkelijken, omdat containers gemakkelijk kunnen worden gestart, gestopt en verwijderd.
-
-## Installeren van PuTTY op Windows
-
-Om PuTTY te downloaden en te installeren, moet je de volgende stappen volgen:
-
-Stap        | Actie      | Opmerking |
-| :---------- | :---------- | :---------- |
-| 1 | Ga naar `https://www.putty.org/` | Website van PuTTY. |
-| 2 | Klik op de link 'Download PuTTY' om het installatieprogramma te downloaden | |
-| 3 | Zoek het installatieprogramma in je downloads en open het |  |
-| 4 | Volg de stappen in het installatieprogramma om PuTTY te installeren op je computer | |
-||
-
-## Installeren Git
-
-Git is een vrij en open source gedistribueerd versiebeheersysteem, ontworpen om alles van kleine tot zeer grote projecten met snelheid en efficiëntie af te handelen.
-
-##### Voorwaarden
-- Je computer OS is Ubuntu 22.04 64 bit.
-- Je hebt een [GitHub account](https://github.com/).
-
-Stap        | Actie      | Opmerking |
-| :---------- | :---------- | :---------- |
-| 1 | sudo apt install git | |
-| 2 | git config --global user.email "<Je email address>" | Bijvoorbeeld: "rbontekoe@appligate.nl" |
-| 3 | git config --global user.name "<Je voor- en achternaam>" | Bijvoorbeeld: "Rob Bontekoe" |
-| 4 | git config --global github.user "<Je git hub naam>" | Bijvoorbeeld: "rbontekoe" |
-| 5 | cat .gitconfig | Dit laat je git gegevens zien. Bestanden die met een punt beginnen zijn verborgen bestanden. Verborgen bestanden kun je zien met ```ls -al```. |
-||
-
-
-## Installeren Thonny
-
-Om Thonny te installeren op Ubuntu 22.04, volg je de volgende stappen:
-
-|Stap        | Actie      | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | Ctrl + Alt + T| Open het terminalvenster. |
-| 2 | sudo apt install thonny | Thonny installeren. |
-||
-
-## Installeren Docker op Raspberry Pi
-
-Docker is een open containerplatform voor het ontwikkelen, verschepen en uitvoeren van toepassingen.
-
-##### Voorwaarden
-- Je computer besturingssysteem is Ubuntu 22.04 of hoger.
-- Je hebt `curl` geinstallleerd: `sudo apt install curl`.
-
-##### Installeren
-
-|Stap        | Actie      | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | sudo apt update | Update Software Repositories. |
-| 2 | sudo apt remove docker docker-engine docker.io | Verwijder oudere versies van Docker |
-| 3 | curl -sSL https://get.docker.com \| sh| Installeer Docker |
-| 4 | sudo docker version | Check [Docker Engine Version](https://docs.docker.com/engine/release-notes/) |
-||
-
-## Installeren van Ubuntu op een Samsung T5 en Lenovo Legion Y520 met Windows 10
-
-The stappen die ik heb gevolgd.
-
-|Stap        | Actie/Response | Opmerking |
-|:---------- | :---------- |:---------- |
-| 1 | Download ISO-image van de Ubuntu 18.04. website |  |
-| 2 | Kopieer met Rufus naar een [USB-stick](https://github.com/kfechter/LegionY530Ubuntu/blob/master/Sections/CreateBootDrive.md) |  |
-| 3 | Start de machine en druk op F2 | Verander de Bios van Lenovo |
-||
-```
-Onder de Boot tab:
- Fast Boot disabled
-Onder de Security tab:
- Secureboot disabled
-```
-
-|Stap        | Action/Response | Omerking |
-|:---------- | :---------- |:---------- |
-| 4 | Start Y520 met Windows 10 and druk op F12 |  |
-| 5 | Kies Ubuntu | Herstart via USB. |
-| 6 | Na herstart kies voor `install Ubuntu on 500GB portable disk` |  |
-| 7 | sudo apt update |  |
-| 8 | sudo do-release-upgrade -d | [Upgrade naar Ubuntu 20.04](https://ubuntu.com/blog/how-to-upgrade-from-ubuntu-18-04-lts-to-20-04-lts-today). |
-||
 
 Nog even bewaren!
 
