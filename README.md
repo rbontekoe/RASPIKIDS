@@ -2,7 +2,7 @@
 
 **UNDER DEVELOPMENT**
 
-# Supplement to Ed Donners course
+# Supplement to Ed Donners course: Master AI and LLMs
 
 [Cursusmateriaal](https://rbontekoe.github.io/llm/stable)
 
