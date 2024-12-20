@@ -4,5 +4,5 @@
 
 # Supplement to Ed Donners course
 
-[Cursusmateriaal](https://rbontekoe.github.io/RASPIKIDS/stable)
+[Cursusmateriaal](https://rbontekoe.github.io/llm/stable)
 
